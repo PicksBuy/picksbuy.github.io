@@ -964,8 +964,9 @@ function openLogin(){
   const go=ov.querySelector('#lGo');
   const run=async()=>{
     go.disabled=true; go.textContent='…';
-    const r=await sb.auth.signInWithPassword({email:ov.querySelector('#lE').value.trim(),password:ov.querySelector('#lP').value});
-    if(r.error){ go.disabled=false; go.textContent='دخول'; toast('الإيميل أو الباسورد غلط'); return; }
+    const r=await sb.auth.signInWithPassword({email:ov.querySelector('#lE').value.trim().toLowerCase(),password:ov.querySelector('#lP').value.trim()});
+    if(r.error){ go.disabled=false; go.textContent='دخول'; const m=String(r.error.message||'').toLowerCase();
+      toast(m.includes('confirm')?'الحساب لسه متأكدش من Supabase':m.includes('invalid')?'الإيميل أو الباسورد غلط':'مشكلة في الدخول: '+(r.error.message||'')); return; }
     const st=await checkAdmin();
     if(!st.isAdm){ toast('الحساب ده مش مسجل كأدمن'); await sb.auth.signOut(); await checkAdmin(); }
     else toast('أهلاً 👋 دلوقتي تقدر تعدّل');
