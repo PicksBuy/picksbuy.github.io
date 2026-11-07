@@ -1,1 +1,3 @@
-# picksbuy.github.io
+# PicksBuy
+
+PicksBuy shop: https://picksbuy.github.io
