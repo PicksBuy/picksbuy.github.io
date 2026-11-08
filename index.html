@@ -125,7 +125,7 @@ body:not(.admin) .cartbtn.has{display:flex}
 .vch.sw.on img{border-color:#fff}
 .swbig{display:none;align-items:center;gap:12px;margin:8px 0 2px;padding:8px;border:1px solid var(--line);border-radius:14px;background:#fff}
 .swbig.on{display:flex}
-.swbig img{width:84px;height:84px;border-radius:12px;object-fit:cover;padding:0!important}
+.swbig img{width:132px;height:132px;border-radius:12px;object-fit:contain;background:#fff;padding:0!important;cursor:zoom-in}
 .swbig b{direction:ltr;font-size:15px}
 .szl span img{width:18px;height:18px;border-radius:50%;object-fit:cover;vertical-align:-4px;margin-inline-end:5px;padding:0!important}
 .qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:12px;flex:none}
@@ -768,7 +768,7 @@ function openDetail(id){
   const vsel=ov.querySelector('#vsel');
   const swb=ov.querySelector('#swbig');
   const paint=()=>{ if(vsel) vsel.querySelectorAll('.vch').forEach(b=>b.classList.toggle('on',vs[+b.dataset.vi].s===sel));
-    if(swb){ const x=vs.find(v=>v.s===sel); if(x&&x.img){ swb.querySelector('img').src=img(x.img); swb.querySelector('b').textContent=x.s; swb.classList.add('on'); } else swb.classList.remove('on'); } const q=ov.querySelector('#qn'); if(q) q.textContent=qn; };
+    if(swb){ const x=vs.find(v=>v.s===sel); if(x&&(x.img||x.photo)){ const si=swb.querySelector('img'); si.src=img(x.photo||x.img); si.onclick=()=>zoomImg(img(x.photo||x.img)); swb.querySelector('b').textContent=x.s; swb.classList.add('on'); } else swb.classList.remove('on'); } const q=ov.querySelector('#qn'); if(q) q.textContent=qn; };
   if(vsel) vsel.onclick=e=>{ const b=e.target.closest('[data-vi]'); if(!b||b.disabled) return; sel=vs[+b.dataset.vi].s; qn=1; paint(); };
   ov.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{
     const cur=S.products.find(x=>x.id===p.id)||p; const room=(vs&&!sel)?99:avail(cur,sel)-inCart(p.id,sel);
@@ -953,7 +953,7 @@ function openForm(p){
   const F = {
     images:[...(p?.images||[])].map(id=>({id})),
     hasSizes: p ? !!(p.sizes&&p.sizes.length) : false,
-    sizes: (p?.sizes||[]).map(s=>({s:s.s,q:s.q,...(s.img?{img:s.img}:{})})),
+    sizes: (p?.sizes||[]).map(s=>({s:s.s,q:s.q,...(s.img?{img:s.img}:{}),...(s.photo?{photo:s.photo}:{})})),
     fresh:[] // uploaded during this form
   };
   const defCountry = p?.countryId || (S.country!=='all'?S.country:'');
@@ -1053,7 +1053,7 @@ function openForm(p){
       createdAt:p?.createdAt||new Date().toISOString()
     };
     if(F.hasSizes){
-      data.sizes=F.sizes.filter(s=>String(s.s).trim()).map(s=>({s:String(s.s).trim(),q:Math.max(0,Math.round(num(s.q)||0)),...(s.img?{img:s.img}:{})}));
+      data.sizes=F.sizes.filter(s=>String(s.s).trim()).map(s=>({s:String(s.s).trim(),q:Math.max(0,Math.round(num(s.q)||0)),...(s.img?{img:s.img}:{}),...(s.photo?{photo:s.photo}:{})}));
       data.qty=null;
     } else { data.sizes=[]; data.qty=Math.max(0,Math.round(num(q('#fQty').value)||0)); }
     const btn=q('#save'); btn.disabled=true; btn.textContent='بيحفظ…';

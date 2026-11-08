@@ -1,5 +1,5 @@
 {
- "id": "2026-11-08-f",
+ "id": "2026-11-08-g",
  "title": "منتجات Black Friday والـ dm الجديدة",
  "categories": [
   {
@@ -1465,39 +1465,91 @@
    ],
    "sizes": [
     {
-     "s": "Barely There",
-     "q": 5
+     "s": "Tease U Later",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-tease-u-later.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-tease-u-later.jpg"
     },
     {
      "s": "Naughty Nude",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-naughty-nude.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-naughty-nude.jpg"
     },
     {
-     "s": "Send Nudes",
-     "q": 5
-    },
-    {
-     "s": "Tease U Later",
-     "q": 5
+     "s": "Barely There",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-barely-there.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-barely-there.jpg"
     },
     {
      "s": "Steamy Spice",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-steamy-spice.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-steamy-spice.jpg"
     },
     {
-     "s": "Hot & Heavy",
-     "q": 5
+     "s": "Lip Lock",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-lip-lock.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-lip-lock.jpg"
     },
     {
-     "s": "Up All Night",
-     "q": 5
+     "s": "Up To No Good",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-up-to-no-good.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-up-to-no-good.jpg"
+    },
+    {
+     "s": "Cuff Me",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-cuff-me.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-cuff-me.jpg"
     },
     {
      "s": "After Hours",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-after-hours.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-after-hours.jpg"
+    },
+    {
+     "s": "Send Nudes",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-send-nudes.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-send-nudes.jpg"
+    },
+    {
+     "s": "Up All Night",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-up-all-night.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-up-all-night.jpg"
+    },
+    {
+     "s": "Hot N Heavy",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-hot-n-heavy.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-hot-n-heavy.jpg"
+    },
+    {
+     "s": "Wild Side",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-wild-side.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-wild-side.jpg"
+    },
+    {
+     "s": "Tied Up",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-tied-up.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-tied-up.jpg"
+    },
+    {
+     "s": "Flirt Alert",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-lingerie-stain-flirt-alert.jpg",
+     "photo": "img/nyx/sh/nyx-lip-lingerie-stain-flirt-alert.jpg"
     }
    ],
-   "qty": 40,
+   "qty": 70,
    "promo": false,
    "hidden": false,
    "createdAt": "2026-11-08T18:04:00+02:00",
@@ -1523,39 +1575,127 @@
    ],
    "sizes": [
     {
-     "s": "Hydra-Honey",
-     "q": 5
+     "s": "Caramel Drip",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-caramel-drip.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-caramel-drip.jpg"
+    },
+    {
+     "s": "Hydra Honey",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-hydra-honey.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-hydra-honey.jpg"
+    },
+    {
+     "s": "Splash N Spice",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-splash-n-spice.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-splash-n-spice.jpg"
+    },
+    {
+     "s": "Cocoa Quench",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-cocoa-quench.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-cocoa-quench.jpg"
     },
     {
      "s": "Mocha Me Wet",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-mocha-me-wet.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-mocha-me-wet.jpg"
     },
     {
      "s": "Espresso Soak",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-espresso-soak.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-espresso-soak.jpg"
     },
     {
-     "s": "Cranberry Splash",
-     "q": 5
+     "s": "Bubblegum Burst",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-bubblegum-burst.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-bubblegum-burst.jpg"
+    },
+    {
+     "s": "Drippin In Rose",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-drippin-in-rose.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-drippin-in-rose.jpg"
     },
     {
      "s": "Blush Rush",
-     "q": 5
-    },
-    {
-     "s": "Caramel Drip",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-blush-rush.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-blush-rush.jpg"
     },
     {
      "s": "Berry Thirsty",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-berry-thirsty.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-berry-thirsty.jpg"
     },
     {
-     "s": "Cocoa Quench!",
-     "q": 5
+     "s": "Red-y Set Wet",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-red-y-set-wet.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-red-y-set-wet.jpg"
+    },
+    {
+     "s": "Burst That Tang",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-burst-that-tang.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-burst-that-tang.jpg"
+    },
+    {
+     "s": "Cranberry Splash",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-cranberry-splash.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-cranberry-splash.jpg"
+    },
+    {
+     "s": "Mauve N Moist",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-mauve-n-moist.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-mauve-n-moist.jpg"
+    },
+    {
+     "s": "Water Bout Wine",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-water-bout-wine.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-water-bout-wine.jpg"
+    },
+    {
+     "s": "Grape Gushin",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-grape-gushin.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-grape-gushin.jpg"
+    },
+    {
+     "s": "Petal Pourin",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-petal-pourin.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-petal-pourin.jpg"
+    },
+    {
+     "s": "Drippin Nude",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-drippin-nude.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-drippin-nude.jpg"
+    },
+    {
+     "s": "Magenta Mist",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-magenta-mist.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-magenta-mist.jpg"
+    },
+    {
+     "s": "Cherry Drenched",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-lip-iv-cherry-drenched.jpg",
+     "photo": "img/nyx/sh/nyx-lip-iv-cherry-drenched.jpg"
     }
    ],
-   "qty": 40,
+   "qty": 100,
    "promo": false,
    "hidden": false,
    "createdAt": "2026-11-08T18:05:00+02:00",
@@ -1713,14 +1853,12 @@
    "sizes": [
     {
      "s": "Black",
-     "q": 5
-    },
-    {
-     "s": "Dark Chocolate",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-epic-ink-black.jpg",
+     "photo": "img/nyx/sh/nyx-epic-ink-black.jpg"
     }
    ],
-   "qty": 10,
+   "qty": 5,
    "promo": false,
    "hidden": false,
    "createdAt": "2026-11-08T18:08:00+02:00",
@@ -1745,24 +1883,34 @@
    ],
    "sizes": [
     {
-     "s": "Transparent",
-     "q": 5
+     "s": "Clear",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-brow-glue-clear.jpg",
+     "photo": "img/nyx/sh/nyx-brow-glue-clear.jpg"
     },
     {
      "s": "Taupe",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-brow-glue-taupe.jpg",
+     "photo": "img/nyx/sh/nyx-brow-glue-taupe.jpg"
     },
     {
      "s": "Medium Brown",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-brow-glue-medium-brown.jpg",
+     "photo": "img/nyx/sh/nyx-brow-glue-medium-brown.jpg"
     },
     {
      "s": "Dark Brown",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-brow-glue-dark-brown.jpg",
+     "photo": "img/nyx/sh/nyx-brow-glue-dark-brown.jpg"
     },
     {
      "s": "Black",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-brow-glue-black.jpg",
+     "photo": "img/nyx/sh/nyx-brow-glue-black.jpg"
     }
    ],
    "qty": 25,
@@ -1828,7 +1976,7 @@
    "id": "nyx-cswsfoundation",
    "brand": "NYX Professional Makeup",
    "name": "Can't Stop Won't Stop Foundation",
-   "desc": "الفاونديشن الأشهر من NYX: تغطية عالية ومات لحد 24 ساعة، ضد المية ومش بيسد المسام، 45 درجة.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "desc": "الفاونديشن الأشهر من NYX: تغطية عالية ومات لحد 24 ساعة، ضد المية ومش بيسد المسام، 45 درجة.\n\nاختاري الدرجة من الاختيارات تحت.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
    "countryId": "fr",
    "categoryId": "foundation",
    "price": 1220,
@@ -1837,8 +1985,49 @@
     "img/nyx/nyx-cswsfoundation-light.jpg",
     "img/nyx/nyx-cswsfoundation-1.jpg"
    ],
-   "sizes": [],
-   "qty": 20,
+   "sizes": [
+    {
+     "s": "Porcelain",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-cswsfoundation-porcelain.jpg"
+    },
+    {
+     "s": "Buff",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-cswsfoundation-buff.jpg"
+    },
+    {
+     "s": "Medium Olive",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-cswsfoundation-medium-olive.jpg"
+    },
+    {
+     "s": "Cappuccino",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-cswsfoundation-cappuccino.jpg"
+    },
+    {
+     "s": "Chestnut",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-cswsfoundation-chestnut.jpg"
+    },
+    {
+     "s": "Deep Sable",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-cswsfoundation-deep-sable.jpg"
+    },
+    {
+     "s": "Deep Espresso",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-cswsfoundation-deep-espresso.jpg"
+    },
+    {
+     "s": "Deep Ebony",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-cswsfoundation-deep-ebony.jpg"
+    }
+   ],
+   "qty": 40,
    "promo": false,
    "hidden": false,
    "createdAt": "2026-11-08T18:12:00+02:00",
@@ -1887,35 +2076,37 @@
    ],
    "sizes": [
     {
+     "s": "Brightening Translucent",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-csws-powder-brightening-translucent.jpg"
+    },
+    {
      "s": "Fair",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-csws-powder-fair.jpg"
     },
     {
      "s": "Light",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-csws-powder-light.jpg"
     },
     {
      "s": "Light Medium",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-csws-powder-light-medium.jpg"
     },
     {
-     "s": "Golden",
-     "q": 5
+     "s": "Medium",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-csws-powder-medium.jpg"
     },
     {
-     "s": "Tan",
-     "q": 5
-    },
-    {
-     "s": "Caramel",
-     "q": 5
-    },
-    {
-     "s": "Mocha",
-     "q": 5
+     "s": "Rich",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-csws-powder-rich.jpg"
     }
    ],
-   "qty": 35,
+   "qty": 30,
    "promo": false,
    "hidden": false,
    "createdAt": "2026-11-08T18:14:00+02:00",
@@ -1942,50 +2133,108 @@
    "sizes": [
     {
      "s": "Fair",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-fair.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-fair.jpg"
     },
     {
      "s": "Light",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-light.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-light.jpg"
+    },
+    {
+     "s": "Medium Vanilla",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-medium-vanilla.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium-vanilla.jpg"
     },
     {
      "s": "Vanilla",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-vanilla.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-vanilla.jpg"
     },
     {
      "s": "Beige",
-     "q": 5
-    },
-    {
-     "s": "Medium",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-beige.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-beige.jpg"
     },
     {
      "s": "Golden",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-golden.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-golden.jpg"
+    },
+    {
+     "s": "Medium Golden",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-medium-golden.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium-golden.jpg"
+    },
+    {
+     "s": "Light Tan",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-light-tan.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-light-tan.jpg"
     },
     {
      "s": "Tan",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-tan.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-tan.jpg"
     },
     {
-     "s": "Camel",
-     "q": 5
+     "s": "Medium",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-medium.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium.jpg"
+    },
+    {
+     "s": "Sand",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-sand.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-sand.jpg"
+    },
+    {
+     "s": "Caramel",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-caramel.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-caramel.jpg"
     },
     {
      "s": "Deep Golden",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-deep-golden.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-deep-golden.jpg"
+    },
+    {
+     "s": "Camel",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-camel.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-camel.jpg"
     },
     {
      "s": "Mocha",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-mocha.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-mocha.jpg"
+    },
+    {
+     "s": "Rich",
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-rich.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-rich.jpg"
     },
     {
      "s": "Deep",
-     "q": 5
+     "q": 5,
+     "img": "img/nyx/sw/nyx-bare-with-me-concealer-deep.jpg",
+     "photo": "img/nyx/sh/nyx-bare-with-me-concealer-deep.jpg"
     }
    ],
-   "qty": 55,
+   "qty": 85,
    "promo": false,
    "hidden": false,
    "createdAt": "2026-11-08T18:15:00+02:00",
@@ -2215,7 +2464,7 @@
    }
   },
   {
-   "key": "upd-img-nyx-lip-lingerie-stain-1",
+   "key": "upd-img-nyx-lip-lingerie-stain-3",
    "id": "nyx-lip-lingerie-stain",
    "set": {
     "images": [
@@ -2223,44 +2472,96 @@
     ],
     "sizes": [
      {
-      "s": "Barely There",
-      "q": 5
+      "s": "Tease U Later",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-tease-u-later.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-tease-u-later.jpg"
      },
      {
       "s": "Naughty Nude",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-naughty-nude.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-naughty-nude.jpg"
      },
      {
-      "s": "Send Nudes",
-      "q": 5
-     },
-     {
-      "s": "Tease U Later",
-      "q": 5
+      "s": "Barely There",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-barely-there.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-barely-there.jpg"
      },
      {
       "s": "Steamy Spice",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-steamy-spice.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-steamy-spice.jpg"
      },
      {
-      "s": "Hot & Heavy",
-      "q": 5
+      "s": "Lip Lock",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-lip-lock.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-lip-lock.jpg"
      },
      {
-      "s": "Up All Night",
-      "q": 5
+      "s": "Up To No Good",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-up-to-no-good.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-up-to-no-good.jpg"
+     },
+     {
+      "s": "Cuff Me",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-cuff-me.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-cuff-me.jpg"
      },
      {
       "s": "After Hours",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-after-hours.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-after-hours.jpg"
+     },
+     {
+      "s": "Send Nudes",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-send-nudes.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-send-nudes.jpg"
+     },
+     {
+      "s": "Up All Night",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-up-all-night.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-up-all-night.jpg"
+     },
+     {
+      "s": "Hot N Heavy",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-hot-n-heavy.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-hot-n-heavy.jpg"
+     },
+     {
+      "s": "Wild Side",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-wild-side.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-wild-side.jpg"
+     },
+     {
+      "s": "Tied Up",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-tied-up.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-tied-up.jpg"
+     },
+     {
+      "s": "Flirt Alert",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-lingerie-stain-flirt-alert.jpg",
+      "photo": "img/nyx/sh/nyx-lip-lingerie-stain-flirt-alert.jpg"
      }
     ],
-    "qty": 40,
+    "qty": 70,
     "desc": "قلم تينت للشفايف بيدّي لون طبيعي ثابت طول اليوم ومش بيطبع.\n\nاختاري الدرجة من الاختيارات تحت.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%."
    }
   },
   {
-   "key": "upd-img-nyx-lip-iv-2",
+   "key": "upd-img-nyx-lip-iv-3",
    "id": "nyx-lip-iv",
    "set": {
     "images": [
@@ -2269,39 +2570,127 @@
     ],
     "sizes": [
      {
-      "s": "Hydra-Honey",
-      "q": 5
+      "s": "Caramel Drip",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-caramel-drip.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-caramel-drip.jpg"
+     },
+     {
+      "s": "Hydra Honey",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-hydra-honey.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-hydra-honey.jpg"
+     },
+     {
+      "s": "Splash N Spice",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-splash-n-spice.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-splash-n-spice.jpg"
+     },
+     {
+      "s": "Cocoa Quench",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-cocoa-quench.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-cocoa-quench.jpg"
      },
      {
       "s": "Mocha Me Wet",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-mocha-me-wet.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-mocha-me-wet.jpg"
      },
      {
       "s": "Espresso Soak",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-espresso-soak.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-espresso-soak.jpg"
      },
      {
-      "s": "Cranberry Splash",
-      "q": 5
+      "s": "Bubblegum Burst",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-bubblegum-burst.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-bubblegum-burst.jpg"
+     },
+     {
+      "s": "Drippin In Rose",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-drippin-in-rose.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-drippin-in-rose.jpg"
      },
      {
       "s": "Blush Rush",
-      "q": 5
-     },
-     {
-      "s": "Caramel Drip",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-blush-rush.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-blush-rush.jpg"
      },
      {
       "s": "Berry Thirsty",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-berry-thirsty.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-berry-thirsty.jpg"
      },
      {
-      "s": "Cocoa Quench!",
-      "q": 5
+      "s": "Red-y Set Wet",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-red-y-set-wet.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-red-y-set-wet.jpg"
+     },
+     {
+      "s": "Burst That Tang",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-burst-that-tang.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-burst-that-tang.jpg"
+     },
+     {
+      "s": "Cranberry Splash",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-cranberry-splash.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-cranberry-splash.jpg"
+     },
+     {
+      "s": "Mauve N Moist",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-mauve-n-moist.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-mauve-n-moist.jpg"
+     },
+     {
+      "s": "Water Bout Wine",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-water-bout-wine.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-water-bout-wine.jpg"
+     },
+     {
+      "s": "Grape Gushin",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-grape-gushin.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-grape-gushin.jpg"
+     },
+     {
+      "s": "Petal Pourin",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-petal-pourin.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-petal-pourin.jpg"
+     },
+     {
+      "s": "Drippin Nude",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-drippin-nude.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-drippin-nude.jpg"
+     },
+     {
+      "s": "Magenta Mist",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-magenta-mist.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-magenta-mist.jpg"
+     },
+     {
+      "s": "Cherry Drenched",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-lip-iv-cherry-drenched.jpg",
+      "photo": "img/nyx/sh/nyx-lip-iv-cherry-drenched.jpg"
      }
     ],
-    "qty": 40,
+    "qty": 100,
     "desc": "تينت + جلوس بلمعة عالية وبيرطّب، لون ثابت ولمعة حلوة.\n\nاختاري الدرجة من الاختيارات تحت.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%."
    }
   },
@@ -2414,7 +2803,7 @@
    }
   },
   {
-   "key": "upd-img-nyx-epic-ink-1",
+   "key": "upd-img-nyx-epic-ink-3",
    "id": "nyx-epic-ink",
    "set": {
     "images": [
@@ -2423,19 +2812,17 @@
     "sizes": [
      {
       "s": "Black",
-      "q": 5
-     },
-     {
-      "s": "Dark Chocolate",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-epic-ink-black.jpg",
+      "photo": "img/nyx/sh/nyx-epic-ink-black.jpg"
      }
     ],
-    "qty": 10,
+    "qty": 5,
     "desc": "آيلاينر قلم برأس فرشاة دقيقة، أسود غامق وثابت ومقاوم للمية.\n\nاختاري الدرجة من الاختيارات تحت.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%."
    }
   },
   {
-   "key": "upd-img-nyx-brow-glue-1",
+   "key": "upd-img-nyx-brow-glue-3",
    "id": "nyx-brow-glue",
    "set": {
     "images": [
@@ -2443,24 +2830,34 @@
     ],
     "sizes": [
      {
-      "s": "Transparent",
-      "q": 5
+      "s": "Clear",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-brow-glue-clear.jpg",
+      "photo": "img/nyx/sh/nyx-brow-glue-clear.jpg"
      },
      {
       "s": "Taupe",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-brow-glue-taupe.jpg",
+      "photo": "img/nyx/sh/nyx-brow-glue-taupe.jpg"
      },
      {
       "s": "Medium Brown",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-brow-glue-medium-brown.jpg",
+      "photo": "img/nyx/sh/nyx-brow-glue-medium-brown.jpg"
      },
      {
       "s": "Dark Brown",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-brow-glue-dark-brown.jpg",
+      "photo": "img/nyx/sh/nyx-brow-glue-dark-brown.jpg"
      },
      {
       "s": "Black",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-brow-glue-black.jpg",
+      "photo": "img/nyx/sh/nyx-brow-glue-black.jpg"
      }
     ],
     "qty": 25,
@@ -2492,16 +2889,57 @@
    }
   },
   {
-   "key": "upd-img-nyx-cswsfoundation-2",
+   "key": "upd-img-nyx-cswsfoundation-3",
    "id": "nyx-cswsfoundation",
    "set": {
     "images": [
      "img/nyx/nyx-cswsfoundation-light.jpg",
      "img/nyx/nyx-cswsfoundation-1.jpg"
     ],
-    "sizes": [],
-    "qty": 20,
-    "desc": "الفاونديشن الأشهر من NYX: تغطية عالية ومات لحد 24 ساعة، ضد المية ومش بيسد المسام، 45 درجة.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%."
+    "sizes": [
+     {
+      "s": "Porcelain",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-cswsfoundation-porcelain.jpg"
+     },
+     {
+      "s": "Buff",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-cswsfoundation-buff.jpg"
+     },
+     {
+      "s": "Medium Olive",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-cswsfoundation-medium-olive.jpg"
+     },
+     {
+      "s": "Cappuccino",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-cswsfoundation-cappuccino.jpg"
+     },
+     {
+      "s": "Chestnut",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-cswsfoundation-chestnut.jpg"
+     },
+     {
+      "s": "Deep Sable",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-cswsfoundation-deep-sable.jpg"
+     },
+     {
+      "s": "Deep Espresso",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-cswsfoundation-deep-espresso.jpg"
+     },
+     {
+      "s": "Deep Ebony",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-cswsfoundation-deep-ebony.jpg"
+     }
+    ],
+    "qty": 40,
+    "desc": "الفاونديشن الأشهر من NYX: تغطية عالية ومات لحد 24 ساعة، ضد المية ومش بيسد المسام، 45 درجة.\n\nاختاري الدرجة من الاختيارات تحت.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%."
    }
   },
   {
@@ -2517,7 +2955,7 @@
    }
   },
   {
-   "key": "upd-img-nyx-csws-powder-1",
+   "key": "upd-img-nyx-csws-powder-3",
    "id": "nyx-csws-powder",
    "set": {
     "images": [
@@ -2525,40 +2963,42 @@
     ],
     "sizes": [
      {
+      "s": "Brightening Translucent",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-csws-powder-brightening-translucent.jpg"
+     },
+     {
       "s": "Fair",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-csws-powder-fair.jpg"
      },
      {
       "s": "Light",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-csws-powder-light.jpg"
      },
      {
       "s": "Light Medium",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-csws-powder-light-medium.jpg"
      },
      {
-      "s": "Golden",
-      "q": 5
+      "s": "Medium",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-csws-powder-medium.jpg"
      },
      {
-      "s": "Tan",
-      "q": 5
-     },
-     {
-      "s": "Caramel",
-      "q": 5
-     },
-     {
-      "s": "Mocha",
-      "q": 5
+      "s": "Rich",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-csws-powder-rich.jpg"
      }
     ],
-    "qty": 35,
+    "qty": 30,
     "desc": "بودرة مضغوطة مات بتثبّت المكياج وبتشيل اللمعة طول اليوم.\n\nاختاري الدرجة من الاختيارات تحت.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%."
    }
   },
   {
-   "key": "upd-img-nyx-bare-with-me-concealer-2",
+   "key": "upd-img-nyx-bare-with-me-concealer-3",
    "id": "nyx-bare-with-me-concealer",
    "set": {
     "images": [
@@ -2568,50 +3008,108 @@
     "sizes": [
      {
       "s": "Fair",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-fair.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-fair.jpg"
      },
      {
       "s": "Light",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-light.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-light.jpg"
+     },
+     {
+      "s": "Medium Vanilla",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-medium-vanilla.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium-vanilla.jpg"
      },
      {
       "s": "Vanilla",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-vanilla.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-vanilla.jpg"
      },
      {
       "s": "Beige",
-      "q": 5
-     },
-     {
-      "s": "Medium",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-beige.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-beige.jpg"
      },
      {
       "s": "Golden",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-golden.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-golden.jpg"
+     },
+     {
+      "s": "Medium Golden",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-medium-golden.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium-golden.jpg"
+     },
+     {
+      "s": "Light Tan",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-light-tan.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-light-tan.jpg"
      },
      {
       "s": "Tan",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-tan.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-tan.jpg"
      },
      {
-      "s": "Camel",
-      "q": 5
+      "s": "Medium",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-medium.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium.jpg"
+     },
+     {
+      "s": "Sand",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-sand.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-sand.jpg"
+     },
+     {
+      "s": "Caramel",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-caramel.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-caramel.jpg"
      },
      {
       "s": "Deep Golden",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-deep-golden.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-deep-golden.jpg"
+     },
+     {
+      "s": "Camel",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-camel.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-camel.jpg"
      },
      {
       "s": "Mocha",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-mocha.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-mocha.jpg"
+     },
+     {
+      "s": "Rich",
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-rich.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-rich.jpg"
      },
      {
       "s": "Deep",
-      "q": 5
+      "q": 5,
+      "img": "img/nyx/sw/nyx-bare-with-me-concealer-deep.jpg",
+      "photo": "img/nyx/sh/nyx-bare-with-me-concealer-deep.jpg"
      }
     ],
-    "qty": 55,
+    "qty": 85,
     "desc": "كونسيلر سيروم خفيف بيغطي ويرطّب لحد 12 ساعة، فينيش مات طبيعي، 17 درجة.\n\nاختاري الدرجة من الاختيارات تحت.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%."
    }
   }
