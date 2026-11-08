@@ -1414,6 +1414,15 @@ async function checkImports(){
   const box=$('#imp'); box.innerHTML='';
   if(!S.canEdit) return;
   try{ BATCH=await (await fetch('import/batch.json?v='+Date.now(),{cache:'no-store'})).json(); }catch(e){ BATCH=null; return; }
+  const done=new Set(S.settings.imported||[]);
+  const ups=(BATCH.updates||[]).filter(u=>!done.has(u.key)&&S.products.some(p=>p.id===u.id));
+  if(ups.length){ try{
+    const now=new Date().toISOString();
+    for(const u of ups) ok(await sb.from('products').update(toRow('products',{...u.set,updatedAt:now})).eq('id',u.id));
+    ok(await sb.from('settings').upsert({id:1,data:{...S.settings,imported:[...new Set([...done,...ups.map(u=>u.key)])]}}));
+    await Promise.all(['products','settings'].map(refresh));
+    toast(`اتحدثت صور ${ups.length} منتج ✅`);
+  }catch(e){ console.warn('updates',e); } }
   const seen=new Set([...(S.settings.imported||[]), ...S.products.map(p=>p.id)]);
   const items=(BATCH.products||[]).filter(p=>!seen.has(p.id));
   if(!items.length) return;
