@@ -11,7 +11,8 @@
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="img/icon.jpg">
-<link rel="apple-touch-icon" href="img/icon.jpg">
+<link rel="apple-touch-icon" href="img/icon-512.png">
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 <style>
@@ -57,7 +58,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdro
 .bar{display:flex;align-items:center;justify-content:space-between;margin:14px 0 8px;gap:8px}
 .bar h2{margin:0;font-size:17px}
 .bar span{color:var(--muted);font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding-bottom:110px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding-bottom:28px}
 @media(min-width:640px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(min-width:920px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;cursor:pointer;position:relative}
@@ -194,6 +195,28 @@ body:not(.admin) .cartbtn.has{display:flex}
 .chip{transition:background .2s,color .2s,transform .15s}.chip:active{transform:scale(.95)}
 header{box-shadow:0 1px 0 var(--line),0 6px 18px rgba(60,20,25,.04)}
 .empty .btn{display:inline-block;width:auto;margin-top:12px;padding:10px 20px}
+.fav{position:absolute;bottom:10px;inset-inline-start:10px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);font-size:17px;display:grid;place-items:center;box-shadow:0 3px 10px rgba(0,0,0,.12);transition:transform .15s}
+.fav:active{transform:scale(.85)}.fav.on{color:var(--red)}
+.ribbon~.fav{bottom:32px}
+.galw{position:relative}.galbtns{position:absolute;top:10px;inset-inline-start:10px;display:flex;gap:8px;z-index:2}
+.galbtns button{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.94);font-size:17px;box-shadow:0 3px 10px rgba(0,0,0,.14)}
+.galbtns button.on{color:var(--red)}
+.zoom{position:fixed;inset:0;z-index:80;background:rgba(10,6,8,.94);display:flex;align-items:center;justify-content:center;animation:fd .15s}
+.zoom img{max-width:100%;max-height:100%;object-fit:contain;touch-action:pinch-zoom}
+.zoom button{position:absolute;top:14px;inset-inline-end:14px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.15);color:#fff;font-size:22px}
+.askfab{position:fixed;bottom:16px;inset-inline-start:16px;z-index:26;width:50px;height:50px;border-radius:50%;background:#25D366;color:#fff;display:none;place-items:center;font-size:23px;text-decoration:none;box-shadow:0 8px 22px rgba(37,211,102,.38)}
+body:not(.admin) .askfab.on{display:grid}
+.totop{position:fixed;bottom:76px;inset-inline-end:16px;z-index:24;width:42px;height:42px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);font-size:18px;font-weight:900;opacity:0;pointer-events:none;transition:opacity .2s}
+.totop.on{opacity:1;pointer-events:auto}
+.xsec{margin:6px 0 26px}.xsec h2{font-size:17px;margin:0 0 10px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.step{background:#fff;border-radius:16px;padding:14px 8px;text-align:center;box-shadow:var(--shadow)}
+.step .n{width:34px;height:34px;border-radius:50%;margin:0 auto 6px;display:grid;place-items:center;background:var(--soft);font-size:18px}
+.step b{display:block;font-size:13.5px}.step span{font-size:11.5px;color:var(--muted);line-height:1.5;display:block;margin-top:2px}
+.revs{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x mandatory;padding-bottom:4px}.revs::-webkit-scrollbar{display:none}
+.revs img{flex:none;width:200px;height:260px;object-fit:cover;object-position:top;border-radius:16px;box-shadow:var(--shadow);scroll-snap-align:start;background:#fff;cursor:zoom-in}
+.radm{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}.radm .t{position:relative;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:var(--soft)}
+.radm .t img{width:100%;height:100%;object-fit:cover}.radm .t button{position:absolute;top:4px;inset-inline-end:4px;width:24px;height:24px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff}
 .empty{text-align:center;padding:50px 20px;color:var(--muted)}
 .empty .big{font-size:42px}
 .note{background:#FFF4E5;border:1px solid #F3D9B5;color:#7A4A12;border-radius:12px;padding:10px 12px;margin-top:12px;font-size:14px}
@@ -318,11 +341,14 @@ body.admin .fab, body.admin .fab2{display:flex}
   <div class="grid" id="grid">
     <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
   </div>
+  <section id="extras"></section>
 </main>
 
 <button class="fab" id="addBtn">＋ منتج جديد</button>
 <button class="fab2" id="manageBtn">⚙️ التقسيمات</button>
-<footer class="wrap" style="text-align:center;padding:0 0 120px;margin-top:-80px;color:var(--muted);font-size:12px">© PicksBuy · <a id="grpLink" target="_blank" rel="noopener" style="color:#1f9d55;font-weight:700;text-decoration:none;display:none">💬 جروب الواتساب</a><span id="grpSep" style="display:none"> · </span><button id="adminLink" style="color:var(--muted);font-size:12px;text-decoration:underline">دخول الأدمن</button></footer>
+<footer class="wrap" style="text-align:center;padding:4px 0 110px;color:var(--muted);font-size:12px;line-height:2">© PicksBuy · <a id="grpLink" target="_blank" rel="noopener" style="color:#1f9d55;font-weight:700;text-decoration:none;display:none">💬 جروب الواتساب</a><span id="grpSep" style="display:none"> · </span><button id="adminLink" style="color:var(--muted);font-size:12px;text-decoration:underline">دخول الأدمن</button></footer>
+<a class="askfab" id="askFab" target="_blank" rel="noopener" aria-label="اسألينا على واتساب">💬</a>
+<button class="totop" id="toTop" aria-label="لفوق">↑</button>
 <button class="cartbtn" id="cartBtn"><span class="c" id="cartN">0</span>🛒 السلة<span class="t" id="cartT"></span></button>
 <div class="toast" id="toast"></div>
 
@@ -333,7 +359,7 @@ const SB_KEY = "sb_publishable_JdmfjPIw0VthxJSCGbzN3g_6Ymo-DhQ";
 const S = {
   db:null, user:null, assets:null, canEdit:false, admin:false,
   countries:[], cats:[], products:[], settings:{},
-  country:'all', cat:'all', sub:'all', q:'', sort:'new', promoOnly:false, inStock:false, minP:null, maxP:null, brands:[],
+  country:'all', cat:'all', sub:'all', q:'', sort:'new', promoOnly:false, favOnly:false, inStock:false, minP:null, maxP:null, brands:[],
   got:{countries:false,categories:false,products:false}, ready:false
 };
 const $ = s => document.querySelector(s);
@@ -489,6 +515,7 @@ function card(p){
       ${p.hidden ? `<span class="hidden-tag">مخفي</span>` : ''}
       ${isPromo(p) && st>0 ? `<div class="ribbon">${esc(String(S.settings.promo.title||'OFFER').toUpperCase())}</div>` : ''}
       ${!S.admin && st>0 ? `<button class="addq" data-add="${esc(p.id)}" aria-label="أضف للسلة">＋</button>` : ''}
+      ${!S.admin ? `<button class="fav ${isFav(p.id)?'on':''}" data-fav="${esc(p.id)}" aria-label="المفضلة">${isFav(p.id)?'♥':'♡'}</button>` : ''}
     </div>
     <div class="body">
       ${p.brand ? `<div class="brand-l">${esc(p.brand)}</div>` : ''}
@@ -501,10 +528,52 @@ function card(p){
   </article>`;
 }
 
+/* ---------- bottom sections, zoom, floating buttons ---------- */
+function renderExtras(){
+  const box=$('#extras'); if(!box) return;
+  const revs=S.settings.reviews||[];
+  box.innerHTML = `
+    ${revs.length?`<div class="xsec"><h2>💬 آراء العملاء</h2><div class="revs">${revs.map(r=>`<img src="${img(r)}" loading="lazy" alt="رأي عميلة">`).join('')}</div></div>`:''}
+    <div class="xsec"><h2>إزاي تطلبي؟</h2><div class="steps">
+      <div class="step"><div class="n">🛍️</div><b>اختاري</b><span>ضيفي اللي عاجبك للسلة</span></div>
+      <div class="step"><div class="n">📝</div><b>أكدي</b><span>اكتبي بياناتك والمحافظة</span></div>
+      <div class="step"><div class="n">💬</div><b>ابعتي</b><span>الطلب يوصلنا على واتساب ونأكد معاكي</span></div>
+    </div></div>`;
+}
+function zoomImg(src){
+  const z=document.createElement('div'); z.className='zoom'; z.innerHTML=`<img src="${src}" alt=""><button aria-label="قفل">×</button>`;
+  document.body.appendChild(z); pushNav();
+  z.close=()=>{ z.remove(); popNav(); };
+  z.addEventListener('click',e=>{ if(e.target===z||e.target.closest('button')) z.close(); });
+}
+function paintFloat(){
+  const wa=(S.settings.whatsapp||'').replace(/\D/g,''), a=$('#askFab');
+  a.classList.toggle('on',!!wa); if(wa) a.href=`https://wa.me/${wa}?text=${encodeURIComponent('أهلاً PicksBuy 👋 عندي سؤال')}`;
+}
+window.addEventListener('scroll',()=>{ $('#toTop').classList.toggle('on',window.scrollY>1100); },{passive:true});
+$('#toTop').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+$('#extras').addEventListener('click',e=>{ const im=e.target.closest('.revs img'); if(im) zoomImg(im.src); });
+
+/* phone Back button closes the open window instead of leaving the site */
+let NAV_IGNORE=0;
+function topLayer(){ const z=document.querySelectorAll('.zoom, .ov'); return z[z.length-1]; }
+function pushNav(){ if(!(history.state&&history.state.pb)) { try{ history.pushState({pb:1},''); }catch(e){} } }
+function popNav(){ if(!topLayer() && history.state&&history.state.pb){ NAV_IGNORE++; history.back(); } }
+window.addEventListener('popstate',()=>{
+  if(NAV_IGNORE>0){ NAV_IGNORE--; if(topLayer()) pushNav(); return; }
+  const t=topLayer(); if(!t) return;
+  t._byBack=true; t.close();
+  if(topLayer()) pushNav();
+});
+
 /* ---------- filters & sort ---------- */
 const SORTS={new:'الأحدث',low:'السعر: الأقل الأول',high:'السعر: الأعلى الأول',avail:'المتاح الأول',off:'أكبر خصم'};
+let FAV=[]; try{ FAV=JSON.parse(localStorage.getItem('pb_fav')||'[]')||[]; }catch(e){ FAV=[]; }
+const isFav=id=>FAV.includes(id);
+function toggleFav(id){ FAV=isFav(id)?FAV.filter(x=>x!==id):[...FAV,id]; try{ localStorage.setItem('pb_fav',JSON.stringify(FAV)); }catch(e){} toast(isFav(id)?'اتضافت للمفضلة ❤️':'اتشالت من المفضلة'); render(); }
 function isNewP(p){ return p.createdAt && Date.now()-new Date(p.createdAt).getTime() < 2*864e5; }
 function applyExtra(list){
+  if(S.favOnly) list=list.filter(p=>isFav(p.id));
   if(S.inStock) list=list.filter(p=>stock(p)>0);
   if(S.minP!=null) list=list.filter(p=>(num(p.price)||0)>=S.minP);
   if(S.maxP!=null) list=list.filter(p=>(num(p.price)||0)<=S.maxP);
@@ -516,12 +585,13 @@ function activeFilters(){
   if(S.promoOnly) a.push({k:'promo',l:'🔥 '+(S.settings.promo?.title||'العروض'),clear:()=>S.promoOnly=false});
   if(S.country!=='all'){ const c=country(S.country); a.push({k:'country',l:(c?.flag||'')+' '+(c?.name||''),clear:()=>S.country='all'}); }
   if(S.cat!=='all'){ a.push({k:'cat',l:(S.sub!=='all'?cat(S.sub):cat(S.cat))?.name||'',clear:()=>{S.cat='all';S.sub='all';}}); }
+  if(S.favOnly) a.push({k:'fav',l:'❤️ المفضلة',clear:()=>S.favOnly=false});
   if(S.inStock) a.push({k:'stock',l:'المتاح بس',clear:()=>S.inStock=false});
   if(S.minP!=null||S.maxP!=null) a.push({k:'price',l:S.minP!=null&&S.maxP!=null?`${fmt(S.minP)} - ${fmt(S.maxP)}`:S.minP!=null?`من ${fmt(S.minP)}`:`لحد ${fmt(S.maxP)}`,clear:()=>{S.minP=null;S.maxP=null;}});
   S.brands.forEach(b=>a.push({k:'b:'+b,l:b,clear:()=>S.brands=S.brands.filter(x=>x!==b)}));
   return a;
 }
-function clearAll(){ Object.assign(S,{promoOnly:false,country:'all',cat:'all',sub:'all',inStock:false,minP:null,maxP:null,brands:[],q:''}); $('#q').value=''; $('.search').classList.remove('has'); render(); }
+function clearAll(){ Object.assign(S,{favOnly:false,promoOnly:false,country:'all',cat:'all',sub:'all',inStock:false,minP:null,maxP:null,brands:[],q:''}); $('#q').value=''; $('.search').classList.remove('has'); render(); }
 function drawActive(){
   const a=activeFilters(), extra=a.filter(f=>!['country','cat','promo'].includes(f.k)).length;
   const fc=$('#fCount'); fc.textContent=a.length; fc.classList.toggle('on',a.length>0); $('#fBtn').classList.toggle('on',a.length>0);
@@ -533,7 +603,7 @@ function openSort(){
   ov.querySelector('.sb').onclick=e=>{ const b=e.target.closest('[data-so]'); if(!b) return; S.sort=b.dataset.so; ov.close(); render(); };
 }
 function openFilters(){
-  const T={country:S.country,cat:S.cat,sub:S.sub,promoOnly:S.promoOnly,inStock:S.inStock,minP:S.minP,maxP:S.maxP,brands:[...S.brands]};
+  const T={favOnly:S.favOnly,country:S.country,cat:S.cat,sub:S.sub,promoOnly:S.promoOnly,inStock:S.inStock,minP:S.minP,maxP:S.maxP,brands:[...S.brands]};
   const base=visible();
   const brandsAll=[...new Set(base.map(p=>(p.brand||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
   const countriesAll=[...S.countries].sort(byOrder).filter(c=>base.some(p=>p.countryId===c.id));
@@ -544,7 +614,7 @@ function openFilters(){
   const draw=()=>{
     const subs=T.cat==='all'?[]:S.cats.filter(c=>c.parentId===T.cat).sort(byOrder);
     ov.querySelector('#fb').innerHTML=`
-      ${promoOn()&&base.some(isPromo)?`<div class="fsec"><div class="fchips"><button data-t="promo" class="${T.promoOnly?'on':''}">🔥 ${esc(S.settings.promo.title||'العروض')} بس</button><button data-t="stock" class="${T.inStock?'on':''}">✅ المتاح بس</button></div></div>`:`<div class="fsec"><div class="fchips"><button data-t="stock" class="${T.inStock?'on':''}">✅ المتاح بس</button></div></div>`}
+      ${promoOn()&&base.some(isPromo)?`<div class="fsec"><div class="fchips"><button data-t="promo" class="${T.promoOnly?'on':''}">🔥 ${esc(S.settings.promo.title||'العروض')} بس</button><button data-t="stock" class="${T.inStock?'on':''}">✅ المتاح بس</button>${FAV.length?`<button data-t="fav" class="${T.favOnly?'on':''}">❤️ المفضلة (${FAV.length})</button>`:''}</div></div>`:`<div class="fsec"><div class="fchips"><button data-t="stock" class="${T.inStock?'on':''}">✅ المتاح بس</button>${FAV.length?`<button data-t="fav" class="${T.favOnly?'on':''}">❤️ المفضلة (${FAV.length})</button>`:''}</div></div>`}
       <div class="fsec"><b>البلد</b><div class="fchips"><button data-c="all" class="${T.country==='all'?'on':''}">🌍 الكل</button>${countriesAll.map(c=>`<button data-c="${esc(c.id)}" class="${T.country===c.id?'on':''}">${esc((c.flag||'')+' '+c.name)}</button>`).join('')}</div></div>
       <div class="fsec"><b>القسم</b><div class="fchips"><button data-k="all" class="${T.cat==='all'?'on':''}">الكل</button>${mains.map(m=>`<button data-k="${esc(m.id)}" class="${T.cat===m.id?'on':''}">${esc(m.name)}</button>`).join('')}</div>
         ${subs.length?`<div class="fchips" style="margin-top:8px">${subs.map(s2=>`<button data-s="${esc(s2.id)}" class="${T.sub===s2.id?'on':''}" style="font-size:12px">${esc(s2.name)}</button>`).join('')}</div>`:''}</div>
@@ -554,14 +624,14 @@ function openFilters(){
     ov.querySelector('#fGo').textContent=`شوفي النتايج (${count()})`;
   };
   ov.querySelector('#fb').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return;
-    if(b.dataset.t==='promo') T.promoOnly=!T.promoOnly; else if(b.dataset.t==='stock') T.inStock=!T.inStock;
+    if(b.dataset.t==='promo') T.promoOnly=!T.promoOnly; else if(b.dataset.t==='stock') T.inStock=!T.inStock; else if(b.dataset.t==='fav') T.favOnly=!T.favOnly;
     else if(b.dataset.c) T.country=b.dataset.c; else if(b.dataset.k){ T.cat=b.dataset.k; T.sub='all'; }
     else if(b.dataset.s) T.sub=T.sub===b.dataset.s?'all':b.dataset.s;
     else if(b.dataset.pr){ const [a,c2]=presets[+b.dataset.pr]; if(T.minP===a&&T.maxP===c2){T.minP=null;T.maxP=null;} else {T.minP=a;T.maxP=c2;} }
     else if(b.dataset.b){ const x=b.dataset.b; T.brands=T.brands.includes(x)?T.brands.filter(y=>y!==x):[...T.brands,x]; }
     draw(); });
   ov.querySelector('#fb').addEventListener('input',e=>{ if(e.target.id==='pMin') T.minP=num(e.target.value); if(e.target.id==='pMax') T.maxP=num(e.target.value); ov.querySelector('#fGo').textContent=`شوفي النتايج (${count()})`; });
-  ov.querySelector('#fClr').onclick=()=>{ Object.assign(T,{country:'all',cat:'all',sub:'all',promoOnly:false,inStock:false,minP:null,maxP:null,brands:[]}); draw(); };
+  ov.querySelector('#fClr').onclick=()=>{ Object.assign(T,{favOnly:false,country:'all',cat:'all',sub:'all',promoOnly:false,inStock:false,minP:null,maxP:null,brands:[]}); draw(); };
   ov.querySelector('#fGo').onclick=()=>{ Object.assign(S,T); ov.close(); render(); $('#title').scrollIntoView({behavior:'smooth',block:'center'}); };
   draw();
 }
@@ -584,6 +654,7 @@ $('#active').onclick = e => { const b=e.target.closest('[data-af]'); if(!b) retu
 
 $('#grid').onclick = e => {
   if(e.target.closest('[data-clearall]')) return clearAll();
+  const fv=e.target.closest('[data-fav]'); if(fv){ e.stopPropagation(); return toggleFav(fv.dataset.fav); }
   if(e.target.closest('[data-req]')) return openRequest();
   const ed=e.target.closest('[data-edit]'); if(ed){ e.stopPropagation(); return openForm(S.products.find(p=>p.id===ed.dataset.edit)); }
   const ad=e.target.closest('[data-add]'); if(ad){ e.stopPropagation(); const p=S.products.find(x=>x.id===ad.dataset.add); if(p&&variants(p)) return openDetail(p.id); return addToCart(ad.dataset.add,''); }
@@ -610,8 +681,8 @@ function sheet(title, bodyHTML, footHTML){
   const ov=document.createElement('div'); ov.className='ov';
   ov.innerHTML=`<div class="sheet"><div class="sh"><h3>${title}</h3><button class="x" data-close>×</button></div><div class="sb">${bodyHTML}</div>${footHTML?`<div class="sf">${footHTML}</div>`:''}</div>`;
   document.body.appendChild(ov);
-  document.body.style.overflow='hidden';
-  ov.close=()=>{ ov.remove(); if(!document.querySelector('.ov')) document.body.style.overflow=''; ov.onclosed&&ov.onclosed(); };
+  document.body.style.overflow='hidden'; pushNav();
+  ov.close=()=>{ if(!ov.isConnected) return; ov.remove(); if(!document.querySelector('.ov')) document.body.style.overflow=''; if(!ov._byBack) popNav(); ov.onclosed&&ov.onclosed(); };
   ov.addEventListener('click',e=>{ if(e.target===ov || e.target.closest('[data-close]')) ov.close(); });
   return ov;
 }
@@ -644,7 +715,7 @@ function openDetail(id){
   const p=S.products.find(x=>x.id===id); if(!p) return;
   const c=country(p.countryId), k=cat(p.categoryId), par=k?.parentId?cat(k.parentId):null, st=stock(p);
   const ims=p.images||[];
-  const gal = ims.length ? `<div class="gal" id="gal">${ims.map(i=>`<img src="${img(i)}" alt="">`).join('')}</div>${ims.length>1?`<div class="dots" id="dots">${ims.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`:''}` : '';
+  const gal = ims.length ? `<div class="galw">${!S.admin?`<div class="galbtns"><button id="dShare" aria-label="مشاركة">↗</button><button id="dFav" class="${isFav(p.id)?'on':''}" aria-label="المفضلة">${isFav(p.id)?'♥':'♡'}</button></div>`:''}<div class="gal" id="gal">${ims.map(i=>`<img src="${img(i)}" alt="">`).join('')}</div>${ims.length>1?`<div class="dots" id="dots">${ims.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`:''}</div>` : '';
   const vs=variants(p);
   const sizes=!vs ? '' : S.admin
     ? `<div class="lbl">المتاح</div><div class="szl">${vs.map(s=>`<span class="${num(s.q)>0?'':'no'}">${esc(s.s)}<small>(${num(s.q)||0})</small></span>`).join('')}</div>`
@@ -652,7 +723,7 @@ function openDetail(id){
   const foot = S.admin
     ? `<button class="btn" id="cpy" style="flex:1.2">📋 بوست</button><button class="btn" id="sty">📸 ستوري</button><button class="btn p" id="ed">✏️ تعديل</button>`
     : (st>0 ? `<div class="qty"><button data-q="1">+</button><b id="qn">1</b><button data-q="-1">−</button></div><button class="btn r" id="addc">🛒 أضف للسلة</button>`
-            : `<button class="btn" data-close>نفدت الكمية</button>`);
+            : `<button class="btn" data-close>رجوع</button><button class="btn p" id="reqSim">✨ اطلبي زيه</button>`);
   const ov=sheet(esc(c?(c.flag+' '+c.name):'تفاصيل المنتج'), `
     ${gal}
     ${p.brand?`<div class="brand-l" style="margin-top:10px;font-size:12px">${esc(p.brand)}</div>`:''}
@@ -671,6 +742,12 @@ function openDetail(id){
   if(cp) cp.onclick=async()=>{ try{ await navigator.clipboard.writeText(waText(p)); toast('اتنسخ ✅ الصقه في الجروب'); }catch(e){ showCopy(waText(p)); } };
   const ed=ov.querySelector('#ed'); if(ed) ed.onclick=()=>{ ov.close(); openForm(p); };
   const sy=ov.querySelector('#sty'); if(sy) sy.onclick=()=>makeStory(p);
+  const rs=ov.querySelector('#reqSim'); if(rs) rs.onclick=()=>{ ov.close(); openRequest({note:[p.brand,p.name].filter(Boolean).join(' - '),country:c?((c.flag||'')+' '+c.name):''}); };
+  const df=ov.querySelector('#dFav'); if(df) df.onclick=()=>{ toggleFav(p.id); df.classList.toggle('on',isFav(p.id)); df.textContent=isFav(p.id)?'♥':'♡'; };
+  const ds=ov.querySelector('#dShare'); if(ds) ds.onclick=async()=>{ const url=`${location.origin+location.pathname}#p-${p.id}`, text=`${[p.brand,p.name].filter(Boolean).join(' - ')} بـ ${fmt(num(p.price))} ${cur()} من PicksBuy 🛍️`;
+    try{ if(navigator.share){ await navigator.share({title:p.name,text,url}); return; } }catch(e){ return; }
+    try{ await navigator.clipboard.writeText(text+'\n'+url); toast('اتنسخ اللينك ✅'); }catch(e){ showCopy(text+'\n'+url); } };
+  const gl=ov.querySelector('#gal'); if(gl) gl.addEventListener('click',e=>{ const im=e.target.closest('img'); if(im) zoomImg(im.src); });
   let sel = vs ? (vs.filter(s=>num(s.q)>0).length===1 ? vs.find(s=>num(s.q)>0).s : '') : '', qn=1;
   const vsel=ov.querySelector('#vsel');
   const paint=()=>{ if(vsel) vsel.querySelectorAll('.vch').forEach(b=>b.classList.toggle('on',vs[+b.dataset.vi].s===sel)); const q=ov.querySelector('#qn'); if(q) q.textContent=qn; };
@@ -854,7 +931,7 @@ function catOptions(sel){
   }).join('');
 }
 function openForm(p){
-  const isNew=!p;
+  const isNew=!p || !!p.__copy;
   const F = {
     images:[...(p?.images||[])].map(id=>({id})),
     hasSizes: p ? !!(p.sizes&&p.sizes.length) : false,
@@ -884,7 +961,8 @@ function openForm(p){
     <div id="sizesBox"></div>
     <div class="f"><label>الوصف</label><textarea id="fDesc" placeholder="تفاصيل المنتج، الخامة، طريقة الاستخدام…">${esc(p?.desc)}</textarea></div>
     <label class="sw">إخفاء عن العملاء <input type="checkbox" id="fHidden" ${p?.hidden && num(p.price)>0 ?'checked':''}></label>
-  `, `<button class="btn" data-close>إلغاء</button><button class="btn p" id="save">${isNew?'ضيف المنتج':'احفظ التعديل'}</button>`);
+  `, `<button class="btn" data-close>إلغاء</button>${!isNew?'<button class="btn" id="dup">⧉ نسخة</button>':''}<button class="btn p" id="save">${isNew?'ضيف المنتج':'احفظ التعديل'}</button>`);
+  const dp=ov.querySelector('#dup'); if(dp) dp.onclick=()=>{ ov.close(); openForm({...p,images:[],createdAt:null,__copy:true}); toast('نسخة جديدة، حطي الصور واحفظي'); };
 
   const q=s=>ov.querySelector(s);
   function drawImgs(){
@@ -1045,6 +1123,10 @@ function drawManage(){
         <div class="f"><label>جملة تحت العرض</label><input id="sPS" value="${esc(S.settings.promo?.subtitle||'')}" placeholder="كل منتج بـ 250 L.E"></div>
         <div class="f" style="margin-bottom:4px"><label>آخر يوم في العرض (اختياري)</label><input id="sPE" type="date" value="${esc(S.settings.promo?.ends||'')}"><div class="hint">لو حطيته هيظهر عداد تنازلي، والعرض بيقفل لوحده بعد اليوم ده.</div></div>
       </div>
+      <div class="grp" style="padding:12px"><div class="sect" style="margin-top:0">💬 آراء العملاء</div>
+        <div class="hint">حطي سكرين شوت من رسايل العملاء الحلوة، وهتظهر في آخر الموقع.</div>
+        <div class="radm" id="radm">${(S.settings.reviews||[]).map((r,i)=>`<div class="t"><img src="${img(r)}"><button data-rvrm="${i}">×</button></div>`).join('')}${S.assets?'<button class="add" data-rvadd="1" style="aspect-ratio:3/4">＋<br>صورة</button>':''}</div>
+        <input type="file" id="rvFile" accept="image/*" multiple hidden></div>
       <div class="f"><label>لينك جروب الواتساب</label><input id="sGrp" inputmode="url" value="${esc(S.settings.group||'')}" placeholder="https://chat.whatsapp.com/..." style="direction:ltr;text-align:right"><div class="hint">لما يتحط، أي حد يفتح الموقع لأول مرة هيظهرله إعلان ينضم للجروب. من الجروب ← ⋮ ← Group info ← Invite via link ← Copy link.</div></div>
       <div class="f"><label>الجملة اللي تحت الاسم</label><input id="sTag" value="${esc(S.settings.tagline||'منتجات أصلية من كل العالم 🌍')}"></div>
       <button class="btn p" style="width:100%" id="sSave">احفظ الإعدادات</button>`;
@@ -1094,6 +1176,11 @@ async function onManageClick(e){
         if(!await ask(`تمسح قسم <b>${esc(cat(id)?.name)}</b>؟`,'امسح')) return;
       }
       await S.db.collection(col).doc(id).delete(); toast('اتمسح');
+    } else if(b.dataset.rvadd){ const fi=manageOv.querySelector('#rvFile'); fi.onchange=async()=>{ const files=[...fi.files]; fi.value=''; if(!files.length) return; toast('بيرفع…');
+        const add=[]; for(const f of files){ try{ add.push((await S.assets.upload(await compress(f,false))).id); }catch(e){} }
+        if(add.length){ await S.db.doc('settings/main').set({...S.settings,reviews:[...(S.settings.reviews||[]),...add]}); toast('اتضافت ✅'); } }; fi.click();
+    } else if(b.dataset.rvrm){ const i=+b.dataset.rvrm, arr=[...(S.settings.reviews||[])], [gone]=arr.splice(i,1);
+      await S.db.doc('settings/main').set({...S.settings,reviews:arr}); try{ await S.assets.delete(gone); }catch(e){} toast('اتشالت');
     } else if(b.dataset.zadd){ manageOv.querySelector('#zones').insertAdjacentHTML('beforeend',zoneRow({name:'',fee:''}));
     } else if(b.dataset.zfill){ manageOv.querySelector('#zones').innerHTML=DEFAULT_ZONES.map(n=>zoneRow({name:n,fee:''})).join(''); b.remove(); toast('حطي السعر قدام كل منطقة ودوسي احفظ');
     } else if(b.dataset.zrm){ b.closest('.zrow').remove();
@@ -1158,7 +1245,7 @@ async function refresh(t){
     const d=ok(await sb.from('settings').select('data').eq('id',1).maybeSingle());
     S.settings=d?.data||{};
     $('#tagline').textContent=S.settings.tagline||'منتجات أصلية من كل العالم 🌍';
-    paintGroup();
+    paintGroup(); paintFloat(); renderExtras();
   } else {
     S[KEY[t]] = ok(await sb.from(t).select('*')).map(r=>fromRow(t,r));
   }
@@ -1264,13 +1351,13 @@ async function setOrderStatus(id,st){
     S.orders=null; drawManage(); refresh('products').catch(()=>{}); return true;
   }catch(e){ toast(S.v2?'حصلت مشكلة، جرّبي تاني':'فعّلي التحديث الأول (الشريط اللي فوق)'); return false; }
 }
-function openRequest(){
+function openRequest(pre={}){
   const cs=[...S.countries].sort(byOrder); let saved={}; try{ saved=JSON.parse(localStorage.getItem('pb_cust')||'{}'); }catch(e){}
   const ov=sheet('✨ اطلبي منتج من بره',`
     <div class="hint" style="margin-bottom:10px">مش لاقية المنتج على الموقع؟ ابعتيلنا تفاصيله ونشوفلك سعره ونجيبهولك.</div>
-    <div class="f"><label>من أنهي بلد؟</label><select id="rC"><option value="">مش مهم / مش عارفة</option>${cs.map(c=>`<option>${esc((c.flag||'')+' '+c.name)}</option>`).join('')}<option>بلد تانية</option></select></div>
+    <div class="f"><label>من أنهي بلد؟</label><select id="rC"><option value="">مش مهم / مش عارفة</option>${cs.map(c=>`<option ${pre.country===((c.flag||'')+' '+c.name)?'selected':''}>${esc((c.flag||'')+' '+c.name)}</option>`).join('')}<option>بلد تانية</option></select></div>
     <div class="f"><label>لينك المنتج (لو معاكي)</label><input id="rL" inputmode="url" placeholder="https://..." style="direction:ltr;text-align:right"></div>
-    <div class="f"><label>اسم المنتج / التفاصيل</label><textarea id="rN" placeholder="مثلاً: The Ordinary Niacinamide 30ml، أو مقاس M لون أسود…"></textarea></div>
+    <div class="f"><label>اسم المنتج / التفاصيل</label><textarea id="rN" placeholder="مثلاً: The Ordinary Niacinamide 30ml، أو مقاس M لون أسود…">${esc(pre.note||'')}</textarea></div>
     <div class="row2"><div class="f"><label>الاسم</label><input id="rNm" value="${esc(saved.n||'')}"></div><div class="f"><label>الموبايل</label><input id="rP" type="tel" inputmode="tel" value="${esc(saved.p||'')}" style="direction:ltr;text-align:right"></div></div>`,
     `<button class="btn" data-close>إلغاء</button><button class="btn r" id="rGo">ابعتي الطلب</button>`);
   ov.querySelector('#rGo').onclick=async()=>{
