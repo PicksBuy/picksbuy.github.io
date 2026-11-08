@@ -134,6 +134,11 @@ body:not(.admin) .cartbtn.has{display:flex}
 .tot{display:flex;justify-content:space-between;align-items:center;padding:14px 0 6px;font-weight:800;font-size:17px}
 .tot b{color:var(--red);direction:ltr;font-size:20px}
 .ok-ic{font-size:46px;text-align:center;margin:6px 0}
+.impbar{margin-top:12px;background:#fff;border:2px dashed var(--rose);border-radius:16px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.impbar b{flex:1;font-size:14px}.impbar button{background:var(--ink);color:#fff;border-radius:999px;padding:8px 14px;font-weight:800;font-size:13px;white-space:nowrap}
+.impl label{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.impl img{width:54px;height:68px;object-fit:cover;border-radius:10px;flex:none}.impl input{width:20px;height:20px;accent-color:var(--red);flex:none}
+.impl .t{flex:1;min-width:0}.impl .n{font-weight:700;font-size:13.5px;unicode-bidi:plaintext;text-align:right}
 .empty{text-align:center;padding:50px 20px;color:var(--muted)}
 .empty .big{font-size:42px}
 .note{background:#FFF4E5;border:1px solid #F3D9B5;color:#7A4A12;border-radius:12px;padding:10px 12px;margin-top:12px;font-size:14px}
@@ -246,6 +251,7 @@ body.admin .fab, body.admin .fab2{display:flex}
 </header>
 
 <main class="wrap">
+  <div id="imp"></div>
   <div id="promo"></div>
   <div class="lbl">البلد</div>
   <div class="rail" id="countries"></div>
@@ -428,7 +434,7 @@ function card(p){
       ${p.brand ? `<div class="brand-l">${esc(p.brand)}</div>` : ''}
       <h3>${esc(p.name)}</h3>
       ${sizes ? `<div class="sz">${esc(sizes)}</div>` : ''}
-      <div class="price">${num(p.price)!=null ? `<b>${fmt(num(p.price))} ${esc(cur())}</b>` : ''}${num(p.oldPrice) && num(p.oldPrice)>num(p.price) ? `<s>${fmt(num(p.oldPrice))}</s>` : ''}</div>
+      <div class="price">${S.admin && !num(p.price) ? `<b style="color:var(--warn);font-size:13px">⚠️ محتاج سعر</b>` : num(p.price)!=null ? `<b>${fmt(num(p.price))} ${esc(cur())}</b>` : ''}${num(p.oldPrice) && num(p.oldPrice)>num(p.price) ? `<s>${fmt(num(p.oldPrice))}</s>` : ''}</div>
       ${S.admin ? `<div class="meta" style="font-size:12px">المتاح: ${st}</div>` : ''}
     </div>
     ${S.admin ? `<div class="adm"><button data-edit="${esc(p.id)}">✏️ تعديل</button><button data-del="${esc(p.id)}">🗑️ مسح</button></div>` : ''}
@@ -670,14 +676,14 @@ function openForm(p){
       <div class="f"><label>القسم</label><select id="fCat">${catOptions(defCat)}</select></div>
     </div>
     <div class="row2">
-      <div class="f"><label>السعر (${esc(cur())}) *</label><input id="fPrice" inputmode="decimal" value="${esc(p?.price??'')}" placeholder="1200"></div>
+      <div class="f"><label>السعر (${esc(cur())}) *</label><input id="fPrice" inputmode="decimal" value="${num(p?.price)>0?esc(p.price):''}" placeholder="1200"></div>
       <div class="f"><label>السعر قبل الخصم</label><input id="fOld" inputmode="decimal" value="${esc(p?.oldPrice??'')}" placeholder="اختياري"></div>
     </div>
     ${S.settings.promo?.title?`<label class="sw">🔥 ضمن عرض ${esc(S.settings.promo.title)} <input type="checkbox" id="fPromo" ${(p?p.promo:S.promoOnly)?'checked':''}></label>`:''}
     <label class="sw">فيه مقاسات أو ألوان أو أنواع؟ <input type="checkbox" id="fHas" ${F.hasSizes?'checked':''}></label>
     <div id="sizesBox"></div>
     <div class="f"><label>الوصف</label><textarea id="fDesc" placeholder="تفاصيل المنتج، الخامة، طريقة الاستخدام…">${esc(p?.desc)}</textarea></div>
-    <label class="sw">إخفاء عن العملاء <input type="checkbox" id="fHidden" ${p?.hidden?'checked':''}></label>
+    <label class="sw">إخفاء عن العملاء <input type="checkbox" id="fHidden" ${p?.hidden && num(p.price)>0 ?'checked':''}></label>
   `, `<button class="btn" data-close>إلغاء</button><button class="btn p" id="save">${isNew?'ضيف المنتج':'احفظ التعديل'}</button>`);
 
   const q=s=>ov.querySelector(s);
@@ -737,7 +743,7 @@ function openForm(p){
   q('#save').onclick=async()=>{
     const name=q('#fName').value.trim(), price=num(q('#fPrice').value);
     if(!name){ toast('اكتب اسم المنتج'); q('#fName').focus(); return; }
-    if(price==null){ toast('اكتب السعر'); q('#fPrice').focus(); return; }
+    if(price==null||price<=0){ toast('اكتب السعر'); q('#fPrice').focus(); return; }
     if(F.images.some(i=>i.busy)){ toast('استنى الصور تخلص رفع'); return; }
     const data={
       name, brand:q('#fBrand').value.trim(), desc:q('#fDesc').value.trim(),
@@ -956,6 +962,7 @@ async function checkAdmin(){
   if(was!==isAdm) await refresh('products').catch(()=>{});
   let pref='1'; try{ pref=localStorage.getItem('pb_admin') ?? '1'; }catch(e){}
   setAdmin(isAdm && pref==='1');
+  checkImports();
   return {session,isAdm};
 }
 function openLogin(after){
@@ -982,6 +989,50 @@ $('#adminLink').onclick=async()=>{
   if(session){ await sb.auth.signOut(); try{ localStorage.removeItem('pb_admin'); }catch(e){} await checkAdmin(); toast('خرجت من الأدمن'); }
   else openLogin();
 };
+
+/* ---------- ready-made batches prepared by Claude (import/batch.json) ---------- */
+let BATCH=null;
+async function checkImports(){
+  const box=$('#imp'); box.innerHTML='';
+  if(!S.canEdit) return;
+  try{ BATCH=await (await fetch('import/batch.json?v='+Date.now(),{cache:'no-store'})).json(); }catch(e){ BATCH=null; return; }
+  const seen=new Set([...(S.settings.imported||[]), ...S.products.map(p=>p.id)]);
+  const items=(BATCH.products||[]).filter(p=>!seen.has(p.id));
+  if(!items.length) return;
+  box.innerHTML=`<div class="impbar"><span style="font-size:24px">📦</span><b>${items.length} منتج جديد جاهز تضيفه</b><button id="impGo">شوف وأضف</button></div>`;
+  $('#impGo').onclick=()=>openImport(items);
+}
+function openImport(items){
+  const ov=sheet('منتجات جديدة جاهزة',`
+    <div class="hint" style="margin-bottom:6px">شيل العلامة من أي منتج مش عايزه. المنتجات اللي مكتوب عليها "محتاج سعر" هتتضاف مخفية لحد ما تحط سعرها من ✏️ تعديل.</div>
+    <div class="impl">${items.map(p=>{ const c=country(p.countryId);
+      return `<label><input type="checkbox" data-iid="${esc(p.id)}" checked>${p.images[0]?`<img src="${img(p.images[0])}" alt="">`:''}
+        <div class="t">${p.brand?`<div class="brand-l" style="font-size:10px">${esc(p.brand)}</div>`:''}<div class="n">${esc(p.name)}</div>
+        <div class="hint">${c?esc((c.flag||'')+' '+c.name)+' · ':''}${p.needsPrice?'<b style="color:var(--warn)">محتاج سعر</b>':`<b style="color:var(--red)" dir="ltr">${fmt(p.price)} ${esc(cur())}</b>`}${p.promo?' · 🔥':''}${p.sizes&&p.sizes.length?' · '+p.sizes.length+' أنواع':''}</div></div></label>`; }).join('')}</div>`,
+    `<button class="btn" data-close>مش دلوقتي</button><button class="btn r" id="impRun">أضف المنتجات</button>`);
+  const btn=ov.querySelector('#impRun');
+  const count=()=>{ const n=ov.querySelectorAll('[data-iid]:checked').length; btn.textContent=n?`أضف ${n} منتج`:'تجاهل الكل'; };
+  ov.querySelector('.impl').addEventListener('change',count); count();
+  btn.onclick=async()=>{
+    const pick=new Set([...ov.querySelectorAll('[data-iid]:checked')].map(i=>i.dataset.iid));
+    btn.disabled=true; btn.textContent='بيضيف…';
+    try{
+      const haveC=new Set(S.cats.map(c=>c.id));
+      const newC=(BATCH.categories||[]).filter(c=>!haveC.has(c.id));
+      if(newC.length) ok(await sb.from('categories').upsert(newC.map(c=>toRow('categories',c))));
+      const now=new Date().toISOString();
+      const rows=items.filter(p=>pick.has(p.id)).map(p=>{ const {needsPrice,...d}=p; return toRow('products',{...d,updatedAt:now}); });
+      if(rows.length) ok(await sb.from('products').upsert(rows));
+      const data={...S.settings, imported:[...new Set([...(S.settings.imported||[]), ...items.map(p=>p.id)])]};
+      const sp=BATCH.settingsPatch;
+      if(sp && !data.imported.includes(sp.id)){ data.promo={...(data.promo||{}),...(sp.promo||{})}; data.imported.push(sp.id); }
+      ok(await sb.from('settings').upsert({id:1,data}));
+      await Promise.all(['categories','products','settings'].map(refresh));
+      ov.close(); $('#imp').innerHTML='';
+      toast(rows.length?`اتضاف ${rows.length} منتج ✅`:'تمام');
+    }catch(e){ btn.disabled=false; count(); toast('حصلت مشكلة، جرّب تاني'); }
+  };
+}
 
 /* ---------- links: #order-XXX, #p-ID, #admin ---------- */
 function clearHash(){ try{ history.replaceState(null,'',location.pathname+location.search); }catch(e){} }

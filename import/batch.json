@@ -1,0 +1,369 @@
+{
+ "id": "2026-11-08-a",
+ "title": "منتجات Black Friday والـ dm الجديدة",
+ "categories": [
+  {
+   "id": "serum",
+   "name": "سيروم",
+   "parentId": "skin",
+   "order": 3
+  },
+  {
+   "id": "sunscreen",
+   "name": "صن سكرين",
+   "parentId": "skin",
+   "order": 4
+  },
+  {
+   "id": "eyes",
+   "name": "آيلاينر وكحل",
+   "parentId": "makeup",
+   "order": 4
+  },
+  {
+   "id": "cheeks",
+   "name": "بلاشر",
+   "parentId": "makeup",
+   "order": 5
+  },
+  {
+   "id": "deo",
+   "name": "مزيل عرق",
+   "parentId": "body",
+   "order": 1
+  },
+  {
+   "id": "handcream",
+   "name": "كريم إيد",
+   "parentId": "body",
+   "order": 2
+  }
+ ],
+ "products": [
+  {
+   "id": "bf2-glamveda",
+   "brand": "Glamveda",
+   "name": "Rice & Ceramide Vitalizing Face Serum 30ml",
+   "desc": "سيروم للوش بالأرز والسيراميد، بيفتّح ويوحّد لون البشرة (Glass Glow).\nمناسب للبشرة الجافة والمختلطة.\nالحجم: 30 مل",
+   "countryId": "in",
+   "categoryId": "serum",
+   "price": 150,
+   "oldPrice": null,
+   "images": [
+    "img/glamveda.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-08T04:30:05+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "bf2-thalia",
+   "brand": "Thalia Sodi",
+   "name": "Strawberry Field Shimmering Body Mist",
+   "desc": "بادي ميست بريحة الفراولة مع لمعة خفيفة على الجسم.\nالحجم: 65 مل",
+   "countryId": "us",
+   "categoryId": "bodymist",
+   "price": 130,
+   "oldPrice": null,
+   "images": [
+    "img/thalia.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-08T04:30:04+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "bf2-cosmia",
+   "brand": "Cosmia",
+   "name": "Magnolia Anti-Perspirant Roll-On",
+   "desc": "مزيل عرق رول أون بمستخلص الماجنوليا.\nحماية لحد 48 ساعة، من غير كحول ومن غير بارابين.",
+   "countryId": "ru",
+   "categoryId": "deo",
+   "price": 160,
+   "oldPrice": null,
+   "images": [
+    "img/cosmia.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-08T04:30:03+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "bf2-coluxury",
+   "brand": "CO Luxury",
+   "name": "Classical Glass Skin Rice & Ceramide Sunscreen SPF50",
+   "desc": "صن سكرين بالأرز والسيراميد، حماية واسعة SPF50 PA++++ وحماية من الضوء الأزرق.\nالحجم: 50 جم",
+   "countryId": null,
+   "categoryId": "sunscreen",
+   "price": 170,
+   "oldPrice": null,
+   "images": [
+    "img/coluxury.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-08T04:30:02+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "bf2-nathabit",
+   "brand": "Nat Habit",
+   "name": "Fresh Tikta Brightening Ubtan Face Wash",
+   "desc": "غسول وش أيورفيدا بالحمص والكركم وخشب الصندل الأحمر، لتفتيح البشرة.\nلكل أنواع البشرة. حجم صغير 7 جم مناسب للسفر.",
+   "countryId": "in",
+   "categoryId": "facewash",
+   "price": 50,
+   "oldPrice": null,
+   "images": [
+    "img/nathabit.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-08T04:30:01+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "dm-balea-urea",
+   "brand": "Balea",
+   "name": "Urea 5% Hand Cream",
+   "desc": "كريم إيد بـ 5% يوريا للإيدين الجافة والمتعبة، بيقلل الإحساس بالشد.\nVegan. من dm ألمانيا.",
+   "countryId": "de",
+   "categoryId": "handcream",
+   "price": 285,
+   "oldPrice": null,
+   "images": [
+    "img/balea-urea.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T04:20:09+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "dm-balea-cherry",
+   "brand": "Balea",
+   "name": "Very Cherry Hand Cream (Limited Edition)",
+   "desc": "كريم إيد ليميتد إديشن بريحة الكريز وفاكهة التنين.\nVegan. من dm ألمانيا.",
+   "countryId": "de",
+   "categoryId": "handcream",
+   "price": 275,
+   "oldPrice": null,
+   "images": [
+    "img/balea-cherry.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T04:20:08+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "dm-powershine",
+   "brand": "Trend It Up",
+   "name": "Power Shine Lip Gloss",
+   "desc": "ليب جلوس لامع بيدي إحساس بامتلاء الشفايف.\nمن dm ألمانيا.",
+   "countryId": "de",
+   "categoryId": "lips",
+   "price": 280,
+   "oldPrice": null,
+   "images": [
+    "img/powershine.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T04:20:07+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "dm-mivolis-multi",
+   "brand": "Mivolis",
+   "name": "Multivitamin Effervescent Tablets",
+   "desc": "أقراص فوارة فيها 10 فيتامينات أساسية بطعم الفواكه الاستوائية، من غير سكر مضاف.\n20 قرص. من dm ألمانيا.",
+   "countryId": "de",
+   "categoryId": "vitamins",
+   "price": 0,
+   "oldPrice": null,
+   "images": [
+    "img/mivolis-multi.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": true,
+   "createdAt": "2026-11-08T04:20:06+02:00",
+   "needsPrice": true
+  },
+  {
+   "id": "dm-mivolis-b12",
+   "brand": "Mivolis",
+   "name": "Vitamin B12 Effervescent Tablets",
+   "desc": "أقراص فوارة فيتامين B12 بطعم التوت والفراولة.\n20 قرص. من dm ألمانيا.",
+   "countryId": "de",
+   "categoryId": "vitamins",
+   "price": 0,
+   "oldPrice": null,
+   "images": [
+    "img/mivolis-b12.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": true,
+   "createdAt": "2026-11-08T04:20:05+02:00",
+   "needsPrice": true
+  },
+  {
+   "id": "in-blueheaven",
+   "brand": "Blue Heaven",
+   "name": "2X Intense Kajal – Green Queen",
+   "desc": "كحل أخضر 2X Intense، ضد المية ومش بيسيح، ثبات لحد 24 ساعة.\nفيه ألوفيرا ومستخلص الجنكو، وبرّاية مدمجة.",
+   "countryId": "in",
+   "categoryId": "eyes",
+   "price": 0,
+   "oldPrice": null,
+   "images": [
+    "img/blueheaven.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": true,
+   "createdAt": "2026-11-08T04:20:04+02:00",
+   "needsPrice": true
+  },
+  {
+   "id": "giordano-cheek",
+   "brand": "Giordano Colors",
+   "name": "Cheek Stick",
+   "desc": "بلاشر ستيك كريمي سهل الاستخدام على الخدود.",
+   "countryId": null,
+   "categoryId": "cheeks",
+   "price": 0,
+   "oldPrice": null,
+   "images": [
+    "img/giordano.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": true,
+   "createdAt": "2026-11-08T04:20:03+02:00",
+   "needsPrice": true
+  },
+  {
+   "id": "qibest-lipserum",
+   "brand": "Qibest",
+   "name": "Brightening Lip Serum",
+   "desc": "سيروم للشفايف بيفتّح ويرطب ويدي امتلاء (Moist & Plump).",
+   "countryId": "cn",
+   "categoryId": "lips",
+   "price": 0,
+   "oldPrice": null,
+   "images": [
+    "img/qibest.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": true,
+   "createdAt": "2026-11-08T04:20:02+02:00",
+   "needsPrice": true
+  },
+  {
+   "id": "dm-glide-stay",
+   "brand": "Trend It Up",
+   "name": "Glide & Stay Lip Liner",
+   "desc": "قلم تحديد شفايف بثبات لحد 7 ساعات، وفيه برّاية في الغطا.\nVegan. من dm ألمانيا.",
+   "countryId": "de",
+   "categoryId": "lips",
+   "price": 0,
+   "oldPrice": null,
+   "images": [
+    "img/glide-255.jpg",
+    "img/glide-red.jpg",
+    "img/glide-berry.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "255 (بني)",
+     "q": 1
+    },
+    {
+     "s": "أحمر",
+     "q": 1
+    },
+    {
+     "s": "نبيتي",
+     "q": 1
+    }
+   ],
+   "qty": null,
+   "promo": false,
+   "hidden": true,
+   "createdAt": "2026-11-08T04:20:01+02:00",
+   "needsPrice": true
+  },
+  {
+   "id": "dm-clean-precise",
+   "brand": "Trend It Up",
+   "name": "Clean & Precise Lip Liner 630",
+   "desc": "قلم تحديد شفايف بتركيبة فيها هيالورونيك أسيد، درجة 630.\nVegan. من dm ألمانيا.",
+   "countryId": "de",
+   "categoryId": "lips",
+   "price": 0,
+   "oldPrice": null,
+   "images": [
+    "img/clean-630.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": true,
+   "createdAt": "2026-11-08T04:20:00+02:00",
+   "needsPrice": true
+  },
+  {
+   "id": "dm-balea-bodymilk",
+   "brand": "Balea",
+   "name": "Rich Body Milk 48h",
+   "desc": "بادي ميلك غني للبشرة الجافة، ترطيب لحد 48 ساعة بزبدة الشيا.\nVegan. من dm ألمانيا.",
+   "countryId": "de",
+   "categoryId": "body",
+   "price": 0,
+   "oldPrice": null,
+   "images": [
+    "img/balea-bodymilk.jpg"
+   ],
+   "sizes": [],
+   "qty": 1,
+   "promo": false,
+   "hidden": true,
+   "createdAt": "2026-11-08T04:19:59+02:00",
+   "needsPrice": true
+  }
+ ],
+ "settingsPatch": {
+  "id": "promo-sub-1",
+  "promo": {
+   "subtitle": "عروض تبدأ من 50 L.E"
+  }
+ }
+}
