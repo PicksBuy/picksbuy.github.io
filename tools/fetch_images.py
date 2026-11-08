@@ -42,7 +42,9 @@ for j in jobs:
                 err = e; time.sleep(2)
         if data is None: raise err
         im = flat(Image.open(io.BytesIO(data)))
-        if j["kind"] == "swatch":
+        if j["kind"] == "raw":
+            pass
+        elif j["kind"] == "swatch":
             im = ImageOps.fit(im, (200, 200), Image.LANCZOS)
         else:
             W, H = 900, 1125

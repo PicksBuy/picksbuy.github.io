@@ -348,5 +348,25 @@
   "url": "https://static.thcdn.com/productimg/original/15921976-1495345639263959.jpg",
   "out": "img/nyx/nyx-lip-iv-light.jpg",
   "kind": "product"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwef715b2d/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS02-HYDRA-HONEY-0800897266974-PackshotWithTexture.jpg",
+  "out": "img/nyx/probe/nyx-lip-iv.jpg",
+  "kind": "raw"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwdee33c36/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS03-BARELY-THERE-0800897274993-PackshotWithTexture.jpg",
+  "out": "img/nyx/probe/nyx-lip-lingerie-stain.jpg",
+  "kind": "raw"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwcfa6b66b/PDPV2-Assets/NYX_937/NYX-PMU-Makeup-Eyes-Eyebrow-THE-BROW-GLUE-INSTANT-BROW-STYLER-TBG03-MEDIUM-BROWN-0800897233808-Extra-25yrs.jpg",
+  "out": "img/nyx/probe/nyx-brow-glue.jpg",
+  "kind": "raw"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw8fa9fad6/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS02-LIGHT-0800897129774-OpenSwatch.png",
+  "out": "img/nyx/probe/nyx-bare-with-me-concealer.jpg",
+  "kind": "raw"
  }
 ]
