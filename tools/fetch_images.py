@@ -25,6 +25,16 @@ for j in jobs:
         report.append(f"skip {out}"); continue
     os.makedirs(os.path.dirname(out), exist_ok=True)
     try:
+        if j.get("pages"):
+            import re, html as H
+            for pg in j["pages"]:
+                try:
+                    page = get(pg).decode("utf-8", "ignore")
+                    m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', page) or \
+                        re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', page)
+                    if m: j["url"] = H.unescape(m.group(1)); j["referer"] = pg; break
+                except Exception as e: err = e
+            if not j.get("url"): raise RuntimeError(f"no og:image ({err})")
         data = None
         for attempt in range(3):
             try: data = get(j["url"], j.get("referer")); break
