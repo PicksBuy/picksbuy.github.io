@@ -2,7 +2,7 @@ name: Fetch product images
 on:
   push:
     branches: [main]
-    paths: [import/images.json, tools/fetch_images.py]
+    paths: [import/images.json, tools/fetch_images.py, tools/probe_nyx.py]
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,10 +15,11 @@ jobs:
         with: { python-version: '3.12' }
       - run: pip install pillow
       - run: python tools/fetch_images.py
+      - run: python tools/probe_nyx.py || true
       - name: Commit images
         run: |
           git config user.name "picksbuy-bot"
           git config user.email "picksbuy-bot@users.noreply.github.com"
-          git add img import/images-report.txt
+          git add img import/images-report.txt import/nyx-probe.json || true
           git diff --cached --quiet || git commit -m "Add downloaded product images"
           git pull --rebase origin main && git push
