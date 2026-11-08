@@ -217,6 +217,8 @@ body:not(.admin) .askfab.on{display:grid}
 .revs img{flex:none;width:200px;height:260px;object-fit:cover;object-position:top;border-radius:16px;box-shadow:var(--shadow);scroll-snap-align:start;background:#fff;cursor:zoom-in}
 .radm{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}.radm .t{position:relative;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:var(--soft)}
 .radm .t img{width:100%;height:100%;object-fit:cover}.radm .t button{position:absolute;top:4px;inset-inline-end:4px;width:24px;height:24px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff}
+.ph img[src^="http"],.mini .im img[src^="http"],.gal img[src^="http"],.cl img[src^="http"],.impl img[src^="http"]{object-fit:contain;background:#fff;padding:6%}
+.gal img[src^="http"]{padding:4%}
 .empty{text-align:center;padding:50px 20px;color:var(--muted)}
 .empty .big{font-size:42px}
 .note{background:#FFF4E5;border:1px solid #F3D9B5;color:#7A4A12;border-radius:12px;padding:10px 12px;margin-top:12px;font-size:14px}
@@ -527,6 +529,9 @@ function card(p){
     ${S.admin ? `<div class="adm"><button data-edit="${esc(p.id)}">✏️ تعديل</button><button data-del="${esc(p.id)}">🗑️ مسح</button></div>` : ''}
   </article>`;
 }
+
+/* any picture that fails to load shows the PicksBuy placeholder instead of a broken icon */
+document.addEventListener('error',e=>{ const t=e.target; if(t&&t.tagName==='IMG'&&!t.dataset.fb){ t.dataset.fb='1'; t.src='img/ph.jpg'; t.style.objectFit='cover'; t.style.padding='0'; } },true);
 
 /* ---------- bottom sections, zoom, floating buttons ---------- */
 function renderExtras(){
@@ -1421,7 +1426,7 @@ function openImport(items){
       const newC=(BATCH.categories||[]).filter(c=>!haveC.has(c.id));
       if(newC.length) ok(await sb.from('categories').upsert(newC.map(c=>toRow('categories',c))));
       const now=new Date().toISOString();
-      const rows=items.filter(p=>pick.has(p.id)).map(p=>{ const {needsPrice,...d}=p; return toRow('products',{...d,updatedAt:now}); });
+      const rows=items.filter(p=>pick.has(p.id)).map(p=>{ const {needsPrice,src,...d}=p; return toRow('products',{...d,updatedAt:now}); });
       if(rows.length) ok(await sb.from('products').upsert(rows));
       const data={...S.settings, imported:[...new Set([...(S.settings.imported||[]), ...items.map(p=>p.id)])]};
       const sp=BATCH.settingsPatch;

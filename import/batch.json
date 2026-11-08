@@ -1,5 +1,5 @@
 {
- "id": "2026-11-08-a",
+ "id": "2026-11-08-b",
  "title": "منتجات Black Friday والـ dm الجديدة",
  "categories": [
   {
@@ -37,6 +37,30 @@
    "name": "كريم إيد",
    "parentId": "body",
    "order": 2
+  },
+  {
+   "id": "womenhealth",
+   "name": "صحة المرأة",
+   "parentId": null,
+   "order": 9
+  },
+  {
+   "id": "meno-supp",
+   "name": "مكملات المينوبوز",
+   "parentId": "womenhealth",
+   "order": 1
+  },
+  {
+   "id": "intimate",
+   "name": "عناية حساسة",
+   "parentId": "womenhealth",
+   "order": 2
+  },
+  {
+   "id": "cooling",
+   "name": "تبريد وراحة",
+   "parentId": "womenhealth",
+   "order": 3
   }
  ],
  "products": [
@@ -358,6 +382,342 @@
    "hidden": true,
    "createdAt": "2026-11-08T04:19:59+02:00",
    "needsPrice": true
+  },
+  {
+   "id": "boots-meno-complex",
+   "brand": "Boots",
+   "name": "Menopause & Me Menopause Complex 30 + 30 Tablets",
+   "desc": "مكمل غذائي متكامل لفترة المينوبوز وبعدها، فيه 26 فيتامين ومعدن ومستخلصات نباتية منها الكالسيوم والمريمية والبرسيم الأحمر.\nمن غير ألوان أو نكهات صناعية، ومن غير لاكتوز.\nعلبة: 30 قرص + 30 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1295,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10319040?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:55:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 14.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10319040"
+   }
+  },
+  {
+   "id": "boots-peri-complex",
+   "brand": "Boots",
+   "name": "Menopause & Me Perimenopause Complex – 30 Tablets",
+   "desc": "مكمل لفترة ما قبل المينوبوز (Perimenopause)، فيه 16 فيتامين ومعدن ومستخلصات نباتية منها البرسيم الأحمر وجذر الماكا والأشواجندا.\nعلبة: 30 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1295,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10335453?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:54:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 14.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10335453"
+   }
+  },
+  {
+   "id": "hh-meno",
+   "brand": "Health & Her",
+   "name": "Menopause Multi-Nutrient Support – 60 Capsules",
+   "desc": "مكمل متعدد العناصر لدعم الصحة في فترة المينوبوز، فيه فيتامين B6 وB12 وC والماغنسيوم والزنك والبرسيم الأحمر.\nعلبة: 60 كبسولة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1915,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10321423?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:53:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 21.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10321423"
+   }
+  },
+  {
+   "id": "hh-peri",
+   "brand": "Health & Her",
+   "name": "Perimenopause Multi-Nutrient Support – 60 Capsules",
+   "desc": "مكمل لفترة ما قبل المينوبوز، فيه فيتامينات B وC وD3 والماغنسيوم، مع البرسيم الأحمر واليام البري.\nعلبة: 60 كبسولة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1915,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10321422?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:52:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 21.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10321422"
+   }
+  },
+  {
+   "id": "hh-peri-mind",
+   "brand": "Health & Her",
+   "name": "Perimenopause Mind+ Support – 30 Capsules",
+   "desc": "مكمل لدعم المزاج والتركيز في فترة ما قبل المينوبوز، فيه فيتامين B6 وC والماغنسيوم.\nعلبة: 30 كبسولة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1760,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10321424?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:51:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 19.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10321424"
+   }
+  },
+  {
+   "id": "menopace-orig-90",
+   "brand": "Vitabiotics",
+   "name": "Menopace Original – 90 Tablets",
+   "desc": "قرص واحد في اليوم لفترة المينوبوز وبعدها، فيه 22 عنصر منها فيتامينات ومستخلص فول الصويا.\nمناسب للنباتيين، من غير جلوتين ولاكتوز.\nعلبة: 90 قرص (3 شهور).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1175,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10000298?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:50:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 12.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10000298"
+   }
+  },
+  {
+   "id": "menopace-plus",
+   "brand": "Vitabiotics",
+   "name": "Menopace Plus – 56 Tablets",
+   "desc": "تركيبة Menopace الأصلية مع قرص نباتي إضافي فيه فول الصويا والمريمية والشاي الأخضر.\nعلبة: 28 قرص فيتامينات + 28 قرص نباتي.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1550,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10000305?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:49:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 17.3,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10000305"
+   }
+  },
+  {
+   "id": "menopace-night",
+   "brand": "Vitabiotics",
+   "name": "Menopace Night – 30 Tablets",
+   "desc": "تركيبة مسائية فيها 24 عنصر منها البابونج والجنجل وفيتامين D3.\nبتتاخد بالليل بدل أي نوع Menopace تاني.\nعلبة: 30 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1370,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10102193?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:48:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 15.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10102193"
+   }
+  },
+  {
+   "id": "paused-peri",
+   "brand": "Paused",
+   "name": "Perimenopause All-In-One Blend – 60 Capsules",
+   "desc": "مزيج فيتامينات ومعادن ومستخلصات نباتية لفترة ما قبل المينوبوز، فيه فيتامين B6 وB12 والمريمية والبرسيم الأحمر والجينسنج.\nعلبة: 60 كبسولة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1760,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10344397?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:47:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 19.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10344397"
+   }
+  },
+  {
+   "id": "paused-meno",
+   "brand": "Paused",
+   "name": "Menopause All-In-One Blend – 60 Capsules",
+   "desc": "مزيج لفترة المينوبوز فيه الشتافاري وبذور الكتان والمريمية، مع الفولات وفيتامين E وB12 وB6 والبيوتين.\nعلبة: 60 كبسولة (شهر).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "meno-supp",
+   "price": 1760,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10344395?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:46:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 19.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10344395"
+   }
+  },
+  {
+   "id": "boots-meno-shower",
+   "brand": "Boots",
+   "name": "Menopause & Me Intimate Moisturising Shower Cream 250ml",
+   "desc": "شاور كريم مرطب للمنطقة الحساسة، ترطيب لحد 24 ساعة.\nتركيبة لطيفة من غير رغوة، ومن غير عطر أو صابون أو سلفات. مناسب للاستخدام اليومي.\nالحجم: 250 مل.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "intimate",
+   "price": 550,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10342024?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:45:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.49,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10342024"
+   }
+  },
+  {
+   "id": "boots-meno-gel",
+   "brand": "Boots",
+   "name": "Menopause & Me Vaginal Moisturising Gel 30ml",
+   "desc": "جل مرطب طويل المفعول (لحد 3 أيام)، فيه مشتق الهيالورونيك أسيد Hydeal-D.\nمن غير هرمونات ومن غير بارابين أو عطر. معاه أبليكيتور.\nيكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "intimate",
+   "price": 980,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10338746?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:44:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 9.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10338746"
+   }
+  },
+  {
+   "id": "boots-meno-fan",
+   "brand": "Boots",
+   "name": "Menopause & Me Wearable Neck Fan",
+   "desc": "مروحة رقبة بتتلبس، تبريد فوري للوش والرقبة.\n3 سرعات، من غير ريش، خفيفة وسهلة الحمل. بتشتغل لحد 3 ساعات وبتتشحن USB.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "cooling",
+   "price": 1450,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10339936?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:43:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 15.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10339936"
+   }
+  },
+  {
+   "id": "boots-meno-cool",
+   "brand": "Boots",
+   "name": "Menopause & Me Instant Cooling Packs (5 Packs)",
+   "desc": "أكياس تبريد فوري بتشتغل بالضغط، تبريد لحد 20 دقيقة في أي مكان.\nناعمة على البشرة ومناسبة لكل الجسم.\nالعلبة: 5 أكياس.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "cooling",
+   "price": 590,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10340220?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T13:42:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10340220"
+   }
   }
  ],
  "settingsPatch": {
