@@ -65,7 +65,6 @@ skip img/nyx/sw/nyx-duck-plump-liner-ducking-clear.jpg
 skip img/nyx/sw/nyx-duck-plump-liner-swollen-spice.jpg
 skip img/nyx/sw/nyx-duck-plump-liner-subtle-touch.jpg
 skip img/nyx/sw/nyx-duck-plump-liner-syringe-sienna.jpg
-FAIL img/nyx/nyx-csws-concealer-light.jpg RuntimeError: no og:image (HTTP Error 403: Forbidden)
 skip img/nyx/nyx-cswsfoundation-light.jpg
 skip img/nyx/nyx-bare-with-me-concealer-light.jpg
 skip img/nyx/nyx-lip-iv-light.jpg
