@@ -7,9 +7,9 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 jobs = json.load(open("import/images.json"))
 report = []
 
-def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "image/avif,image/webp,image/*,*/*",
-                                               "Referer": "https://www.google.com/"})
+def get(url, ref=None):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+                                               "Accept-Language": "en-GB,en;q=0.9", "Referer": ref or "https://www.google.com/"})
     with urllib.request.urlopen(req, timeout=40) as r:
         return r.read()
 
@@ -27,7 +27,7 @@ for j in jobs:
     try:
         data = None
         for attempt in range(3):
-            try: data = get(j["url"]); break
+            try: data = get(j["url"], j.get("referer")); break
             except Exception as e:
                 err = e; time.sleep(2)
         if data is None: raise err
