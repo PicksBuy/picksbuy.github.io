@@ -19,6 +19,33 @@ def flat(im):
         im = im.convert("RGBA"); bg = Image.new("RGB", im.size, (255, 255, 255)); bg.paste(im, mask=im.split()[-1]); return bg
     return im.convert("RGB")
 
+def chip(im):
+    """Crop the densest patch of the dominant (texture) colour."""
+    import numpy as np
+    small = im.copy(); small.thumbnail((300, 300))
+    a = np.asarray(small).astype(int); h, w, _ = a.shape
+    mx, mn = a.max(2), a.min(2)
+    keep = (mn < 232) & ~((mx < 60))                      # not background white, not pure black
+    sat = (mx - mn) / np.maximum(mx, 1)
+    px = a[keep]
+    if len(px) < 50: return ImageOps.fit(im, (200, 200), Image.LANCZOS)
+    q = (px // 24)                                        # coarse colour bins
+    keys, counts = np.unique(q[:, 0] * 10000 + q[:, 1] * 100 + q[:, 2], return_counts=True)
+    order = np.argsort(-counts)
+    best = keys[order[0]]
+    for kk in keys[order[:6]]:                            # skip teal/blue packaging bins when a warmer bin is close in size
+        r, g, b = kk // 10000, (kk // 100) % 100, kk % 100
+        if not (b > r + 2 and g > r + 1): best = kk; break
+    tgt = np.array([best // 10000, (best // 100) % 100, best % 100]) * 24 + 12
+    m = (np.abs(a - tgt).sum(2) < 70) & keep
+    s = max(12, int(min(h, w) * 0.16))
+    ii = np.pad(m.astype(int).cumsum(0).cumsum(1), ((1, 0), (1, 0)))
+    win = ii[s:, s:] - ii[:-s, s:] - ii[s:, :-s] + ii[:-s, :-s]
+    y, x = np.unravel_index(np.argmax(win), win.shape)
+    sx, sy = im.width / w, im.height / h
+    box = (int(x * sx), int(y * sy), int((x + s) * sx), int((y + s) * sy))
+    return im.crop(box).resize((200, 200), Image.LANCZOS)
+
 for j in jobs:
     out = j["out"]
     if os.path.exists(out) and not os.environ.get("FORCE"):
@@ -44,6 +71,11 @@ for j in jobs:
         im = flat(Image.open(io.BytesIO(data)))
         if j["kind"] == "raw":
             pass
+        elif j["kind"] == "shade":
+            photo = im.copy(); photo.thumbnail((640, 640), Image.LANCZOS)
+            sq = Image.new("RGB", (640, 640), (255, 255, 255)); sq.paste(photo, ((640 - photo.width) // 2, (640 - photo.height) // 2))
+            os.makedirs(os.path.dirname(j["photo"]), exist_ok=True); sq.save(j["photo"], "JPEG", quality=85, optimize=True)
+            im = chip(im)
         elif j["kind"] == "swatch":
             im = ImageOps.fit(im, (200, 200), Image.LANCZOS)
         else:

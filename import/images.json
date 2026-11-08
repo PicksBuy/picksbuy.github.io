@@ -350,23 +350,415 @@
   "kind": "product"
  },
  {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw363fc7f8/images/pdp/NYX_1131/NYX_1131-UPDATED/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Serum-WSLS01-CARAMEL-DRIP-0800897266967-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-caramel-drip.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-caramel-drip.jpg",
+  "kind": "shade"
+ },
+ {
   "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwef715b2d/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS02-HYDRA-HONEY-0800897266974-PackshotWithTexture.jpg",
-  "out": "img/nyx/probe/nyx-lip-iv.jpg",
-  "kind": "raw"
+  "out": "img/nyx/sw/nyx-lip-iv-hydra-honey.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-hydra-honey.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwbc6ea45b/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS03-SPLASH-N-SPICE-0800897266981-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-splash-n-spice.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-splash-n-spice.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw720daaf0/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS04-COCOA-QUENCH-0800897266998-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-cocoa-quench.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-cocoa-quench.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw49b0113c/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS05-MOCHA-ME-WET-0800897267001-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-mocha-me-wet.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-mocha-me-wet.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwf6844e4b/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS06-ESPRESSO-SOAK-0800897267018-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-espresso-soak.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-espresso-soak.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw54745190/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS07-BUBBLEGUM-BURST-0800897267025-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-bubblegum-burst.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-bubblegum-burst.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw3a382d8e/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS08-DRIPPIN-IN-ROSE-0800897267032-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-drippin-in-rose.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-drippin-in-rose.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw4d681730/images/pdp/NYX_1131/NYX_1131-UPDATED/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Serum-WSLS09-BLUSH-RUSH-0800897267049-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-blush-rush.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-blush-rush.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw357bc4f8/images/pdp/NYX_1131/NYX_1131-UPDATED/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Serum-WSLS10-BERRY-THIRSTY-0800897267056-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-berry-thirsty.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-berry-thirsty.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw9754ec1d/images/pdp/NYX_1131/NYX_1131-UPDATED/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Serum-WSLS11-RED-Y-SET-WET-0800897267063-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-red-y-set-wet.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-red-y-set-wet.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw6ad25d50/images/pdp/NYX_1131/NYX_1131-UPDATED/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Serum-WSLS12-BURST-THAT-TANG-0800897267070-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-burst-that-tang.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-burst-that-tang.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw6977c017/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS13-CRANBERRY-SPLASH-0800897267087-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-cranberry-splash.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-cranberry-splash.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw6a720b86/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS14-MAUVE-N-MOIST-0800897267094-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-mauve-n-moist.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-mauve-n-moist.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwf3074173/images/pdp/NYX_1131/NYX_1131-UPDATED-3/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Stain-WSLS15-WATER-BOUT-WINE-0800897267100-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-water-bout-wine.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-water-bout-wine.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw8e583ff2/images/pdp/NYX_1131/NYX-PMU-Makeup-Lip-LIP-GLOSS-Lip-IV-Hydrating-Gloss-Serum-WSLS16-GRAPE-GUSHIN-0800897267117-PackshotWithTexture[1].jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-grape-gushin.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-grape-gushin.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw69b27866/images/pdp/NYX_1131/NYX_1131-UPDATED-4/NYX-LIP-IV-HYDRATING-GLOSS-STAIN-WSLS17-PETAL-POURIN-0800897279387-PackshoWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-petal-pourin.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-petal-pourin.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw29a4c769/images/pdp/NYX_1131/NYX_1131-UPDATED-4/NYX-LIP-IV-HYDRATING-GLOSS-STAIN-WSLS18-DRIPPIN-NUDE-0800897279400-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-drippin-nude.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-drippin-nude.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw7c59ca53/images/pdp/NYX_1131/NYX_1131-UPDATED-4/NYX-LIP-IV-HYDRATING-GLOSS-STAIN-WSLS19-MAGENTA-MIST-0800897279417-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-magenta-mist.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-magenta-mist.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwc15f1e17/images/pdp/NYX_1131/NYX_1131-UPDATED-4/NYX-LIP-IV-HYDRATING-GLOSS-STAIN-WSLS22-CHERRY-DRENCHED-0800897279448-PackshoWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-iv-cherry-drenched.jpg",
+  "photo": "img/nyx/sh/nyx-lip-iv-cherry-drenched.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw5bcc43c2/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS01-TEASE-U-LATER-0800897274979-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-tease-u-later.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-tease-u-later.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw1e65724c/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS02-NAUGHTY-NUDE-0800897274986-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-naughty-nude.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-naughty-nude.jpg",
+  "kind": "shade"
  },
  {
   "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwdee33c36/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS03-BARELY-THERE-0800897274993-PackshotWithTexture.jpg",
-  "out": "img/nyx/probe/nyx-lip-lingerie-stain.jpg",
-  "kind": "raw"
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-barely-there.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-barely-there.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw730f7817/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS04-STEAMY-SPICE-0800897275013-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-steamy-spice.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-steamy-spice.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw3ea480f4/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS05-LIP-LOCK-0800897275037-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-lip-lock.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-lip-lock.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwe0b909ab/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS06-UP-TO-NO-GOOD-0800897275044-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-up-to-no-good.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-up-to-no-good.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw6afe941a/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS07-CUFF-ME-0800897275051-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-cuff-me.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-cuff-me.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw20a0cb6c/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS08-AFTER-HOURS-0800897275068-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-after-hours.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-after-hours.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw54031ee8/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS09-SEND-NUDES-0800897275075-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-send-nudes.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-send-nudes.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwb6bd9f89/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS10-UP-ALL-NIGHT-0800897275082-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-up-all-night.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-up-all-night.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwabb6b99c/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS11-HOT-N-HEAVY-0800897275099-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-hot-n-heavy.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-hot-n-heavy.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw1ccf5005/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-PMU-Makeup-Lip-Lip-Liner-LIP-LINGERIE-LIP-LINER-STAIN-LLLS12-WILD-SIDE-0800897275105-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-wild-side.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-wild-side.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw013a454e/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-LIP-LINGERIE-LIP-LINER-STAIN-LLLS13-TIED-UP-0800897291815-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-tied-up.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-tied-up.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwd51ec333/images/pdp/NYX_1162/NYX_1162-UPDATED/NYX-LIP-LINGERIE-LIP-LINER-STAIN-LLLS14-FLIRT-ALERT-0800897291822-PackshotWithTexture.jpg",
+  "out": "img/nyx/sw/nyx-lip-lingerie-stain-flirt-alert.jpg",
+  "photo": "img/nyx/sh/nyx-lip-lingerie-stain-flirt-alert.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwc0e8c23e/PDPV2-Assets/NYX_937/NYX-PMU-Makeup-Eyes-Eyebrow-THE-BROW-GLUE-INSTANT-BROW-STYLER-TBG01-CLEAR-Extra-25yrs.jpg",
+  "out": "img/nyx/sw/nyx-brow-glue-clear.jpg",
+  "photo": "img/nyx/sh/nyx-brow-glue-clear.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwdda1a35d/PDPV2-Assets/NYX_937/NYX-PMU-Makeup-Eyes-Eyebrow-THE-BROW-GLUE-INSTANT-BROW-STYLER-TBG02-TAUPE-0800897233792-Extra-25yrs.jpg",
+  "out": "img/nyx/sw/nyx-brow-glue-taupe.jpg",
+  "photo": "img/nyx/sh/nyx-brow-glue-taupe.jpg",
+  "kind": "shade"
  },
  {
   "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwcfa6b66b/PDPV2-Assets/NYX_937/NYX-PMU-Makeup-Eyes-Eyebrow-THE-BROW-GLUE-INSTANT-BROW-STYLER-TBG03-MEDIUM-BROWN-0800897233808-Extra-25yrs.jpg",
-  "out": "img/nyx/probe/nyx-brow-glue.jpg",
-  "kind": "raw"
+  "out": "img/nyx/sw/nyx-brow-glue-medium-brown.jpg",
+  "photo": "img/nyx/sh/nyx-brow-glue-medium-brown.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwcdbd1b36/PDPV2-Assets/NYX_937/NYX-PMU-Makeup-Eyes-Eyebrow-THE-BROW-GLUE-INSTANT-BROW-STYLER-TBG04-DARK-BROWN-0800897233815-Extra-25yrs.jpg",
+  "out": "img/nyx/sw/nyx-brow-glue-dark-brown.jpg",
+  "photo": "img/nyx/sh/nyx-brow-glue-dark-brown.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwa9753fd4/PDPV2-Assets/NYX_937/NYX-PMU-Makeup-Eyes-Eyebrow-THE-BROW-GLUE-INSTANT-BROW-STYLER-TBG05-BLACK-0800897233846-Extra-25yrs.jpg",
+  "out": "img/nyx/sw/nyx-brow-glue-black.jpg",
+  "photo": "img/nyx/sh/nyx-brow-glue-black.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwac6577c6/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS01-FAIR-0800897129767-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-fair.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-fair.jpg",
+  "kind": "shade"
  },
  {
   "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw8fa9fad6/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS02-LIGHT-0800897129774-OpenSwatch.png",
-  "out": "img/nyx/probe/nyx-bare-with-me-concealer.jpg",
-  "kind": "raw"
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-light.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-light.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw25a38e4e/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS2pnt5-MEDIUM-VANILLA-0800897242312-PackshotWTexture.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-medium-vanilla.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium-vanilla.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw73158a42/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS03-VANILLA-0800897129781-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-vanilla.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-vanilla.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwe5c60e02/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS04-BEIGE-0800897129798-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-beige.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-beige.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw9b7a618e/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS05-GOLDEN-0800897129804-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-golden.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-golden.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw6c693239/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS5pnt5-MEDIUM-GOLDEN-0800897242329-PackshotWTexture.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-medium-golden.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium-golden.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwceeed394/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS5pnt7-LIGHT-TAN-0800897242336-PackshotWTexture.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-light-tan.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-light-tan.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwe18d4fdf/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS06-TAN-0800897129811-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-tan.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-tan.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw211655bd/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS07-MEDIUM-0800897129828-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-medium.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-medium.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw6292abd7/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS08-SAND-0800897129835-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-sand.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-sand.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw21e2febc/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS8pnt5-CARAMEL-0800897242343-PackshotWTexture.jpg",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-caramel.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-caramel.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwd2b96e69/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS09-DEEP-GOLDEN-0800897129842-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-deep-golden.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-deep-golden.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw0bfd3eff/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS10-CAMEL-0800897129859-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-camel.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-camel.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw2b5aed69/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS11-MOCHA-0800897129866-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-mocha.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-mocha.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dw9eb079a1/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS12-RICH-0800897129873-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-rich.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-rich.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwf9596c72/images/pdp/NYX_1014/NYX-PMU-Makeup-Face-Concealer-BARE-WITH-ME-CONCEALER-SERUM-BWMCCS13-DEEP-0800897135195-OpenSwatch.png",
+  "out": "img/nyx/sw/nyx-bare-with-me-concealer-deep.jpg",
+  "photo": "img/nyx/sh/nyx-bare-with-me-concealer-deep.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://global.nyxcosmetics.com/dw/image/v2/BDCR_PRD/on/demandware.static/-/Sites-nyx-master-catalog/default/dwe2298532/ProductImages/2023/best-sellers-transparent/NYX-PMU-Makeup-Eye-Eyeliner-EPIC-INK-LINER-EIL01-Black-0800897085605-Extra.png",
+  "out": "img/nyx/sw/nyx-epic-ink-black.jpg",
+  "photo": "img/nyx/sh/nyx-epic-ink-black.jpg",
+  "kind": "shade"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0143F_sw.png_s3.lmb_r3pntg/b919d03b31ed71c5afbe2b67cd9904a6/NYXC0143F_sw.png?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-cswsfoundation-porcelain.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0112F_sw.png_s3.lmb_qbq13j/6b4b120e2a2a6a2fd372e642f44b6496/NYXC0112F_sw.png?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-cswsfoundation-buff.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0135F_sw.png_s3.lmb_q7w1p/55c1f7a17973c520ec8720088933ff77/NYXC0135F_sw.png?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-cswsfoundation-medium-olive.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0114F_sw.png_s3.lmb_l6q1do/3a0246457a9dcc9dc1174f7f1c8fcd21/NYXC0114F_sw.png?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-cswsfoundation-cappuccino.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0116F_sw.png_s3.lmb_qw00ia/5846f4c6be67ed2a3e0d1c3ad9949f21/NYXC0116F_sw.png?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-cswsfoundation-chestnut.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0124F_sw.png_s3.lmb_xzdbpp/d352f922c6ba894762f3ad5abd5b2f47/NYXC0124F_sw.png?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-cswsfoundation-deep-sable.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0122F_sw.png_s3.lmb_3qa3bo/c7dde2765c27cdffa8ad96cc7fba1b98/NYXC0122F_sw.png?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-cswsfoundation-deep-espresso.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0121F_sw.png_s3.lmb_xc0v8/fe594472f498ba12788e2d43bb98a169/NYXC0121F_sw.png?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-cswsfoundation-deep-ebony.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0643F_sw.jpg_s3.lmb_dx1n7o/e529a6a94363b55554f9bc7e15e6c20f/NYXC0643F_sw.jpg?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-csws-powder-brightening-translucent.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0636F_sw.jpg_s3.lmb_pu5d3c/9cac8ff0c6086e6987a4acaa956d448e/NYXC0636F_sw.jpg?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-csws-powder-fair.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0642F_sw.jpg_s3.lmb_blnrnn/b6c693135c71eb99707ba24e11192a5c/NYXC0642F_sw.jpg?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-csws-powder-light.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0633F_sw.jpg_s3.lmb_iep6na/9126f38a043d8c50986900d53ca53602/NYXC0633F_sw.jpg?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-csws-powder-light-medium.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0644F_sw.jpg_s3.lmb_7nxzlh/90a53dba13d10b97069a86f4bad7251d/NYXC0644F_sw.jpg?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-csws-powder-medium.jpg",
+  "kind": "swatch"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0637F_sw.jpg_s3.lmb_ivfuzj/4ad2506fc7a66f1c58e759a28a5180b3/NYXC0637F_sw.jpg?w=200&h=200&q=80&fit=fill",
+  "out": "img/nyx/sw/nyx-csws-powder-rich.jpg",
+  "kind": "swatch"
  }
 ]
