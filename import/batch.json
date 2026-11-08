@@ -1,5 +1,5 @@
 {
- "id": "2026-11-08-b",
+ "id": "2026-11-08-c",
  "title": "منتجات Black Friday والـ dm الجديدة",
  "categories": [
   {
@@ -61,6 +61,30 @@
    "name": "تبريد وراحة",
    "parentId": "womenhealth",
    "order": 3
+  },
+  {
+   "id": "women-vit",
+   "name": "فيتامينات للستات",
+   "parentId": "vitamins",
+   "order": 1
+  },
+  {
+   "id": "hsn",
+   "name": "شعر وبشرة وأظافر",
+   "parentId": "vitamins",
+   "order": 2
+  },
+  {
+   "id": "omega",
+   "name": "أوميجا 3 وفيتامينات شاملة",
+   "parentId": "vitamins",
+   "order": 3
+  },
+  {
+   "id": "pregnancy",
+   "name": "حمل ورضاعة",
+   "parentId": "vitamins",
+   "order": 4
   }
  ],
  "products": [
@@ -717,6 +741,438 @@
     "gbp": 4.99,
     "rate": 74.2,
     "url": "https://www.boots.com/10340220"
+   }
+  },
+  {
+   "id": "vb-wellwoman-90",
+   "brand": "Vitabiotics",
+   "name": "Wellwoman Original – 90 Capsules",
+   "desc": "فيتامينات شاملة للستات، فيها فيتامين B6 وB12 والحديد والبيوتين والزنك والسيلينيوم.\nبتدعم الطاقة والمناعة والبشرة والشعر والأظافر.\nعلبة: 90 كبسولة (3 شهور).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 1635,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10028127?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:40:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 18.4,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10028127"
+   }
+  },
+  {
+   "id": "vb-wellwoman-plus",
+   "brand": "Vitabiotics",
+   "name": "Wellwoman Plus Omega 3.6.9 – 56 Tablets",
+   "desc": "تركيبة Wellwoman الأصلية مع كبسولة أوميجا 3 و6 و9 (زيت سمك، زيت زهرة الربيع، زيت البوراج، زيت زيتون).\nعلبة: 28 قرص + 28 كبسولة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 1550,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10114330?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:39:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 17.3,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10114330"
+   }
+  },
+  {
+   "id": "vb-wellwoman-max",
+   "brand": "Vitabiotics",
+   "name": "Wellwoman Max – 84 Tablets",
+   "desc": "أقوى تركيبة في Wellwoman: 3 في 1، فيتامينات ومعادن + أوميجا 3-6-9 + كالسيوم وفيتامين D.\nعلبة: 84 (28 يوم).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 1915,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10188747?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:38:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 22.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10188747"
+   }
+  },
+  {
+   "id": "vb-wellwoman-70",
+   "brand": "Vitabiotics",
+   "name": "Wellwoman 70+ – 30 Tablets",
+   "desc": "فيتامينات مخصوص للستات فوق 70 سنة، فيها 26 عنصر منها فيتامين D3 والحديد والزنك واليود.\nعلبة: 30 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 980,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10131420?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:37:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 10.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10131420"
+   }
+  },
+  {
+   "id": "vb-perfectil-90",
+   "brand": "Vitabiotics",
+   "name": "Perfectil Original Triple Active – 90 Tablets",
+   "desc": "فيتامينات للبشرة والشعر والأظافر: بيوتين للبشرة، زنك للشعر، سيلينيوم للأظافر.\nمناسب للنباتيين، من غير جلوتين.\nعلبة: 90 قرص (3 شهور).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1675,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10028125?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:36:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 18.9,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10028125"
+   }
+  },
+  {
+   "id": "vb-perfectil-hair",
+   "brand": "Vitabiotics",
+   "name": "Perfectil Plus Hair – 60 Tablets",
+   "desc": "كل مميزات Perfectil مع دعم زيادة للشعر (بيوتين وسيلينيوم أكتر، ونحاس للون الشعر).\nعلبة: 60 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1760,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10181221?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:35:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 20.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10181221"
+   }
+  },
+  {
+   "id": "vb-perfectil-nails",
+   "brand": "Vitabiotics",
+   "name": "Perfectil Plus Nails – 60 Tablets",
+   "desc": "كل مميزات Perfectil مع سيلينيوم زيادة للأظافر، وفيه مستخلص بذور العنب وذيل الحصان وMSM.\nعلبة: 60 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1535,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10120866?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:34:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 17.1,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10120866"
+   }
+  },
+  {
+   "id": "nutriburst-hsn",
+   "brand": "Nutriburst",
+   "name": "Hair, Skin & Nails Gummies Strawberry – 60",
+   "desc": "جامي بطعم الفراولة فيها 11 فيتامين ومعدن، أهمها البيوتين والزنك وفيتامين C.\nعلبة: 60 حباية.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1760,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10351426?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:33:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 19.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10351426"
+   }
+  },
+  {
+   "id": "bettervits-hsn",
+   "brand": "Bettervits",
+   "name": "Hair, Skin & Nails Gummies – 60",
+   "desc": "جامي للشعر والبشرة والأظافر فيها بيوتين وسيلينيوم وزنك وفيتامينات A وC وD3 وE وB6.\nعلبة: 60 حباية.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 2540,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10371951?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:32:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 30.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10371951"
+   }
+  },
+  {
+   "id": "newnordic-hsn",
+   "brand": "New Nordic",
+   "name": "Hair, Skin & Nail Gummies – 60",
+   "desc": "جامي بطعم الفراولة والتوت، فيها بيوتين ومستخلص الدخن والزنك.\nعلبة: 60 حباية.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1565,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10380032?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:31:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 17.49,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10380032"
+   }
+  },
+  {
+   "id": "vitabright-collagen",
+   "brand": "VitaBright",
+   "name": "Marine Collagen Skin, Hair & Nails – 120 Capsules",
+   "desc": "كولاجين بحري متحلل (Type 1) مع هيالورونيك أسيد وبيوتين وفيتامين C وE وزنك ونحاس.\nعلبة: 120 كبسولة (شهر لشهرين).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1760,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10371852?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 19.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10371852"
+   }
+  },
+  {
+   "id": "ss-woman",
+   "brand": "Seven Seas",
+   "name": "Omega-3 & Multivitamins Woman – 30-Day Duo Pack",
+   "desc": "باك 2 في 1: قرص فيه 22 فيتامين ومعدن (بيوتين، حديد، D، C، B12) + كبسولة أوميجا 3 (300 مجم).\nيكفي 30 يوم.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 1840,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10320852?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:29:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 21.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10320852"
+   }
+  },
+  {
+   "id": "ss-man",
+   "brand": "Seven Seas",
+   "name": "Omega-3 & Multivitamins Man – 30-Day Duo Pack",
+   "desc": "باك 2 في 1 للرجالة: قرص فيه 22 فيتامين ومعدن (B12، D، ماغنسيوم، زنك) + كبسولة أوميجا 3 (300 مجم).\nيكفي 30 يوم.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 1840,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10320850?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:28:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 21.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10320850"
+   }
+  },
+  {
+   "id": "ss-gut",
+   "brand": "Seven Seas",
+   "name": "Omega-3 & Gut Friendly Bacteria – 30 Capsules",
+   "desc": "أوميجا 3 مع فيتامين D وE وبكتيريا نافعة للهضم (Bacillus Subtilis DE111).\nعلبة: 30 كبسولة (شهر).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 1605,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10372300?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:27:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 18.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10372300"
+   }
+  },
+  {
+   "id": "vb-pregnacare-90",
+   "brand": "Vitabiotics",
+   "name": "Pregnacare Original – 90 Tablets",
+   "desc": "فيتامينات للحمل فيها 19 عنصر، منها 400 ميكروجرام حمض فوليك و10 ميكروجرام فيتامين D.\nمن غير فيتامين A. علبة: 90 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "pregnancy",
+   "price": 1230,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10020683?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:26:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 13.2,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10020683"
+   }
+  },
+  {
+   "id": "vb-pregnacare-30",
+   "brand": "Vitabiotics",
+   "name": "Pregnacare Original – 30 Tablets",
+   "desc": "نفس تركيبة Pregnacare Original بحجم شهر.\nعلبة: 30 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "pregnancy",
+   "price": 540,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10000790?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:25:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.35,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10000790"
+   }
+  },
+  {
+   "id": "vb-pregnacare-liquid",
+   "brand": "Vitabiotics",
+   "name": "Pregnacare Liquid – 200ml",
+   "desc": "Pregnacare شراب بدل الأقراص، بطعم البرتقال، فيه حمض فوليك وفيتامين D وحديد.\nالحجم: 200 مل.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "pregnancy",
+   "price": 945,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10201855?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:24:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 9.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10201855"
+   }
+  },
+  {
+   "id": "vb-conception-hh",
+   "brand": "Vitabiotics",
+   "name": "Pregnacare Him & Her Conception – 60 Tablets",
+   "desc": "باك للزوجين اللي بيخططوا للحمل: 30 قرص للست (حمض فوليك) + 30 قرص للراجل (زنك وسيلينيوم).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "pregnancy",
+   "price": 1895,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10099416?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T14:23:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 21.75,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10099416"
    }
   }
  ],
