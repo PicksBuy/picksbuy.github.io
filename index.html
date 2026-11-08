@@ -120,6 +120,14 @@ body:not(.admin) .cartbtn.has{display:flex}
 .vch{border:1.5px solid var(--line);border-radius:10px;padding:6px 14px;font-weight:700;direction:ltr;background:#fff}
 .vch.on{border-color:var(--ink);background:var(--ink);color:#fff}
 .vch:disabled{color:#bbb;text-decoration:line-through}
+.vch.sw{display:inline-flex;align-items:center;gap:7px;padding:4px 12px 4px 5px;border-radius:999px}
+.vch.sw img{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid rgba(0,0,0,.08);padding:0!important;background:#eee}
+.vch.sw.on img{border-color:#fff}
+.swbig{display:none;align-items:center;gap:12px;margin:8px 0 2px;padding:8px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.swbig.on{display:flex}
+.swbig img{width:84px;height:84px;border-radius:12px;object-fit:cover;padding:0!important}
+.swbig b{direction:ltr;font-size:15px}
+.szl span img{width:18px;height:18px;border-radius:50%;object-fit:cover;vertical-align:-4px;margin-inline-end:5px;padding:0!important}
 .qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:12px;flex:none}
 .qty button{width:40px;height:44px;font-size:20px;font-weight:700}
 .qty b{min-width:26px;text-align:center}
@@ -726,8 +734,8 @@ function openDetail(id){
   const gal = ims.length ? `<div class="galw">${!S.admin?`<div class="galbtns"><button id="dShare" aria-label="مشاركة">↗</button><button id="dFav" class="${isFav(p.id)?'on':''}" aria-label="المفضلة">${isFav(p.id)?'♥':'♡'}</button></div>`:''}<div class="gal" id="gal">${ims.map(i=>`<img src="${img(i)}" alt="">`).join('')}</div>${ims.length>1?`<div class="dots" id="dots">${ims.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`:''}</div>` : '';
   const vs=variants(p);
   const sizes=!vs ? '' : S.admin
-    ? `<div class="lbl">المتاح</div><div class="szl">${vs.map(s=>`<span class="${num(s.q)>0?'':'no'}">${esc(s.s)}<small>(${num(s.q)||0})</small></span>`).join('')}</div>`
-    : `<div class="lbl">اختار</div><div class="szl" id="vsel">${vs.map((s,i)=>`<button class="vch" data-vi="${i}" ${num(s.q)>0?'':'disabled'}>${esc(s.s)}</button>`).join('')}</div>`;
+    ? `<div class="lbl">المتاح</div><div class="szl">${vs.map(s=>`<span class="${num(s.q)>0?'':'no'}">${s.img?`<img src="${img(s.img)}" alt="">`:''}${esc(s.s)}<small>(${num(s.q)||0})</small></span>`).join('')}</div>`
+    : `<div class="lbl">اختار${vs.some(s=>s.img)?' الدرجة':''}</div><div class="szl" id="vsel">${vs.map((s,i)=>`<button class="vch${s.img?' sw':''}" data-vi="${i}" ${num(s.q)>0?'':'disabled'}>${s.img?`<img src="${img(s.img)}" alt="" loading="lazy">`:''}${esc(s.s)}</button>`).join('')}</div><div class="swbig" id="swbig"><img alt=""><b></b></div>`;
   const foot = S.admin
     ? `<button class="btn" id="cpy" style="flex:1.2">📋 بوست</button><button class="btn" id="sty">📸 ستوري</button><button class="btn p" id="ed">✏️ تعديل</button>`
     : (st>0 ? `<div class="qty"><button data-q="1">+</button><b id="qn">1</b><button data-q="-1">−</button></div><button class="btn r" id="addc">🛒 أضف للسلة</button>`
@@ -758,7 +766,9 @@ function openDetail(id){
   const gl=ov.querySelector('#gal'); if(gl) gl.addEventListener('click',e=>{ const im=e.target.closest('img'); if(im) zoomImg(im.src); });
   let sel = vs ? (vs.filter(s=>num(s.q)>0).length===1 ? vs.find(s=>num(s.q)>0).s : '') : '', qn=1;
   const vsel=ov.querySelector('#vsel');
-  const paint=()=>{ if(vsel) vsel.querySelectorAll('.vch').forEach(b=>b.classList.toggle('on',vs[+b.dataset.vi].s===sel)); const q=ov.querySelector('#qn'); if(q) q.textContent=qn; };
+  const swb=ov.querySelector('#swbig');
+  const paint=()=>{ if(vsel) vsel.querySelectorAll('.vch').forEach(b=>b.classList.toggle('on',vs[+b.dataset.vi].s===sel));
+    if(swb){ const x=vs.find(v=>v.s===sel); if(x&&x.img){ swb.querySelector('img').src=img(x.img); swb.querySelector('b').textContent=x.s; swb.classList.add('on'); } else swb.classList.remove('on'); } const q=ov.querySelector('#qn'); if(q) q.textContent=qn; };
   if(vsel) vsel.onclick=e=>{ const b=e.target.closest('[data-vi]'); if(!b||b.disabled) return; sel=vs[+b.dataset.vi].s; qn=1; paint(); };
   ov.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{
     const cur=S.products.find(x=>x.id===p.id)||p; const room=(vs&&!sel)?99:avail(cur,sel)-inCart(p.id,sel);
@@ -943,7 +953,7 @@ function openForm(p){
   const F = {
     images:[...(p?.images||[])].map(id=>({id})),
     hasSizes: p ? !!(p.sizes&&p.sizes.length) : false,
-    sizes: (p?.sizes||[]).map(s=>({s:s.s,q:s.q})),
+    sizes: (p?.sizes||[]).map(s=>({s:s.s,q:s.q,...(s.img?{img:s.img}:{})})),
     fresh:[] // uploaded during this form
   };
   const defCountry = p?.countryId || (S.country!=='all'?S.country:'');
@@ -1043,7 +1053,7 @@ function openForm(p){
       createdAt:p?.createdAt||new Date().toISOString()
     };
     if(F.hasSizes){
-      data.sizes=F.sizes.filter(s=>String(s.s).trim()).map(s=>({s:String(s.s).trim(),q:Math.max(0,Math.round(num(s.q)||0))}));
+      data.sizes=F.sizes.filter(s=>String(s.s).trim()).map(s=>({s:String(s.s).trim(),q:Math.max(0,Math.round(num(s.q)||0)),...(s.img?{img:s.img}:{})}));
       data.qty=null;
     } else { data.sizes=[]; data.qty=Math.max(0,Math.round(num(q('#fQty').value)||0)); }
     const btn=q('#save'); btn.disabled=true; btn.textContent='بيحفظ…';
