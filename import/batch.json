@@ -1,5 +1,5 @@
 {
- "id": "2026-11-08-c",
+ "id": "2026-11-08-d",
  "title": "منتجات Black Friday والـ dm الجديدة",
  "categories": [
   {
@@ -85,6 +85,24 @@
    "name": "حمل ورضاعة",
    "parentId": "vitamins",
    "order": 4
+  },
+  {
+   "id": "foundation",
+   "name": "فاونديشن وكونسيلر",
+   "parentId": "makeup",
+   "order": 5
+  },
+  {
+   "id": "setting",
+   "name": "برايمر وسبراي تثبيت",
+   "parentId": "makeup",
+   "order": 6
+  },
+  {
+   "id": "brows",
+   "name": "حواجب",
+   "parentId": "makeup",
+   "order": 7
   }
  ],
  "products": [
@@ -1173,6 +1191,557 @@
     "gbp": 21.75,
     "rate": 74.2,
     "url": "https://www.boots.com/10099416"
+   }
+  },
+  {
+   "id": "nyx-butter-gloss",
+   "brand": "NYX Professional Makeup",
+   "name": "Butter Gloss",
+   "desc": "الجلوس الأيقوني من NYX: لمعة ناعمة بقوام كريمي مش لازق، تلبسيه لوحده أو فوق الروج.\n\nالدرجات المتاحة: اختاري من الاختيارات.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "lips",
+   "price": 710,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-butter-gloss.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "Sugar High",
+     "q": 5
+    },
+    {
+     "s": "Angel Food Cake",
+     "q": 5
+    },
+    {
+     "s": "Tiramisu",
+     "q": 5
+    },
+    {
+     "s": "Crème Brulee",
+     "q": 5
+    },
+    {
+     "s": "Madeleine",
+     "q": 5
+    },
+    {
+     "s": "Brownie Drip",
+     "q": 5
+    },
+    {
+     "s": "Clear",
+     "q": 5
+    }
+   ],
+   "qty": 35,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 7.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/levres/gloss-baume-a-levres/butter-gloss/NYX_089.html"
+   }
+  },
+  {
+   "id": "nyx-fat-oil",
+   "brand": "NYX Professional Makeup",
+   "name": "Fat Oil Lip Drip",
+   "desc": "زيت شفايف لامع بيرطّب لحد 12 ساعة، فيه سكوالين وزيوت توت، مش لازق وأبليكيتور عريض.\n\nالدرجات المتاحة: اختاري من الاختيارات.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "lips",
+   "price": 770,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-fat-oil.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "My Main",
+     "q": 5
+    },
+    {
+     "s": "Missed Call",
+     "q": 5
+    },
+    {
+     "s": "Status Update",
+     "q": 5
+    },
+    {
+     "s": "Follow Back",
+     "q": 5
+    },
+    {
+     "s": "That's Chic",
+     "q": 5
+    },
+    {
+     "s": "Coconut Cutie",
+     "q": 5
+    },
+    {
+     "s": "Caramelt Mami",
+     "q": 5
+    }
+   ],
+   "qty": 35,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:01:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 8.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/levres/gloss-baume-a-levres/huile-a-levres-fat-oil/NYX_1054.html"
+   }
+  },
+  {
+   "id": "nyx-slim-lip-liner",
+   "brand": "NYX Professional Makeup",
+   "name": "Slim Lip Liner",
+   "desc": "قلم تحديد الشفايف الأشهر من NYX: كريمي وثابت وألوانه بتظبط مع أي جلوس أو روج.\n\nالدرجات المتاحة: اختاري من الاختيارات.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "lips",
+   "price": 520,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-slim-lip-liner.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "Espresso",
+     "q": 5
+    },
+    {
+     "s": "Nude Truffle",
+     "q": 5
+    },
+    {
+     "s": "Cocoa",
+     "q": 5
+    },
+    {
+     "s": "Mauve",
+     "q": 5
+    },
+    {
+     "s": "Natural",
+     "q": 5
+    },
+    {
+     "s": "Peekaboo Neutral",
+     "q": 5
+    }
+   ],
+   "qty": 30,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:02:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 4.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/best-sellers/best-sellers-levres"
+   }
+  },
+  {
+   "id": "nyx-duck-plump-liner",
+   "brand": "NYX Professional Makeup",
+   "name": "Duck Plump Liner",
+   "desc": "قلم شفايف بيحدد وبينفخ الشفايف في نفس الوقت، بيعمل إحساس تنميل خفيف لدقايق.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "lips",
+   "price": 835,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-duck-plump-liner.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:03:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 9.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/levres/crayon-a-levres/crayon-a-levres-duck-plump-liner/NYX_1132.html"
+   }
+  },
+  {
+   "id": "nyx-lip-lingerie-stain",
+   "brand": "NYX Professional Makeup",
+   "name": "Lip Lingerie Stain",
+   "desc": "قلم تينت للشفايف بيدّي لون طبيعي ثابت طول اليوم ومش بيطبع.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "lips",
+   "price": 1000,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-lip-lingerie-stain.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:04:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 12.5,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/best-sellers"
+   }
+  },
+  {
+   "id": "nyx-lip-iv",
+   "brand": "NYX Professional Makeup",
+   "name": "Lip IV Hydrating Gloss Stain",
+   "desc": "تينت + جلوس بلمعة عالية وبيرطّب، لون ثابت ولمعة حلوة.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "lips",
+   "price": 1025,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-lip-iv.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:05:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 12.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/levres/gloss-baume-a-levres"
+   }
+  },
+  {
+   "id": "nyx-buttermelt-blush",
+   "brand": "NYX Professional Makeup",
+   "name": "Buttermelt Blush",
+   "desc": "بلاشر بودرة بيدوب على الخد زي الكريم، فيه زبدة مانجو ولوز وشيا، ثابت لحد 12 ساعة.\n\nالدرجات المتاحة: اختاري من الاختيارات.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "cheeks",
+   "price": 835,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-buttermelt-blush.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "My Butta Half",
+     "q": 5
+    },
+    {
+     "s": "Butta Together",
+     "q": 5
+    },
+    {
+     "s": "U Know Butta",
+     "q": 5
+    },
+    {
+     "s": "Feeling Butta",
+     "q": 5
+    },
+    {
+     "s": "Butta Than Coral",
+     "q": 5
+    },
+    {
+     "s": "Butta Cherry Pop",
+     "q": 5
+    },
+    {
+     "s": "All The Butta",
+     "q": 5
+    }
+   ],
+   "qty": 35,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:06:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 9.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/teint/blush/buttermelt-blush/NYX_1104.html"
+   }
+  },
+  {
+   "id": "nyx-buttermelt-bronzer",
+   "brand": "NYX Professional Makeup",
+   "name": "Buttermelt Bronzer",
+   "desc": "برونزر بودرة بقوام زبدي، بيدّي سمرة طبيعية وبيتدمج بسهولة، 8 درجات.\n\nالدرجات المتاحة: اختاري من الاختيارات.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "cheeks",
+   "price": 900,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-buttermelt-bronzer.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "Butta Cup",
+     "q": 5
+    },
+    {
+     "s": "Butta Ballin",
+     "q": 5
+    },
+    {
+     "s": "All Buttad Up",
+     "q": 5
+    },
+    {
+     "s": "Deserve Butta",
+     "q": 5
+    },
+    {
+     "s": "Butta'd Down",
+     "q": 5
+    },
+    {
+     "s": "Butta Match",
+     "q": 5
+    }
+   ],
+   "qty": 30,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:07:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 10.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/promotions/buttermelt-bronzer/800897254698.html"
+   }
+  },
+  {
+   "id": "nyx-epic-ink",
+   "brand": "NYX Professional Makeup",
+   "name": "Epic Ink Liner",
+   "desc": "آيلاينر قلم برأس فرشاة دقيقة، أسود غامق وثابت ومقاوم للمية.\n\nالدرجات المتاحة: اختاري من الاختيارات.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "eyes",
+   "price": 835,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-epic-ink.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "Black",
+     "q": 5
+    },
+    {
+     "s": "Dark Chocolate",
+     "q": 5
+    }
+   ],
+   "qty": 10,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:08:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 9.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/yeux/eyeliner"
+   }
+  },
+  {
+   "id": "nyx-brow-glue",
+   "brand": "NYX Professional Makeup",
+   "name": "The Brow Glue",
+   "desc": "جل تثبيت الحواجب الأشهر: بيرفع ويثبّت الشعر طول اليوم من غير ما يبقى ناشف.\n\nالدرجات المتاحة: اختاري من الاختيارات.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "brows",
+   "price": 770,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-brow-glue.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "Transparent",
+     "q": 5
+    },
+    {
+     "s": "Taupe",
+     "q": 5
+    },
+    {
+     "s": "Medium Brown",
+     "q": 5
+    },
+    {
+     "s": "Dark Brown",
+     "q": 5
+    },
+    {
+     "s": "Black",
+     "q": 5
+    }
+   ],
+   "qty": 25,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:09:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 8.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/la-marque/nos-points-de-vente/info-boutiques"
+   }
+  },
+  {
+   "id": "nyx-face-glue-spray",
+   "brand": "NYX Professional Makeup",
+   "name": "The Face Glue Setting Spray 60ml",
+   "desc": "سبراي تثبيت المكياج لحد 24 ساعة، بيخليه ضد المية ومش بيطبع، وبيرطّب البشرة.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "setting",
+   "price": 835,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-face-glue-spray.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:10:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 9.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/teint/spray-fixateur-poudre-libre/spray-fixateur-the-face-glue/NYX_1129.html"
+   }
+  },
+  {
+   "id": "nyx-face-glue-primer",
+   "brand": "NYX Professional Makeup",
+   "name": "The Face Glue Primer 35ml",
+   "desc": "برايمر بيرطّب البشرة وبيثبّت المكياج عليها، أحلى مع سبراي The Face Glue.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "setting",
+   "price": 835,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-face-glue-primer.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:11:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 9.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/teint/spray-fixateur-poudre-libre/spray-fixateur-the-face-glue/NYX_1129.html"
+   }
+  },
+  {
+   "id": "nyx-cswsfoundation",
+   "brand": "NYX Professional Makeup",
+   "name": "Can't Stop Won't Stop Foundation",
+   "desc": "الفاونديشن الأشهر من NYX: تغطية عالية ومات لحد 24 ساعة، ضد المية ومش بيسد المسام، 45 درجة.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "foundation",
+   "price": 1220,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-cswsfoundation.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:12:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 15.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/promotions/fond-de-teint-liquide---can-t-stop-won-t-stop/800897157333.html"
+   }
+  },
+  {
+   "id": "nyx-csws-concealer",
+   "brand": "NYX Professional Makeup",
+   "name": "Can't Stop Won't Stop Concealer",
+   "desc": "كونسيلر تغطية عالية لحد 24 ساعة، للهالات والعيوب والكونتور.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "foundation",
+   "price": 835,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-csws-concealer.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:13:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 9.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/best-sellers/anti-cernes-correcteur---can-t-stop-won-t-stop-concealer/NYX_728.html"
+   }
+  },
+  {
+   "id": "nyx-csws-powder",
+   "brand": "NYX Professional Makeup",
+   "name": "Can't Stop Won't Stop Setting Powder",
+   "desc": "بودرة مضغوطة مات بتثبّت المكياج وبتشيل اللمعة طول اليوم.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "powder",
+   "price": 835,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-csws-powder.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:14:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 9.95,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/best-sellers/anti-cernes-correcteur---can-t-stop-won-t-stop-concealer/NYX_728.html"
+   }
+  },
+  {
+   "id": "nyx-bare-with-me-concealer",
+   "brand": "NYX Professional Makeup",
+   "name": "Bare With Me Concealer Serum",
+   "desc": "كونسيلر سيروم خفيف بيغطي ويرطّب لحد 12 ساعة، فينيش مات طبيعي، 17 درجة.\n\nاكتبي درجة اللون اللي عايزاها في ملاحظات الطلب.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "foundation",
+   "price": 1060,
+   "oldPrice": null,
+   "images": [
+    "img/nyx-bare-with-me-concealer.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-08T18:15:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 13.5,
+    "rate": 60.63,
+    "url": "https://www.nyxcosmetics.fr/teint/anti-cernes-correcteur/serum-correcteur-bare-with-me/NYX_1014.html"
    }
   }
  ],
