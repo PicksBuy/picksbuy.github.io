@@ -31,10 +31,10 @@ img{display:block;max-width:100%}
 header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .hd{display:flex;align-items:center;gap:10px;padding:10px 0}
 .mark{width:46px;height:46px;border-radius:50%;object-fit:cover;border:1px solid var(--line);flex:none}
-.brand{flex:1;min-width:0;line-height:1.1}
-.brand b{font-family:Pacifico,cursive;font-weight:400;font-size:22px;direction:ltr;display:inline-block}
+.brand{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:0}
+.brand b{font-family:Pacifico,cursive;font-weight:400;font-size:22px;line-height:1.85;direction:ltr;align-self:flex-start;padding:0 2px;margin:-9px 0 0}
 .brand b span{color:var(--red)}
-.brand small{display:block;color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand small{display:block;color:var(--muted);font-size:12.5px;line-height:1.3;margin:2px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .mode{display:none;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:var(--soft);font-weight:700;font-size:13px;white-space:nowrap}
 .mode.on{background:var(--ink);color:#fff}
 .search{display:flex;gap:8px;padding:0 0 10px}
