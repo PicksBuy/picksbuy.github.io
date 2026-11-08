@@ -209,6 +209,7 @@ body:not(.admin) .askfab.on{display:grid}
 .totop{position:fixed;bottom:76px;inset-inline-end:16px;z-index:24;width:42px;height:42px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);font-size:18px;font-weight:900;opacity:0;pointer-events:none;transition:opacity .2s}
 .totop.on{opacity:1;pointer-events:auto}
 .xsec{margin:6px 0 26px}.xsec h2{font-size:17px;margin:0 0 10px}
+.howto{display:block;width:100%;max-width:360px;margin:0 auto 14px;border-radius:18px;box-shadow:var(--shadow);background:#000;aspect-ratio:9/16}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .step{background:#fff;border-radius:16px;padding:14px 8px;text-align:center;box-shadow:var(--shadow)}
 .step .n{width:34px;height:34px;border-radius:50%;margin:0 auto 6px;display:grid;place-items:center;background:var(--soft);font-size:18px}
@@ -539,7 +540,9 @@ function renderExtras(){
   const revs=S.settings.reviews||[];
   box.innerHTML = `
     ${revs.length?`<div class="xsec"><h2>💬 آراء العملاء</h2><div class="revs">${revs.map(r=>`<img src="${img(r)}" loading="lazy" alt="رأي عميلة">`).join('')}</div></div>`:''}
-    <div class="xsec"><h2>إزاي تطلبي؟</h2><div class="steps">
+    <div class="xsec"><h2>إزاي تطلبي؟</h2>
+      <video class="howto" src="img/howto.mp4" poster="img/howto.jpg" controls playsinline preload="none"></video>
+      <div class="steps">
       <div class="step"><div class="n">🛍️</div><b>اختاري</b><span>ضيفي اللي عاجبك للسلة</span></div>
       <div class="step"><div class="n">📝</div><b>أكدي</b><span>اكتبي بياناتك والمحافظة</span></div>
       <div class="step"><div class="n">💬</div><b>ابعتي</b><span>الطلب يوصلنا على واتساب ونأكد معاكي</span></div>
