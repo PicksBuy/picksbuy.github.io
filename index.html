@@ -143,6 +143,20 @@ body:not(.admin) .cartbtn.has{display:flex}
 .joinpop img{width:84px;height:84px;border-radius:50%;border:1px solid var(--line);margin:0 auto 8px}
 .joinpop h4{margin:4px 0;font-size:19px}.joinpop p{margin:4px 0 10px;color:var(--muted);line-height:1.8;font-size:14px}
 .joinpop ul{list-style:none;padding:0;margin:0 0 6px;text-align:right;display:inline-block}.joinpop li{margin:4px 0;font-weight:600;font-size:14px}
+.pill{display:inline-block;border-radius:999px;padding:1px 10px;font-size:12px;font-weight:800}
+.st-new{background:#FFF1D6;color:#8A5300}.st-confirmed{background:#E2F0FF;color:#1D4F91}.st-shipped{background:#EDE4FF;color:#5B2FB0}
+.st-delivered{background:#E3F4EA;color:#1F6B43}.st-cancelled,.st-expired{background:#F1EAEA;color:#8B6F6F}
+.obtns{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 4px}.obtns button,.obtns a{border-radius:10px;padding:7px 12px;font-weight:800;font-size:13px;background:var(--soft);text-decoration:none;color:var(--ink)}
+.obtns .go{background:var(--ink);color:#fff}.obtns .no{color:var(--red)}.obtns .wa{background:#E7F8EE;color:#1F7A47}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}.kpi{background:var(--soft);border-radius:12px;padding:8px;text-align:center}
+.kpi b{display:block;font-size:18px;direction:ltr}.kpi small{color:var(--muted);font-size:11px;font-weight:700}
+.minil{font-size:13px;line-height:1.9;margin:0 0 10px}.sect{font-weight:800;margin:14px 0 6px;font-size:14px}
+.reqbtn{flex:none;border:1px solid var(--line);background:#fff;border-radius:12px;padding:0 10px;font-weight:800;font-size:13px;white-space:nowrap}
+.reqcard{grid-column:1/-1;background:linear-gradient(135deg,#fff,#FBEFEC);border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center}
+.reqcard b{display:block;font-size:16px;margin-bottom:4px}.reqcard button{margin-top:10px;background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;font-weight:800}
+.shipnote{margin-top:10px;background:#EEF7F1;border:1px solid #D2EBDB;color:#1F6B43;border-radius:12px;padding:8px 12px;font-size:13.5px;font-weight:700}
+.zrow{display:grid;grid-template-columns:1fr 90px 34px;gap:6px;margin-bottom:6px}.zrow input{border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:100%;outline:none}
+.zrow button{border-radius:10px;background:var(--soft)}
 .empty{text-align:center;padding:50px 20px;color:var(--muted)}
 .empty .big{font-size:42px}
 .note{background:#FFF4E5;border:1px solid #F3D9B5;color:#7A4A12;border-radius:12px;padding:10px 12px;margin-top:12px;font-size:14px}
@@ -250,11 +264,13 @@ body.admin .fab, body.admin .fab2{display:flex}
         <option value="high">السعر ↓</option>
         <option value="avail">المتاح الأول</option>
       </select>
+      <button class="reqbtn" id="reqBtn">✨ اطلبي من بره</button>
     </div>
   </div>
 </header>
 
 <main class="wrap">
+  <div id="upg"></div>
   <div id="imp"></div>
   <div id="promo"></div>
   <div class="lbl">البلد</div>
@@ -262,6 +278,7 @@ body.admin .fab, body.admin .fab2{display:flex}
   <div class="lbl">القسم</div>
   <div class="rail" id="cats"></div>
   <div class="rail sub" id="subs" style="display:none"></div>
+  <div id="cinfo"></div>
   <div id="note"></div>
   <div class="bar"><h2 id="title">كل المنتجات</h2><span id="count"></span></div>
   <div class="grid" id="grid">
@@ -386,6 +403,8 @@ function render(){
   $('#title').textContent = [S.promoOnly ? (S.settings.promo.title||'العروض') : kn, cn && ('من '+cn)].filter(Boolean).join(' ') || 'كل المنتجات';
   $('#count').textContent = S.ready ? `${list.length} منتج` : '';
 
+  const ci=S.country!=='all'?country(S.country):null;
+  $('#cinfo').innerHTML = ci&&ci.info ? `<div class="shipnote">🚚 ${esc(ci.flag||'')} ${esc(ci.info)}</div>` : '';
   drawCartBtn();
   if (!S.ready) return;
   if (!list.length){
@@ -393,7 +412,7 @@ function render(){
       S.products.length ? 'مفيش منتجات هنا' : (S.admin ? 'لسه مفيش منتجات. دوس <b>＋ منتج جديد</b> تحت علشان تضيف أول منتج.' : 'المنتجات هتنزل قريب ✨')}</div>`;
     return;
   }
-  $('#grid').innerHTML = list.map(card).join('');
+  $('#grid').innerHTML = list.map(card).join('') + (S.admin ? '' : `<div class="reqcard"><b>مش لاقية اللي عايزاه؟ ✨</b><span class="hint">ابعتيلنا اسم المنتج أو لينكه ونجيبهولك من أي بلد</span><br><button data-req="1">اطلبي منتج من بره</button></div>`);
 }
 
 function renderPromo(all){
@@ -458,12 +477,14 @@ $('#subs').onclick = e => { const b=e.target.closest('[data-s]'); if(!b) return;
 $('#q').oninput = e => { S.q=e.target.value; render(); };
 $('#sort').onchange = e => { S.sort=e.target.value; render(); };
 $('#grid').onclick = e => {
+  if(e.target.closest('[data-req]')) return openRequest();
   const ed=e.target.closest('[data-edit]'); if(ed){ e.stopPropagation(); return openForm(S.products.find(p=>p.id===ed.dataset.edit)); }
   const ad=e.target.closest('[data-add]'); if(ad){ e.stopPropagation(); const p=S.products.find(x=>x.id===ad.dataset.add); if(p&&variants(p)) return openDetail(p.id); return addToCart(ad.dataset.add,''); }
   const dl=e.target.closest('[data-del]'); if(dl){ e.stopPropagation(); return delProduct(dl.dataset.del); }
   const c=e.target.closest('.card'); if(c) openDetail(c.dataset.id);
 };
 $('#addBtn').onclick = () => openForm(null);
+$('#reqBtn').onclick = () => openRequest();
 $('#cartBtn').onclick = () => openCart();
 $('#manageBtn').onclick = () => openManage();
 $('#modeBtn').onclick = () => { setAdmin(!S.admin); };
@@ -522,7 +543,7 @@ function openDetail(id){
     ? `<div class="lbl">المتاح</div><div class="szl">${vs.map(s=>`<span class="${num(s.q)>0?'':'no'}">${esc(s.s)}<small>(${num(s.q)||0})</small></span>`).join('')}</div>`
     : `<div class="lbl">اختار</div><div class="szl" id="vsel">${vs.map((s,i)=>`<button class="vch" data-vi="${i}" ${num(s.q)>0?'':'disabled'}>${esc(s.s)}</button>`).join('')}</div>`;
   const foot = S.admin
-    ? `<button class="btn" id="cpy">📋 انسخ بوست واتساب</button><button class="btn p" id="ed">✏️ تعديل</button>`
+    ? `<button class="btn" id="cpy" style="flex:1.2">📋 بوست</button><button class="btn" id="sty">📸 ستوري</button><button class="btn p" id="ed">✏️ تعديل</button>`
     : (st>0 ? `<div class="qty"><button data-q="1">+</button><b id="qn">1</b><button data-q="-1">−</button></div><button class="btn r" id="addc">🛒 أضف للسلة</button>`
             : `<button class="btn" data-close>نفدت الكمية</button>`);
   const ov=sheet(esc(c?(c.flag+' '+c.name):'تفاصيل المنتج'), `
@@ -531,17 +552,18 @@ function openDetail(id){
     <div class="dname" style="margin-top:2px">${esc(p.name)}</div>
     ${isPromo(p)?`<div style="display:inline-block;background:#120c0e;color:#fff;font-family:Anton,sans-serif;letter-spacing:1.5px;font-size:12px;border-radius:999px;padding:3px 12px;margin:4px 0;direction:ltr">🔥 ${esc(String(S.settings.promo.title).toUpperCase())}</div>`:''}
     <div class="meta">${[par?.name,k?.name].filter(Boolean).map(esc).join(' › ')}</div>
+    ${c&&c.info?`<div class="shipnote" style="margin-top:8px">🚚 ${esc(c.info)}</div>`:''}
     <div class="dprice">${num(p.price)!=null?`<b>${fmt(num(p.price))} ${esc(cur())}</b>`:''}${num(p.oldPrice)&&num(p.oldPrice)>num(p.price)?`<s>${fmt(num(p.oldPrice))} ${esc(cur())}</s>`:''}</div>
     ${st<=0?`<div class="note" style="margin:0 0 10px;background:#FBE9EA;border-color:#F0C9CD;color:var(--red)">نفدت الكمية</div>`:(S.admin?`<div class="meta">المتاح: ${st} قطعة</div>`:'')}
     ${sizes}
     ${p.desc?`<div class="desc">${esc(p.desc)}</div>`:''}
-    ${S.admin && wa && st>0 ? '' : ''}
   `, foot);
   const g=ov.querySelector('#gal'), dots=ov.querySelector('#dots');
   if(g&&dots) g.addEventListener('scroll',()=>{ const i=Math.round(Math.abs(g.scrollLeft)/g.clientWidth); [...dots.children].forEach((d,j)=>d.classList.toggle('on',i===j)); },{passive:true});
   const cp=ov.querySelector('#cpy');
   if(cp) cp.onclick=async()=>{ try{ await navigator.clipboard.writeText(waText(p)); toast('اتنسخ ✅ الصقه في الجروب'); }catch(e){ showCopy(waText(p)); } };
   const ed=ov.querySelector('#ed'); if(ed) ed.onclick=()=>{ ov.close(); openForm(p); };
+  const sy=ov.querySelector('#sty'); if(sy) sy.onclick=()=>makeStory(p);
   let sel = vs ? (vs.filter(s=>num(s.q)>0).length===1 ? vs.find(s=>num(s.q)>0).s : '') : '', qn=1;
   const vsel=ov.querySelector('#vsel');
   const paint=()=>{ if(vsel) vsel.querySelectorAll('.vch').forEach(b=>b.classList.toggle('on',vs[+b.dataset.vi].s===sel)); const q=ov.querySelector('#qn'); if(q) q.textContent=qn; };
@@ -577,7 +599,9 @@ function drawCart(){
   if(!cartOv) return;
   const lines=cartLines(), cb=cartOv.querySelector('#cbody');
   if(!lines.length){ cb.innerHTML=`<div class="empty"><div class="big">🛒</div>السلة فاضية</div>`; cartOv.querySelector('#chk').disabled=true; return; }
-  const keep=cb.querySelector('#oName')?{n:cb.querySelector('#oName').value,a:cb.querySelector('#oAddr').value,x:cb.querySelector('#oNote').value}:null;
+  const keep=cb.querySelector('#oName')?{n:cb.querySelector('#oName').value,a:cb.querySelector('#oAddr').value,x:cb.querySelector('#oNote').value,p:cb.querySelector('#oPhone').value,g:cb.querySelector('#oGov')?.value||''}:null;
+  const zones=shipZones(); let saved={}; try{ saved=JSON.parse(localStorage.getItem('pb_cust')||'{}'); }catch(e){}
+  const gsel=keep?keep.g:(saved.g||''), z=zones.find(x=>x.name===gsel), fee=z&&num(z.fee)!=null?num(z.fee):null, sub=cartTotal();
   cb.innerHTML=lines.map((l,i)=>{ const p=l.p;
     return `<div class="cl ${l.ok?'':'bad'}">
       ${p&&p.images?.length?`<img src="${img(p.images[0])}" alt="">`:'<div class="ni"></div>'}
@@ -588,33 +612,46 @@ function drawCart(){
         <button class="rmv" data-ci="${i}" data-op="rm">شيل</button></div>
       ${l.ok?`<div class="qty"><button data-ci="${i}" data-op="1">+</button><b>${Math.min(l.n,l.max)}</b><button data-ci="${i}" data-op="-1">−</button></div>`:''}
     </div>`; }).join('') +
-    `<div class="tot"><span>الإجمالي</span><b>${fmt(cartTotal())} ${esc(cur())}</b></div>
-     <div class="hint" style="margin-bottom:12px">مصاريف الشحن بتتحدد على واتساب حسب المنطقة.</div>
+    `<div class="tot" style="font-size:15px;padding-bottom:0"><span>المنتجات</span><b style="font-size:16px">${fmt(sub)} ${esc(cur())}</b></div>
+     ${zones.length?`<div class="tot" style="font-size:15px;padding:6px 0 0"><span>الشحن</span><b style="font-size:16px;color:var(--ink)">${fee!=null?fmt(fee)+' '+esc(cur()):(gsel?'يتحدد على واتساب':'اختاري المحافظة')}</b></div>`:''}
+     <div class="tot"><span>الإجمالي</span><b>${fmt(sub+(fee||0))} ${esc(cur())}</b></div>
+     ${zones.length?'':'<div class="hint" style="margin-bottom:12px">مصاريف الشحن بتتحدد على واتساب حسب المنطقة.</div>'}
      <div class="f"><label>الاسم</label><input id="oName" autocomplete="name"></div>
-     <div class="f"><label>العنوان / المنطقة</label><input id="oAddr" autocomplete="street-address"></div>
+     <div class="f"><label>رقم الموبايل (واتساب)</label><input id="oPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" style="direction:ltr;text-align:right"></div>
+     ${zones.length?`<div class="f"><label>المحافظة</label><select id="oGov"><option value="">— اختاري —</option>${zones.map(x=>`<option ${x.name===gsel?'selected':''}>${esc(x.name)}</option>`).join('')}</select></div>`:''}
+     <div class="f"><label>العنوان بالتفصيل</label><input id="oAddr" autocomplete="street-address"></div>
      <div class="f"><label>ملاحظات (اختياري)</label><input id="oNote"></div>`;
-  if(keep){ cb.querySelector('#oName').value=keep.n; cb.querySelector('#oAddr').value=keep.a; cb.querySelector('#oNote').value=keep.x; }
-  else { try{ const s=JSON.parse(localStorage.getItem('pb_cust')||'{}'); cb.querySelector('#oName').value=s.n||''; cb.querySelector('#oAddr').value=s.a||''; }catch(e){} }
+  if(keep){ cb.querySelector('#oName').value=keep.n; cb.querySelector('#oAddr').value=keep.a; cb.querySelector('#oNote').value=keep.x; cb.querySelector('#oPhone').value=keep.p; }
+  else { cb.querySelector('#oName').value=saved.n||''; cb.querySelector('#oAddr').value=saved.a||''; cb.querySelector('#oPhone').value=saved.p||''; }
+  const gs=cb.querySelector('#oGov'); if(gs) gs.onchange=()=>drawCart();
   cartOv.querySelector('#chk').disabled=!lines.some(l=>l.ok);
 }
 async function checkout(){
   const cb=cartOv.querySelector('#cbody'), name=cb.querySelector('#oName')?.value.trim()||'', addr=cb.querySelector('#oAddr')?.value.trim()||'', note=cb.querySelector('#oNote')?.value.trim()||'';
+  const phone=(cb.querySelector('#oPhone')?.value||'').trim(), gov=cb.querySelector('#oGov')?.value||'', zones=shipZones();
   const wa=(S.settings.whatsapp||'').replace(/[^\d]/g,'');
   if(!wa){ toast('رقم الواتساب مش متسجل'); return; }
   if(!name){ toast('اكتب اسمك'); cb.querySelector('#oName').focus(); return; }
-  try{ localStorage.setItem('pb_cust',JSON.stringify({n:name,a:addr})); }catch(e){}
+  if(phone.replace(/\D/g,'').length<10){ toast('اكتبي رقم الموبايل صح'); cb.querySelector('#oPhone').focus(); return; }
+  if(zones.length && !gov){ toast('اختاري المحافظة'); cb.querySelector('#oGov').focus(); return; }
+  if(!addr){ toast('اكتبي العنوان'); cb.querySelector('#oAddr').focus(); return; }
+  try{ localStorage.setItem('pb_cust',JSON.stringify({n:name,a:addr,p:phone,g:gov})); }catch(e){}
   const btn=cartOv.querySelector('#chk'); btn.disabled=true; btn.textContent='بنأكد الكمية…';
   let res;
   try{
-    const r=await sb.rpc('place_order',{items:CART.map(c=>({id:c.id,v:c.v||'',n:c.n})),customer:{name,addr,note}});
+    const r=await sb.rpc('place_order',{items:CART.map(c=>({id:c.id,v:c.v||'',n:c.n})),customer:{name,addr,note,phone,gov}});
     if(r.error) throw r.error; res=r.data;
   }catch(e){ btn.disabled=false; btn.textContent='تأكيد الطلب'; toast('حصلت مشكلة في الاتصال، جرّب تاني'); return; }
   refresh('products').catch(()=>{});
   if(!res||!res.ok){ btn.disabled=false; btn.textContent='تأكيد الطلب'; toast('للأسف الحاجات دي خلصت'); return; }
   const got=res.items||[], lost=res.missing||[], no=res.order_no, total=num(res.total)||0;
+  const zf=zones.find(x=>x.name===gov), ship=res.shipping!=null?num(res.shipping):(zf&&num(zf.fee)!=null?num(zf.fee):null);
+  const hold=num(res.hold)!=null?num(res.hold):num(S.settings.holdHours);
   const msg=[`🛍️ طلب جديد من PicksBuy`,`رقم الطلب: ${no}`,'',
     ...got.map((l,i)=>`${i+1}) ${[l.brand,l.name].filter(Boolean).join(' - ')}${l.v?` (${l.v})`:''}\n   ${fmt(num(l.price))} ${cur()} × ${l.n} = ${fmt((num(l.price)||0)*l.n)} ${cur()}`),
-    '',`الإجمالي: ${fmt(total)} ${cur()}`,'',`الاسم: ${name}`, addr?`العنوان: ${addr}`:'', note?`ملاحظات: ${note}`:'',
+    '',`المنتجات: ${fmt(total)} ${cur()}`, gov?`الشحن (${gov}): ${ship!=null?fmt(ship)+' '+cur():'يتحدد'}`:'', `الإجمالي: ${fmt(total+(ship||0))} ${cur()}${ship==null&&zones.length?' + الشحن':''}`,
+    '',`الاسم: ${name}`,`الموبايل: ${phone}`, addr?`العنوان: ${[gov,addr].filter(Boolean).join(' - ')}`:'', note?`ملاحظات: ${note}`:'',
+    hold>0?'':'', hold>0?`⏳ الطلب محجوز ${hold} ساعات لحد ما نأكده`:'',
     '',`📸 الطلب بالصور: ${location.origin+location.pathname}#order-${no}`].filter((x,i,a)=>x!==''||a[i-1]!=='').join('\n').trim();
   const href=`https://wa.me/${wa}?text=${encodeURIComponent(msg)}`;
   CART=[]; saveCart();
@@ -622,7 +659,8 @@ async function checkout(){
   const ov=sheet('خطوة أخيرة',`<div class="ok-ic">✅</div>
     <p style="text-align:center;line-height:1.8;margin:0 0 10px">طلبك اتسجل برقم <b dir="ltr">${no}</b><br>دوس على الزرار تحت علشان تبعت الطلب على واتساب ونكمل معاك.</p>
     ${lost.length?`<div class="note" style="margin-bottom:10px">الحاجات دي خلصت قبل ما تأكد: ${lost.map(l=>esc(l.name||'')).join('، ')}</div>`:''}
-    <div class="tot"><span>الإجمالي</span><b>${fmt(total)} ${esc(cur())}</b></div>`,
+    <div class="tot"><span>الإجمالي</span><b>${fmt(total+(ship||0))} ${esc(cur())}</b></div>
+    ${hold>0?`<div class="hint" style="text-align:center">⏳ الحاجات محجوزالك ${hold} ساعات. ابعتي الرسالة علشان نأكد الطلب.</div>`:''}`,
     `<a class="btn g" style="text-align:center;text-decoration:none" target="_blank" rel="noopener" href="${href}" id="waGo">ابعت الطلب على واتساب</a>`);
   ov.querySelector('#waGo').addEventListener('click',()=>setTimeout(()=>ov.close(),400));
 }
@@ -639,13 +677,63 @@ async function delProduct(id){
 }
 
 /* ---------- image compress ---------- */
-async function compress(file){
-  const bmp = await new Promise((res,rej)=>{ const im=new Image(); im.onload=()=>res(im); im.onerror=rej; im.src=URL.createObjectURL(file); });
-  const max=1400, sc=Math.min(1,max/Math.max(bmp.naturalWidth,bmp.naturalHeight));
-  const cv=document.createElement('canvas'); cv.width=Math.round(bmp.naturalWidth*sc); cv.height=Math.round(bmp.naturalHeight*sc);
-  const cx=cv.getContext('2d'); cx.fillStyle='#fff'; cx.fillRect(0,0,cv.width,cv.height); cx.drawImage(bmp,0,0,cv.width,cv.height);
-  URL.revokeObjectURL(bmp.src);
-  return await new Promise(r=>cv.toBlob(r,'image/jpeg',0.85));
+async function loadImg(src){ return await new Promise((res,rej)=>{ const im=new Image(); im.crossOrigin='anonymous'; im.onload=()=>res(im); im.onerror=rej; im.src=src; }); }
+function rrect(cx,x,y,w,h,r){ cx.beginPath(); cx.moveTo(x+r,y); cx.arcTo(x+w,y,x+w,y+h,r); cx.arcTo(x+w,y+h,x,y+h,r); cx.arcTo(x,y+h,x,y,r); cx.arcTo(x,y,x+w,y,r); cx.closePath(); }
+async function compress(file, enhance=true){
+  const url=URL.createObjectURL(file), im=await loadImg(url);
+  const iw=im.naturalWidth, ih=im.naturalHeight; let cv=document.createElement('canvas'), cx=cv.getContext('2d');
+  if(!enhance){
+    const sc=Math.min(1,1400/Math.max(iw,ih)); cv.width=Math.round(iw*sc); cv.height=Math.round(ih*sc);
+    cx.fillStyle='#fff'; cx.fillRect(0,0,cv.width,cv.height); cx.drawImage(im,0,0,cv.width,cv.height);
+  } else {
+    // same look as the photos Claude prepared: soft blurred backdrop, photo centred with rounded corners and a light shadow
+    const W=900,H=1125; cv.width=W; cv.height=H;
+    const t=document.createElement('canvas'); t.width=24; t.height=30; const tc=t.getContext('2d');
+    const cs=Math.max(24/iw,30/ih); tc.drawImage(im,(24-iw*cs)/2,(30-ih*cs)/2,iw*cs,ih*cs);
+    cx.imageSmoothingEnabled=true; cx.imageSmoothingQuality='high'; cx.drawImage(t,0,0,W,H);
+    cx.fillStyle='rgba(250,246,244,.55)'; cx.fillRect(0,0,W,H);
+    const s2=Math.min((W-50)/iw,(H-50)/ih), fw=iw*s2, fh=ih*s2, x=(W-fw)/2, y=(H-fh)/2;
+    cx.save(); cx.shadowColor='rgba(90,60,60,.28)'; cx.shadowBlur=36; cx.shadowOffsetY=12; rrect(cx,x,y,fw,fh,24); cx.fillStyle='#fff'; cx.fill(); cx.restore();
+    cx.save(); rrect(cx,x,y,fw,fh,24); cx.clip(); cx.drawImage(im,x,y,fw,fh); cx.restore();
+  }
+  URL.revokeObjectURL(url);
+  return await new Promise(r=>cv.toBlob(r,'image/jpeg',0.86));
+}
+
+/* ---------- story maker (1080x1920 image for WhatsApp status / Instagram) ---------- */
+function wrapLines(cx,text,maxW,maxLines){ const words=String(text).split(/\s+/), lines=[]; let cur='';
+  for(const w of words){ const t=cur?cur+' '+w:w; if(cx.measureText(t).width>maxW && cur){ lines.push(cur); cur=w; if(lines.length===maxLines) break; } else cur=t; }
+  if(lines.length<maxLines && cur) lines.push(cur); return lines; }
+async function makeStory(p){
+  toast('بيجهز الستوري…');
+  try{ await document.fonts.ready; }catch(e){}
+  const W=1080,H=1920, cv=document.createElement('canvas'); cv.width=W; cv.height=H; const cx=cv.getContext('2d');
+  const promo=isPromo(p), dark=promo;
+  const g=cx.createLinearGradient(0,0,0,H);
+  if(dark){ g.addColorStop(0,'#2a1013'); g.addColorStop(.5,'#120c0e'); g.addColorStop(1,'#0b0809'); } else { g.addColorStop(0,'#FBF3F0'); g.addColorStop(1,'#F1E1DC'); }
+  cx.fillStyle=g; cx.fillRect(0,0,W,H);
+  const ink=dark?'#fff':'#1C1417', sub=dark?'#E8A090':'#A6303D', muted=dark?'#d9c3be':'#7D6F72';
+  try{ const lg=await loadImg($('.mark').src); cx.save(); cx.beginPath(); cx.arc(W/2,150,70,0,Math.PI*2); cx.clip(); cx.drawImage(lg,W/2-70,80,140,140); cx.restore(); }catch(e){}
+  cx.textAlign='center'; cx.fillStyle=ink; cx.font='400 60px Pacifico, cursive'; cx.direction='ltr'; cx.fillText('PicksBuy',W/2,300);
+  const ix=110, iy=360, iw=860, ih=1000;
+  try{ const pi=await loadImg(img(p.images[0])); const sc=Math.max(iw/pi.naturalWidth,ih/pi.naturalHeight);
+    cx.save(); cx.shadowColor='rgba(0,0,0,.25)'; cx.shadowBlur=40; cx.shadowOffsetY=16; rrect(cx,ix,iy,iw,ih,40); cx.fillStyle='#fff'; cx.fill(); cx.restore();
+    cx.save(); rrect(cx,ix,iy,iw,ih,40); cx.clip(); cx.drawImage(pi,ix+(iw-pi.naturalWidth*sc)/2,iy+(ih-pi.naturalHeight*sc)/2,pi.naturalWidth*sc,pi.naturalHeight*sc); cx.restore();
+  }catch(e){ rrect(cx,ix,iy,iw,ih,40); cx.fillStyle=dark?'#2a1d20':'#fff'; cx.fill(); }
+  if(promo){ cx.fillStyle='#A6303D'; rrect(cx,ix+30,iy+30,420,84,42); cx.fill(); cx.fillStyle='#fff'; cx.font='48px Anton, Impact, sans-serif'; cx.textAlign='center'; cx.fillText(String(S.settings.promo.title||'OFFER').toUpperCase(),ix+240,iy+90); }
+  let y=iy+ih+90; cx.textAlign='center'; cx.direction='ltr';
+  if(p.brand){ cx.fillStyle=muted; cx.font='700 38px Cairo, sans-serif'; cx.fillText(String(p.brand).toUpperCase().split('').join(String.fromCharCode(8202)),W/2,y); y+=70; }
+  cx.fillStyle=ink; cx.font='800 54px Cairo, sans-serif'; for(const ln of wrapLines(cx,p.name,900,2)){ cx.fillText(ln,W/2,y); y+=70; }
+  y+=40; cx.fillStyle=sub; cx.font='900 110px Cairo, sans-serif'; cx.fillText(`${fmt(num(p.price))} ${cur()}`,W/2,y+30);
+  const o=num(p.oldPrice); if(o&&o>num(p.price)){ y+=110; cx.fillStyle=muted; cx.font='700 52px Cairo, sans-serif'; const t=`${fmt(o)} ${cur()}`; cx.fillText(t,W/2,y); const tw=cx.measureText(t).width; cx.fillRect(W/2-tw/2,y-18,tw,5); }
+  cx.fillStyle=dark?'rgba(255,255,255,.12)':'rgba(28,20,23,.08)'; rrect(cx,140,H-190,800,110,55); cx.fill();
+  cx.fillStyle=ink; cx.font='800 46px Cairo, sans-serif'; cx.direction='rtl'; cx.fillText('🛒 اطلبي من picksbuy.github.io',W/2,H-118);
+  const blob=await new Promise(r=>cv.toBlob(r,'image/jpeg',0.9)), url=URL.createObjectURL(blob), file=new File([blob],`picksbuy-${p.id}.jpg`,{type:'image/jpeg'});
+  const canShare=!!(navigator.canShare&&navigator.canShare({files:[file]}));
+  const ov=sheet('الستوري جاهز 📸',`<img src="${url}" style="width:100%;max-width:330px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.18)">
+    <div class="hint" style="text-align:center;margin-top:8px">${canShare?'دوسي "شاركي" واختاري واتساب (الحالة) أو إنستجرام.':'نزّليها وبعدين حطيها في الحالة أو الستوري.'}</div>`,
+    `${canShare?'<button class="btn g" id="shr">شاركي</button>':''}<a class="btn p" style="text-align:center;text-decoration:none" href="${url}" download="picksbuy-${esc(p.id)}.jpg">تحميل</a>`);
+  const sh=ov.querySelector('#shr'); if(sh) sh.onclick=async()=>{ try{ await navigator.share({files:[file],text:`${p.name}\n${location.origin+location.pathname}#p-${p.id}`}); }catch(e){} };
 }
 
 /* ---------- product form ---------- */
@@ -670,7 +758,8 @@ function openForm(p){
   const defCat = p?.categoryId || (S.sub!=='all'?S.sub:(S.cat!=='all'?S.cat:''));
   const ov=sheet(isNew?'منتج جديد':'تعديل المنتج', `
     <div class="f"><label>الصور</label><div class="imgs" id="imgs"></div><div class="hint">أول صورة هي اللي بتظهر في الكارت. دوس "رئيسية" على أي صورة تخليها الأولى.</div>
-      <input type="file" id="file" accept="image/*" multiple hidden></div>
+      <input type="file" id="file" accept="image/*" multiple hidden>
+      <label class="sw" style="margin:8px 0 0">✨ تحسين الصور تلقائي (نفس شكل باقي الموقع) <input type="checkbox" id="fEnh" ${localStorage.getItem('pb_enh')==='0'?'':'checked'}></label></div>
     <div class="row2">
       <div class="f"><label>البراند</label><input id="fBrand" value="${esc(p?.brand)}" placeholder="مثلاً: Lancôme" style="direction:ltr;text-align:right"></div>
       <div class="f"><label>اسم المنتج *</label><input id="fName" value="${esc(p?.name)}" placeholder="Lash Idôle Mascara" style="direction:ltr;text-align:right"></div>
@@ -708,7 +797,7 @@ function openForm(p){
     for(const f of files){
       const slot={busy:true, preview:URL.createObjectURL(f)}; F.images.push(slot); drawImgs();
       try{
-        const blob=await compress(f);
+        const blob=await compress(f, q('#fEnh')?q('#fEnh').checked:true);
         const r=await S.assets.upload(blob,{type:'image/jpeg'});
         slot.id=r.id; slot.busy=false; F.fresh.push(r.id);
       }catch(err){
@@ -740,6 +829,7 @@ function openForm(p){
   });
   q('#fHas').onchange=e=>{ F.hasSizes=e.target.checked; if(F.hasSizes&&!F.sizes.length) F.sizes=[]; drawSizes(); };
   drawImgs(); drawSizes();
+  q('#fEnh').onchange=e=>{ try{ localStorage.setItem('pb_enh',e.target.checked?'1':'0'); }catch(x){} };
 
   let saved=false;
   ov.onclosed=async()=>{ if(!saved && S.assets) for(const id of F.fresh){ try{ await S.assets.delete(id); }catch(e){} } };
@@ -805,7 +895,8 @@ function drawManage(){
       <span class="cnt">${pc(p=>p.countryId===c.id)}</span>
       <button class="ib" data-mv="countries|${esc(c.id)}|-1" ${i?'':'disabled'}>▲</button>
       <button class="ib" data-mv="countries|${esc(c.id)}|1" ${i<list.length-1?'':'disabled'}>▼</button>
-      <button class="ib d" data-rmc="countries|${esc(c.id)}">🗑</button></div>`).join('')
+      <button class="ib d" data-rmc="countries|${esc(c.id)}">🗑</button></div>
+      ${S.v2?`<div class="mrow" style="margin:-4px 0 12px"><input class="nm" data-keep="1" data-col="countries" data-id="${esc(c.id)}" data-f="info" value="${esc(c.info||'')}" placeholder="🚚 معلومة الشحنة، مثلاً: الشحنة الجاية توصل 5 ديسمبر، آخر طلب 25 نوفمبر" style="font-size:12.5px"></div>`:''}`).join('')
       + `<div class="newrow"><input id="nFlag" placeholder="🏳️" style="width:56px;text-align:center"><input id="nName" placeholder="اسم البلد" style="flex:1"><button data-new="countries">إضافة</button></div>
       <div class="hint" style="margin-top:8px">الرقم الصغير جنب كل بلد = عدد المنتجات فيه. البلد اللي مفيهوش منتجات مش بيظهر للعملاء.</div>`;
   } else if(manageTab==='cats'){
@@ -829,19 +920,18 @@ function drawManage(){
     }).join('') + `<div class="newrow"><input id="nCat" placeholder="قسم رئيسي جديد" style="flex:1"><button data-new="categories">إضافة</button></div>`;
   } else if(manageTab==='orders'){
     if(!S.orders){ mb.innerHTML='<div class="empty">بيحمّل الطلبات…</div>'; loadOrders(); return; }
-    mb.innerHTML = `<button class="ghost" data-reload-orders="1" style="margin-bottom:10px">↻ تحديث</button>` + (S.orders.length ? S.orders.map(o=>{
-      const c=o.customer||{}, d=new Date(o.created_at);
-      return `<div class="grp" style="${o.status==='cancelled'?'opacity:.55':''}">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><b dir="ltr">${esc(o.order_no)}</b><span class="hint">${d.toLocaleDateString('ar-EG')} ${d.toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit'})}</span></div>
-        <div style="font-weight:700">${esc(c.name||'')}${c.addr?` — <span class="hint">${esc(c.addr)}</span>`:''}</div>
-        ${c.note?`<div class="hint">${esc(c.note)}</div>`:''}
-        <div style="margin:6px 0;font-size:13px;line-height:1.7">${(o.items||[]).map(l=>`• ${esc([l.brand,l.name].filter(Boolean).join(' - '))}${l.v?` (${esc(l.v)})`:''} × ${l.n}`).join('<br>')}</div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><b style="color:var(--red)" dir="ltr">${fmt(num(o.total))} ${esc(cur())}</b>
-        ${o.status==='cancelled'?'<span class="hint">اتلغى ورجعت الكمية</span>':`<button class="ib d" style="width:auto;padding:0 12px" data-cancel="${o.id}">إلغاء ورجّع الكمية</button>`}</div></div>`; }).join('') : '<div class="empty">لسه مفيش طلبات</div>');
+    mb.innerHTML=ordersTab();
   } else {
     mb.innerHTML=`
       <div class="f"><label>رقم الواتساب للطلبات</label><input id="sWa" inputmode="tel" value="${esc(S.settings.whatsapp)}" placeholder="مثلاً 201001234567" style="direction:ltr;text-align:right"><div class="hint">بكود الدولة من غير + . لما يتكتب، هيظهر للعميل زرار "اطلب على واتساب".</div></div>
       <div class="f"><label>العملة</label><input id="sCur" value="${esc(S.settings.currency||'L.E')}"></div>
+      <div class="grp" style="padding:12px">
+        <div class="sect" style="margin-top:0">🚚 مصاريف الشحن</div>
+        <div class="hint" style="margin-bottom:8px">العميلة بتختار المحافظة في السلة والشحن بيتحسب لوحده. سيبي السعر فاضي لو بيتحدد على واتساب.</div>
+        <div id="zones">${(shipZones().length?shipZones():[]).map(z=>zoneRow(z)).join('')}</div>
+        <div style="display:flex;gap:6px"><button class="ghost" data-zadd="1">＋ منطقة</button>${shipZones().length?'':'<button class="ghost" data-zfill="1">املّي المحافظات</button>'}</div>
+      </div>
+      ${S.v2?`<div class="f"><label>⏳ مدة حجز الطلب لحد التأكيد (ساعات)</label><input id="sHold" inputmode="numeric" value="${esc(S.settings.holdHours??6)}"><div class="hint">الطلب اللي ماتأكدش في المدة دي بيتلغي لوحده والكمية ترجع. اكتبي 0 لو مش عايزة كده.</div></div>`:''}
       <div class="grp" style="padding:12px">
         <label class="sw" style="margin-bottom:12px">🔥 العرض شغّال <input type="checkbox" id="sPA" ${S.settings.promo?.active?'checked':''}></label>
         <div class="f"><label>اسم العرض</label><input id="sPT" value="${esc(S.settings.promo?.title||'')}" placeholder="Black Friday" style="direction:ltr;text-align:right"></div>
@@ -897,6 +987,16 @@ async function onManageClick(e){
         if(!await ask(`تمسح قسم <b>${esc(cat(id)?.name)}</b>؟`,'امسح')) return;
       }
       await S.db.collection(col).doc(id).delete(); toast('اتمسح');
+    } else if(b.dataset.zadd){ manageOv.querySelector('#zones').insertAdjacentHTML('beforeend',zoneRow({name:'',fee:''}));
+    } else if(b.dataset.zfill){ manageOv.querySelector('#zones').innerHTML=DEFAULT_ZONES.map(n=>zoneRow({name:n,fee:''})).join(''); b.remove(); toast('حطي السعر قدام كل منطقة ودوسي احفظ');
+    } else if(b.dataset.zrm){ b.closest('.zrow').remove();
+    } else if(b.dataset.ost){ const [id,st]=b.dataset.ost.split('|'); await setOrderStatus(+id,st);
+    } else if(b.dataset.ofil){ S.ordFilter=b.dataset.ofil; drawManage();
+    } else if(b.dataset.oview){ openOrder(b.dataset.oview);
+    } else if(b.dataset.rq){ const [id,act]=b.dataset.rq.split('|');
+      if(act==='del'){ if(!await ask('تمسحي الطلب ده؟','امسحي')) return; ok(await sb.from('requests').delete().eq('id',+id)); }
+      else ok(await sb.from('requests').update({status:act}).eq('id',+id));
+      S.orders=null; drawManage();
     } else if(b.dataset.reloadOrders){ S.orders=null; drawManage();
     } else if(b.dataset.cancel){
       if(!await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return;
@@ -905,6 +1005,8 @@ async function onManageClick(e){
     } else if(b.id==='sSave'){
       await S.db.doc('settings/main').set({ ...S.settings,
         group:manageOv.querySelector('#sGrp').value.trim(),
+        shipping:[...manageOv.querySelectorAll('.zrow')].map(r=>({name:r.querySelector('[data-zn]').value.trim(),fee:r.querySelector('[data-zf]').value.trim()})).filter(z=>z.name),
+        ...(manageOv.querySelector('#sHold')?{holdHours:Math.max(0,num(manageOv.querySelector('#sHold').value)??6)}:{}),
         whatsapp:manageOv.querySelector('#sWa').value.trim(),
         currency:manageOv.querySelector('#sCur').value.trim()||'L.E',
         tagline:manageOv.querySelector('#sTag').value.trim(),
@@ -956,7 +1058,9 @@ async function refresh(t){
   render(); drawManage(); drawCart();
 }
 async function loadOrders(){
-  try{ S.orders = ok(await sb.from('orders').select('*').order('created_at',{ascending:false}).limit(60)); }
+  if(S.v2){ try{ const r=await sb.rpc('release_expired'); if(r.data>0) refresh('products').catch(()=>{}); }catch(e){} }
+  if(S.v2){ try{ S.requests = ok(await sb.from('requests').select('*').order('created_at',{ascending:false}).limit(50)); }catch(e){ S.requests=[]; } }
+  try{ S.orders = ok(await sb.from('orders').select('*').order('created_at',{ascending:false}).limit(200)); }
   catch(e){ S.orders=[]; toast('مقدرناش نجيب الطلبات'); }
   drawManage();
 }
@@ -969,7 +1073,7 @@ async function checkAdmin(){
   if(was!==isAdm) await refresh('products').catch(()=>{});
   let pref='1'; try{ pref=localStorage.getItem('pb_admin') ?? '1'; }catch(e){}
   setAdmin(isAdm && pref==='1');
-  checkImports();
+  checkImports(); checkUpgrade();
   return {session,isAdm};
 }
 function openLogin(after){
@@ -996,6 +1100,101 @@ $('#adminLink').onclick=async()=>{
   if(session){ await sb.auth.signOut(); try{ localStorage.removeItem('pb_admin'); }catch(e){} await checkAdmin(); toast('خرجت من الأدمن'); }
   else openLogin();
 };
+
+/* ---------- shipping, orders, requests (update 2) ---------- */
+const DEFAULT_ZONES=['القاهرة','الجيزة','الإسكندرية','القليوبية','محافظات الدلتا','مدن القناة','الصعيد','محافظات بعيدة (البحر الأحمر - مطروح - سيناء - الوادي الجديد)'];
+function shipZones(){ return Array.isArray(S.settings.shipping)?S.settings.shipping.filter(z=>z&&z.name):[]; }
+function zoneRow(z){ return `<div class="zrow"><input data-zn value="${esc(z.name)}" placeholder="المحافظة / المنطقة"><input data-zf inputmode="numeric" value="${esc(z.fee??'')}" placeholder="السعر"><button data-zrm="1">×</button></div>`; }
+const ST={new:'جديد',confirmed:'متأكد',shipped:'اتشحن',delivered:'اتسلم',cancelled:'اتلغى',expired:'انتهى الحجز'};
+function waPhone(ph){ let d=String(ph||'').replace(/\D/g,''); if(d.startsWith('00')) d=d.slice(2); if(d.startsWith('0')) d='2'+d; if(d.length===10&&d.startsWith('1')) d='20'+d; return d; }
+function ago(t){ const m=Math.round((Date.now()-new Date(t))/6e4); if(m<60) return `من ${m} دقيقة`; const h=Math.round(m/60); if(h<48) return `من ${h} ساعة`; return `من ${Math.round(h/24)} يوم`; }
+function holdLeft(o){ const h=num(S.settings.holdHours)??6; if(!S.v2||h<=0||o.status!=='new') return ''; const ms=new Date(o.created_at).getTime()+h*36e5-Date.now(); if(ms<=0) return '⏳ هيتلغي دلوقتي'; const hh=Math.floor(ms/36e5), mm=Math.round(ms%36e5/6e4); return `⏳ هيتلغي لوحده بعد ${hh?hh+' س ':''}${mm} د لو ماتأكدش`; }
+function orderButtons(o){
+  const b=[]; const wa=waPhone(o.phone||(o.customer||{}).phone);
+  if(o.status==='new') b.push(`<button class="go" data-ost="${o.id}|confirmed">✅ تأكيد</button>`);
+  if(o.status==='confirmed') b.push(`<button class="go" data-ost="${o.id}|shipped">🚚 اتشحن</button>`);
+  if(o.status==='shipped') b.push(`<button class="go" data-ost="${o.id}|delivered">📦 اتسلم</button>`);
+  if(wa.length>=11) b.push(`<a class="wa" target="_blank" rel="noopener" href="https://wa.me/${wa}?text=${encodeURIComponent(`أهلاً ${(o.customer||{}).name||''} 👋 بخصوص طلبك ${o.order_no} من PicksBuy`)}">💬 كلّميها</a>`);
+  if(['new','confirmed'].includes(o.status)) b.push(`<button class="no" data-ost="${o.id}|cancelled">إلغاء</button>`);
+  return b.join('');
+}
+function orderCard(o){
+  const c=o.customer||{}, ph=o.phone||c.phone||'', gov=o.gov||c.gov||'', hl=holdLeft(o);
+  return `<div class="grp" style="${['cancelled','expired'].includes(o.status)?'opacity:.55':''}">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px"><b dir="ltr">${esc(o.order_no)}</b><span class="pill st-${esc(o.status)}">${ST[o.status]||esc(o.status)}</span></div>
+    <div class="hint">${ago(o.created_at)}${hl?' · '+hl:''}</div>
+    <div style="font-weight:700;margin-top:4px">${esc(c.name||'')}${ph?` · <span dir="ltr">${esc(ph)}</span>`:''}</div>
+    ${gov||c.addr?`<div class="hint">${esc([gov,c.addr].filter(Boolean).join(' - '))}</div>`:''}${c.note?`<div class="hint">ملاحظات: ${esc(c.note)}</div>`:''}
+    <div style="margin:6px 0;font-size:13px;line-height:1.7">${(o.items||[]).map(l=>`• ${esc([l.brand,l.name].filter(Boolean).join(' - '))}${l.v?` (${esc(l.v)})`:''} × ${l.n}`).join('<br>')}</div>
+    <div style="display:flex;justify-content:space-between;align-items:center"><b style="color:var(--red)" dir="ltr">${fmt(num(o.total)+(num(o.shipping)||0))} ${esc(cur())}</b>${num(o.shipping)?`<span class="hint">شامل شحن ${fmt(num(o.shipping))}</span>`:''}</div>
+    <div class="obtns">${orderButtons(o)}<button data-oview="${esc(o.order_no)}">📸 بالصور</button></div></div>`;
+}
+function ordersTab(){
+  const os=S.orders||[], live=o=>!['cancelled','expired'].includes(o.status), wk=Date.now()-7*864e5;
+  const week=os.filter(o=>live(o)&&new Date(o.created_at)>wk), rev=week.reduce((a,o)=>a+(num(o.total)||0),0), pend=os.filter(o=>o.status==='new').length;
+  const sold={}; week.forEach(o=>(o.items||[]).forEach(l=>{ const k=[l.brand,l.name].filter(Boolean).join(' - '); sold[k]=(sold[k]||0)+l.n; }));
+  const best=Object.entries(sold).sort((a,b)=>b[1]-a[1]).slice(0,5);
+  const vis=S.products.filter(p=>!p.hidden), last=vis.filter(p=>stock(p)===1), out=vis.filter(p=>stock(p)<=0);
+  const f=S.ordFilter||'all', groups={all:'الكل',new:'جديد',confirmed:'متأكد',shipped:'اتشحن',delivered:'اتسلم',closed:'ملغي'};
+  const shown=os.filter(o=>f==='all'||(f==='closed'?!live(o):o.status===f));
+  const reqs=(S.requests||[]).filter(r=>r.status!=='done');
+  return `<div class="kpis"><div class="kpi"><b>${week.length}</b><small>طلبات الأسبوع</small></div><div class="kpi"><b>${fmt(rev)}</b><small>مبيعات الأسبوع</small></div><div class="kpi"><b style="color:${pend?'#8A5300':'inherit'}">${pend}</b><small>مستني تأكيد</small></div></div>
+    ${best.length?`<div class="sect">🏆 الأكتر مبيعاً الأسبوع ده</div><div class="minil">${best.map(([k,n])=>`${esc(k)} <b>× ${n}</b>`).join('<br>')}</div>`:''}
+    ${last.length||out.length?`<div class="sect">📉 المخزون</div><div class="minil">${last.length?`آخر قطعة: ${last.map(p=>esc(p.name)).join('، ')}<br>`:''}${out.length?`<span class="hint">خلصانين (${out.length}): ${out.map(p=>esc(p.name)).join('، ')}</span>`:''}</div>`:''}
+    ${S.v2?`<div class="sect">✨ طلبات منتجات من بره ${reqs.length?`<span class="pill st-new">${reqs.length}</span>`:''}</div>${reqs.length?reqs.map(r=>`<div class="grp"><div style="display:flex;justify-content:space-between"><b>${esc(r.name||'')}</b><span class="hint">${ago(r.created_at)}</span></div>
+      ${r.country?`<div class="hint">من: ${esc(r.country)}</div>`:''}${r.note?`<div style="font-size:13.5px;margin:4px 0">${esc(r.note)}</div>`:''}${r.link?`<a href="${esc(/^https?:/i.test(r.link)?r.link:'https://'+r.link)}" target="_blank" rel="noopener" style="font-size:12.5px;direction:ltr;display:block;word-break:break-all">${esc(r.link)}</a>`:''}
+      <div class="obtns">${waPhone(r.phone).length>=11?`<a class="wa" target="_blank" rel="noopener" href="https://wa.me/${waPhone(r.phone)}?text=${encodeURIComponent('أهلاً '+(r.name||'')+' 👋 بخصوص طلبك من PicksBuy')}">💬 كلّميها</a>`:''}<button class="go" data-rq="${r.id}|done">✓ اتعمل</button><button class="no" data-rq="${r.id}|del">🗑</button></div></div>`).join(''):'<div class="hint">مفيش طلبات جديدة</div>'}`:''}
+    <div class="sect">🧾 الطلبات</div>
+    <div class="rail" style="padding-top:0">${Object.entries(groups).map(([k,v])=>`<button class="chip ${f===k?'on':''}" data-ofil="${k}">${v}</button>`).join('')}<button class="chip" data-reload-orders="1">↻</button></div>
+    <div style="margin-top:8px">${shown.length?shown.map(orderCard).join(''):'<div class="empty">مفيش طلبات هنا</div>'}</div>`;
+}
+async function setOrderStatus(id,st){
+  if(st==='cancelled' && !await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return false;
+  try{
+    const r = S.v2 ? await sb.rpc('set_order_status',{oid:id,st}) : (st==='cancelled' ? await sb.rpc('cancel_order',{oid:id}) : {error:{message:'update needed'}});
+    if(r.error) throw r.error;
+    toast({confirmed:'اتأكد ✅',shipped:'اتشحن 🚚',delivered:'اتسلم 📦',cancelled:'اتلغى ورجعت الكمية'}[st]||'تمام');
+    S.orders=null; drawManage(); refresh('products').catch(()=>{}); return true;
+  }catch(e){ toast(S.v2?'حصلت مشكلة، جرّبي تاني':'فعّلي التحديث الأول (الشريط اللي فوق)'); return false; }
+}
+function openRequest(){
+  const cs=[...S.countries].sort(byOrder); let saved={}; try{ saved=JSON.parse(localStorage.getItem('pb_cust')||'{}'); }catch(e){}
+  const ov=sheet('✨ اطلبي منتج من بره',`
+    <div class="hint" style="margin-bottom:10px">مش لاقية المنتج على الموقع؟ ابعتيلنا تفاصيله ونشوفلك سعره ونجيبهولك.</div>
+    <div class="f"><label>من أنهي بلد؟</label><select id="rC"><option value="">مش مهم / مش عارفة</option>${cs.map(c=>`<option>${esc((c.flag||'')+' '+c.name)}</option>`).join('')}<option>بلد تانية</option></select></div>
+    <div class="f"><label>لينك المنتج (لو معاكي)</label><input id="rL" inputmode="url" placeholder="https://..." style="direction:ltr;text-align:right"></div>
+    <div class="f"><label>اسم المنتج / التفاصيل</label><textarea id="rN" placeholder="مثلاً: The Ordinary Niacinamide 30ml، أو مقاس M لون أسود…"></textarea></div>
+    <div class="row2"><div class="f"><label>الاسم</label><input id="rNm" value="${esc(saved.n||'')}"></div><div class="f"><label>الموبايل</label><input id="rP" type="tel" inputmode="tel" value="${esc(saved.p||'')}" style="direction:ltr;text-align:right"></div></div>`,
+    `<button class="btn" data-close>إلغاء</button><button class="btn r" id="rGo">ابعتي الطلب</button>`);
+  ov.querySelector('#rGo').onclick=async()=>{
+    const q=x=>ov.querySelector(x).value.trim(), d={country:q('#rC'),link:q('#rL'),note:q('#rN'),name:q('#rNm'),phone:q('#rP')};
+    if(!d.link&&!d.note){ toast('اكتبي اسم المنتج أو حطي اللينك'); return; }
+    if(!d.name){ toast('اكتبي اسمك'); return; }
+    const wa=(S.settings.whatsapp||'').replace(/\D/g,''); if(!wa){ toast('رقم الواتساب مش متسجل'); return; }
+    const btn=ov.querySelector('#rGo'); btn.disabled=true;
+    if(S.v2){ try{ await sb.rpc('submit_request',{name:d.name,phone:d.phone,country:d.country,link:d.link,note:d.note}); }catch(e){} }
+    try{ localStorage.setItem('pb_cust',JSON.stringify({...saved,n:d.name,p:d.phone||saved.p})); }catch(e){}
+    const msg=['✨ طلب منتج من بره - PicksBuy','',d.country?`البلد: ${d.country}`:'',d.note?`المنتج: ${d.note}`:'',d.link?`اللينك: ${d.link}`:'','',`الاسم: ${d.name}`,d.phone?`الموبايل: ${d.phone}`:'','','📸 لو معاكي صورة للمنتج ابعتيها هنا'].filter((x,i,a)=>x!==''||a[i-1]!=='').join('\n').trim();
+    ov.close();
+    const o2=sheet('خطوة أخيرة',`<div class="ok-ic">✨</div><p style="text-align:center;line-height:1.8;margin:0">دوسي الزرار تحت علشان تبعتي الطلب على واتساب، وهنرد عليكي بالسعر والمعاد.</p>`,
+      `<a class="btn g" style="text-align:center;text-decoration:none" target="_blank" rel="noopener" href="https://wa.me/${wa}?text=${encodeURIComponent(msg)}" id="rWa">ابعتي على واتساب</a>`);
+    o2.querySelector('#rWa').addEventListener('click',()=>setTimeout(()=>o2.close(),400));
+  };
+}
+function checkUpgrade(){
+  const box=$('#upg'); box.innerHTML='';
+  if(!S.canEdit || S.v2) return;
+  box.innerHTML=`<div class="impbar" style="border-color:#1D4F91"><span style="font-size:24px">⚙️</span><b>خطوة واحدة لتفعيل المميزات الجديدة (الشحن، تأكيد الطلبات، طلبات من بره)</b><button id="upGo">فعّل</button></div>`;
+  $('#upGo').onclick=()=>{
+    const ov=sheet('تفعيل المميزات الجديدة',`<ol style="line-height:2;padding-inline-start:20px;margin:0">
+      <li>دوس <b>📋 انسخ الكود</b> تحت.</li><li>دوس <b>افتح SQL Editor</b>، امسح أي حاجة مكتوبة، والصق.</li><li>دوس <b>Run</b> ولازم يطلع <b>Success</b>.</li><li>ارجع هنا واعمل تحديث للصفحة.</li></ol>`,
+      `<button class="btn r" id="upCp">📋 انسخ الكود</button><a class="btn p" style="text-align:center;text-decoration:none" target="_blank" rel="noopener" href="https://supabase.com/dashboard/project/iozwfbafomkwlhlbkcuq/sql/new">افتح SQL Editor</a>`);
+    ov.querySelector('#upCp').onclick=async()=>{
+      try{ const t=await (await fetch('import/upgrade-2.sql?v='+Date.now(),{cache:'no-store'})).text(); await navigator.clipboard.writeText(t); toast('اتنسخ ✅ روح الصقه في SQL Editor'); }
+      catch(e){ toast('مقدرتش أنسخ، جرّب تاني'); }
+    };
+  };
+}
 
 /* ---------- ready-made batches prepared by Claude (import/batch.json) ---------- */
 let BATCH=null;
@@ -1079,15 +1278,14 @@ async function openOrder(no){
       <div class="i">${l.brand?`<div class="brand-l" style="font-size:10px">${esc(l.brand)}</div>`:''}<div class="n">${esc(l.name)}</div>
       ${l.v?`<div class="v">${esc(l.v)}</div>`:''}<div class="p">${fmt(num(l.price))} ${esc(cur())} × ${l.n}</div></div></div>`; }).join('');
   const ov=sheet(`طلب <span dir="ltr">${esc(o.order_no)}</span>`,`
-    <div class="hint" style="margin-bottom:6px">${d.toLocaleDateString('ar-EG')} ${d.toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit'})}${o.status==='cancelled'?' · <b style="color:var(--red)">اتلغى</b>':''}</div>
-    <div style="font-weight:800">${esc(c.name||'')}</div>${c.addr?`<div class="hint">${esc(c.addr)}</div>`:''}${c.note?`<div class="hint">ملاحظات: ${esc(c.note)}</div>`:''}
-    ${rows}<div class="tot"><span>الإجمالي</span><b>${fmt(num(o.total))} ${esc(cur())}</b></div>`,
-    o.status==='cancelled' ? `<button class="btn" data-close>تمام</button>`
-      : `<button class="btn" data-close>تمام</button><button class="btn r" id="oc">إلغاء ورجّع الكمية</button>`);
-  const oc=ov.querySelector('#oc');
-  if(oc) oc.onclick=async()=>{ if(!await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return;
-    const r=await sb.rpc('cancel_order',{oid:o.id}); if(r.error){ toast('حصلت مشكلة'); return; }
-    toast('اتلغى ورجعت الكمية'); S.orders=null; ov.close(); refresh('products'); };
+    <div style="display:flex;justify-content:space-between;align-items:center"><span class="hint">${d.toLocaleDateString('ar-EG')} ${d.toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit'})}</span><span class="pill st-${esc(o.status)}">${ST[o.status]||esc(o.status)}</span></div>
+    ${holdLeft(o)?`<div class="hint">${holdLeft(o)}</div>`:''}
+    <div style="font-weight:800;margin-top:6px">${esc(c.name||'')}${(o.phone||c.phone)?` · <span dir="ltr">${esc(o.phone||c.phone)}</span>`:''}</div>
+    ${(o.gov||c.gov||c.addr)?`<div class="hint">${esc([o.gov||c.gov,c.addr].filter(Boolean).join(' - '))}</div>`:''}${c.note?`<div class="hint">ملاحظات: ${esc(c.note)}</div>`:''}
+    ${rows}<div class="tot"><span>الإجمالي</span><b>${fmt(num(o.total)+(num(o.shipping)||0))} ${esc(cur())}</b></div>${num(o.shipping)?`<div class="hint" style="text-align:left">شامل شحن ${fmt(num(o.shipping))}</div>`:''}
+    <div class="obtns">${orderButtons(o)}</div>`,
+    `<button class="btn" data-close>تمام</button>`);
+  ov.querySelector('.obtns').addEventListener('click',async e=>{ const b=e.target.closest('[data-ost]'); if(!b) return; const [id,st]=b.dataset.ost.split('|'); if(await setOrderStatus(+id,st)) ov.close(); });
 }
 
 /* ---------- boot ---------- */
@@ -1096,6 +1294,8 @@ async function openOrder(no){
   S.db=DB;
   S.timer=setTimeout(()=>{ if(!S.ready){ note('النت بطيء شوية… لسه بنحمّل المنتجات.'); } },10000);
   try{
+    try{ const v=await sb.rpc('pb_version'); S.v2=!v.error && v.data>=2; }catch(e){ S.v2=false; }
+    if(S.v2){ try{ await sb.rpc('release_expired'); }catch(e){} }
     await Promise.all(['countries','categories','products','settings'].map(refresh));
     S.ready=true; clearTimeout(S.timer); note(''); render();
   }catch(e){ S.ready=true; clearTimeout(S.timer); note('مقدرناش نحمّل المنتجات دلوقتي. جرّب تفتح الصفحة تاني.'); render(); }
