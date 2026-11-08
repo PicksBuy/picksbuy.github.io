@@ -499,6 +499,7 @@ function waText(p){
   else if (o && n && o>n){ lines.push(`${fmt(o)} ${cur()}❌`,'',isPromo(p)?`💥${String(S.settings.promo.title).toUpperCase()} OFFER💥`:'💥OFFER PRICE💥','',`${fmt(n)} ${cur()} ✅`); }
   else if (n!=null) lines.push(`${fmt(n)} ${cur()} ✅`);
   if (stock(p)<=0) lines.push('','Sold out');
+  lines.push('',`🛒 اطلبي من هنا: ${location.origin+location.pathname}#p-${p.id}`);
   return lines.join('\n');
 }
 function openDetail(id){
@@ -603,7 +604,8 @@ async function checkout(){
   const got=res.items||[], lost=res.missing||[], no=res.order_no, total=num(res.total)||0;
   const msg=[`🛍️ طلب جديد من PicksBuy`,`رقم الطلب: ${no}`,'',
     ...got.map((l,i)=>`${i+1}) ${[l.brand,l.name].filter(Boolean).join(' - ')}${l.v?` (${l.v})`:''}\n   ${fmt(num(l.price))} ${cur()} × ${l.n} = ${fmt((num(l.price)||0)*l.n)} ${cur()}`),
-    '',`الإجمالي: ${fmt(total)} ${cur()}`,'',`الاسم: ${name}`, addr?`العنوان: ${addr}`:'', note?`ملاحظات: ${note}`:''].filter((x,i,a)=>x!==''||a[i-1]!=='').join('\n').trim();
+    '',`الإجمالي: ${fmt(total)} ${cur()}`,'',`الاسم: ${name}`, addr?`العنوان: ${addr}`:'', note?`ملاحظات: ${note}`:'',
+    '',`📸 الطلب بالصور: ${location.origin+location.pathname}#order-${no}`].filter((x,i,a)=>x!==''||a[i-1]!=='').join('\n').trim();
   const href=`https://wa.me/${wa}?text=${encodeURIComponent(msg)}`;
   CART=[]; saveCart();
   const old=cartOv; old.onclosed=null; old.close(); cartOv=null;
@@ -956,7 +958,7 @@ async function checkAdmin(){
   setAdmin(isAdm && pref==='1');
   return {session,isAdm};
 }
-function openLogin(){
+function openLogin(after){
   const ov=sheet('دخول الأدمن',`
     <div class="f"><label>الإيميل</label><input id="lE" type="email" autocomplete="username" style="direction:ltr;text-align:right"></div>
     <div class="f"><label>الباسورد</label><input id="lP" type="password" autocomplete="current-password" style="direction:ltr;text-align:right"></div>`,
@@ -969,7 +971,7 @@ function openLogin(){
       toast(m.includes('confirm')?'الحساب لسه متأكدش من Supabase':m.includes('invalid')?'الإيميل أو الباسورد غلط':'مشكلة في الدخول: '+(r.error.message||'')); return; }
     const st=await checkAdmin();
     if(!st.isAdm){ toast('الحساب ده مش مسجل كأدمن'); await sb.auth.signOut(); await checkAdmin(); }
-    else toast('أهلاً 👋 دلوقتي تقدر تعدّل');
+    else { toast('أهلاً 👋 دلوقتي تقدر تعدّل'); if(after) setTimeout(after,300); }
     ov.close();
   };
   go.onclick=run; ov.querySelector('#lP').addEventListener('keydown',e=>{ if(e.key==='Enter') run(); });
@@ -980,6 +982,36 @@ $('#adminLink').onclick=async()=>{
   if(session){ await sb.auth.signOut(); try{ localStorage.removeItem('pb_admin'); }catch(e){} await checkAdmin(); toast('خرجت من الأدمن'); }
   else openLogin();
 };
+
+/* ---------- links: #order-XXX, #p-ID, #admin ---------- */
+function clearHash(){ try{ history.replaceState(null,'',location.pathname+location.search); }catch(e){} }
+async function route(){
+  const h=decodeURIComponent(location.hash||'');
+  if(h==='#admin'){ clearHash(); const {data:{session}}=await sb.auth.getSession(); if(!session) openLogin(); return; }
+  if(h.startsWith('#p-')){ const id=h.slice(3); clearHash(); if(S.products.find(x=>x.id===id)) openDetail(id); else toast('المنتج ده مش متاح دلوقتي'); return; }
+  if(h.startsWith('#order-')){ const no=h.slice(7); clearHash(); openOrder(no); }
+}
+async function openOrder(no){
+  if(!S.canEdit){ toast('سجّل دخول الأدمن علشان تشوف الطلب'); openLogin(()=>openOrder(no)); return; }
+  let o=null;
+  try{ o=ok(await sb.from('orders').select('*').eq('order_no',no).maybeSingle()); }catch(e){}
+  if(!o){ toast('مش لاقيين الطلب ده'); return; }
+  const c=o.customer||{}, d=new Date(o.created_at);
+  const rows=(o.items||[]).map(l=>{ const p=S.products.find(x=>x.id===l.id); const im=p&&p.images&&p.images[0];
+    return `<div class="cl">${im?`<img src="${img(im)}" alt="">`:'<div class="ni"></div>'}
+      <div class="i">${l.brand?`<div class="brand-l" style="font-size:10px">${esc(l.brand)}</div>`:''}<div class="n">${esc(l.name)}</div>
+      ${l.v?`<div class="v">${esc(l.v)}</div>`:''}<div class="p">${fmt(num(l.price))} ${esc(cur())} × ${l.n}</div></div></div>`; }).join('');
+  const ov=sheet(`طلب <span dir="ltr">${esc(o.order_no)}</span>`,`
+    <div class="hint" style="margin-bottom:6px">${d.toLocaleDateString('ar-EG')} ${d.toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit'})}${o.status==='cancelled'?' · <b style="color:var(--red)">اتلغى</b>':''}</div>
+    <div style="font-weight:800">${esc(c.name||'')}</div>${c.addr?`<div class="hint">${esc(c.addr)}</div>`:''}${c.note?`<div class="hint">ملاحظات: ${esc(c.note)}</div>`:''}
+    ${rows}<div class="tot"><span>الإجمالي</span><b>${fmt(num(o.total))} ${esc(cur())}</b></div>`,
+    o.status==='cancelled' ? `<button class="btn" data-close>تمام</button>`
+      : `<button class="btn" data-close>تمام</button><button class="btn r" id="oc">إلغاء ورجّع الكمية</button>`);
+  const oc=ov.querySelector('#oc');
+  if(oc) oc.onclick=async()=>{ if(!await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return;
+    const r=await sb.rpc('cancel_order',{oid:o.id}); if(r.error){ toast('حصلت مشكلة'); return; }
+    toast('اتلغى ورجعت الكمية'); S.orders=null; ov.close(); refresh('products'); };
+}
 
 /* ---------- boot ---------- */
 (async()=>{
@@ -998,7 +1030,8 @@ $('#adminLink').onclick=async()=>{
   document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refresh('products').catch(()=>{}); });
   await checkAdmin();
   sb.auth.onAuthStateChange(ev=>{ if(ev==='SIGNED_OUT') setTimeout(checkAdmin,0); });
-  if(location.hash==='#admin'){ const {data:{session}}=await sb.auth.getSession(); if(!session) openLogin(); }
+  route();
+  window.addEventListener('hashchange',route);
 })();
 </script>
 </body>
