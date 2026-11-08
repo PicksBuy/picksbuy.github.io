@@ -1109,7 +1109,7 @@ async function openOrder(no){
   sb.auth.onAuthStateChange(ev=>{ if(ev==='SIGNED_OUT') setTimeout(checkAdmin,0); });
   const viaLink=/^#(order-|admin)/.test(location.hash);
   route();
-  if(!viaLink) setTimeout(maybeJoinPopup,3500);
+  if(!viaLink) maybeJoinPopup();
   window.addEventListener('hashchange',route);
 })();
 </script>
