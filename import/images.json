@@ -333,5 +333,25 @@
   "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0932F_sw.jpg_s3.lmb_4ptqcx/7055fc2bc498bbd568f908d244e8b81b/NYXC0932F_sw.jpg?w=200&h=200&q=80&fit=fill",
   "out": "img/nyx/sw/nyx-duck-plump-liner-syringe-sienna.jpg",
   "kind": "swatch"
+ },
+ {
+  "url": "https://media.superdrug.com//medias/sys_master/prd-images/hf2/hac/10666934698014/prd-front-775633_600x600/prd-front-775633-600x600.jpg",
+  "out": "img/nyx/nyx-csws-concealer-light.jpg",
+  "kind": "product"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0143F_1.jpg_s3.lmb_bntsy/ccb761ad6e7ab81baa77bbb5f996a057/NYXC0143F_1.jpg?w=900",
+  "out": "img/nyx/nyx-cswsfoundation-light.jpg",
+  "kind": "product"
+ },
+ {
+  "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0844F_1.jpg_s3.lmb_5likqq/3994f19d14cfd461f6334edcad76c327/NYXC0844F_1.jpg?w=900",
+  "out": "img/nyx/nyx-bare-with-me-concealer-light.jpg",
+  "kind": "product"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/15921976-1495345639263959.jpg",
+  "out": "img/nyx/nyx-lip-iv-light.jpg",
+  "kind": "product"
  }
 ]
