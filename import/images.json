@@ -335,15 +335,6 @@
   "kind": "swatch"
  },
  {
-  "url": "",
-  "out": "img/nyx/nyx-csws-concealer-light.jpg",
-  "kind": "product",
-  "pages": [
-   "https://www.nyxcosmetics.fr/best-sellers/anti-cernes-correcteur---can-t-stop-won-t-stop-concealer/NYX_728.html",
-   "https://www.nyxcosmetics.com/face/concealer/cant-stop-wont-stop-contour-concealer/NYX_301.html"
-  ]
- },
- {
   "url": "https://cdn.beautybay.com/images/eoaaqxyywn6o/NYXC0143F_1.jpg_s3.lmb_bntsy/ccb761ad6e7ab81baa77bbb5f996a057/NYXC0143F_1.jpg?w=900",
   "out": "img/nyx/nyx-cswsfoundation-light.jpg",
   "kind": "product"

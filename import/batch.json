@@ -1518,6 +1518,7 @@
    "price": 1025,
    "oldPrice": null,
    "images": [
+    "img/nyx/nyx-lip-iv-light.jpg",
     "img/nyx/nyx-lip-iv-1.jpg"
    ],
    "sizes": [
@@ -1833,6 +1834,7 @@
    "price": 1220,
    "oldPrice": null,
    "images": [
+    "img/nyx/nyx-cswsfoundation-light.jpg",
     "img/nyx/nyx-cswsfoundation-1.jpg"
    ],
    "sizes": [],
@@ -1934,6 +1936,7 @@
    "price": 1060,
    "oldPrice": null,
    "images": [
+    "img/nyx/nyx-bare-with-me-concealer-light.jpg",
     "img/nyx/nyx-bare-with-me-concealer-1.jpg"
    ],
    "sizes": [
@@ -2257,10 +2260,11 @@
    }
   },
   {
-   "key": "upd-img-nyx-lip-iv-1",
+   "key": "upd-img-nyx-lip-iv-2",
    "id": "nyx-lip-iv",
    "set": {
     "images": [
+     "img/nyx/nyx-lip-iv-light.jpg",
      "img/nyx/nyx-lip-iv-1.jpg"
     ],
     "sizes": [
@@ -2488,10 +2492,11 @@
    }
   },
   {
-   "key": "upd-img-nyx-cswsfoundation-1",
+   "key": "upd-img-nyx-cswsfoundation-2",
    "id": "nyx-cswsfoundation",
    "set": {
     "images": [
+     "img/nyx/nyx-cswsfoundation-light.jpg",
      "img/nyx/nyx-cswsfoundation-1.jpg"
     ],
     "sizes": [],
@@ -2553,10 +2558,11 @@
    }
   },
   {
-   "key": "upd-img-nyx-bare-with-me-concealer-1",
+   "key": "upd-img-nyx-bare-with-me-concealer-2",
    "id": "nyx-bare-with-me-concealer",
    "set": {
     "images": [
+     "img/nyx/nyx-bare-with-me-concealer-light.jpg",
      "img/nyx/nyx-bare-with-me-concealer-1.jpg"
     ],
     "sizes": [
