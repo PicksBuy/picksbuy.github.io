@@ -68,3 +68,7 @@ skip img/nyx/sw/nyx-duck-plump-liner-syringe-sienna.jpg
 skip img/nyx/nyx-cswsfoundation-light.jpg
 skip img/nyx/nyx-bare-with-me-concealer-light.jpg
 skip img/nyx/nyx-lip-iv-light.jpg
+ok   img/nyx/probe/nyx-lip-iv.jpg 285815B
+ok   img/nyx/probe/nyx-lip-lingerie-stain.jpg 79144B
+ok   img/nyx/probe/nyx-brow-glue.jpg 471616B
+ok   img/nyx/probe/nyx-bare-with-me-concealer.jpg 605668B
