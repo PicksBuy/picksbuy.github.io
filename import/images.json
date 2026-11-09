@@ -1090,5 +1090,23 @@
   "out": "img/sd/sd-davidoff-cool-water-man-gift-set.jpg",
   "kind": "product",
   "referer": "https://www.lookfantastic.com/p/davidoff-cool-water-eau-de-toilette-75ml/11079879/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/11194563-3295319472845144.jpg",
+  "out": "img/sd/sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/jimmy-choo-blossom-eau-de-parfum-spray-40ml/11194563/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/10952572-1815323127016720.jpg",
+  "out": "img/sd/sd-rabanne-lady-million-eau-de-parfum-50ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/paco-rabanne-lady-million-eau-de-parfum-50ml/10643790/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/1600/1600/10947902-3584556386313961.jpg",
+  "out": "img/sd/sd-calvin-klein-eternity-for-men-eau-de-toilette-100m.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/calvin-klein-eternity-for-men-eau-de-toilette-100ml/10947902/"
  }
 ]
