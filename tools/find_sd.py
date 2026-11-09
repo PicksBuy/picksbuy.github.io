@@ -79,3 +79,4 @@ for it in items:
 json.dump(jobs,open('import/images.json','w'),indent=1)
 json.dump({'found':found,'log':log,'ao_sample':list(aol)[:40]},open('import/sd2-found.json','w'),indent=1)
 print('\n'.join(log)); print(sum(1 for v in found.values() if v[2]),'/',len(items))
+# r3
