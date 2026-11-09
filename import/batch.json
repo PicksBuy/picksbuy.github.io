@@ -1,5 +1,5 @@
 {
- "id": "2026-11-08-g",
+ "id": "2026-11-09-a",
  "title": "منتجات Black Friday والـ dm الجديدة",
  "categories": [
   {
@@ -103,6 +103,18 @@
    "name": "حواجب",
    "parentId": "makeup",
    "order": 7
+  },
+  {
+   "id": "home",
+   "name": "للبيت",
+   "parentId": null,
+   "order": 9
+  },
+  {
+   "id": "candles",
+   "name": "شموع معطرة",
+   "parentId": "home",
+   "order": 1
   }
  ],
  "products": [
@@ -2244,6 +2256,86 @@
     "rate": 60.63,
     "url": "https://www.nyxcosmetics.fr/teint/anti-cernes-correcteur/serum-correcteur-bare-with-me/NYX_1014.html"
    }
+  },
+  {
+   "id": "bbw-candles-bf",
+   "brand": "Bath & Body Works",
+   "name": "Single Wick Candles",
+   "desc": "شموع Bath & Body Works الأصلية بفتيلة واحدة، ريحتها بتملا الأوضة وبتعيش معاكي.\n\nاختاري الريحة اللي عايزاها من الاختيارات تحت، كل ريحة قطعة واحدة بس.\n\n🔥 عرض البلاك فرايداي: 480 بدل 850 جنيه.",
+   "countryId": "us",
+   "categoryId": "candles",
+   "price": 480,
+   "oldPrice": 850,
+   "images": [
+    "img/bbw/bbw-candles.jpg",
+    "img/bbw/tis-the-season.jpg",
+    "img/bbw/the-perfect-christmas.jpg",
+    "img/bbw/winter.jpg",
+    "img/bbw/cinnamon-pinecone.jpg",
+    "img/bbw/cranberry-pomegranate.jpg",
+    "img/bbw/leaves.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "'Tis the Season",
+     "q": 1,
+     "img": "img/bbw/sw-tis-the-season.jpg",
+     "photo": "img/bbw/tis-the-season.jpg"
+    },
+    {
+     "s": "The Perfect Christmas",
+     "q": 1,
+     "img": "img/bbw/sw-the-perfect-christmas.jpg",
+     "photo": "img/bbw/the-perfect-christmas.jpg"
+    },
+    {
+     "s": "Winter",
+     "q": 1,
+     "img": "img/bbw/sw-winter.jpg",
+     "photo": "img/bbw/winter.jpg"
+    },
+    {
+     "s": "Cinnamon Pinecone",
+     "q": 1,
+     "img": "img/bbw/sw-cinnamon-pinecone.jpg",
+     "photo": "img/bbw/cinnamon-pinecone.jpg"
+    },
+    {
+     "s": "Tree Farm",
+     "q": 0,
+     "img": "img/bbw/sw-tree-farm.jpg",
+     "photo": "img/bbw/tree-farm.jpg"
+    },
+    {
+     "s": "Coffee & Whiskey",
+     "q": 0,
+     "img": "img/bbw/sw-coffee-whiskey.jpg",
+     "photo": "img/bbw/coffee-whiskey.jpg"
+    },
+    {
+     "s": "Pumpkin Apple",
+     "q": 0,
+     "img": "img/bbw/sw-pumpkin-apple.jpg",
+     "photo": "img/bbw/pumpkin-apple.jpg"
+    },
+    {
+     "s": "Cranberry & Pomegranate",
+     "q": 1,
+     "img": "img/bbw/sw-cranberry-pomegranate.jpg",
+     "photo": "img/bbw/cranberry-pomegranate.jpg"
+    },
+    {
+     "s": "Leaves",
+     "q": 1,
+     "img": "img/bbw/sw-leaves.jpg",
+     "photo": "img/bbw/leaves.jpg"
+    }
+   ],
+   "qty": null,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T14:00:00+02:00",
+   "needsPrice": false
   }
  ],
  "settingsPatch": {
