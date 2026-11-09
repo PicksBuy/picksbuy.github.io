@@ -139,6 +139,12 @@
    "name": "أطقم هدايا",
    "parentId": "perfume",
    "order": 3
+  },
+  {
+   "id": "perfume-u",
+   "name": "برفانات للجنسين",
+   "parentId": "perfume",
+   "order": 3
   }
  ],
  "products": [
@@ -2777,6 +2783,842 @@
    "promo": true,
    "hidden": false,
    "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-billie-eilish-eilish-eau-de-parfum-100ml",
+   "brand": "Billie Eilish",
+   "name": "Eilish Eau de Parfum 100ml",
+   "desc": "عطر حريمي أصلي من Billie Eilish – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3670,
+   "oldPrice": 5630,
+   "images": [
+    "img/sd/sd-billie-eilish-eilish-eau-de-parfum-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-billie-eilish-eilish-no-2-eau-de-parfum-100ml",
+   "brand": "Billie Eilish",
+   "name": "Eilish No. 2 Eau de Parfum 100ml",
+   "desc": "عطر حريمي أصلي من Billie Eilish – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3670,
+   "oldPrice": 5630,
+   "images": [
+    "img/sd/sd-billie-eilish-eilish-no-2-eau-de-parfum-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-dkny-golden-delicious-eau-de-parfum-50ml",
+   "brand": "DKNY",
+   "name": "Golden Delicious Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من DKNY – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3440,
+   "oldPrice": 3715,
+   "images": [
+    "img/sd/sd-dkny-golden-delicious-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-dkny-be-delicious-fresh-blossom-eau-de-parfum-30ml",
+   "brand": "DKNY",
+   "name": "Be Delicious Fresh Blossom Eau de Parfum 30ml",
+   "desc": "عطر حريمي أصلي من DKNY – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3050,
+   "oldPrice": 3200,
+   "images": [
+    "img/sd/sd-dkny-be-delicious-fresh-blossom-eau-de-parfum-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-olymp-a-flora-eau-de-parfum-intense-30ml",
+   "brand": "Rabanne",
+   "name": "Olympéa Flora Eau de Parfum Intense 30ml",
+   "desc": "عطر حريمي أصلي من Rabanne – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4445,
+   "oldPrice": 6295,
+   "images": [
+    "img/sd/sd-rabanne-olymp-a-flora-eau-de-parfum-intense-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6",
+   "brand": "Jimmy Choo",
+   "name": "Blossom Special Edition Eau de Parfum 60ml",
+   "desc": "عطر حريمي أصلي من Jimmy Choo – حجم 60ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4060,
+   "oldPrice": 5780,
+   "images": [
+    "img/sd/sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-fame-eau-de-parfum-50ml",
+   "brand": "Rabanne",
+   "name": "Fame Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Rabanne – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 5685,
+   "oldPrice": 8805,
+   "images": [
+    "img/sd/sd-rabanne-fame-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml",
+   "brand": "Rabanne",
+   "name": "Pure XS For Her Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Rabanne – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 5295,
+   "oldPrice": 7845,
+   "images": [
+    "img/sd/sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-lady-million-eau-de-parfum-50ml",
+   "brand": "Rabanne",
+   "name": "Lady Million Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Rabanne – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 6305,
+   "oldPrice": 8065,
+   "images": [
+    "img/sd/sd-rabanne-lady-million-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-olymp-a-eau-de-parfum-30ml",
+   "brand": "Rabanne",
+   "name": "Olympéa Eau de Parfum 30ml",
+   "desc": "عطر حريمي أصلي من Rabanne – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4910,
+   "oldPrice": 5855,
+   "images": [
+    "img/sd/sd-rabanne-olymp-a-eau-de-parfum-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-narciso-rodriguez-all-of-me-eau-de-parfum-30ml",
+   "brand": "Narciso Rodriguez",
+   "name": "All Of Me Eau de Parfum 30ml",
+   "desc": "عطر حريمي أصلي من Narciso Rodriguez – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3360,
+   "oldPrice": 6810,
+   "images": [
+    "img/sd/sd-narciso-rodriguez-all-of-me-eau-de-parfum-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-versace-eros-pour-femme-eau-de-toilette-100ml",
+   "brand": "Versace",
+   "name": "Eros Pour Femme Eau de Toilette 100ml",
+   "desc": "عطر حريمي أصلي من Versace – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 5375,
+   "oldPrice": 9245,
+   "images": [
+    "img/sd/sd-versace-eros-pour-femme-eau-de-toilette-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-versace-dylan-purple-eau-de-parfum-50ml",
+   "brand": "Versace",
+   "name": "Dylan Purple Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Versace – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4910,
+   "oldPrice": 8215,
+   "images": [
+    "img/sd/sd-versace-dylan-purple-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-moschino-toy-2-pearl-eau-de-parfum-50ml",
+   "brand": "Moschino",
+   "name": "Toy 2 Pearl Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Moschino – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3980,
+   "oldPrice": 6810,
+   "images": [
+    "img/sd/sd-moschino-toy-2-pearl-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-elegant-pink-100ml",
+   "brand": "Arabian Oud",
+   "name": "Elegant Pink 100ml",
+   "desc": "عطر حريمي أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 7040,
+   "oldPrice": 9615,
+   "images": [
+    "img/sd/sd-arabian-oud-elegant-pink-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-taraf-women-parfum-100ml",
+   "brand": "Arabian Oud",
+   "name": "Taraf Women Parfum 100ml",
+   "desc": "عطر حريمي أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 13080,
+   "oldPrice": 18465,
+   "images": [
+    "img/sd/sd-arabian-oud-taraf-women-parfum-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-360-for-women-100ml",
+   "brand": "Arabian Oud",
+   "name": "360 For Women 100ml",
+   "desc": "عطر حريمي أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4020,
+   "oldPrice": 5190,
+   "images": [
+    "img/sd/sd-arabian-oud-360-for-women-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-bella-100ml",
+   "brand": "Arabian Oud",
+   "name": "Bella 100ml",
+   "desc": "عطر حريمي أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 6285,
+   "oldPrice": 8510,
+   "images": [
+    "img/sd/sd-arabian-oud-bella-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-bella-200ml",
+   "brand": "Arabian Oud",
+   "name": "Bella 200ml",
+   "desc": "عطر حريمي أصلي من Arabian Oud – حجم 200ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 8045,
+   "oldPrice": 11090,
+   "images": [
+    "img/sd/sd-arabian-oud-bella-200ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-arabella-100ml",
+   "brand": "Arabian Oud",
+   "name": "Arabella 100ml",
+   "desc": "عطر حريمي أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 9810,
+   "oldPrice": 13670,
+   "images": [
+    "img/sd/sd-arabian-oud-arabella-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-madawi-50ml",
+   "brand": "Arabian Oud",
+   "name": "Madawi 50ml",
+   "desc": "عطر حريمي أصلي من Arabian Oud – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 8300,
+   "oldPrice": 11460,
+   "images": [
+    "img/sd/sd-arabian-oud-madawi-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-phantom-eau-de-toilette-50ml",
+   "brand": "Rabanne",
+   "name": "Phantom Eau de Toilette 50ml",
+   "desc": "عطر رجالي أصلي من Rabanne – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 4755,
+   "oldPrice": 6810,
+   "images": [
+    "img/sd/sd-rabanne-phantom-eau-de-toilette-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-invictus-victory-eau-de-parfum-50ml",
+   "brand": "Rabanne",
+   "name": "Invictus Victory Eau de Parfum 50ml",
+   "desc": "عطر رجالي أصلي من Rabanne – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 5065,
+   "oldPrice": 7330,
+   "images": [
+    "img/sd/sd-rabanne-invictus-victory-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-1-million-lucky-eau-de-toilette-100ml",
+   "brand": "Rabanne",
+   "name": "1 Million Lucky Eau de Toilette 100ml",
+   "desc": "عطر رجالي أصلي من Rabanne – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 5140,
+   "oldPrice": 8140,
+   "images": [
+    "img/sd/sd-rabanne-1-million-lucky-eau-de-toilette-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-issey-miyake-l-eau-d-issey-pour-homme-intense-eau-",
+   "brand": "Issey Miyake",
+   "name": "L'Eau d'Issey Pour Homme Intense Eau de Toilette 75ml",
+   "desc": "عطر رجالي أصلي من Issey Miyake – حجم 75ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 3285,
+   "oldPrice": 5705,
+   "images": [
+    "img/sd/sd-issey-miyake-l-eau-d-issey-pour-homme-intense-eau-.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-calvin-klein-eternity-for-men-eau-de-toilette-100m",
+   "brand": "Calvin Klein",
+   "name": "Eternity for Men Eau de Toilette 100ml",
+   "desc": "عطر رجالي أصلي من Calvin Klein – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 3905,
+   "oldPrice": 7400,
+   "images": [
+    "img/sd/sd-calvin-klein-eternity-for-men-eau-de-toilette-100m.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-w-100ml",
+   "brand": "Arabian Oud",
+   "name": "W 100ml",
+   "desc": "عطر رجالي أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 7545,
+   "oldPrice": 10350,
+   "images": [
+    "img/sd/sd-arabian-oud-w-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-arabian-knight-100ml",
+   "brand": "Arabian Oud",
+   "name": "Arabian Knight 100ml",
+   "desc": "عطر للجنسين أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-u",
+   "price": 8045,
+   "oldPrice": 11090,
+   "images": [
+    "img/sd/sd-arabian-oud-arabian-knight-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-arabian-knight-silver-100ml",
+   "brand": "Arabian Oud",
+   "name": "Arabian Knight Silver 100ml",
+   "desc": "عطر للجنسين أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-u",
+   "price": 7545,
+   "oldPrice": 10350,
+   "images": [
+    "img/sd/sd-arabian-oud-arabian-knight-silver-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-vanilla-rose-100ml",
+   "brand": "Arabian Oud",
+   "name": "Vanilla Rose 100ml",
+   "desc": "عطر للجنسين أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-u",
+   "price": 8300,
+   "oldPrice": 11460,
+   "images": [
+    "img/sd/sd-arabian-oud-vanilla-rose-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-kashmir-musk-100ml",
+   "brand": "Arabian Oud",
+   "name": "Kashmir Musk 100ml",
+   "desc": "عطر للجنسين أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-u",
+   "price": 9555,
+   "oldPrice": 13300,
+   "images": [
+    "img/sd/sd-arabian-oud-kashmir-musk-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-yacht-mood-75ml",
+   "brand": "Arabian Oud",
+   "name": "Yacht Mood 75ml",
+   "desc": "عطر للجنسين أصلي من Arabian Oud – حجم 75ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-u",
+   "price": 8600,
+   "oldPrice": 11900,
+   "images": [
+    "img/sd/sd-arabian-oud-yacht-mood-75ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-sehr-al-kalemat-100ml",
+   "brand": "Arabian Oud",
+   "name": "Sehr Al Kalemat 100ml",
+   "desc": "عطر للجنسين أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-u",
+   "price": 8045,
+   "oldPrice": 11090,
+   "images": [
+    "img/sd/sd-arabian-oud-sehr-al-kalemat-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-musk-mubakhar-100ml",
+   "brand": "Arabian Oud",
+   "name": "Musk Mubakhar 100ml",
+   "desc": "عطر للجنسين أصلي من Arabian Oud – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-u",
+   "price": 8300,
+   "oldPrice": 11460,
+   "images": [
+    "img/sd/sd-arabian-oud-musk-mubakhar-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-tarteel-silver-75ml",
+   "brand": "Arabian Oud",
+   "name": "Tarteel Silver 75ml",
+   "desc": "عطر للجنسين أصلي من Arabian Oud – حجم 75ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-u",
+   "price": 12075,
+   "oldPrice": 16990,
+   "images": [
+    "img/sd/sd-arabian-oud-tarteel-silver-75ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-hugo-man-edt-75ml-deodorant-150ml-gift-set",
+   "brand": "HUGO",
+   "name": "Man EDT 75ml + Deodorant 150ml Gift Set",
+   "desc": "طقم هدية أصلي من HUGO.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 4290,
+   "oldPrice": 6000,
+   "images": [
+    "img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift",
+   "brand": "Calvin Klein",
+   "name": "CK One EDT 50ml + Shower Gel 100ml Gift Set",
+   "desc": "طقم هدية أصلي من Calvin Klein.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 2975,
+   "oldPrice": 4305,
+   "images": [
+    "img/sd/sd-calvin-klein-ck-one-eau-de-toilette-200ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-michael-kors-pour-homme-edp-50ml-gift-set",
+   "brand": "Michael Kors",
+   "name": "Pour Homme EDP 50ml Gift Set",
+   "desc": "طقم هدية أصلي من Michael Kors.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 3825,
+   "oldPrice": 7400,
+   "images": [
+    "img/sd/sd-michael-kors-pour-homme-edp-50ml-gift-set.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-michael-kors-pour-femme-edp-50ml-gift-set",
+   "brand": "Michael Kors",
+   "name": "Pour Femme EDP 50ml Gift Set",
+   "desc": "طقم هدية أصلي من Michael Kors.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 3905,
+   "oldPrice": 7845,
+   "images": [
+    "img/sd/sd-michael-kors-pour-femme-edp-50ml-gift-set.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-davidoff-cool-water-man-gift-set",
+   "brand": "Davidoff",
+   "name": "Cool Water Man Gift Set",
+   "desc": "طقم هدية أصلي من Davidoff.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 3360,
+   "oldPrice": 5190,
+   "images": [
+    "img/sd/sd-davidoff-cool-water-man-gift-set.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set",
+   "brand": "Joop!",
+   "name": "Homme EDT 75ml + Shower Gel 75ml Gift Set",
+   "desc": "طقم هدية أصلي من Joop!.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 3515,
+   "oldPrice": 5335,
+   "images": [
+    "img/sd/sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-moschino-mini-gift-set-collection-4-x-5ml",
+   "brand": "Moschino",
+   "name": "Mini Gift Set Collection 4 x 5ml",
+   "desc": "طقم هدية أصلي من Moschino.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 2860,
+   "oldPrice": 3530,
+   "images": [
+    "img/sd/sd-moschino-mini-gift-set-collection-4-x-5ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-versace-women-s-mini-gift-set",
+   "brand": "Versace",
+   "name": "Women's Mini Gift Set",
+   "desc": "طقم هدية أصلي من Versace.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 2975,
+   "oldPrice": 3715,
+   "images": [
+    "img/sd/sd-versace-women-s-mini-gift-set.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-arabian-oud-only-collection-gift-set-400ml",
+   "brand": "Arabian Oud",
+   "name": "Only Collection Gift Set 400ml",
+   "desc": "طقم هدية أصلي من Arabian Oud.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 12325,
+   "oldPrice": 17360,
+   "images": [
+    "img/sd/sd-arabian-oud-only-collection-gift-set-400ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:43:49+02:00",
    "needsPrice": false
   }
  ],
