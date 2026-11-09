@@ -161,48 +161,45 @@ skip img/sd/sd-versace-dylan-blue-pour-femme-eau-de-parfum-50ml.jpg
 skip img/sd/sd-marc-jacobs-daisy-ever-so-fresh-eau-de-parfum-75ml.jpg
 skip img/sd/sd-jean-paul-gaultier-classique-eau-de-toilette-30ml.jpg
 skip img/sd/sd-dkny-nectar-love-eau-de-parfum-30ml.jpg
-ok   img/sd/sd-billie-eilish-eilish-eau-de-parfum-100ml.jpg 156393B
-ok   img/sd/sd-billie-eilish-eilish-no-2-eau-de-parfum-100ml.jpg 158207B
-ok   img/sd/sd-dkny-golden-delicious-eau-de-parfum-50ml.jpg 76051B
-ok   img/sd/sd-dkny-be-delicious-fresh-blossom-eau-de-parfum-30ml.jpg 69836B
-ok   img/sd/sd-rabanne-olymp-a-flora-eau-de-parfum-intense-30ml.jpg 85950B
-ok   img/sd/sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6.jpg 151789B
-ok   img/sd/sd-rabanne-fame-eau-de-parfum-50ml.jpg 134397B
-ok   img/sd/sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml.jpg 37103B
-ok   img/sd/sd-rabanne-lady-million-eau-de-parfum-50ml.jpg 178430B
-ok   img/sd/sd-rabanne-olymp-a-eau-de-parfum-30ml.jpg 85950B
-ok   img/sd/sd-narciso-rodriguez-all-of-me-eau-de-parfum-30ml.jpg 62577B
-ok   img/sd/sd-versace-eros-pour-femme-eau-de-toilette-100ml.jpg 272582B
-ok   img/sd/sd-versace-yellow-diamonds-eau-de-toilette-50ml.jpg 166485B
-ok   img/sd/sd-versace-dylan-purple-eau-de-parfum-50ml.jpg 94564B
-ok   img/sd/sd-moschino-toy-2-pearl-eau-de-parfum-50ml.jpg 113096B
-ok   img/sd/sd-arabian-oud-elegant-pink-100ml.jpg 30176B
-ok   img/sd/sd-arabian-oud-taraf-women-parfum-100ml.jpg 35674B
-ok   img/sd/sd-arabian-oud-360-for-women-100ml.jpg 5918B
-ok   img/sd/sd-arabian-oud-bella-100ml.jpg 29114B
-ok   img/sd/sd-arabian-oud-bella-200ml.jpg 26240B
-ok   img/sd/sd-arabian-oud-arabella-100ml.jpg 48432B
-ok   img/sd/sd-arabian-oud-madawi-50ml.jpg 25284B
-ok   img/sd/sd-rabanne-pure-xs-eau-de-toilette-50ml.jpg 90817B
-ok   img/sd/sd-rabanne-phantom-eau-de-toilette-50ml.jpg 90817B
-ok   img/sd/sd-rabanne-invictus-victory-eau-de-parfum-50ml.jpg 317440B
-ok   img/sd/sd-rabanne-1-million-lucky-eau-de-toilette-100ml.jpg 184682B
-ok   img/sd/sd-issey-miyake-l-eau-d-issey-pour-homme-intense-eau-.jpg 52028B
-ok   img/sd/sd-calvin-klein-eternity-for-men-eau-de-toilette-100m.jpg 35348B
-ok   img/sd/sd-arabian-oud-w-100ml.jpg 9884B
-ok   img/sd/sd-arabian-oud-arabian-knight-100ml.jpg 36174B
-ok   img/sd/sd-arabian-oud-arabian-knight-silver-100ml.jpg 33958B
-ok   img/sd/sd-arabian-oud-vanilla-rose-100ml.jpg 57700B
-ok   img/sd/sd-arabian-oud-kashmir-musk-100ml.jpg 27418B
-ok   img/sd/sd-arabian-oud-yacht-mood-75ml.jpg 33334B
-ok   img/sd/sd-arabian-oud-al-oud-malaki-80ml.jpg 6633B
-ok   img/sd/sd-arabian-oud-sehr-al-kalemat-100ml.jpg 25474B
-ok   img/sd/sd-arabian-oud-musk-mubakhar-100ml.jpg 30650B
-ok   img/sd/sd-arabian-oud-tarteel-silver-75ml.jpg 57974B
-ok   img/sd/sd-hugo-man-edt-75ml-deodorant-150ml-gift-set.jpg 210819B
-ok   img/sd/sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift.jpg 210819B
-ok   img/sd/sd-michael-kors-pour-homme-edp-50ml-gift-set.jpg 128279B
-ok   img/sd/sd-michael-kors-pour-femme-edp-50ml-gift-set.jpg 133368B
-ok   img/sd/sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set.jpg 210819B
-ok   img/sd/sd-versace-women-s-mini-gift-set.jpg 103248B
-ok   img/sd/sd-arabian-oud-only-collection-gift-set-400ml.jpg 15676B
+skip img/sd/sd-billie-eilish-eilish-eau-de-parfum-100ml.jpg
+skip img/sd/sd-billie-eilish-eilish-no-2-eau-de-parfum-100ml.jpg
+skip img/sd/sd-dkny-golden-delicious-eau-de-parfum-50ml.jpg
+skip img/sd/sd-dkny-be-delicious-fresh-blossom-eau-de-parfum-30ml.jpg
+skip img/sd/sd-rabanne-olymp-a-flora-eau-de-parfum-intense-30ml.jpg
+skip img/sd/sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6.jpg
+skip img/sd/sd-narciso-rodriguez-all-of-me-eau-de-parfum-30ml.jpg
+skip img/sd/sd-versace-eros-pour-femme-eau-de-toilette-100ml.jpg
+skip img/sd/sd-versace-yellow-diamonds-eau-de-toilette-50ml.jpg
+skip img/sd/sd-versace-dylan-purple-eau-de-parfum-50ml.jpg
+skip img/sd/sd-moschino-toy-2-pearl-eau-de-parfum-50ml.jpg
+skip img/sd/sd-arabian-oud-elegant-pink-100ml.jpg
+skip img/sd/sd-arabian-oud-taraf-women-parfum-100ml.jpg
+skip img/sd/sd-arabian-oud-360-for-women-100ml.jpg
+skip img/sd/sd-arabian-oud-bella-100ml.jpg
+skip img/sd/sd-arabian-oud-bella-200ml.jpg
+skip img/sd/sd-arabian-oud-arabella-100ml.jpg
+skip img/sd/sd-arabian-oud-madawi-50ml.jpg
+skip img/sd/sd-rabanne-phantom-eau-de-toilette-50ml.jpg
+skip img/sd/sd-rabanne-invictus-victory-eau-de-parfum-50ml.jpg
+skip img/sd/sd-rabanne-1-million-lucky-eau-de-toilette-100ml.jpg
+skip img/sd/sd-issey-miyake-l-eau-d-issey-pour-homme-intense-eau-.jpg
+skip img/sd/sd-calvin-klein-eternity-for-men-eau-de-toilette-100m.jpg
+skip img/sd/sd-arabian-oud-w-100ml.jpg
+skip img/sd/sd-arabian-oud-arabian-knight-100ml.jpg
+skip img/sd/sd-arabian-oud-arabian-knight-silver-100ml.jpg
+skip img/sd/sd-arabian-oud-vanilla-rose-100ml.jpg
+skip img/sd/sd-arabian-oud-kashmir-musk-100ml.jpg
+skip img/sd/sd-arabian-oud-yacht-mood-75ml.jpg
+skip img/sd/sd-arabian-oud-sehr-al-kalemat-100ml.jpg
+skip img/sd/sd-arabian-oud-musk-mubakhar-100ml.jpg
+skip img/sd/sd-arabian-oud-tarteel-silver-75ml.jpg
+skip img/sd/sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift.jpg
+skip img/sd/sd-michael-kors-pour-homme-edp-50ml-gift-set.jpg
+skip img/sd/sd-michael-kors-pour-femme-edp-50ml-gift-set.jpg
+skip img/sd/sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set.jpg
+skip img/sd/sd-versace-women-s-mini-gift-set.jpg
+skip img/sd/sd-arabian-oud-only-collection-gift-set-400ml.jpg
+ok   img/sd/sd-rabanne-fame-eau-de-parfum-50ml.jpg 133699B
+ok   img/sd/sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml.jpg 141856B
+ok   img/sd/sd-rabanne-olymp-a-eau-de-parfum-30ml.jpg 134397B
+ok   img/sd/sd-davidoff-cool-water-man-gift-set.jpg 71062B

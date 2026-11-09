@@ -1120,5 +1120,29 @@
   "out": "img/sd/sd-arabian-oud-only-collection-gift-set-400ml.jpg",
   "kind": "product",
   "referer": "https://arabianoud.com/en/0302020091-only-collection-4-x-100ml"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/13936231-3455323123544319.jpg",
+  "out": "img/sd/sd-rabanne-fame-eau-de-parfum-50ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/paco-rabanne-fame-eau-de-parfum-50ml/13936231/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/11813312-1314945962994623.jpg",
+  "out": "img/sd/sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/paco-rabanne-pure-xs-for-her-eau-de-parfum-50ml/11813312/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/11173343-5065323126666023.jpg",
+  "out": "img/sd/sd-rabanne-olymp-a-eau-de-parfum-30ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/paco-rabanne-olympea-eau-de-parfum-30ml/11173341/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/11079879-1725318374042119.jpg",
+  "out": "img/sd/sd-davidoff-cool-water-man-gift-set.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/davidoff-cool-water-eau-de-toilette-75ml/11079879/"
  }
 ]
