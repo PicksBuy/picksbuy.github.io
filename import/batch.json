@@ -1,5 +1,5 @@
 {
- "id": "2026-11-09-a",
+ "id": "2026-11-09-b",
  "title": "منتجات Black Friday والـ dm الجديدة",
  "categories": [
   {
@@ -2278,25 +2278,25 @@
    "sizes": [
     {
      "s": "'Tis the Season",
-     "q": 1,
+     "q": 0,
      "img": "img/bbw/sw-tis-the-season.jpg",
      "photo": "img/bbw/tis-the-season.jpg"
     },
     {
      "s": "The Perfect Christmas",
-     "q": 1,
+     "q": 0,
      "img": "img/bbw/sw-the-perfect-christmas.jpg",
      "photo": "img/bbw/the-perfect-christmas.jpg"
     },
     {
      "s": "Winter",
-     "q": 1,
+     "q": 0,
      "img": "img/bbw/sw-winter.jpg",
      "photo": "img/bbw/winter.jpg"
     },
     {
      "s": "Cinnamon Pinecone",
-     "q": 1,
+     "q": 0,
      "img": "img/bbw/sw-cinnamon-pinecone.jpg",
      "photo": "img/bbw/cinnamon-pinecone.jpg"
     },
@@ -2320,13 +2320,13 @@
     },
     {
      "s": "Cranberry & Pomegranate",
-     "q": 1,
+     "q": 0,
      "img": "img/bbw/sw-cranberry-pomegranate.jpg",
      "photo": "img/bbw/cranberry-pomegranate.jpg"
     },
     {
      "s": "Leaves",
-     "q": 1,
+     "q": 0,
      "img": "img/bbw/sw-leaves.jpg",
      "photo": "img/bbw/leaves.jpg"
     }
@@ -3203,6 +3203,68 @@
     ],
     "qty": 85,
     "desc": "كونسيلر سيروم خفيف بيغطي ويرطّب لحد 12 ساعة، فينيش مات طبيعي، 17 درجة.\n\nاختاري الدرجة من الاختيارات تحت.\n\n📦 بيتطلب مخصوص من NYX فرنسا، أصلي 100%."
+   }
+  },
+  {
+   "key": "upd-bbw-candles-soldout-1",
+   "id": "bbw-candles-bf",
+   "set": {
+    "sizes": [
+     {
+      "s": "'Tis the Season",
+      "q": 0,
+      "img": "img/bbw/sw-tis-the-season.jpg",
+      "photo": "img/bbw/tis-the-season.jpg"
+     },
+     {
+      "s": "The Perfect Christmas",
+      "q": 0,
+      "img": "img/bbw/sw-the-perfect-christmas.jpg",
+      "photo": "img/bbw/the-perfect-christmas.jpg"
+     },
+     {
+      "s": "Winter",
+      "q": 0,
+      "img": "img/bbw/sw-winter.jpg",
+      "photo": "img/bbw/winter.jpg"
+     },
+     {
+      "s": "Cinnamon Pinecone",
+      "q": 0,
+      "img": "img/bbw/sw-cinnamon-pinecone.jpg",
+      "photo": "img/bbw/cinnamon-pinecone.jpg"
+     },
+     {
+      "s": "Tree Farm",
+      "q": 0,
+      "img": "img/bbw/sw-tree-farm.jpg",
+      "photo": "img/bbw/tree-farm.jpg"
+     },
+     {
+      "s": "Coffee & Whiskey",
+      "q": 0,
+      "img": "img/bbw/sw-coffee-whiskey.jpg",
+      "photo": "img/bbw/coffee-whiskey.jpg"
+     },
+     {
+      "s": "Pumpkin Apple",
+      "q": 0,
+      "img": "img/bbw/sw-pumpkin-apple.jpg",
+      "photo": "img/bbw/pumpkin-apple.jpg"
+     },
+     {
+      "s": "Cranberry & Pomegranate",
+      "q": 0,
+      "img": "img/bbw/sw-cranberry-pomegranate.jpg",
+      "photo": "img/bbw/cranberry-pomegranate.jpg"
+     },
+     {
+      "s": "Leaves",
+      "q": 0,
+      "img": "img/bbw/sw-leaves.jpg",
+      "photo": "img/bbw/leaves.jpg"
+     }
+    ]
    }
   }
  ]
