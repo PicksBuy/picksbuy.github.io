@@ -11,15 +11,22 @@ os.makedirs("img/sd", exist_ok=True)
 for it in Q:
     r = {"q": it["q"]}
     try:
-        s = get("https://www.lookfantastic.com/search/?q=" + urllib.parse.quote(it["q"]))
-        cands = list(dict.fromkeys(re.findall(r'href="(/p/[^"#?]+/\d+/)"', s)))[:8]
+        cands = []
+        for eng in ("https://html.duckduckgo.com/html/?q=", "https://www.bing.com/search?q="):
+            for site in ("lookfantastic.com", "beautybay.com", "notino.co.uk"):
+                try:
+                    s = urllib.parse.unquote(html.unescape(get(eng + urllib.parse.quote(f"{it['q']} site:{site}"))))
+                    cands += [u for u in re.findall(r'https?://(?:www\.)?' + re.escape(site) + r'/[^"&\s<>]+', s) if ("/p/" in u or site != "lookfantastic.com")]
+                except Exception as e: r.setdefault("serr", []).append(str(e)[:60])
+            if cands: break
+        cands = list(dict.fromkeys(cands))
         want = words(it["q"]); best = None; bs = -1
         for c in cands:
-            sc = len(want & words(c.replace("-", " ")))
+            sc = len(want & words(c.replace("-", " ").replace("/", " ")))
             if sc > bs: bs, best = sc, c
         r["cands"] = cands[:5]
         if best:
-            u = "https://www.lookfantastic.com" + best; r["url"] = u
+            u = best; r["url"] = u; r["score"] = bs
             p = html.unescape(get(u))
             og = re.search(r'property="og:image"\s+content="([^"]+)"', p) or re.search(r'content="([^"]+)"\s+property="og:image"', p)
             t = re.search(r"<title>(.*?)</title>", p, re.S); r["title"] = t.group(1).strip()[:120] if t else ""
