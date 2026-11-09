@@ -194,6 +194,12 @@ skip img/sd/sd-rabanne-fame-eau-de-parfum-50ml.jpg
 skip img/sd/sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml.jpg
 skip img/sd/sd-rabanne-olymp-a-eau-de-parfum-30ml.jpg
 skip img/sd/sd-davidoff-cool-water-man-gift-set.jpg
-ok   img/sd/sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6.jpg 121384B
-ok   img/sd/sd-rabanne-lady-million-eau-de-parfum-50ml.jpg 178430B
-ok   img/sd/sd-calvin-klein-eternity-for-men-eau-de-toilette-100m.jpg 78604B
+skip img/sd/sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6.jpg
+skip img/sd/sd-rabanne-lady-million-eau-de-parfum-50ml.jpg
+skip img/sd/sd-calvin-klein-eternity-for-men-eau-de-toilette-100m.jpg
+ok   img/sd/sd-rabanne-olymp-a-flora-eau-de-parfum-intense-30ml.jpg 257190B
+ok   img/sd/sd-versace-eros-pour-femme-eau-de-toilette-100ml.jpg 26333B
+ok   img/sd/sd-rabanne-invictus-victory-eau-de-parfum-50ml.jpg 96867B
+ok   img/sd/sd-rabanne-1-million-lucky-eau-de-toilette-100ml.jpg 102602B
+ok   img/sd/sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set.jpg 179229B
+ok   img/sd/sd-moschino-mini-gift-set-collection-4-x-5ml.jpg 169121B

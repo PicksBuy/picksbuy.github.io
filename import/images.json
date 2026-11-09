@@ -1108,5 +1108,41 @@
   "out": "img/sd/sd-calvin-klein-eternity-for-men-eau-de-toilette-100m.jpg",
   "kind": "product",
   "referer": "https://www.lookfantastic.com/p/calvin-klein-eternity-for-men-eau-de-toilette-100ml/10947902/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/14199002-2225060754629454.jpg",
+  "out": "img/sd/sd-rabanne-olymp-a-flora-eau-de-parfum-intense-30ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/paco-rabanne-olympea-flora-eau-de-parfum-intense-80ml/14199002/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/480/480/11082864-7894294058615241.jpg",
+  "out": "img/sd/sd-versace-eros-pour-femme-eau-de-toilette-100ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/versace-eros-pour-femme-eau-de-parfum-100ml/11082864/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/13026063-9945345308415820.jpg",
+  "out": "img/sd/sd-rabanne-invictus-victory-eau-de-parfum-50ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/paco-rabanne-invictus-victory-extreme-eau-de-parfum-50ml/13026063/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/1600/1600/11733393-1754606927666806.jpg",
+  "out": "img/sd/sd-rabanne-1-million-lucky-eau-de-toilette-100ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/paco-rabanne-1-million-lucky-eau-de-toilette-100ml/11733393/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/13177358-1734884793443312.jpg",
+  "out": "img/sd/sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/joop-homme-eau-de-toilette-75ml-gift-set/13177358/"
+ },
+ {
+  "url": "https://static.thcdn.com/productimg/original/12695074-1404945649809314.jpg",
+  "out": "img/sd/sd-moschino-mini-gift-set-collection-4-x-5ml.jpg",
+  "kind": "product",
+  "referer": "https://www.lookfantastic.com/p/moschino-miniature-collection/12695074/"
  }
 ]
