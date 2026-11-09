@@ -139,25 +139,25 @@ skip img/nyx/sw/nyx-csws-powder-light.jpg
 skip img/nyx/sw/nyx-csws-powder-light-medium.jpg
 skip img/nyx/sw/nyx-csws-powder-medium.jpg
 skip img/nyx/sw/nyx-csws-powder-rich.jpg
-ok   img/sd/sd-ariana-grande-cloud-eau-de-parfum-50ml.jpg 95511B
-ok   img/sd/sd-boss-bottled-infinite-eau-de-parfum-200ml.jpg 152317B
-ok   img/sd/sd-calvin-klein-ck-one-eau-de-toilette-200ml.jpg 47910B
-ok   img/sd/sd-kylie-jenner-cosmic-eau-de-parfum-100ml.jpg 44337B
-ok   img/sd/sd-marc-jacobs-daisy-love-eau-so-sweet-eau-de-toilett.jpg 62302B
-ok   img/sd/sd-jimmy-choo-flash-eau-de-parfum-60ml.jpg 151789B
-ok   img/sd/sd-emporio-armani-stronger-with-you-eau-de-toilette-1.jpg 92146B
-ok   img/sd/sd-versace-eros-flame-eau-de-parfum-100ml.jpg 245868B
-ok   img/sd/sd-jean-paul-gaultier-le-male-eau-de-toilette-40ml.jpg 110896B
-ok   img/sd/sd-jean-paul-gaultier-le-beau-eau-de-toilette-75ml.jpg 111358B
-ok   img/sd/sd-versace-dylan-blue-pour-homme-eau-de-toilette-100m.jpg 174163B
-ok   img/sd/sd-boss-the-scent-magnetic-eau-de-parfum-for-him-100m.jpg 58574B
-ok   img/sd/sd-marc-jacobs-daisy-dream-eau-de-toilette-100ml.jpg 100322B
-ok   img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg 201302B
-ok   img/sd/sd-diesel-only-the-brave-eau-de-toilette-200ml.jpg 113937B
-ok   img/sd/sd-dolce-gabbana-l-imperatrice-eau-de-toilette-100ml.jpg 78204B
-ok   img/sd/sd-versace-men-s-mini-gift-set.jpg 191140B
-ok   img/sd/sd-versace-pour-femme-dylan-turquoise-eau-de-toilette.jpg 168984B
-ok   img/sd/sd-versace-dylan-blue-pour-femme-eau-de-parfum-50ml.jpg 174491B
-ok   img/sd/sd-marc-jacobs-daisy-ever-so-fresh-eau-de-parfum-75ml.jpg 80909B
-ok   img/sd/sd-jean-paul-gaultier-classique-eau-de-toilette-30ml.jpg 44769B
-ok   img/sd/sd-dkny-nectar-love-eau-de-parfum-30ml.jpg 125576B
+skip img/sd/sd-ariana-grande-cloud-eau-de-parfum-50ml.jpg
+skip img/sd/sd-boss-bottled-infinite-eau-de-parfum-200ml.jpg
+skip img/sd/sd-calvin-klein-ck-one-eau-de-toilette-200ml.jpg
+skip img/sd/sd-kylie-jenner-cosmic-eau-de-parfum-100ml.jpg
+skip img/sd/sd-marc-jacobs-daisy-love-eau-so-sweet-eau-de-toilett.jpg
+skip img/sd/sd-jimmy-choo-flash-eau-de-parfum-60ml.jpg
+skip img/sd/sd-emporio-armani-stronger-with-you-eau-de-toilette-1.jpg
+skip img/sd/sd-versace-eros-flame-eau-de-parfum-100ml.jpg
+skip img/sd/sd-jean-paul-gaultier-le-male-eau-de-toilette-40ml.jpg
+skip img/sd/sd-jean-paul-gaultier-le-beau-eau-de-toilette-75ml.jpg
+skip img/sd/sd-versace-dylan-blue-pour-homme-eau-de-toilette-100m.jpg
+skip img/sd/sd-boss-the-scent-magnetic-eau-de-parfum-for-him-100m.jpg
+skip img/sd/sd-marc-jacobs-daisy-dream-eau-de-toilette-100ml.jpg
+skip img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg
+skip img/sd/sd-diesel-only-the-brave-eau-de-toilette-200ml.jpg
+skip img/sd/sd-dolce-gabbana-l-imperatrice-eau-de-toilette-100ml.jpg
+skip img/sd/sd-versace-men-s-mini-gift-set.jpg
+skip img/sd/sd-versace-pour-femme-dylan-turquoise-eau-de-toilette.jpg
+skip img/sd/sd-versace-dylan-blue-pour-femme-eau-de-parfum-50ml.jpg
+skip img/sd/sd-marc-jacobs-daisy-ever-so-fresh-eau-de-parfum-75ml.jpg
+skip img/sd/sd-jean-paul-gaultier-classique-eau-de-toilette-30ml.jpg
+skip img/sd/sd-dkny-nectar-love-eau-de-parfum-30ml.jpg
