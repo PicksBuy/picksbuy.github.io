@@ -37,22 +37,30 @@
  {
   "id": "sd-rabanne-fame-eau-de-parfum-50ml",
   "src": "lf",
-  "q": "rabanne fame eau de parfum 50ml"
+  "q": "rabanne fame eau de parfum 50ml",
+  "page": "https://www.lookfantastic.com/p/paco-rabanne-fame-eau-de-parfum-50ml/13936231/",
+  "redo": true
  },
  {
   "id": "sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml",
   "src": "lf",
-  "q": "pure xs for her eau de parfum 50ml"
+  "q": "pure xs for her eau de parfum 50ml",
+  "page": "https://www.lookfantastic.com/p/paco-rabanne-pure-xs-for-her-eau-de-parfum-50ml/11813312/",
+  "redo": true
  },
  {
   "id": "sd-rabanne-lady-million-eau-de-parfum-50ml",
   "src": "lf",
-  "q": "lady million eau de parfum 50ml"
+  "q": "lady million eau de parfum 50ml",
+  "page": "https://www.lookfantastic.com/p/paco-rabanne-lady-million-eau-de-parfum-spray-50ml/11458064/",
+  "redo": true
  },
  {
   "id": "sd-rabanne-olymp-a-eau-de-parfum-30ml",
   "src": "lf",
-  "q": "olympea eau de parfum 30ml"
+  "q": "olympea eau de parfum 30ml",
+  "page": "https://www.lookfantastic.com/p/paco-rabanne-olympea-eau-de-parfum-30ml/11173341/",
+  "redo": true
  },
  {
   "id": "sd-narciso-rodriguez-all-of-me-eau-de-parfum-30ml",
@@ -117,7 +125,19 @@
  {
   "id": "sd-rabanne-pure-xs-eau-de-toilette-50ml",
   "src": "lf",
-  "q": "rabanne pure xs eau de toilette 50ml"
+  "q": "rabanne pure xs eau de toilette 50ml",
+  "keys": [
+   "pure",
+   "xs",
+   "toilette"
+  ],
+  "neg": [
+   "her",
+   "set",
+   "lotion",
+   "deodorant"
+  ],
+  "redo": true
  },
  {
   "id": "sd-rabanne-phantom-eau-de-toilette-50ml",
@@ -177,7 +197,15 @@
  {
   "id": "sd-arabian-oud-al-oud-malaki-80ml",
   "src": "ao",
-  "q": "malaki"
+  "q": "malaki",
+  "keys": [
+   "malaki"
+  ],
+  "neg": [
+   "maajoun",
+   "majoon"
+  ],
+  "redo": true
  },
  {
   "id": "sd-arabian-oud-sehr-al-kalemat-100ml",
@@ -202,7 +230,8 @@
  {
   "id": "sd-hugo-man-edt-75ml-deodorant-150ml-gift-set",
   "src": "lf",
-  "q": "hugo man eau de toilette 75ml gift set"
+  "q": "hugo man eau de toilette 75ml gift set",
+  "reuse": "img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg"
  },
  {
   "id": "sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift",
@@ -222,7 +251,20 @@
  {
   "id": "sd-davidoff-cool-water-man-gift-set",
   "src": "lf",
-  "q": "davidoff cool water gift set"
+  "q": "davidoff cool water gift set",
+  "keys": [
+   "cool",
+   "water"
+  ],
+  "neg": [
+   "woman",
+   "women",
+   "her",
+   "intense",
+   "reborn",
+   "parfum"
+  ],
+  "redo": true
  },
  {
   "id": "sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set",
@@ -232,12 +274,23 @@
  {
   "id": "sd-michael-kors-mini-gift-set",
   "src": "lf",
-  "q": "michael kors mini set"
+  "q": "michael kors mini set",
+  "keys": [
+   "michael",
+   "kors",
+   "mini"
+  ],
+  "redo": true
  },
  {
   "id": "sd-moschino-mini-gift-set-collection-4-x-5ml",
   "src": "lf",
-  "q": "moschino mini"
+  "q": "moschino mini",
+  "keys": [
+   "moschino",
+   "mini"
+  ],
+  "redo": true
  },
  {
   "id": "sd-versace-women-s-mini-gift-set",

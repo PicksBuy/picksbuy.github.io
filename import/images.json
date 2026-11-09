@@ -930,30 +930,6 @@
   "referer": "https://www.lookfantastic.com/p/jimmy-choo-flash-eau-de-parfum-60ml/10662661/"
  },
  {
-  "url": "https://static.thcdn.com/productimg/original/11173343-5065323126666023.jpg",
-  "out": "img/sd/sd-rabanne-fame-eau-de-parfum-50ml.jpg",
-  "kind": "product",
-  "referer": "https://www.lookfantastic.com/p/paco-rabanne-olympea-eau-de-parfum-50ml/12095647/"
- },
- {
-  "url": "https://static.thcdn.com/productimg/original/12127906-1655348402061930.jpg",
-  "out": "img/sd/sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml.jpg",
-  "kind": "product",
-  "referer": "https://www.lookfantastic.com/p/narciso-rodriguez-pure-musc-for-her-eau-de-parfum-50ml/12127906/"
- },
- {
-  "url": "https://static.thcdn.com/productimg/original/10952572-1815323127016720.jpg",
-  "out": "img/sd/sd-rabanne-lady-million-eau-de-parfum-50ml.jpg",
-  "kind": "product",
-  "referer": "https://www.lookfantastic.com/p/paco-rabanne-lady-m-eau-de-parfum-50ml/10643790/"
- },
- {
-  "url": "https://static.thcdn.com/productimg/original/17694652-1315338374706353.jpg",
-  "out": "img/sd/sd-rabanne-olymp-a-eau-de-parfum-30ml.jpg",
-  "kind": "product",
-  "referer": "https://www.lookfantastic.com/p/rabanne-olympea-elixir-eau-de-parfum-intense-30ml/17694652/"
- },
- {
   "url": "https://static.thcdn.com/productimg/original/14869500-1205322132229740.jpg",
   "out": "img/sd/sd-narciso-rodriguez-all-of-me-eau-de-parfum-30ml.jpg",
   "kind": "product",
@@ -1027,12 +1003,6 @@
  },
  {
   "url": "https://static.thcdn.com/productimg/original/13175212-9285323125428673.jpg",
-  "out": "img/sd/sd-rabanne-pure-xs-eau-de-toilette-50ml.jpg",
-  "kind": "product",
-  "referer": "https://www.lookfantastic.com/p/paco-rabanne-phantom-eau-de-toilette-50ml/13175212/"
- },
- {
-  "url": "https://static.thcdn.com/productimg/original/13175212-9285323125428673.jpg",
   "out": "img/sd/sd-rabanne-phantom-eau-de-toilette-50ml.jpg",
   "kind": "product",
   "referer": "https://www.lookfantastic.com/p/paco-rabanne-phantom-eau-de-toilette-50ml/13175212/"
@@ -1098,12 +1068,6 @@
   "referer": "https://arabianoud.com/en/0301020521-yacht-mood-75-ml"
  },
  {
-  "url": "https://cdn.salla.sa/doPqe/XdgfhIIbvIli1UgPMujV8ZAYnP8asdkgUsoPhJnO.png",
-  "out": "img/sd/sd-arabian-oud-al-oud-malaki-80ml.jpg",
-  "kind": "product",
-  "referer": "https://arabianoud.com/en/0302010002-maajoun-al-arabia-malaki"
- },
- {
   "url": "https://cdn.salla.sa/doPqe/0b501050-385a-40f9-9d14-d7c85ba7c743-1000x1000-eZXqwIDb5aNs6harH3EqpgsKjhcARzBFiq0UP8l0.png",
   "out": "img/sd/sd-arabian-oud-sehr-al-kalemat-100ml.jpg",
   "kind": "product",
@@ -1120,12 +1084,6 @@
   "out": "img/sd/sd-arabian-oud-tarteel-silver-75ml.jpg",
   "kind": "product",
   "referer": "https://arabianoud.com/en/0301020451-tarteel-silver-75-ml"
- },
- {
-  "url": "https://static.thcdn.com/productimg/original/17921079-7035343995887353.jpg",
-  "out": "img/sd/sd-hugo-man-edt-75ml-deodorant-150ml-gift-set.jpg",
-  "kind": "product",
-  "referer": "https://www.lookfantastic.com/p/versace-eros-eau-de-toilette-50ml-gift-set/17921079/"
  },
  {
   "url": "https://static.thcdn.com/productimg/original/17921079-7035343995887353.jpg",

@@ -44,8 +44,17 @@ for it in [i for i in items if i['src']=='ao']:
         for m in re.finditer(r'href="(https://us\.arabianoud\.com/en/\d{6,}[^"]*)"',t): aol[m.group(1)]='ao'
 log.append(f'lf links {len(links)} ao links {len(aol)}')
 def toks(s): return [w for w in re.split(r'[^a-z0-9]+',s.lower().replace("'",'')) if w]
+GEN={'eau','de','du','parfum','toilette','ml','edp','edt','spray','for','the','gift','set','by','x','4','5','30','40','50','60','75','80','90','100','125','150','200','vapo','women','men','her','him','pour','homme','perfume'}
 def best(it):
     pool=links if it['src']=='lf' else aol
+    if it.get('keys'):
+        bestu=None; bl=9e9
+        for u in pool:
+            slug=u.rstrip('/').split('/')[-2] if it['src']=='lf' else u.rstrip('/').split('/')[-1]
+            st=set(toks(slug))
+            if all(k in st for k in it['keys']) and not any(n in st for n in it.get('neg',[])):
+                if len(st)<bl: bl,bestu=len(st),u
+        return bestu,(1.0 if bestu else 0)
     q=toks(it['q']); bestu=None; bs=0
     for u in pool:
         slug=u.rstrip('/').split('/')[-2] if it['src']=='lf' else u.rstrip('/').split('/')[-1]
@@ -60,10 +69,12 @@ def og(u):
         return html.unescape(m.group(1)) if m else None
     except Exception as e: return None
 for it in items:
-    u,s=best(it)
+    out=f"img/sd/{it['id']}.jpg"
+    if it.get('reuse') or (out in outs and not it.get('redo')): continue
+    if it.get('page'): u,s=it['page'],1.0
+    else: u,s=best(it)
     img=og(u) if (u and s>=0.6) else None
     found[it['id']]=[u,round(s,2),img]
-    out=f"img/sd/{it['id']}.jpg"
     if img and out not in outs: jobs.append({"url":img,"out":out,"kind":"product","referer":u}); outs.add(out)
 json.dump(jobs,open('import/images.json','w'),indent=1)
 json.dump({'found':found,'log':log,'ao_sample':list(aol)[:40]},open('import/sd2-found.json','w'),indent=1)
