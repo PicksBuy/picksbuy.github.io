@@ -23,3 +23,4 @@ for u in URLS:
     except Exception as e:
         out[u] = {"err": f"{type(e).__name__}: {e}"[:200]}
 json.dump(out, open("import/nyx-probe.json", "w"), indent=1)
+# rerun
