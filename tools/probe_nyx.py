@@ -1,26 +1,36 @@
-"""Probe Superdrug product data for a category (runs on GitHub Actions)."""
-import json, urllib.request, re
+"""Find official product photos on Lookfantastic for import/sd-queries.json and download them (runs on GitHub Actions)."""
+import json, re, urllib.request, urllib.parse, html, io, os
+from PIL import Image, ImageOps
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-C = "black-friday-fragrance-deals"
-URLS = [
- f"https://api.superdrug.com/api/v2/sd/products/search?fields=FULL&query=:relevance:allCategories:{C}&pageSize=100&currentPage=0&lang=en_GB&curr=GBP",
- f"https://api.superdrug.com/api/v2/sd/products/search?fields=FULL&categoryCode={C}&pageSize=100&lang=en_GB&curr=GBP",
- f"https://www.superdrug.com/api/v2/sd/products/search?fields=FULL&query=:relevance:allCategories:{C}&pageSize=100",
- f"https://www.superdrug.com/{C}/c/{C}",
-]
-out = {}
-for u in URLS:
+def get(u, raw=False):
+    with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA, "Accept-Language": "en-GB"}), timeout=40) as r:
+        b = r.read(); return b if raw else b.decode("utf-8", "ignore")
+def words(s): return set(re.findall(r"[a-z0-9]+", s.lower())) - {"eau", "de", "the", "for", "ml", "spray", "and"}
+Q = json.load(open("import/sd-queries.json")); rep = {}
+os.makedirs("img/sd", exist_ok=True)
+for it in Q:
+    r = {"q": it["q"]}
     try:
-        req = urllib.request.Request(u, headers={"User-Agent": UA, "Accept": "application/json, text/html;q=0.9", "Accept-Language": "en-GB",
-                                                 "Origin": "https://www.superdrug.com", "Referer": f"https://www.superdrug.com/{C}/c/{C}"})
-        with urllib.request.urlopen(req, timeout=40) as r: body = r.read().decode("utf-8", "ignore")
-        out[u] = {"len": len(body), "head": body[:3000]}
-        if body.lstrip().startswith("{"): open("import/sd-products.json", "w").write(body)
-        else:
-            m = re.search(r'<script id="spartacus-app-state"[^>]*>(.*?)</script>', body, re.S) or re.search(r'(\{&q;.*?\})</script>', body, re.S)
-            out[u]["state"] = (m.group(1)[:200] if m else None)
-            if m: open("import/sd-state.txt", "w").write(m.group(1))
+        s = get("https://www.lookfantastic.com/search/?q=" + urllib.parse.quote(it["q"]))
+        cands = list(dict.fromkeys(re.findall(r'href="(/p/[^"#?]+/\d+/)"', s)))[:8]
+        want = words(it["q"]); best = None; bs = -1
+        for c in cands:
+            sc = len(want & words(c.replace("-", " ")))
+            if sc > bs: bs, best = sc, c
+        r["cands"] = cands[:5]
+        if best:
+            u = "https://www.lookfantastic.com" + best; r["url"] = u
+            p = html.unescape(get(u))
+            og = re.search(r'property="og:image"\s+content="([^"]+)"', p) or re.search(r'content="([^"]+)"\s+property="og:image"', p)
+            t = re.search(r"<title>(.*?)</title>", p, re.S); r["title"] = t.group(1).strip()[:120] if t else ""
+            if og:
+                r["img"] = og.group(1)
+                im = Image.open(io.BytesIO(get(og.group(1), True))); im = ImageOps.exif_transpose(im).convert("RGB")
+                im.thumbnail((1200, 1200), Image.LANCZOS)
+                W, H = 1000, 1250; cv = Image.new("RGB", (W, H), (255, 255, 255)); im.thumbnail((int(W*.88), int(H*.88)), Image.LANCZOS)
+                cv.paste(im, ((W-im.width)//2, (H-im.height)//2)); cv.save(f"img/sd/{it['id']}.jpg", quality=88, optimize=True)
+                r["size"] = im.size
     except Exception as e:
-        out[u] = {"err": f"{type(e).__name__}: {e}"[:200]}
-json.dump(out, open("import/nyx-probe.json", "w"), indent=1)
-# rerun
+        r["err"] = f"{type(e).__name__}: {e}"[:150]
+    rep[it["id"]] = r
+json.dump(rep, open("import/nyx-probe.json", "w"), indent=1)
