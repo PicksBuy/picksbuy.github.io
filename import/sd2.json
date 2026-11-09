@@ -374,5 +374,61 @@
   "id": "sd-arabian-oud-only-collection-gift-set-400ml",
   "src": "ao",
   "q": "only collection"
+ },
+ {
+  "id": "sd-ariana-grande-ari-eau-de-parfum-50ml",
+  "src": "lf",
+  "q": "ARI Eau de Parfum 50ml",
+  "page": "https://www.lookfantastic.com/p/ariana-grande-ari-eau-de-parfum-50ml/14589678/",
+  "redo": true
+ },
+ {
+  "id": "sd-boss-the-scent-magnetic-eau-de-parfum-for-her-50ml",
+  "src": "lf",
+  "q": "The Scent Magnetic Eau de Parfum for Her 50ml",
+  "page": "https://www.lookfantastic.com/p/hugo-boss-boss-the-scent-magnetic-eau-de-parfum-for-her-50ml/15742048/",
+  "redo": true
+ },
+ {
+  "id": "sd-valentino-born-in-roma-extradose-donna-30ml",
+  "src": "lf",
+  "q": "Born in Roma Extradose Donna 30ml",
+  "page": "https://www.lookfantastic.com/p/valentino-born-in-roma-donna-extradose-parfum-30ml/15789064/",
+  "redo": true
+ },
+ {
+  "id": "sd-ysl-black-opium-illicit-green-eau-de-parfum-75ml",
+  "src": "lf",
+  "q": "Black Opium Illicit Green Eau de Parfum 75ml",
+  "page": "https://www.lookfantastic.com/p/yves-saint-laurent-black-opium-illicit-green-eau-de-parfum-75ml/13451484/",
+  "redo": true
+ },
+ {
+  "id": "sd-mugler-alien-eau-de-parfum-extraintense-30ml",
+  "src": "lf",
+  "q": "Alien Eau de Parfum Extraintense 30ml",
+  "page": "https://www.lookfantastic.com/p/mugler-alien-extraintense-eau-de-parfum-30ml/15837564/",
+  "redo": true
+ },
+ {
+  "id": "sd-ysl-black-opium-glitter-eau-de-parfum-30ml",
+  "src": "lf",
+  "q": "Black Opium Glitter Eau de Parfum 30ml",
+  "page": "https://www.lookfantastic.com/p/yves-saint-laurent-black-opium-glitter-eau-de-parfum-30ml/15789078/",
+  "redo": true
+ },
+ {
+  "id": "sd-prada-paradoxe-radical-essence-30ml",
+  "src": "lf",
+  "q": "Paradoxe Radical Essence 30ml",
+  "page": "https://www.lookfantastic.com/p/prada-paradoxe-radical-essence-parfum-90ml/16851611/",
+  "redo": true
+ },
+ {
+  "id": "sd-marc-jacobs-dot-eau-de-parfum-50ml",
+  "src": "lf",
+  "q": "Dot Eau de Parfum 50ml",
+  "page": "https://www.lookfantastic.com/p/marc-jacobs-dot-eau-de-parfum-50ml/11079299/",
+  "redo": true
  }
 ]

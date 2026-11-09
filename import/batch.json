@@ -2450,8 +2450,8 @@
    "desc": "عطر حريمي أصلي من Marc Jacobs – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
    "countryId": "uk",
    "categoryId": "perfume-w",
-   "price": 3825,
-   "oldPrice": 7035,
+   "price": 3710,
+   "oldPrice": 7180,
    "images": [
     "img/sd/sd-marc-jacobs-daisy-love-eau-so-sweet-eau-de-toilett.jpg"
    ],
@@ -3460,6 +3460,7 @@
    "price": 4290,
    "oldPrice": 6000,
    "images": [
+    "img/sd/sd-hugo-man-edt-75ml-deodorant-150ml-gift-set.jpg",
     "img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg"
    ],
    "sizes": [],
@@ -3479,6 +3480,7 @@
    "price": 2975,
    "oldPrice": 4305,
    "images": [
+    "img/sd/sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift.jpg",
     "img/sd/sd-calvin-klein-ck-one-eau-de-toilette-200ml.jpg"
    ],
    "sizes": [],
@@ -3619,6 +3621,215 @@
    "promo": true,
    "hidden": false,
    "createdAt": "2026-11-09T15:43:49+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-ariana-grande-ari-eau-de-parfum-50ml",
+   "brand": "Ariana Grande",
+   "name": "ARI Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Ariana Grande – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3050,
+   "oldPrice": 4450,
+   "images": [
+    "img/sd/sd-ariana-grande-ari-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-boss-the-scent-magnetic-eau-de-parfum-for-her-50ml",
+   "brand": "BOSS",
+   "name": "The Scent Magnetic Eau de Parfum for Her 50ml",
+   "desc": "عطر حريمي أصلي من BOSS – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 5220,
+   "oldPrice": 9395,
+   "images": [
+    "img/sd/sd-boss-the-scent-magnetic-eau-de-parfum-for-her-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-valentino-born-in-roma-extradose-donna-30ml",
+   "brand": "Valentino",
+   "name": "Born in Roma Extradose Donna 30ml",
+   "desc": "عطر حريمي أصلي من Valentino – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 6150,
+   "oldPrice": 7770,
+   "images": [
+    "img/sd/sd-valentino-born-in-roma-extradose-donna-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-ysl-black-opium-illicit-green-eau-de-parfum-75ml",
+   "brand": "YSL",
+   "name": "Black Opium Illicit Green Eau de Parfum 75ml",
+   "desc": "عطر حريمي أصلي من YSL – حجم 75ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 6305,
+   "oldPrice": 10130,
+   "images": [
+    "img/sd/sd-ysl-black-opium-illicit-green-eau-de-parfum-75ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-mugler-alien-eau-de-parfum-extraintense-30ml",
+   "brand": "Mugler",
+   "name": "Alien Eau de Parfum Extraintense 30ml",
+   "desc": "عطر حريمي أصلي من Mugler – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 5375,
+   "oldPrice": 7035,
+   "images": [
+    "img/sd/sd-mugler-alien-eau-de-parfum-extraintense-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-ysl-black-opium-glitter-eau-de-parfum-30ml",
+   "brand": "YSL",
+   "name": "Black Opium Glitter Eau de Parfum 30ml",
+   "desc": "عطر حريمي أصلي من YSL – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4985,
+   "oldPrice": 7180,
+   "images": [
+    "img/sd/sd-ysl-black-opium-glitter-eau-de-parfum-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-prada-paradoxe-radical-essence-30ml",
+   "brand": "Prada",
+   "name": "Paradoxe Radical Essence 30ml",
+   "desc": "عطر حريمي أصلي من Prada – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 6150,
+   "oldPrice": 7920,
+   "images": [
+    "img/sd/sd-prada-paradoxe-radical-essence-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-marc-jacobs-dot-eau-de-parfum-50ml",
+   "brand": "Marc Jacobs",
+   "name": "Dot Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Marc Jacobs – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3855,
+   "oldPrice": 7105,
+   "images": [
+    "img/sd/sd-marc-jacobs-dot-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-michael-kors-mini-gift-set",
+   "brand": "Michael Kors",
+   "name": "Mini Gift Set",
+   "desc": "طقم هدية أصلي من Michael Kors.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 2860,
+   "oldPrice": 4085,
+   "images": [
+    "img/sd/sd-michael-kors-mini-gift-set.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-dkny-be-delicious-coconuts-about-summer-eau-de-toi",
+   "brand": "DKNY",
+   "name": "Be Delicious Coconuts About Summer Eau de Toilette 50ml",
+   "desc": "عطر حريمي أصلي من DKNY – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3440,
+   "oldPrice": 3715,
+   "images": [
+    "img/sd/sd-dkny-be-delicious-coconuts-about-summer-eau-de-toi.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-rabanne-pure-xs-eau-de-toilette-50ml",
+   "brand": "Rabanne",
+   "name": "Pure XS Eau de Toilette 50ml",
+   "desc": "عطر رجالي أصلي من Rabanne – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 3825,
+   "oldPrice": 6000,
+   "images": [
+    "img/sd/sd-rabanne-pure-xs-eau-de-toilette-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T16:53:20+02:00",
    "needsPrice": false
   }
  ],
@@ -4548,6 +4759,52 @@
       "img": "img/bbw/sw-leaves.jpg",
       "photo": "img/bbw/leaves.jpg"
      }
+    ]
+   }
+  },
+  {
+   "key": "upd-sd-daisylove-price-1",
+   "id": "sd-marc-jacobs-daisy-love-eau-so-sweet-eau-de-toilett",
+   "set": {
+    "price": 3710,
+    "oldPrice": 7180
+   }
+  },
+  {
+   "key": "upd-setimg-sd-hugo-man-edt-75ml-deodorant-150ml-gift-set-1",
+   "id": "sd-hugo-man-edt-75ml-deodorant-150ml-gift-set",
+   "set": {
+    "images": [
+     "img/sd/sd-hugo-man-edt-75ml-deodorant-150ml-gift-set.jpg",
+     "img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg"
+    ]
+   }
+  },
+  {
+   "key": "upd-setimg-sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift-1",
+   "id": "sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift",
+   "set": {
+    "images": [
+     "img/sd/sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift.jpg",
+     "img/sd/sd-calvin-klein-ck-one-eau-de-toilette-200ml.jpg"
+    ]
+   }
+  },
+  {
+   "key": "upd-setimg-sd-michael-kors-pour-femme-edp-50ml-gift-set-1",
+   "id": "sd-michael-kors-pour-femme-edp-50ml-gift-set",
+   "set": {
+    "images": [
+     "img/sd/sd-michael-kors-pour-femme-edp-50ml-gift-set.jpg"
+    ]
+   }
+  },
+  {
+   "key": "upd-setimg-sd-davidoff-cool-water-man-gift-set-1",
+   "id": "sd-davidoff-cool-water-man-gift-set",
+   "set": {
+    "images": [
+     "img/sd/sd-davidoff-cool-water-man-gift-set.jpg"
     ]
    }
   }
