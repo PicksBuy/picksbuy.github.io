@@ -27,12 +27,28 @@
  {
   "id": "sd-rabanne-olymp-a-flora-eau-de-parfum-intense-30ml",
   "src": "lf",
-  "q": "olympea flora eau de parfum intense 30ml"
+  "q": "olympea flora eau de parfum intense 30ml",
+  "keys": [
+   "olympea",
+   "flora"
+  ],
+  "redo": true
  },
  {
   "id": "sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6",
   "src": "lf",
-  "q": "jimmy choo blossom eau de parfum 60ml"
+  "q": "jimmy choo blossom eau de parfum 60ml",
+  "keys": [
+   "jimmy",
+   "choo",
+   "blossom"
+  ],
+  "neg": [
+   "body",
+   "lotion",
+   "set"
+  ],
+  "redo": true
  },
  {
   "id": "sd-rabanne-fame-eau-de-parfum-50ml",
@@ -52,8 +68,8 @@
   "id": "sd-rabanne-lady-million-eau-de-parfum-50ml",
   "src": "lf",
   "q": "lady million eau de parfum 50ml",
-  "page": "https://www.lookfantastic.com/p/paco-rabanne-lady-million-eau-de-parfum-spray-50ml/11458064/",
-  "redo": true
+  "redo": true,
+  "page": "https://www.lookfantastic.com/p/paco-rabanne-lady-million-eau-de-parfum-50ml/10643790/"
  },
  {
   "id": "sd-rabanne-olymp-a-eau-de-parfum-30ml",
@@ -70,12 +86,33 @@
  {
   "id": "sd-versace-eros-pour-femme-eau-de-toilette-100ml",
   "src": "lf",
-  "q": "versace eros pour femme eau de toilette 100ml"
+  "q": "versace eros pour femme eau de toilette 100ml",
+  "keys": [
+   "eros",
+   "femme"
+  ],
+  "neg": [
+   "set",
+   "body",
+   "lotion",
+   "deodorant"
+  ],
+  "redo": true
  },
  {
   "id": "sd-versace-yellow-diamonds-eau-de-toilette-50ml",
   "src": "lf",
-  "q": "versace yellow diamonds eau de toilette 50ml"
+  "q": "versace yellow diamonds eau de toilette 50ml",
+  "keys": [
+   "yellow",
+   "diamonds"
+  ],
+  "neg": [
+   "set",
+   "body",
+   "lotion"
+  ],
+  "redo": true
  },
  {
   "id": "sd-versace-dylan-purple-eau-de-parfum-50ml",
@@ -126,18 +163,18 @@
   "id": "sd-rabanne-pure-xs-eau-de-toilette-50ml",
   "src": "lf",
   "q": "rabanne pure xs eau de toilette 50ml",
-  "keys": [
-   "pure",
-   "xs",
-   "toilette"
-  ],
   "neg": [
    "her",
    "set",
    "lotion",
    "deodorant"
   ],
-  "redo": true
+  "redo": true,
+  "keys": [
+   "pure",
+   "xs",
+   "toilette"
+  ]
  },
  {
   "id": "sd-rabanne-phantom-eau-de-toilette-50ml",
@@ -147,12 +184,26 @@
  {
   "id": "sd-rabanne-invictus-victory-eau-de-parfum-50ml",
   "src": "lf",
-  "q": "invictus victory eau de parfum 50ml"
+  "q": "invictus victory eau de parfum 50ml",
+  "keys": [
+   "invictus",
+   "victory"
+  ],
+  "neg": [
+   "elixir",
+   "set"
+  ],
+  "redo": true
  },
  {
   "id": "sd-rabanne-1-million-lucky-eau-de-toilette-100ml",
   "src": "lf",
-  "q": "1 million lucky eau de toilette 100ml"
+  "q": "1 million lucky eau de toilette 100ml",
+  "keys": [
+   "million",
+   "lucky"
+  ],
+  "redo": true
  },
  {
   "id": "sd-issey-miyake-l-eau-d-issey-pour-homme-intense-eau-",
@@ -162,7 +213,9 @@
  {
   "id": "sd-calvin-klein-eternity-for-men-eau-de-toilette-100m",
   "src": "lf",
-  "q": "calvin klein eternity for men eau de toilette 100ml"
+  "q": "calvin klein eternity for men eau de toilette 100ml",
+  "page": "https://www.lookfantastic.com/p/calvin-klein-eternity-for-men-eau-de-toilette-100ml/10947902/",
+  "redo": true
  },
  {
   "id": "sd-arabian-oud-w-100ml",
@@ -231,12 +284,15 @@
   "id": "sd-hugo-man-edt-75ml-deodorant-150ml-gift-set",
   "src": "lf",
   "q": "hugo man eau de toilette 75ml gift set",
-  "reuse": "img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg"
+  "reuse": "img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg",
+  "redo": true
  },
  {
   "id": "sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift",
   "src": "lf",
-  "q": "ck one eau de toilette 50ml gift set"
+  "q": "ck one eau de toilette 50ml gift set",
+  "reuse": "img/sd/sd-calvin-klein-ck-one-eau-de-toilette-200ml.jpg",
+  "redo": true
  },
  {
   "id": "sd-michael-kors-pour-homme-edp-50ml-gift-set",
@@ -269,7 +325,18 @@
  {
   "id": "sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set",
   "src": "lf",
-  "q": "joop homme eau de toilette gift set"
+  "q": "joop homme eau de toilette gift set",
+  "keys": [
+   "joop",
+   "homme"
+  ],
+  "neg": [
+   "wild",
+   "lotion",
+   "deodorant",
+   "set"
+  ],
+  "redo": true
  },
  {
   "id": "sd-michael-kors-mini-gift-set",
