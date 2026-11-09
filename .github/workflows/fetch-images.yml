@@ -2,7 +2,7 @@ name: Fetch product images
 on:
   push:
     branches: [main]
-    paths: [import/images.json, tools/fetch_images.py, tools/probe_nyx.py]
+    paths: [import/images.json, tools/fetch_images.py, tools/probe_nyx.py, tools/find_sd.py]
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,6 +16,7 @@ jobs:
       - run: pip install pillow numpy
       - run: python tools/fetch_images.py
       - run: python tools/probe_nyx.py || true
+      - run: python tools/find_sd.py && python tools/fetch_images.py || true
       - name: Commit images
         run: |
           git config user.name "picksbuy-bot"
