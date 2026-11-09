@@ -115,6 +115,30 @@
    "name": "شموع معطرة",
    "parentId": "home",
    "order": 1
+  },
+  {
+   "id": "perfume",
+   "name": "برفانات",
+   "parentId": null,
+   "order": 4
+  },
+  {
+   "id": "perfume-w",
+   "name": "برفانات حريمي",
+   "parentId": "perfume",
+   "order": 1
+  },
+  {
+   "id": "perfume-m",
+   "name": "برفانات رجالي",
+   "parentId": "perfume",
+   "order": 2
+  },
+  {
+   "id": "perfume-gift",
+   "name": "أطقم هدايا",
+   "parentId": "perfume",
+   "order": 3
   }
  ],
  "products": [
@@ -2335,6 +2359,424 @@
    "promo": true,
    "hidden": false,
    "createdAt": "2026-11-09T14:00:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-ariana-grande-cloud-eau-de-parfum-50ml",
+   "brand": "Ariana Grande",
+   "name": "Cloud Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Ariana Grande – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3050,
+   "oldPrice": 4820,
+   "images": [
+    "img/sd/sd-ariana-grande-cloud-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-boss-bottled-infinite-eau-de-parfum-200ml",
+   "brand": "BOSS",
+   "name": "Bottled Infinite Eau de Parfum 200ml",
+   "desc": "عطر رجالي أصلي من BOSS – حجم 200ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 5375,
+   "oldPrice": 11385,
+   "images": [
+    "img/sd/sd-boss-bottled-infinite-eau-de-parfum-200ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-calvin-klein-ck-one-eau-de-toilette-200ml",
+   "brand": "Calvin Klein",
+   "name": "CK One Eau de Toilette 200ml",
+   "desc": "عطر للجنسين أصلي من Calvin Klein – حجم 200ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3440,
+   "oldPrice": 7105,
+   "images": [
+    "img/sd/sd-calvin-klein-ck-one-eau-de-toilette-200ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-kylie-jenner-cosmic-eau-de-parfum-100ml",
+   "brand": "Kylie Jenner",
+   "name": "Cosmic Eau de Parfum 100ml",
+   "desc": "عطر حريمي أصلي من Kylie Jenner – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4060,
+   "oldPrice": 5780,
+   "images": [
+    "img/sd/sd-kylie-jenner-cosmic-eau-de-parfum-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-marc-jacobs-daisy-love-eau-so-sweet-eau-de-toilett",
+   "brand": "Marc Jacobs",
+   "name": "Daisy Love Eau So Sweet Eau de Toilette 50ml",
+   "desc": "عطر حريمي أصلي من Marc Jacobs – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3825,
+   "oldPrice": 7035,
+   "images": [
+    "img/sd/sd-marc-jacobs-daisy-love-eau-so-sweet-eau-de-toilett.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-jimmy-choo-flash-eau-de-parfum-60ml",
+   "brand": "Jimmy Choo",
+   "name": "Flash Eau de Parfum 60ml",
+   "desc": "عطر حريمي أصلي من Jimmy Choo – حجم 60ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3285,
+   "oldPrice": 5780,
+   "images": [
+    "img/sd/sd-jimmy-choo-flash-eau-de-parfum-60ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-emporio-armani-stronger-with-you-eau-de-toilette-1",
+   "brand": "Emporio Armani",
+   "name": "Stronger With You Eau de Toilette 150ml",
+   "desc": "عطر رجالي أصلي من Emporio Armani – حجم 150ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 6615,
+   "oldPrice": 9615,
+   "images": [
+    "img/sd/sd-emporio-armani-stronger-with-you-eau-de-toilette-1.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-versace-eros-flame-eau-de-parfum-100ml",
+   "brand": "Versace",
+   "name": "Eros Flame Eau de Parfum 100ml",
+   "desc": "عطر رجالي أصلي من Versace – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 5375,
+   "oldPrice": 9245,
+   "images": [
+    "img/sd/sd-versace-eros-flame-eau-de-parfum-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-jean-paul-gaultier-le-male-eau-de-toilette-40ml",
+   "brand": "Jean Paul Gaultier",
+   "name": "Le Male Eau de Toilette 40ml",
+   "desc": "عطر رجالي أصلي من Jean Paul Gaultier – حجم 40ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 4445,
+   "oldPrice": 5630,
+   "images": [
+    "img/sd/sd-jean-paul-gaultier-le-male-eau-de-toilette-40ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-jean-paul-gaultier-le-beau-eau-de-toilette-75ml",
+   "brand": "Jean Paul Gaultier",
+   "name": "Le Beau Eau de Toilette 75ml",
+   "desc": "عطر رجالي أصلي من Jean Paul Gaultier – حجم 75ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 4910,
+   "oldPrice": 7035,
+   "images": [
+    "img/sd/sd-jean-paul-gaultier-le-beau-eau-de-toilette-75ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-versace-dylan-blue-pour-homme-eau-de-toilette-100m",
+   "brand": "Versace",
+   "name": "Dylan Blue Pour Homme Eau de Toilette 100ml",
+   "desc": "عطر رجالي أصلي من Versace – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 4985,
+   "oldPrice": 8580,
+   "images": [
+    "img/sd/sd-versace-dylan-blue-pour-homme-eau-de-toilette-100m.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-boss-the-scent-magnetic-eau-de-parfum-for-him-100m",
+   "brand": "BOSS",
+   "name": "The Scent Magnetic Eau de Parfum for Him 100ml",
+   "desc": "عطر رجالي أصلي من BOSS – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 5295,
+   "oldPrice": 9395,
+   "images": [
+    "img/sd/sd-boss-the-scent-magnetic-eau-de-parfum-for-him-100m.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-marc-jacobs-daisy-dream-eau-de-toilette-100ml",
+   "brand": "Marc Jacobs",
+   "name": "Daisy Dream Eau de Toilette 100ml",
+   "desc": "عطر حريمي أصلي من Marc Jacobs – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4445,
+   "oldPrice": 9170,
+   "images": [
+    "img/sd/sd-marc-jacobs-daisy-dream-eau-de-toilette-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-hugo-man-eau-de-toilette-200ml",
+   "brand": "HUGO",
+   "name": "Man Eau de Toilette 200ml",
+   "desc": "عطر رجالي أصلي من HUGO – حجم 200ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 4060,
+   "oldPrice": 7845,
+   "images": [
+    "img/sd/sd-hugo-man-eau-de-toilette-200ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-diesel-only-the-brave-eau-de-toilette-200ml",
+   "brand": "Diesel",
+   "name": "Only The Brave Eau de Toilette 200ml",
+   "desc": "عطر رجالي أصلي من Diesel – حجم 200ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-m",
+   "price": 5760,
+   "oldPrice": 9395,
+   "images": [
+    "img/sd/sd-diesel-only-the-brave-eau-de-toilette-200ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-dolce-gabbana-l-imperatrice-eau-de-toilette-100ml",
+   "brand": "Dolce & Gabbana",
+   "name": "L'Imperatrice Eau de Toilette 100ml",
+   "desc": "عطر حريمي أصلي من Dolce & Gabbana – حجم 100ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3980,
+   "oldPrice": 8360,
+   "images": [
+    "img/sd/sd-dolce-gabbana-l-imperatrice-eau-de-toilette-100ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-versace-men-s-mini-gift-set",
+   "brand": "Versace",
+   "name": "Men's Mini Gift Set",
+   "desc": "طقم هدية ميني أصلي من Versace.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-gift",
+   "price": 2975,
+   "oldPrice": 3715,
+   "images": [
+    "img/sd/sd-versace-men-s-mini-gift-set.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-versace-pour-femme-dylan-turquoise-eau-de-toilette",
+   "brand": "Versace",
+   "name": "Pour Femme Dylan Turquoise Eau de Toilette 50ml",
+   "desc": "عطر حريمي أصلي من Versace – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4060,
+   "oldPrice": 7625,
+   "images": [
+    "img/sd/sd-versace-pour-femme-dylan-turquoise-eau-de-toilette.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-versace-dylan-blue-pour-femme-eau-de-parfum-50ml",
+   "brand": "Versace",
+   "name": "Dylan Blue Pour Femme Eau de Parfum 50ml",
+   "desc": "عطر حريمي أصلي من Versace – حجم 50ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4755,
+   "oldPrice": 8215,
+   "images": [
+    "img/sd/sd-versace-dylan-blue-pour-femme-eau-de-parfum-50ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-marc-jacobs-daisy-ever-so-fresh-eau-de-parfum-75ml",
+   "brand": "Marc Jacobs",
+   "name": "Daisy Ever So Fresh Eau de Parfum 75ml",
+   "desc": "عطر حريمي أصلي من Marc Jacobs – حجم 75ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4755,
+   "oldPrice": 8655,
+   "images": [
+    "img/sd/sd-marc-jacobs-daisy-ever-so-fresh-eau-de-parfum-75ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-jean-paul-gaultier-classique-eau-de-toilette-30ml",
+   "brand": "Jean Paul Gaultier",
+   "name": "Classique Eau de Toilette 30ml",
+   "desc": "عطر حريمي أصلي من Jean Paul Gaultier – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 4830,
+   "oldPrice": 6220,
+   "images": [
+    "img/sd/sd-jean-paul-gaultier-classique-eau-de-toilette-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "sd-dkny-nectar-love-eau-de-parfum-30ml",
+   "brand": "DKNY",
+   "name": "Nectar Love Eau de Parfum 30ml",
+   "desc": "عطر حريمي أصلي من DKNY – حجم 30ml.\n\nجاي من Superdrug إنجلترا 🇬🇧 ضمن عروض البلاك فرايداي.\n\n🔥 عرض بلاك فرايداي لفترة محدودة والكمية محدودة.",
+   "countryId": "uk",
+   "categoryId": "perfume-w",
+   "price": 3050,
+   "oldPrice": 3345,
+   "images": [
+    "img/sd/sd-dkny-nectar-love-eau-de-parfum-30ml.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-09T15:17:06+02:00",
    "needsPrice": false
   }
  ],
