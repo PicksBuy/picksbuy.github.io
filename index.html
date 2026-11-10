@@ -550,6 +550,14 @@ footer.wrap{padding-bottom:130px!important}
 .schip:nth-of-type(6n+1){--t:#FBE4DE}.schip:nth-of-type(6n+2){--t:#FCEBD3}.schip:nth-of-type(6n+3){--t:#EDE4F6}.schip:nth-of-type(6n+4){--t:#DFF1EA}.schip:nth-of-type(6n+5){--t:#FDE3EC}.schip:nth-of-type(6n){--t:#E1ECF8}
 .schip.on{background:var(--rg2);color:#fff;box-shadow:0 8px 18px rgba(90,42,51,.28)}
 .schip.on .n{opacity:.8}
+.frail{margin:0 -16px;padding-inline:16px!important}
+.frail .cring{width:58px}.frail .cring .ring{width:54px;height:54px}.frail .cring .fl{font-size:26px}
+.frail .ctile{width:66px}.frail .ctile .ti{width:66px;height:66px;border-radius:20px}
+.fsec .rail.sub{animation:none;margin-top:6px}
+.fsec>b{font-family:"El Messiri",Cairo,sans-serif;font-size:16px}
+.fchips button{border-width:1px;padding:7px 14px;transition:transform .25s var(--spring),background .2s}
+.fchips button:active{transform:scale(.94)}
+.fchips button.on{background:var(--rg2);border-color:transparent;box-shadow:0 6px 14px rgba(90,42,51,.22)}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -962,12 +970,13 @@ function openFilters(){
   const ov=sheet('فلترة',`<div id="fb"></div>`,`<button class="btn" id="fClr">مسح الكل</button><button class="btn r" id="fGo"></button>`);
   const count=()=>{ const keep={...S}; Object.assign(S,T); const n=(()=>{ let l=visible().filter(p=>(S.country==='all'||p.countryId===S.country)&&(!S.promoOnly||isPromo(p))&&(S.cat==='all'||mainCatOf(p)===S.cat)&&(S.sub==='all'||p.categoryId===S.sub)); return applyExtra(l).length; })(); Object.assign(S,keep); return n; };
   const draw=()=>{
-    const subs=T.cat==='all'?[]:S.cats.filter(c=>c.parentId===T.cat).sort(byOrder);
+    const inC=base.filter(p=>T.country==='all'||p.countryId===T.country);
+    const subs=T.cat==='all'?[]:S.cats.filter(c=>c.parentId===T.cat).sort(byOrder).filter(c=>S.admin||inC.some(p=>p.categoryId===c.id));
     ov.querySelector('#fb').innerHTML=`
       ${promoOn()&&base.some(isPromo)?`<div class="fsec"><div class="fchips"><button data-t="promo" class="${T.promoOnly?'on':''}">🔥 ${esc(S.settings.promo.title||'العروض')} بس</button><button data-t="stock" class="${T.inStock?'on':''}">✅ المتاح بس</button>${FAV.length?`<button data-t="fav" class="${T.favOnly?'on':''}">❤️ المفضلة (${FAV.length})</button>`:''}</div></div>`:`<div class="fsec"><div class="fchips"><button data-t="stock" class="${T.inStock?'on':''}">✅ المتاح بس</button>${FAV.length?`<button data-t="fav" class="${T.favOnly?'on':''}">❤️ المفضلة (${FAV.length})</button>`:''}</div></div>`}
-      <div class="fsec"><b>البلد</b><div class="fchips"><button data-c="all" class="${T.country==='all'?'on':''}">🌍 الكل</button>${countriesAll.map(c=>`<button data-c="${esc(c.id)}" class="${T.country===c.id?'on':''}">${esc((c.flag||'')+' '+c.name)}</button>`).join('')}</div></div>
-      <div class="fsec"><b>القسم</b><div class="fchips"><button data-k="all" class="${T.cat==='all'?'on':''}">الكل</button>${mains.map(m=>`<button data-k="${esc(m.id)}" class="${T.cat===m.id?'on':''}">${esc(m.name)}</button>`).join('')}</div>
-        ${subs.length?`<div class="fchips" style="margin-top:8px">${subs.map(s2=>`<button data-s="${esc(s2.id)}" class="${T.sub===s2.id?'on':''}" style="font-size:12px">${esc(s2.name)}</button>`).join('')}</div>`:''}</div>
+      <div class="fsec"><b>البلد</b><div class="rail world frail"><button class="cring ${T.country==='all'?'on':''}" data-c="all"><span class="ring"><span class="fl">🌍</span></span><span class="cn" style="direction:rtl">الكل</span></button>${countriesAll.map(c=>`<button class="cring ${T.country===c.id?'on':''}" data-c="${esc(c.id)}"><span class="ring"><span class="fl">${esc(c.flag||'🏳️')}</span></span><span class="cn">${esc(c.name)}</span></button>`).join('')}</div></div>
+      <div class="fsec"><b>القسم</b><div class="rail shelf frail"><button class="ctile all ${T.cat==='all'?'on':''}" data-k="all"><span class="ti">✦</span><span class="tn">الكل</span></button>${mains.map(m=>{ const u=tileImg(inC,m.id); return `<button class="ctile ${T.cat===m.id?'on':''}" data-k="${esc(m.id)}"><span class="ti">${u?`<img src="${u}" alt="" loading="lazy">`:'🛍️'}</span><span class="tn">${esc(m.name)}</span></button>`; }).join('')}</div>
+        ${subs.length?`<div class="rail sub" style="display:flex"><div class="subh">جوّه ${esc(cat(T.cat)?.name||'')} فيه إيه؟</div>${subs.map(s2=>{ const ps=inC.filter(p=>p.categoryId===s2.id&&p.images&&p.images.length), pp=ps.find(x=>stock(x)>0)||ps[0]; return `<button class="schip ${T.sub===s2.id?'on':''}" data-s="${esc(s2.id)}"><span class="si">${pp?`<img src="${img(pp.images[0])}" alt="" loading="lazy">`:'🛍️'}</span>${esc(s2.name)}<span class="n">${inC.filter(p=>p.categoryId===s2.id).length}</span></button>`; }).join('')}</div>`:''}</div>
       <div class="fsec"><b>السعر (${esc(cur())})</b><div class="fchips">${presets.map(([a,b,l],i)=>`<button data-pr="${i}" class="${T.minP===a&&T.maxP===b?'on':''}">${l}</button>`).join('')}</div>
         <div class="prange"><input id="pMin" inputmode="numeric" placeholder="من" value="${T.minP??''}"><span class="hint">—</span><input id="pMax" inputmode="numeric" placeholder="لحد" value="${T.maxP??''}"></div></div>
       ${brandsAll.length?`<div class="fsec"><b>البراند</b><div class="fchips">${brandsAll.map(b=>`<button data-b="${esc(b)}" class="${T.brands.includes(b)?'on':''}" style="direction:ltr">${esc(b)}</button>`).join('')}</div></div>`:''}`;
