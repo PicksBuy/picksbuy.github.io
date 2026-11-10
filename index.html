@@ -7,7 +7,9 @@
 <meta name="description" content="PicksBuy — ميكب وعناية بالبشرة والشعر وملابس من بره مصر. اطلب على واتساب.">
 <meta property="og:title" content="PicksBuy 🛍️">
 <meta property="og:description" content="منتجات أصلية من كل العالم — اطلب على واتساب">
-<meta property="og:image" content="img/og.jpg">
+<meta property="og:image" content="https://picksbuy.github.io/img/og.jpg">
+<meta property="og:url" content="https://picksbuy.github.io/">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#FCF5F3">
 <link rel="icon" href="img/icon.jpg">
@@ -558,6 +560,12 @@ footer.wrap{padding-bottom:130px!important}
 .fchips button{border-width:1px;padding:7px 14px;transition:transform .25s var(--spring),background .2s}
 .fchips button:active{transform:scale(.94)}
 .fchips button.on{background:var(--rg2);border-color:transparent;box-shadow:0 6px 14px rgba(90,42,51,.22)}
+.rail.brail{gap:8px;padding:10px 2px 4px}
+.bchip{flex:none;display:flex;align-items:baseline;gap:7px;padding:9px 16px;border-radius:16px;background:#fff;border:1px solid var(--line);direction:ltr;transition:transform .25s var(--spring),background .2s,color .2s}
+.bchip:active{transform:scale(.94)}
+.bchip b{font-family:"Playfair Display",serif;font-style:italic;font-weight:600;font-size:15.5px;white-space:nowrap}
+.bchip span{font-size:11px;font-weight:800;color:var(--muted)}
+.bchip.on{background:var(--rg2);border-color:transparent;color:#fff;box-shadow:0 8px 18px rgba(90,42,51,.28)}.bchip.on span{color:rgba(255,255,255,.7)}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -590,6 +598,7 @@ window.__splashOff=function(){var w=Math.max(0,1300-(Date.now()-t0));setTimeout(
   <div class="lbl">بتدوّري على إيه؟</div>
   <div class="rail shelf" id="cats"></div>
   <div class="rail sub" id="subs" style="display:none"></div>
+  <div id="brands"></div>
   <div id="cinfo"></div>
   <div class="rail act" id="active"></div>
   <div id="note"></div>
@@ -680,6 +689,7 @@ function markSeen(id){ SEEN=[id,...SEEN.filter(x=>x!==id)].slice(0,12); try{ loc
 function miniCard(p){ const d=discount(p); return `<div class="mini ${stock(p)>0?'':'sold'}" data-mid="${esc(p.id)}"><div class="im">${p.images?.length?`<img src="${img(p.images[0])}" loading="lazy" alt="">`:''}${d&&stock(p)>0?`<span>-${d}%</span>`:''}</div><div class="t">${p.brand?`<div class="br">${esc(p.brand)}</div>`:''}<div class="nm">${esc(p.name)}</div>${num(p.price)!=null?`<div class="pr">${fmt(num(p.price))} ${esc(cur())}</div>`:''}</div></div>`; }
 function seenRail(){ if(S.admin) return ''; const ps=SEEN.map(id=>S.products.find(p=>p.id===id)).filter(p=>p&&!p.hidden&&stock(p)>0); return ps.length>=2?`<div class="xsec"><h2>كمّلي من مكان ما وقفتي</h2><div class="mrail">${ps.map(miniCard).join('')}</div></div>`:''; }
 document.addEventListener('click',e=>{ const m=e.target.closest('[data-mid]'); if(!m) return; const o=m.closest('.ov'); if(o&&o.close) o.close(); setTimeout(()=>openDetail(m.dataset.mid),o?240:0); });
+const nrm=s=>String(s||'').toLowerCase().replace(/[\u064B-\u0652\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');
 /* ---------- rendering ---------- */
 function render(){
   const all = visible();
@@ -720,22 +730,28 @@ function render(){
     (S.cat==='all' || mainCatOf(p)===S.cat) &&
     (S.sub==='all' || p.categoryId===S.sub));
   const q = S.q.trim().toLowerCase();
-  if (q) list = list.filter(p => (p.name+' '+(p.brand||'')+' '+(p.desc||'')).toLowerCase().includes(q));
+  if (q){ const ws=nrm(q).split(/\s+/).filter(Boolean);
+    list = list.filter(p => { const k=cat(p.categoryId), par=k&&k.parentId?cat(k.parentId):null, c=country(p.countryId);
+      const hay=nrm([p.name,p.brand,p.desc,k&&k.name,par&&par.name,c&&c.name,(p.sizes||[]).map(x=>x.s).join(' ')].filter(Boolean).join(' ')); return ws.every(w=>hay.includes(w)); }); }
   list = applyExtra(list);
   const t = p => p.createdAt || '';
-  list.sort({
+  const _cmp=({
     new:(a,b)=>t(b).localeCompare(t(a)),
     low:(a,b)=>(num(a.price)??1e12)-(num(b.price)??1e12),
     high:(a,b)=>(num(b.price)??-1)-(num(a.price)??-1),
     avail:(a,b)=>(stock(b)>0)-(stock(a)>0) || t(b).localeCompare(t(a)),
     off:(a,b)=>(discount(b)-discount(a)) || (isPromo(b)-isPromo(a)) || (num(a.price)||0)-(num(b.price)||0)
   }[S.sort] || ((a,b)=>t(b).localeCompare(t(a))));
+  list.sort((a,b)=> S.admin ? _cmp(a,b) : ((stock(b)>0)-(stock(a)>0) || _cmp(a,b)));
 
   const cn = S.country==='all' ? '' : (country(S.country)?.name||'');
   const kn = S.sub!=='all' ? cat(S.sub)?.name : (S.cat!=='all' ? cat(S.cat)?.name : '');
   $('#title').textContent = [S.promoOnly ? (S.settings.promo.title||'العروض') : kn, cn && ('من '+cn)].filter(Boolean).join(' ') || 'كل المنتجات';
   $('#count').textContent = S.ready ? `${list.length} منتج` : '';
 
+  { const bc={}; inCountry.filter(p=>(S.cat==='all'||mainCatOf(p)===S.cat)&&stock(p)>0).forEach(p=>{ const b=(p.brand||'').trim(); if(b) bc[b]=(bc[b]||0)+1; });
+    const top=Object.entries(bc).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,14);
+    $('#brands').innerHTML = top.length>=4 ? `<div class="lbl">براندات بتحبيها</div><div class="rail brail">${top.map(([b,n])=>`<button class="bchip ${S.brands.includes(b)?'on':''}" data-br="${esc(b)}"><b>${esc(b)}</b><span>${n}</span></button>`).join('')}</div>` : ''; }
   const ci=S.country!=='all'?country(S.country):null;
   $('#cinfo').innerHTML = ci&&ci.info ? `<div class="shipnote">🚚 ${esc(ci.flag||'')} ${esc(ci.info)}</div>` : '';
   drawCartBtn(); drawActive();
@@ -996,6 +1012,7 @@ function openFilters(){
 }
 
 /* ---------- events ---------- */
+$('#brands').onclick = e => { const b=e.target.closest('[data-br]'); if(!b) return; const x=b.dataset.br; S.brands=S.brands.includes(x)?S.brands.filter(y=>y!==x):[x]; render(); $('#title').scrollIntoView({behavior:'smooth',block:'center'}); };
 $('#countries').onclick = e => { const b=e.target.closest('[data-c]'); if(!b) return; S.country=b.dataset.c; render(); };
 $('#cats').onclick = e => {
   if(e.target.closest('[data-bf]')){ S.promoOnly=!S.promoOnly; if(S.promoOnly){S.cat='all';S.sub='all';} render(); return; }
@@ -1089,7 +1106,7 @@ function openDetail(id){
     : `<div class="lbl">اختار${vs.some(s=>s.img)?' الدرجة':''}</div><div class="szl" id="vsel">${vs.map((s,i)=>`<button class="vch${s.img?' sw':''}" data-vi="${i}" ${num(s.q)>0?'':'disabled'}>${s.img?`<img src="${img(s.img)}" alt="" loading="lazy">`:''}${esc(s.s)}</button>`).join('')}</div><div class="swbig" id="swbig"><img alt=""><b></b></div>`;
   const foot = S.admin
     ? `<button class="btn" id="cpy" style="flex:1.2">📋 بوست</button><button class="btn" id="sty">📸 ستوري</button><button class="btn p" id="ed">✏️ تعديل</button>`
-    : (st>0 ? `<div class="qty"><button data-q="1">+</button><b id="qn">1</b><button data-q="-1">−</button></div><button class="btn r" id="addc">🛒 أضف للسلة</button>`
+    : (st>0 ? `<div class="qty"><button data-q="1">+</button><b id="qn">1</b><button data-q="-1">−</button></div><button class="btn r" id="addc">🛒 أضف للسلة${num(p.price)!=null?` <span id="addp" style="opacity:.85;font-weight:700;direction:ltr;display:inline-block;margin-inline-start:4px"></span>`:''}</button>`
             : `<button class="btn" data-close>رجوع</button><button class="btn p" id="reqSim">✨ اطلبي زيه</button>`);
   const ov=sheet(esc(c?(c.flag+' '+c.name):'تفاصيل المنتج'), `
     ${gal}
@@ -1121,7 +1138,7 @@ function openDetail(id){
   const vsel=ov.querySelector('#vsel');
   const swb=ov.querySelector('#swbig');
   const paint=()=>{ if(vsel) vsel.querySelectorAll('.vch').forEach(b=>b.classList.toggle('on',vs[+b.dataset.vi].s===sel));
-    if(swb){ const x=vs.find(v=>v.s===sel); if(x&&(x.img||x.photo)){ const si=swb.querySelector('img'); si.src=img(x.photo||x.img); si.onclick=()=>zoomImg(img(x.photo||x.img)); swb.querySelector('b').textContent=x.s; swb.classList.add('on'); } else swb.classList.remove('on'); } const q=ov.querySelector('#qn'); if(q) q.textContent=qn; };
+    if(swb){ const x=vs.find(v=>v.s===sel); if(x&&(x.img||x.photo)){ const si=swb.querySelector('img'); si.src=img(x.photo||x.img); si.onclick=()=>zoomImg(img(x.photo||x.img)); swb.querySelector('b').textContent=x.s; swb.classList.add('on'); } else swb.classList.remove('on'); } const q=ov.querySelector('#qn'); if(q) q.textContent=qn; const ap=ov.querySelector('#addp'); if(ap) ap.textContent=fmt((num(p.price)||0)*qn)+' '+cur(); };
   if(vsel) vsel.onclick=e=>{ const b=e.target.closest('[data-vi]'); if(!b||b.disabled) return; sel=vs[+b.dataset.vi].s; qn=1; paint(); };
   ov.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{
     const cur=S.products.find(x=>x.id===p.id)||p; const room=(vs&&!sel)?99:avail(cur,sel)-inCart(p.id,sel);
