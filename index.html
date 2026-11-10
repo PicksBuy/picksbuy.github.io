@@ -489,6 +489,42 @@ body.admin .dock{display:none}
 .totop{bottom:104px}
 .toast{bottom:110px}
 footer.wrap{padding-bottom:130px!important}
+
+/* ===== v4: depth, 3D, keep-browsing ===== */
+.bfs{perspective:900px}
+.bfi{overflow:visible;background:none;box-shadow:none;transform-style:preserve-3d;transform:rotateY(38deg) rotateX(6deg) scale(.86);opacity:.5;transition:transform 1s var(--ease),opacity .6s}
+.bfs.on .bfi{opacity:1;transform:rotateY(calc(-13deg + var(--ty,0deg))) rotateX(calc(5deg + var(--tx,0deg)));animation:bffloat 5s ease-in-out infinite}
+.bfx.drag .bfs.on .bfi{animation:none;transition:transform .15s}
+@keyframes bffloat{50%{transform:rotateY(calc(-7deg + var(--ty,0deg))) rotateX(calc(1deg + var(--tx,0deg))) translateY(-7px)}}
+.bfi img{border-radius:18px;background:#fff;box-shadow:0 24px 44px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.08);position:relative;display:block}
+.bfi:before{content:"";position:absolute;inset:0;border-radius:18px;z-index:2;pointer-events:none;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.38) 48%,transparent 62%);background-size:260% 100%;animation:gloss 5s ease-in-out infinite;mix-blend-mode:screen}
+@keyframes gloss{0%,100%{background-position:120% 0}50%{background-position:-20% 0}}
+.bfi:after{content:"";position:absolute;left:8%;right:8%;bottom:-20px;height:20px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),transparent);transform:translateZ(-40px);filter:blur(4px)}
+.bfi .bfoff{transform:translateZ(34px);z-index:3}
+.card{transition:transform .35s var(--spring),box-shadow .3s}
+.card:active{transform:perspective(700px) rotateX(4deg) scale(.975)}
+/* the parcel */
+.reqcard{position:relative;overflow:hidden;padding:20px 16px 18px;border-radius:24px;background:linear-gradient(140deg,#fff 0%,#FBEAE5 60%,#F6D9D2 100%)}
+.box3d{width:64px;height:64px;margin:6px auto 20px;perspective:600px}
+.box3d .cube{width:100%;height:100%;position:relative;transform-style:preserve-3d;animation:spin3d 9s linear infinite}
+@keyframes spin3d{from{transform:rotateX(-22deg) rotateY(0)}to{transform:rotateX(-22deg) rotateY(360deg)}}
+.box3d .f{position:absolute;inset:0;border-radius:6px;background:linear-gradient(135deg,#E8B4A6,#B76E79);display:grid;place-items:center;font-size:22px;backface-visibility:hidden;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.box3d .f:before{content:"";position:absolute;top:0;bottom:0;left:calc(50% - 6px);width:12px;background:#5A2A33;opacity:.85}
+.box3d .f:after{content:"";position:absolute;left:0;right:0;top:calc(50% - 6px);height:12px;background:#5A2A33;opacity:.85}
+.box3d .f span{position:relative;z-index:1;background:#fff;border-radius:50%;width:28px;height:28px;display:grid;place-items:center;font-size:15px}
+.box3d .f1{transform:translateZ(32px)}.box3d .f2{transform:rotateY(90deg) translateZ(32px)}.box3d .f3{transform:rotateY(180deg) translateZ(32px)}.box3d .f4{transform:rotateY(-90deg) translateZ(32px)}
+.box3d .f5{transform:rotateX(90deg) translateZ(32px);background:linear-gradient(135deg,#F3CFC4,#C9776A)}.box3d .f6{transform:rotateX(-90deg) translateZ(32px);background:#8E4D58}
+.box3d .sh{position:absolute;left:4px;right:4px;bottom:-22px;height:14px;border-radius:50%;background:radial-gradient(closest-side,rgba(90,42,51,.35),transparent)}
+/* savings + urgency */
+.save{display:inline-flex;align-items:center;gap:6px;margin:0 0 10px;padding:5px 12px;border-radius:999px;background:#E9F6EE;color:#17693B;font-weight:800;font-size:13px}
+.lastp{display:inline-flex;margin:0 6px 10px 0;padding:5px 12px;border-radius:999px;background:#FFF1D6;color:#7A4A00;font-weight:800;font-size:13px}
+.csave{margin:8px 0 2px;padding:9px 12px;border-radius:14px;background:#E9F6EE;color:#17693B;font-weight:800;font-size:14px;text-align:center}
+/* mini rails */
+.mrail{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding:2px 2px 10px;scroll-snap-type:x proximity}.mrail::-webkit-scrollbar{display:none}
+.mrail .mini{width:128px;border-radius:18px;box-shadow:0 6px 16px rgba(150,70,80,.10)}
+.mrail .mini .im{position:relative}.mrail .mini .im span{position:absolute;top:6px;left:6px;background:var(--rg2);color:#fff;border-radius:999px;font-size:10.5px;font-weight:800;padding:1px 7px;direction:ltr}
+.mrail .mini .pr{color:#9E2F3D}
+.simh{font-family:"El Messiri",Cairo,sans-serif;font-weight:700;font-size:16px;margin:18px 0 10px}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -603,6 +639,11 @@ function drawCartBtn(){
 function discount(p){ const o=num(p.oldPrice), n=num(p.price); return (o && n && o>n) ? Math.round((1-n/o)*100) : 0; }
 
 function tileImg(list,catId){ const ps=list.filter(p=>mainCatOf(p)===catId&&p.images&&p.images.length); const p=ps.find(x=>stock(x)>0&&!x.hidden)||ps[0]; return p?img(p.images[0]):''; }
+let SEEN=[]; try{ SEEN=JSON.parse(localStorage.getItem('pb_seen')||'[]')||[]; }catch(e){ SEEN=[]; }
+function markSeen(id){ SEEN=[id,...SEEN.filter(x=>x!==id)].slice(0,12); try{ localStorage.setItem('pb_seen',JSON.stringify(SEEN)); }catch(e){} }
+function miniCard(p){ const d=discount(p); return `<div class="mini ${stock(p)>0?'':'sold'}" data-mid="${esc(p.id)}"><div class="im">${p.images?.length?`<img src="${img(p.images[0])}" loading="lazy" alt="">`:''}${d&&stock(p)>0?`<span>-${d}%</span>`:''}</div><div class="t">${p.brand?`<div class="br">${esc(p.brand)}</div>`:''}<div class="nm">${esc(p.name)}</div>${num(p.price)!=null?`<div class="pr">${fmt(num(p.price))} ${esc(cur())}</div>`:''}</div></div>`; }
+function seenRail(){ if(S.admin) return ''; const ps=SEEN.map(id=>S.products.find(p=>p.id===id)).filter(p=>p&&!p.hidden&&stock(p)>0); return ps.length>=2?`<div class="xsec"><h2>كمّلي من مكان ما وقفتي</h2><div class="mrail">${ps.map(miniCard).join('')}</div></div>`:''; }
+document.addEventListener('click',e=>{ const m=e.target.closest('[data-mid]'); if(!m) return; const o=m.closest('.ov'); if(o&&o.close) o.close(); setTimeout(()=>openDetail(m.dataset.mid),o?240:0); });
 /* ---------- rendering ---------- */
 function render(){
   const all = visible();
@@ -666,21 +707,22 @@ function render(){
   if (!list.length){
     $('#grid').innerHTML = `<div class="empty" style="grid-column:1/-1"><div class="big">🔍</div>${
       S.products.length ? 'مفيش منتجات بالاختيارات دي'+(activeFilters().length||S.q?'<br><button class="btn p" data-clearall="1">امسحي الفلاتر</button>':'') : (S.admin ? 'لسه مفيش منتجات. دوس <b>＋ منتج جديد</b> تحت علشان تضيف أول منتج.' : 'المنتجات هتنزل قريب ✨')}</div>`;
-    if(!S.admin) $('#grid').insertAdjacentHTML('beforeend',`<div class="reqcard"><b>مش لاقية اللي عايزاه؟ ✨</b><span class="hint">ابعتيلنا اسم المنتج أو لينكه ونجيبهولك من أي بلد</span><br><button data-req="1">اطلبي منتج من بره</button></div>`);
+    if(!S.admin) $('#grid').insertAdjacentHTML('beforeend',`<div class="reqcard"><div class="box3d" aria-hidden="true"><div class="cube"><i class="f f1"><span>✈</span></i><i class="f f2"><span>♥</span></i><i class="f f3"><span>✦</span></i><i class="f f4"><span>♥</span></i><i class="f f5"></i><i class="f f6"></i></div><i class="sh"></i></div><b>مش لاقية اللي عايزاه؟ ✨</b><span class="hint">ابعتيلنا اسم المنتج أو لينكه ونجيبهولك من أي بلد</span><br><button data-req="1">اطلبي منتج من بره</button></div>`);
     return;
   }
-  $('#grid').innerHTML = list.map(card).join('') + (S.admin ? '' : `<div class="reqcard"><b>مش لاقية اللي عايزاه؟ ✨</b><span class="hint">ابعتيلنا اسم المنتج أو لينكه ونجيبهولك من أي بلد</span><br><button data-req="1">اطلبي منتج من بره</button></div>`);
+  $('#grid').innerHTML = list.map(card).join('') + (S.admin ? '' : `<div class="reqcard"><div class="box3d" aria-hidden="true"><div class="cube"><i class="f f1"><span>✈</span></i><i class="f f2"><span>♥</span></i><i class="f f3"><span>✦</span></i><i class="f f4"><span>♥</span></i><i class="f f5"></i><i class="f f6"></i></div><i class="sh"></i></div><b>مش لاقية اللي عايزاه؟ ✨</b><span class="hint">ابعتيلنا اسم المنتج أو لينكه ونجيبهولك من أي بلد</span><br><button data-req="1">اطلبي منتج من بره</button></div>`);
 }
 
 function renderPromo(all){
   const box=$('#promo');
-  const items = promoOn() ? all.filter(isPromo).sort((a,b)=>(stock(b)>0)-(stock(a)>0)||(b.createdAt||'').localeCompare(a.createdAt||'')) : [];
+  const allP = promoOn() ? all.filter(isPromo) : [];
+  const items = allP.slice().sort((a,b)=>(stock(b)>0)-(stock(a)>0)||discount(b)-discount(a)||(b.createdAt||'').localeCompare(a.createdAt||'')).slice(0,12);
   if(!items.length){ box.innerHTML=''; return; }
   const pr=S.settings.promo, t=String(pr.title||'').trim(), words=t.split(/\s+/);
   const title = words.length>1 ? esc(words.slice(0,-1).join(' '))+' <span>'+esc(words[words.length-1])+'</span>' : esc(t);
   box.innerHTML=`<section class="promo">
     <div class="ptop"><div><div class="ptitle">${title}</div>${pr.subtitle?`<div class="psub">${esc(pr.subtitle)}</div>`:''}</div>
-    <button class="pall" id="pall">شوف الكل (${items.length})</button></div>
+    <button class="pall" id="pall">شوف الكل (${allP.length})</button></div>
     ${pr.ends?`<div class="cd" id="cd"></div>`:''}
     <div class="bfx" id="bfx"><div class="bft">${items.map((p,i)=>{ const d=discount(p), so=stock(p)<=0; return `<div class="bfs ${so?'sold':''}" data-pid="${esc(p.id)}">
       <div class="bfi">${p.images?.length?`<img src="${img(p.images[0])}" ${i?'loading="lazy"':''} alt="">`:''}${d&&!so?`<span class="bfoff">-${d}%</span>`:''}</div>
@@ -755,11 +797,15 @@ function startBF(){
   if('IntersectionObserver' in window){ if(BF.io) BF.io.disconnect(); BF.vis=true; BF.io=new IntersectionObserver(es=>{ es.forEach(en=>{ if(en.target===$('#bfx')) BF.vis=en.isIntersecting; }); }); BF.io.observe(x); }
   let sx=0, sy=0, dx=0, on=false; const tr=x.querySelector('.bft');
   x.addEventListener('pointerdown',e=>{ on=true; sx=e.clientX; sy=e.clientY; dx=0; BF.dragged=false; clearTimeout(BF.t); x.classList.add('paused'); });
-  x.addEventListener('pointermove',e=>{ if(!on) return; dx=e.clientX-sx; if(Math.abs(dx)>8&&Math.abs(dx)>Math.abs(e.clientY-sy)){ BF.dragged=true; tr.style.transition='none'; tr.style.transform=`translateX(calc(${BF.i*100}% + ${dx}px))`; } });
-  const end=()=>{ if(!on) return; on=false; x.classList.remove('paused'); tr.style.transition='';
+  x.addEventListener('pointermove',e=>{ if(!on) return; dx=e.clientX-sx; x.classList.add('drag'); x.style.setProperty('--ty',Math.max(-22,Math.min(22,dx/5))+'deg'); x.style.setProperty('--tx',Math.max(-10,Math.min(10,(sy-e.clientY)/8))+'deg'); if(Math.abs(dx)>8&&Math.abs(dx)>Math.abs(e.clientY-sy)){ BF.dragged=true; tr.style.transition='none'; tr.style.transform=`translateX(calc(${BF.i*100}% + ${dx}px))`; } });
+  const end=()=>{ if(!on) return; on=false; x.classList.remove('paused'); x.classList.remove('drag'); x.style.setProperty('--ty','0deg'); x.style.setProperty('--tx','0deg'); tr.style.transition='';
     if(BF.dragged && Math.abs(dx)>40) BF.go(BF.i+(dx>0?1:-1),true); else BF.go(BF.i,true); setTimeout(()=>BF.dragged=false,50); };
   x.addEventListener('pointerup',end); x.addEventListener('pointercancel',end); x.addEventListener('pointerleave',end);
 }
+/* gentle tilt with the phone, where the browser allows it without a prompt */
+if(!RM && window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission!=='function'){ let g0=null;
+  addEventListener('deviceorientation',e=>{ const x=$('#bfx'); if(!x||e.gamma==null||x.classList.contains('drag')||!BF.vis) return; if(g0==null) g0=e.gamma;
+    x.style.setProperty('--ty',Math.max(-14,Math.min(14,(e.gamma-g0)/2))+'deg'); },{passive:true}); }
 /* image fade-in + scroll reveal */
 document.addEventListener('load',e=>{ const t=e.target; if(t.tagName==='IMG') t.classList.add('ld'); },true);
 const REV = ('IntersectionObserver' in window) && !RM ? new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); REV.unobserve(en.target); } }),{rootMargin:'0px 0px -6% 0px'}) : null;
@@ -806,7 +852,7 @@ document.addEventListener('error',e=>{ const t=e.target; if(t&&t.tagName==='IMG'
 function renderExtras(){
   const box=$('#extras'); if(!box) return;
   const revs=S.settings.reviews||[];
-  box.innerHTML = `
+  box.innerHTML = `${seenRail()}
     ${revs.length?`<div class="xsec"><h2>💬 آراء العملاء</h2><div class="revs">${revs.map(r=>`<img src="${img(r)}" loading="lazy" alt="رأي عميلة">`).join('')}</div></div>`:''}
     <div class="xsec"><h2>إزاي تطلبي؟</h2>
       <video class="howto" src="img/howto.mp4" poster="img/howto.jpg" controls playsinline preload="none"></video>
@@ -996,6 +1042,9 @@ function openDetail(id){
   const p=S.products.find(x=>x.id===id); if(!p) return;
   const c=country(p.countryId), k=cat(p.categoryId), par=k?.parentId?cat(k.parentId):null, st=stock(p);
   const ims=p.images||[];
+  if(!S.admin){ markSeen(p.id); setTimeout(()=>{ try{ renderExtras(); }catch(e){} },400); }
+  const sv=(num(p.oldPrice)||0)-(num(p.price)||0), dd=discount(p);
+  const sim=S.admin?[]:visible().filter(x=>x.id!==p.id&&stock(x)>0&&mainCatOf(x)===mainCatOf(p)).sort((a,b)=>(b.categoryId===p.categoryId)-(a.categoryId===p.categoryId)||(b.brand===p.brand)-(a.brand===p.brand)||discount(b)-discount(a)).slice(0,10);
   const gal = ims.length ? `<div class="galw">${!S.admin?`<div class="galbtns"><button id="dShare" aria-label="مشاركة">↗</button><button id="dFav" class="${isFav(p.id)?'on':''}" aria-label="المفضلة">${isFav(p.id)?'♥':'♡'}</button></div>`:''}<div class="gal" id="gal">${ims.map(i=>`<img src="${img(i)}" alt="">`).join('')}</div>${ims.length>1?`<div class="dots" id="dots">${ims.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`:''}</div>` : '';
   const vs=variants(p);
   const sizes=!vs ? '' : S.admin
@@ -1013,9 +1062,11 @@ function openDetail(id){
     <div class="meta">${[par?.name,k?.name].filter(Boolean).map(esc).join(' › ')}</div>
     ${c&&c.info?`<div class="shipnote" style="margin-top:8px">🚚 ${esc(c.info)}</div>`:''}
     <div class="dprice">${num(p.price)!=null?`<b>${fmt(num(p.price))} ${esc(cur())}</b>`:''}${num(p.oldPrice)&&num(p.oldPrice)>num(p.price)?`<s>${fmt(num(p.oldPrice))} ${esc(cur())}</s>`:''}</div>
+    ${st>0&&!S.admin&&sv>0?`<span class="save">هتوفّري ${fmt(sv)} ${esc(cur())}${dd?` (${dd}%)`:''}</span>`:''}${st>0&&st<=3&&!S.admin?`<span class="lastp">${st===1?'آخر قطعة':'باقي '+st+' قطع بس'}</span>`:''}
     ${st<=0?`<div class="note" style="margin:0 0 10px;background:#FBE9EA;border-color:#F0C9CD;color:var(--red)">نفدت الكمية</div>`:(S.admin?`<div class="meta">المتاح: ${st} قطعة</div>`:'')}
     ${sizes}
     ${p.desc?`<div class="desc">${esc(p.desc)}</div>`:''}
+    ${sim.length>=2?`<div class="simh">ممكن يعجبك كمان</div><div class="mrail">${sim.map(miniCard).join('')}</div>`:''}
   `, foot);
   const g=ov.querySelector('#gal'), dots=ov.querySelector('#dots');
   if(g&&dots) g.addEventListener('scroll',()=>{ const i=Math.round(Math.abs(g.scrollLeft)/g.clientWidth); [...dots.children].forEach((d,j)=>d.classList.toggle('on',i===j)); },{passive:true});
@@ -1082,6 +1133,7 @@ function drawCart(){
     `<div class="tot" style="font-size:15px;padding-bottom:0"><span>المنتجات</span><b style="font-size:16px">${fmt(sub)} ${esc(cur())}</b></div>
      ${zones.length?`<div class="tot" style="font-size:15px;padding:6px 0 0"><span>الشحن</span><b style="font-size:16px;color:var(--ink)">${fee!=null?fmt(fee)+' '+esc(cur()):(gsel?'يتحدد على واتساب':'اختاري المحافظة')}</b></div>`:''}
      <div class="tot"><span>الإجمالي</span><b>${fmt(sub+(fee||0))} ${esc(cur())}</b></div>
+     ${(v=>v>0?`<div class="csave">🎉 وفّرتي ${fmt(v)} ${esc(cur())} في الطلب ده</div>`:'')(lines.filter(l=>l.ok).reduce((a,l)=>a+Math.max(0,(num(l.p.oldPrice)||0)-(num(l.p.price)||0))*Math.min(l.n,l.max),0))}
      ${zones.length?'':'<div class="hint" style="margin-bottom:12px">مصاريف الشحن بتتحدد على واتساب حسب المنطقة.</div>'}
      <div class="f"><label>الاسم</label><input id="oName" autocomplete="name"></div>
      <div class="f"><label>رقم الموبايل (واتساب)</label><input id="oPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" style="direction:ltr;text-align:right"></div>
