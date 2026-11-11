@@ -1,26 +1,30 @@
 {
- "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins": {
+ "https://www.primark.com/en-gb/c/sale/women": {
   "status": 200,
-  "len": 5996,
-  "title": "Pardon Our Interruption",
-  "count": [],
-  "names": 0,
-  "prodlinks": 0
+  "len": 2395614,
+  "title": "Every Day is Black Friday | Women&#x27;s Clothing Sale | Primark UK",
+  "next": 0,
+  "plinks": 48
  },
- "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins?pageSize=180": {
+ "https://www.primark.com/en-gb/c/sale/women?page=2": {
   "status": 200,
-  "len": 5996,
-  "title": "Pardon Our Interruption",
-  "count": [],
-  "names": 0,
-  "prodlinks": 0
+  "len": 2344195,
+  "title": "Page 2 | Every Day is Black Friday | Women&#x27;s Clothing Sale | Primark UK",
+  "next": 0,
+  "plinks": 48
  },
- "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins?pageNo=2": {
+ "https://www.primark.com/en-gb/c/sale/women?page=3": {
   "status": 200,
-  "len": 5996,
-  "title": "Pardon Our Interruption",
-  "count": [],
-  "names": 0,
-  "prodlinks": 0
+  "len": 2064846,
+  "title": "Page 3 | Every Day is Black Friday | Women&#x27;s Clothing Sale | Primark UK",
+  "next": 0,
+  "plinks": 38
+ },
+ "https://www.primark.com/en-gb/c/sale/women?page=4": {
+  "status": 200,
+  "len": 2390368,
+  "title": "Every Day is Black Friday | Women&#x27;s Clothing Sale | Primark UK",
+  "next": 0,
+  "plinks": 48
  }
 }
