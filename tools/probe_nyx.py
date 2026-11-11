@@ -17,7 +17,8 @@ for pg in (1,2,3):
         try: d=json.loads(blk)
         except Exception: continue
         for li in (d.get('itemListElement') or []) if isinstance(d,dict) else []:
-            it=li.get('item') or {}; h=(it.get('url') or '').replace('https://www.primark.com','')
+            if not isinstance(li,dict) or not isinstance(li.get('item'),dict): continue
+            it=li['item']; h=(it.get('url') or '').replace('https://www.primark.com','')
             if h in items: items[h].update(color=it.get('color'),image=it.get('image'),ld_low=(it.get('offers') or {}).get('lowPrice'))
     time.sleep(1)
 n=0
