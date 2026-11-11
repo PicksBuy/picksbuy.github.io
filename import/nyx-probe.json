@@ -1,1 +1,26 @@
-{}
+{
+ "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins": {
+  "status": 200,
+  "len": 5996,
+  "title": "Pardon Our Interruption",
+  "count": [],
+  "names": 0,
+  "prodlinks": 0
+ },
+ "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins?pageSize=180": {
+  "status": 200,
+  "len": 5996,
+  "title": "Pardon Our Interruption",
+  "count": [],
+  "names": 0,
+  "prodlinks": 0
+ },
+ "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins?pageNo=2": {
+  "status": 200,
+  "len": 5996,
+  "title": "Pardon Our Interruption",
+  "count": [],
+  "names": 0,
+  "prodlinks": 0
+ }
+}

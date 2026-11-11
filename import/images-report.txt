@@ -203,11 +203,11 @@ skip img/sd/sd-rabanne-invictus-victory-eau-de-parfum-50ml.jpg
 skip img/sd/sd-rabanne-1-million-lucky-eau-de-toilette-100ml.jpg
 skip img/sd/sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set.jpg
 skip img/sd/sd-moschino-mini-gift-set-collection-4-x-5ml.jpg
-ok   img/sd/sd-ariana-grande-ari-eau-de-parfum-50ml.jpg 166091B
-ok   img/sd/sd-boss-the-scent-magnetic-eau-de-parfum-for-her-50ml.jpg 72236B
-ok   img/sd/sd-valentino-born-in-roma-extradose-donna-30ml.jpg 154526B
-ok   img/sd/sd-ysl-black-opium-illicit-green-eau-de-parfum-75ml.jpg 252841B
-ok   img/sd/sd-mugler-alien-eau-de-parfum-extraintense-30ml.jpg 71745B
-ok   img/sd/sd-ysl-black-opium-glitter-eau-de-parfum-30ml.jpg 190394B
-ok   img/sd/sd-prada-paradoxe-radical-essence-30ml.jpg 196449B
-ok   img/sd/sd-marc-jacobs-dot-eau-de-parfum-50ml.jpg 75735B
+skip img/sd/sd-ariana-grande-ari-eau-de-parfum-50ml.jpg
+skip img/sd/sd-boss-the-scent-magnetic-eau-de-parfum-for-her-50ml.jpg
+skip img/sd/sd-valentino-born-in-roma-extradose-donna-30ml.jpg
+skip img/sd/sd-ysl-black-opium-illicit-green-eau-de-parfum-75ml.jpg
+skip img/sd/sd-mugler-alien-eau-de-parfum-extraintense-30ml.jpg
+skip img/sd/sd-ysl-black-opium-glitter-eau-de-parfum-30ml.jpg
+skip img/sd/sd-prada-paradoxe-radical-essence-30ml.jpg
+skip img/sd/sd-marc-jacobs-dot-eau-de-parfum-50ml.jpg
