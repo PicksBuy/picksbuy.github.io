@@ -159,6 +159,12 @@ body:not(.admin) .cartbtn.has{display:flex}
 .st-delivered{background:#E3F4EA;color:#1F6B43}.st-cancelled,.st-expired{background:#F1EAEA;color:#8B6F6F}
 .obtns{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 4px}.obtns button,.obtns a{border-radius:10px;padding:7px 12px;font-weight:800;font-size:13px;background:var(--soft);text-decoration:none;color:var(--ink)}
 .obtns .go{background:var(--ink);color:#fff}.obtns .no{color:var(--red)}.obtns .wa{background:#E7F8EE;color:#1F7A47}
+.ocard{cursor:pointer;padding:14px 14px 8px;border-radius:16px;background:#fff;box-shadow:0 2px 10px rgba(60,20,20,.05)}.ocard:active{background:var(--soft)}
+.ocard .ono{font-size:16px}.ocard .hint{font-size:13.5px;line-height:1.7}.ocard .onm{font-weight:800;font-size:17px;margin-top:6px}.ocard .oit{margin:8px 0;font-size:15.5px;line-height:1.9;font-weight:600;unicode-bidi:plaintext}
+.ocard .pill{font-size:13.5px;padding:3px 12px}.ocard .obtns button,.ocard .obtns a{font-size:14.5px;padding:10px 14px}
+.ordv .cl img,.ordv .cl .ni{width:96px;height:118px;cursor:zoom-in}.ordv .cl .i .n{white-space:normal;font-size:16px;line-height:1.5}.ordv .cl .i .v{font-size:15px;font-weight:800;color:var(--ink);background:var(--soft);display:inline-block;border-radius:8px;padding:2px 10px;margin:4px 0}.ordv .cl .i .p{font-size:16px}
+.ordv .who{font-weight:800;font-size:18px;margin-top:8px}.ordv .hint{font-size:14.5px;line-height:1.8}.ordv .obtns button,.ordv .obtns a{font-size:15px;padding:11px 16px}
+.xls{display:flex;gap:8px;margin:8px 0}.xls button{flex:1;border-radius:12px;padding:11px;font-weight:800;font-size:14.5px;background:#E7F8EE;color:#1F7A47}
 .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}.kpi{background:var(--soft);border-radius:12px;padding:8px;text-align:center}
 .kpi b{display:block;font-size:18px;direction:ltr}.kpi small{color:var(--muted);font-size:11px;font-weight:700}
 .minil{font-size:13px;line-height:1.9;margin:0 0 10px}.sect{font-weight:800;margin:14px 0 6px;font-size:14px}
@@ -956,8 +962,12 @@ $('#extras').addEventListener('click',e=>{ const im=e.target.closest('.revs img'
 /* phone Back button closes the open window instead of leaving the site */
 let NAV_IGNORE=0;
 function topLayer(){ const z=document.querySelectorAll('.zoom, .ov:not(.out)'); return z[z.length-1]; }
-function pushNav(){ if(!(history.state&&history.state.pb)) { try{ history.pushState({pb:1},''); }catch(e){} } }
-function popNav(){ if(!topLayer() && history.state&&history.state.pb){ NAV_IGNORE++; history.back(); } }
+/* the marker carries a token made on this page load: after a reload (pull-to-refresh, tab restored by the phone)
+   an old marker is ignored, otherwise Back would leave to the previous copy of the page and reload the whole site */
+const NAV_T=Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const navOn=()=>!!(history.state&&history.state.pb===NAV_T);
+function pushNav(){ if(!navOn()) { try{ history.pushState({pb:NAV_T},''); }catch(e){} } }
+function popNav(){ if(!topLayer() && navOn()){ NAV_IGNORE++; history.back(); } }
 window.addEventListener('popstate',()=>{
   if(NAV_IGNORE>0){ NAV_IGNORE--; if(topLayer()) pushNav(); return; }
   const t=topLayer(); if(!t) return;
@@ -1560,6 +1570,7 @@ async function onManageChange(e){
   catch(err){ toast('ماتحفظش'); }
 }
 async function onManageClick(e){
+  const oc=!e.target.closest('button,a,input,select,textarea')&&e.target.closest('[data-ocard]'); if(oc){ openOrder(oc.dataset.ocard); return; }
   const b=e.target.closest('button'); if(!b) return;
   try{
     if(b.dataset.new==='countries'){
@@ -1610,6 +1621,7 @@ async function onManageClick(e){
       if(act==='del'){ if(!await ask('تمسحي الطلب ده؟','امسحي')) return; ok(await sb.from('requests').delete().eq('id',+id)); }
       else ok(await sb.from('requests').update({status:act}).eq('id',+id));
       S.orders=null; drawManage();
+    } else if(b.dataset.xls){ exportOrders(b);
     } else if(b.dataset.reloadOrders){ S.orders=null; drawManage();
     } else if(b.dataset.cancel){
       if(!await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return;
@@ -1734,14 +1746,14 @@ function orderButtons(o){
 }
 function orderCard(o){
   const c=o.customer||{}, ph=o.phone||c.phone||'', gov=o.gov||c.gov||'', hl=holdLeft(o);
-  return `<div class="grp" style="${['cancelled','expired'].includes(o.status)?'opacity:.55':''}">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px"><b dir="ltr">${esc(o.order_no)}</b><span class="pill st-${esc(o.status)}">${ST[o.status]||esc(o.status)}</span></div>
+  return `<div class="grp ocard" data-ocard="${esc(o.order_no)}" style="${['cancelled','expired'].includes(o.status)?'opacity:.55':''}">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px"><b dir="ltr" class="ono">${esc(o.order_no)}</b><span class="pill st-${esc(o.status)}">${ST[o.status]||esc(o.status)}</span></div>
     <div class="hint">${ago(o.created_at)}${hl?' · '+hl:''}</div>
-    <div style="font-weight:700;margin-top:4px">${esc(c.name||'')}${ph?` · <span dir="ltr">${esc(ph)}</span>`:''}</div>
+    <div class="onm">${esc(c.name||'')}${ph?` · <span dir="ltr">${esc(ph)}</span>`:''}</div>
     ${gov||c.addr?`<div class="hint">${esc([gov,c.addr].filter(Boolean).join(' - '))}</div>`:''}${c.note?`<div class="hint">ملاحظات: ${esc(c.note)}</div>`:''}
-    <div style="margin:6px 0;font-size:13px;line-height:1.7">${(o.items||[]).map(l=>`• ${esc([l.brand,l.name].filter(Boolean).join(' - '))}${l.v?` (${esc(l.v)})`:''} × ${l.n}`).join('<br>')}</div>
+    <div class="oit">${(o.items||[]).map(l=>`• ${esc([l.brand,l.name].filter(Boolean).join(' - '))}${l.v?` (${esc(l.v)})`:''} × ${l.n}`).join('<br>')}</div>
     <div style="display:flex;justify-content:space-between;align-items:center"><b style="color:var(--red)" dir="ltr">${fmt(num(o.total)+(num(o.shipping)||0))} ${esc(cur())}</b>${num(o.shipping)?`<span class="hint">شامل شحن ${fmt(num(o.shipping))}</span>`:''}</div>
-    <div class="obtns">${orderButtons(o)}<button data-oview="${esc(o.order_no)}">📸 بالصور</button></div></div>`;
+    <div class="obtns">${orderButtons(o)}<button data-oview="${esc(o.order_no)}">🔍 افتح الطلب</button></div></div>`;
 }
 function ordersTab(){
   const os=S.orders||[], live=o=>!['cancelled','expired'].includes(o.status), wk=Date.now()-7*864e5;
@@ -1760,7 +1772,41 @@ function ordersTab(){
       <div class="obtns">${waPhone(r.phone).length>=11?`<a class="wa" target="_blank" rel="noopener" href="https://wa.me/${waPhone(r.phone)}?text=${encodeURIComponent('أهلاً '+(r.name||'')+' 👋 بخصوص طلبك من PicksBuy')}">💬 كلّميها</a>`:''}<button class="go" data-rq="${r.id}|done">✓ اتعمل</button><button class="no" data-rq="${r.id}|del">🗑</button></div></div>`).join(''):'<div class="hint">مفيش طلبات جديدة</div>'}`:''}
     <div class="sect">🧾 الطلبات</div>
     <div class="rail" style="padding-top:0">${Object.entries(groups).map(([k,v])=>`<button class="chip ${f===k?'on':''}" data-ofil="${k}">${v}</button>`).join('')}<button class="chip" data-reload-orders="1">↻</button></div>
+    <div class="xls"><button data-xls="1">📊 نزّل الطلبات Excel</button></div>
     <div style="margin-top:8px">${shown.length?shown.map(orderCard).join(''):'<div class="empty">مفيش طلبات هنا</div>'}</div>`;
+}
+function loadScript(src){ return new Promise((res,rej)=>{ const sc=document.createElement('script'); sc.src=src; sc.onload=res; sc.onerror=rej; document.head.appendChild(sc); }); }
+async function exportOrders(btn){
+  const t0=btn.textContent; btn.disabled=true; btn.textContent='بيجهّز الملف…';
+  try{
+    let os=[]; for(let from=0; from<5000; from+=1000){ const part=ok(await sb.from('orders').select('*').order('created_at',{ascending:false}).range(from,from+999)); os=os.concat(part); if(part.length<1000) break; }
+    const dt=t=>{ const d=new Date(t), p=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; };
+    const H1=['رقم الطلب','التاريخ','الحالة','الاسم','الموبايل','المحافظة','العنوان','ملاحظات','المنتجات','عدد القطع','إجمالي المنتجات','الشحن','الإجمالي'];
+    const H2=['رقم الطلب','التاريخ','الحالة','الاسم','الموبايل','البراند','المنتج','المقاس / النوع','الكمية','سعر القطعة','الإجمالي','البلد','كود المنتج'];
+    const A=[H1], B=[H2];
+    for(const o of os){ const c=o.customer||{}, its=o.items||[], ph=o.phone||c.phone||'', st=ST[o.status]||o.status;
+      A.push([o.order_no,dt(o.created_at),st,c.name||'',ph,o.gov||c.gov||'',c.addr||'',c.note||'',
+        its.map(l=>`${[l.brand,l.name].filter(Boolean).join(' - ')}${l.v?` (${l.v})`:''} × ${l.n}`).join('\n'), its.reduce((a,l)=>a+(+l.n||0),0), num(o.total)||0, num(o.shipping)||0, (num(o.total)||0)+(num(o.shipping)||0)]);
+      for(const l of its){ const p=S.products.find(x=>x.id===l.id), k=p&&country(p.countryId);
+        B.push([o.order_no,dt(o.created_at),st,c.name||'',ph,l.brand||'',l.name||'',l.v||'',+l.n||0,num(l.price)||0,(num(l.price)||0)*(+l.n||0),k?k.name:'',l.id||'']); } }
+    const name=`PicksBuy-orders-${dt(Date.now()).slice(0,10)}`;
+    let blob, ext='xlsx';
+    try{
+      if(!window.XLSX) await loadScript('https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js');
+      const wb=XLSX.utils.book_new(); wb.Workbook={Views:[{RTL:true}]};
+      const mk=(rows,w)=>{ const ws=XLSX.utils.aoa_to_sheet(rows); ws['!cols']=w.map(x=>({wch:x})); ws['!views']=[{rightToLeft:true}]; return ws; };
+      XLSX.utils.book_append_sheet(wb,mk(A,[12,17,10,20,15,14,34,24,60,9,14,9,12]),'الطلبات');
+      XLSX.utils.book_append_sheet(wb,mk(B,[12,17,10,20,15,16,44,16,8,11,11,12,18]),'المنتجات');
+      blob=new Blob([XLSX.write(wb,{bookType:'xlsx',type:'array'})],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+    }catch(e){ /* no internet for the Excel library: a CSV that Excel opens */
+      const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"'; ext='csv';
+      blob=new Blob(['\ufeff'+B.map(r=>r.map(q).join(',')).join('\r\n')],{type:'text/csv;charset=utf-8'});
+    }
+    const file=new File([blob],`${name}.${ext}`,{type:blob.type});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=file.name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+    toast(`اتنزّل ملف فيه ${os.length} طلب ✅`);
+  }catch(e){ console.warn(e); toast('الملف ماتعملش، جرّب تاني'); }
+  btn.disabled=false; btn.textContent=t0;
 }
 async function setOrderStatus(id,st){
   if(st==='cancelled' && !await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return false;
@@ -1902,7 +1948,7 @@ function maybeJoinPopup(){
 }
 
 /* ---------- links: #order-XXX, #p-ID, #admin ---------- */
-function clearHash(){ try{ history.replaceState(null,'',location.pathname+location.search); }catch(e){} }
+function clearHash(){ try{ history.replaceState(history.state,'',location.pathname+location.search); }catch(e){} }
 async function route(){
   const h=decodeURIComponent(location.hash||'');
   if(h==='#admin'){ clearHash(); const {data:{session}}=await sb.auth.getSession(); if(!session) openLogin(); return; }
@@ -1920,14 +1966,16 @@ async function openOrder(no){
     return `<div class="cl">${im?`<img src="${img(im)}" alt="">`:'<div class="ni"></div>'}
       <div class="i">${l.brand?`<div class="brand-l" style="font-size:10px">${esc(l.brand)}</div>`:''}<div class="n">${esc(l.name)}</div>
       ${l.v?`<div class="v">${esc(l.v)}</div>`:''}<div class="p">${fmt(num(l.price))} ${esc(cur())} × ${l.n}</div></div></div>`; }).join('');
-  const ov=sheet(`طلب <span dir="ltr">${esc(o.order_no)}</span>`,`
+  const ov=sheet(`طلب <span dir="ltr">${esc(o.order_no)}</span>`,`<div class="ordv">
     <div style="display:flex;justify-content:space-between;align-items:center"><span class="hint">${d.toLocaleDateString('ar-EG')} ${d.toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit'})}</span><span class="pill st-${esc(o.status)}">${ST[o.status]||esc(o.status)}</span></div>
     ${holdLeft(o)?`<div class="hint">${holdLeft(o)}</div>`:''}
-    <div style="font-weight:800;margin-top:6px">${esc(c.name||'')}${(o.phone||c.phone)?` · <span dir="ltr">${esc(o.phone||c.phone)}</span>`:''}</div>
+    <div class="who">${esc(c.name||'')}${(o.phone||c.phone)?` · <span dir="ltr">${esc(o.phone||c.phone)}</span>`:''}</div>
     ${(o.gov||c.gov||c.addr)?`<div class="hint">${esc([o.gov||c.gov,c.addr].filter(Boolean).join(' - '))}</div>`:''}${c.note?`<div class="hint">ملاحظات: ${esc(c.note)}</div>`:''}
     ${rows}<div class="tot"><span>الإجمالي</span><b>${fmt(num(o.total)+(num(o.shipping)||0))} ${esc(cur())}</b></div>${num(o.shipping)?`<div class="hint" style="text-align:left">شامل شحن ${fmt(num(o.shipping))}</div>`:''}
-    <div class="obtns">${orderButtons(o)}</div>`,
+    <div class="obtns">${orderButtons(o)}</div></div>`,
     `<button class="btn" data-close>تمام</button>`);
+  ov.querySelector('.sheet').style.maxHeight='96vh';
+  ov.querySelector('.ordv').addEventListener('click',e=>{ const im=e.target.closest('.cl img'); if(im) zoomImg(im.src); });
   ov.querySelector('.obtns').addEventListener('click',async e=>{ const b=e.target.closest('[data-ost]'); if(!b) return; const [id,st]=b.dataset.ost.split('|'); if(await setOrderStatus(+id,st)) ov.close(); });
 }
 
