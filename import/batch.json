@@ -145,6 +145,12 @@
    "name": "برفانات للجنسين",
    "parentId": "perfume",
    "order": 3
+  },
+  {
+   "id": "minerals",
+   "name": "فيتامين د وماغنسيوم وكالسيوم",
+   "parentId": "vitamins",
+   "order": 5
   }
  ],
  "products": [
@@ -3831,6 +3837,462 @@
    "hidden": false,
    "createdAt": "2026-11-09T16:53:20+02:00",
    "needsPrice": false
+  },
+  {
+   "id": "boots-multi-iron-90",
+   "brand": "Boots",
+   "name": "Multivitamins with Iron – 90 Tablets",
+   "desc": "مالتي فيتامين يومي فيه 12 فيتامين أساسي + حديد، بيساعد على تقليل التعب والإرهاق ودعم المناعة.\nقرص واحد في اليوم – العلبة تكفي 3 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 465,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10240991?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10240991"
+   }
+  },
+  {
+   "id": "boots-multi-30",
+   "brand": "Boots",
+   "name": "Everyday Multivitamins – 30 Tablets",
+   "desc": "مالتي فيتامين يومي بسيط وسعره حلو، من غير نكهات أو مواد حافظة صناعية.\nقرص واحد في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 270,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10259787?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.49,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10259787"
+   }
+  },
+  {
+   "id": "boots-vitd-240",
+   "brand": "Boots",
+   "name": "Everyday Vitamin D 10µg – 240 Tablets",
+   "desc": "فيتامين د 10 ميكروجرام لدعم العظام والمناعة.\nقرص في اليوم – العلبة 240 قرص تكفي 8 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 505,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10327279?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10327279"
+   }
+  },
+  {
+   "id": "boots-vitd-max-90",
+   "brand": "Boots",
+   "name": "Max Strength Vitamin D – 90 Tablets",
+   "desc": "فيتامين د3 بأعلى تركيز من Boots، لدعم المناعة والعظام والعضلات والأسنان.\n90 قرص – تكفي 3 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 1165,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10353989?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 13.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10353989"
+   }
+  },
+  {
+   "id": "boots-calmag-180",
+   "brand": "Boots",
+   "name": "Calcium, Magnesium + Vitamin D – 180 Tablets",
+   "desc": "كالسيوم + ماغنسيوم + فيتامين د في قرص واحد لدعم العظام والعضلات وتقليل الإرهاق.\nقرصين في اليوم – 180 قرص تكفي 3 شهور. مناسب للنباتيين.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 930,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10239661?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 10.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10239661"
+   }
+  },
+  {
+   "id": "boots-calmag-60",
+   "brand": "Boots",
+   "name": "Calcium & Magnesium + Vitamin D – 60 Tablets",
+   "desc": "كالسيوم وماغنسيوم وفيتامين د لدعم العظام والعضلات وتقليل التعب.\nقرصين في اليوم – 60 قرص تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 465,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10320581?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10320581"
+   }
+  },
+  {
+   "id": "boots-magnesium-180",
+   "brand": "Boots",
+   "name": "Magnesium 375mg – 180 Tablets",
+   "desc": "ماغنسيوم 375 مجم لتقليل التعب والإرهاق ودعم الطاقة.\nقرصين في اليوم – 180 قرص تكفي 3 شهور. مناسب للنباتيين والڤيجان.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 1155,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10317532?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 12.85,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10317532"
+   }
+  },
+  {
+   "id": "vb-perfectil-30",
+   "brand": "Vitabiotics",
+   "name": "Perfectil Original Triple Active – 30 Tablets",
+   "desc": "بيرفكتيل الأصلي للشعر والبشرة والأظافر – رقم 1 في إنجلترا في مكملات الجمال.\nفيه بيوتين وزنك وسيلينيوم وفيتامين B2.\nقرص واحد في اليوم – تكفي شهر. من غير جلوتين ومناسب للنباتيين.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 645,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10001123?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 6.3,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10001123"
+   }
+  },
+  {
+   "id": "vb-conception-30",
+   "brand": "Vitabiotics",
+   "name": "Pregnacare Conception – 30 Tablets",
+   "desc": "بريجناكير كونسبشن للي بتخطط للحمل: حمض فوليك 400 ميكروجرام + زنك + إينوزيتول + فيتامين د و B12.\nقرص واحد في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "pregnancy",
+   "price": 890,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10077556?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 9.45,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10077556"
+   }
+  },
+  {
+   "id": "newleaf-collagen-gum",
+   "brand": "New Leaf",
+   "name": "Collagen Gummies with Vitamin C, Folic Acid & Biotin – 60",
+   "desc": "جاميز كولاجين بطعم الفراولة مع فيتامين سي وبيوتين وحمض فوليك للبشرة والشعر.\n60 قطعة – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1240,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10394381?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 13.95,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10394381"
+   }
+  },
+  {
+   "id": "hairgain-gummies",
+   "brand": "Hair Gain",
+   "name": "Vegan Hair Gummies – 60",
+   "desc": "جاميز للشعر بتركيبة ڤيجان حاصلة على جوايز، فيها AnaGain من براعم البسلة + بيوتين وزنك وسيلينيوم.\nبطعم التفاح الطبيعي، من غير ألوان أو محليات صناعية.\nقطعتين في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 2490,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10360711?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 29.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10360711"
+   }
+  },
+  {
+   "id": "bioglan-collagen-gum",
+   "brand": "Bioglan",
+   "name": "Beauty Collagen Strawberry Gummies – 60",
+   "desc": "جاميز كولاجين بحري بطعم الفراولة مع فيتامين سي وبيوتين وسيلينيوم للشعر والبشرة والأظافر.\n60 قطعة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1865,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10317585?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 22.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10317585"
+   }
+  },
+  {
+   "id": "boots-hsn-90",
+   "brand": "Boots",
+   "name": "Beauty Formula Skin, Hair & Nails – 90 Tablets",
+   "desc": "تركيبة الجمال من Boots: 22 عنصر غذائي منهم بيوتين وزنك وسيلينيوم ونحاس للبشرة والشعر والأظافر.\nقرص واحد في اليوم – 90 قرص تكفي 3 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 1280,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10319613?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 14.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10319613"
+   }
+  },
+  {
+   "id": "boots-collagen-90",
+   "brand": "Boots",
+   "name": "Marine Collagen 1000mg – 90 Tablets",
+   "desc": "كولاجين بحري 1000 مجم + فيتامين سي لدعم نضارة ومرونة البشرة.\nقرص واحد في اليوم – 90 قرص تكفي 3 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 2725,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10342412?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 33.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10342412"
+   }
+  },
+  {
+   "id": "novomins-women-gum",
+   "brand": "Novomins",
+   "name": "Women's Multivitamin – 60 Gummies",
+   "desc": "مالتي فيتامين للستات على شكل جاميز بطعم التوت: 23 فيتامين ومعدن وأعشاب + بكتيريا نافعة.\nحلال ومن غير ألوان أو مواد حافظة صناعية.\n60 قطعة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 1710,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10397031?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 19.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10397031"
+   }
+  },
+  {
+   "id": "vb-wellwoman-30",
+   "brand": "Vitabiotics",
+   "name": "Wellwoman Original – 30 Capsules",
+   "desc": "ويل وومان الأصلي – رقم 1 للستات في إنجلترا: 24 عنصر غذائي مع حديد و B6 و B12 وزيت زهرة الربيع.\nكبسولة واحدة في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 665,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10001201?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 6.55,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10001201"
+   }
+  },
+  {
+   "id": "vb-wellwoman-50",
+   "brand": "Vitabiotics",
+   "name": "Wellwoman 50+ – 30 Tablets",
+   "desc": "ويل وومان للستات فوق الـ50: تركيبة متكاملة لدعم القلب والطاقة والعظام.\nقرص واحد في اليوم – تكفي شهر. مناسب للنباتيين.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 970,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10072511?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 10.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10072511"
+   }
+  },
+  {
+   "id": "vb-feroglobin-30",
+   "brand": "Vitabiotics",
+   "name": "Feroglobin Iron – 30 Capsules",
+   "desc": "فيروجلوبين: حديد بطيء المفعول ولطيف على المعدة + زنك ونحاس وفيتامينات B وحمض فوليك.\nمناسب وقت الدورة الشهرية.\nكبسولة في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 580,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10131412?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 5.49,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10131412"
+   }
+  },
+  {
+   "id": "centrum-women-30",
+   "brand": "Centrum",
+   "name": "Women Multivitamins & Minerals – 30 Tablets",
+   "desc": "سنتروم للستات تحت الـ50: 23 فيتامين ومعدن للطاقة والمناعة والشعر والبشرة والعظام.\nقرص واحد في اليوم – تكفي شهر. من غير جلوتين ولاكتوز.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "women-vit",
+   "price": 725,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10141602?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 7.35,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10141602"
+   }
   }
  ],
  "settingsPatch": {
