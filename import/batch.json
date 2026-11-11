@@ -6462,5 +6462,43 @@
    "prefix": "sd-",
    "until": "2026-12-02T00:00:00+02:00"
   }
+ ],
+ "revert": [
+  {
+   "key": "boots-bf-2026-11-11",
+   "ids": [
+    "b-b12-180",
+    "b-vitc-zinc-180",
+    "b-vegan-omega-60",
+    "b-iron-180",
+    "b-vite-90",
+    "b-b12-hs-60",
+    "b-codliver-240",
+    "b-multi-240",
+    "b-glucosamine-240",
+    "b-max-codliver-60",
+    "b-vitd-hs-180",
+    "b-reenergise-orange",
+    "b-reenergise-mango",
+    "b-reenergise-berry",
+    "b-hsn-30",
+    "b-bcomplex-90",
+    "b-teatree-oil",
+    "b-magnesium-60",
+    "b-calcium-dk-60",
+    "b-folic-d-60",
+    "b-glucosamine-30",
+    "b-vitc-d-eff",
+    "b-az50-30",
+    "b-max-codliver-30",
+    "b-az-30",
+    "b-multi-iron-30",
+    "b-folic-60",
+    "b-vitc-zinc-eff",
+    "b-multi-eff",
+    "b-vitc-1000-eff"
+   ],
+   "until": "2026-11-12T00:00:00+02:00"
+  }
  ]
 }

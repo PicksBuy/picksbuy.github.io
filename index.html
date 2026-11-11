@@ -661,6 +661,10 @@ function mainCatOf(p){ const c = cat(p.categoryId); if(!c) return null; return c
 function visible(){ return S.products.filter(p => S.admin || !p.hidden); }
 /* offers that end on a date: rules live in settings.expire = [{key,prefix|ids,until}] */
 function isExpired(p){ const now=Date.now(); return (S.settings.expire||[]).some(r=> r.until && Date.parse(r.until)<=now && (Array.isArray(r.ids)?r.ids.includes(p.id):(!!r.prefix&&String(p.id).startsWith(r.prefix)))); }
+/* offers whose discount ends on a date: settings.revert = [{key,prefix|ids,until}] -> price goes back to oldPrice */
+function isReverted(p){ const now=Date.now(); return (S.settings.revert||[]).some(r=> r.until && Date.parse(r.until)<=now && (Array.isArray(r.ids)?r.ids.includes(p.id):(!!r.prefix&&String(p.id).startsWith(r.prefix)))); }
+function revertOne(p){ const o=num(p.oldPrice), n=num(p.price); if(o&&n&&o>n&&isReverted(p)) return {...p,price:o,oldPrice:null,_rev:true}; return p; }
+function applyRevert(){ S.products=S.products.map(revertOne); }
 function dropExpired(){ const gone=S.products.filter(isExpired); if(!gone.length) return; S.products=S.products.filter(p=>!isExpired(p)); S.expiredGone=[...new Set([...(S.expiredGone||[]),...gone.map(p=>p.id)])]; }
 function promoOn(){ const pr=S.settings.promo; if(!pr||!pr.active) return false; if(pr.ends && new Date(pr.ends+'T23:59:59')<new Date()) return false; return true; }
 function isPromo(p){ return promoOn() && !!p.promo; }
@@ -1660,10 +1664,10 @@ async function refresh(t){
     const d=ok(await sb.from('settings').select('data').eq('id',1).maybeSingle());
     S.settings=d?.data||{};
     $('#tagline').textContent=S.settings.tagline||'منتجات أصلية من كل العالم 🌍';
-    paintGroup(); paintFloat(); renderExtras(); dropExpired();
+    paintGroup(); paintFloat(); renderExtras(); dropExpired(); applyRevert();
   } else {
     S[KEY[t]] = ok(await sb.from(t).select('*')).map(r=>fromRow(t,r));
-    if(t==='products') dropExpired();
+    if(t==='products'){ dropExpired(); applyRevert(); }
   }
   render(); drawManage(); drawCart();
 }
@@ -1814,6 +1818,13 @@ async function checkImports(){
   try{ BATCH=await (await fetch('import/batch.json?v='+Date.now(),{cache:'no-store'})).json(); }catch(e){ BATCH=null; return; }
   const rules=(BATCH.expire||[]).filter(r=>!(S.settings.expire||[]).some(x=>x.key===r.key));
   if(rules.length){ try{ ok(await sb.from('settings').upsert({id:1,data:{...S.settings,expire:[...(S.settings.expire||[]),...rules]}})); await refresh('settings'); }catch(e){ console.warn('expire',e); } }
+  const rv=(BATCH.revert||[]).filter(r=>!(S.settings.revert||[]).some(x=>x.key===r.key));
+  if(rv.length){ try{ ok(await sb.from('settings').upsert({id:1,data:{...S.settings,revert:[...(S.settings.revert||[]),...rv]}})); await refresh('settings'); }catch(e){ console.warn('revert',e); } }
+  const back=S.products.filter(p=>p._rev);
+  if(back.length){ try{
+    for(const p of back) ok(await sb.from('products').update(toRow('products',{price:p.price,oldPrice:null,updatedAt:new Date().toISOString()})).eq('id',p.id));
+    await refresh('products'); toast(`${back.length} عرض خلص ورجع لسعره الأصلي ⏰`);
+  }catch(e){ console.warn('revert-save',e); } }
   if(S.expiredGone&&S.expiredGone.length){ try{
     ok(await sb.from('products').delete().in('id',S.expiredGone));
     toast(`اتمسحت ${S.expiredGone.length} عروض خلصت ⏰`); S.expiredGone=[];
@@ -1828,7 +1839,7 @@ async function checkImports(){
     toast(`اتحدثت صور ${ups.length} منتج ✅`);
   }catch(e){ console.warn('updates',e); } }
   const seen=new Set([...(S.settings.imported||[]), ...S.products.map(p=>p.id)]);
-  const items=(BATCH.products||[]).filter(p=>!seen.has(p.id)&&!isExpired({...p,id:p.id}));
+  const items=(BATCH.products||[]).filter(p=>!seen.has(p.id)&&!isExpired({...p,id:p.id})).map(revertOne);
   if(!items.length) return;
   box.innerHTML=`<div class="impbar"><span style="font-size:24px">📦</span><b>${items.length} منتج جديد جاهز تضيفه</b><button id="impGo">شوف وأضف</button></div>`;
   $('#impGo').onclick=()=>openImport(items);
