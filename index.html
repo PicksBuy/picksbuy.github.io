@@ -571,6 +571,7 @@ footer.wrap{padding-bottom:130px!important}
 .dlv button:active{transform:scale(.96)}
 .dlv button.on{background:var(--rg2);border-color:transparent;color:#fff;box-shadow:0 8px 18px rgba(90,42,51,.25)}
 .pickn{margin:0 0 12px;padding:10px 12px;border-radius:14px;background:#FBEAE5;font-size:13.5px;line-height:1.7}
+.vshare{display:block;width:100%;max-width:360px;margin:10px auto 14px;background:var(--rg);color:#fff;font-weight:800;box-shadow:0 8px 20px rgba(183,110,121,.35)}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -905,14 +906,29 @@ function card(p){
 /* any picture that fails to load shows the PicksBuy placeholder instead of a broken icon */
 document.addEventListener('error',e=>{ const t=e.target; if(t&&t.tagName==='IMG'&&!t.dataset.fb){ t.dataset.fb='1'; t.src='img/ph.jpg'; t.style.objectFit='cover'; t.style.padding='0'; } },true);
 
+/* ---------- share the how-to video ---------- */
+let VID_FILE=null;
+async function vidFile(){ if(VID_FILE) return VID_FILE; const r=await fetch('img/howto.mp4?v=3'); VID_FILE=new File([await r.blob()],'PicksBuy.mp4',{type:'video/mp4'}); return VID_FILE; }
+async function shareVideo(){
+  const url=location.origin+location.pathname+'#howto', text='PicksBuy 🛍️ منتجات أصلية من كل العالم. شوفي بتطلبي إزاي:';
+  try{ const f=VID_FILE||await Promise.race([vidFile(),new Promise((_,j)=>setTimeout(j,3500))]); if(navigator.canShare&&navigator.canShare({files:[f]})){ await navigator.share({files:[f],text:text+'\n'+url}); return; } }catch(e){ if(e&&e.name==='AbortError') return; }
+  try{ if(navigator.share){ await navigator.share({title:'PicksBuy',text,url}); return; } }catch(e){ if(e&&e.name==='AbortError') return; }
+  try{ await navigator.clipboard.writeText(text+'\n'+url); toast('اتنسخ لينك الفيديو ✅'); }catch(e){ showCopy(text+'\n'+url); }
+}
+document.addEventListener('click',e=>{ if(e.target.closest('#vShare')) shareVideo(); });
+document.addEventListener('play',e=>{ if(e.target.id==='howto') vidFile().catch(()=>{}); },true);
+document.addEventListener('pointerdown',e=>{ if(e.target.closest('#vShare')) vidFile().catch(()=>{}); },true);
+function goHowto(n=0){ const v=$('#howto'); if(!v||!S.ready){ if(n<25) setTimeout(()=>goHowto(n+1),300); return; } setTimeout(()=>v.scrollIntoView({behavior:'smooth',block:'center'}),n?500:0); vidFile().catch(()=>{}); }
 /* ---------- bottom sections, zoom, floating buttons ---------- */
 function renderExtras(){
   const box=$('#extras'); if(!box) return;
+  const pv=box.querySelector('video'); if(pv&&!pv.paused&&!pv.ended) return;
   const revs=S.settings.reviews||[];
   box.innerHTML = `${seenRail()}
     ${revs.length?`<div class="xsec"><h2>💬 آراء العملاء</h2><div class="revs">${revs.map(r=>`<img src="${img(r)}" loading="lazy" alt="رأي عميلة">`).join('')}</div></div>`:''}
     <div class="xsec"><h2>إزاي تطلبي؟</h2>
-      <video class="howto" src="img/howto.mp4" poster="img/howto.jpg" controls playsinline preload="none"></video>
+      <video class="howto" id="howto" src="img/howto.mp4?v=3" poster="img/howto.jpg?v=3" controls playsinline preload="none"></video>
+      <button class="btn vshare" id="vShare">📤 شاركي الفيديو مع صحابك</button>
       <div class="steps">
       <div class="step"><div class="n">🛍️</div><b>اختاري</b><span>ضيفي اللي عاجبك للسلة</span></div>
       <div class="step"><div class="n">📝</div><b>أكدي</b><span>اكتبي بياناتك والمحافظة</span></div>
@@ -1853,7 +1869,7 @@ function openImport(items){
 function groupLink(){ const g=String(S.settings.group||'').trim(); return /^https:\/\/(chat\.whatsapp\.com|wa\.me|whatsapp\.com)\//i.test(g)?g:''; }
 function paintGroup(){ const g=groupLink(), a=$('#grpLink'); a.style.display=g?'inline':'none'; $('#grpSep').style.display=g?'inline':'none'; if(g) a.href=g; }
 function maybeJoinPopup(){
-  const g=groupLink(); if(!g || S.canEdit || document.querySelector('.ov:not(.out)')) return;
+  const g=groupLink(); if(!g || S.canEdit || window.__noJoin || document.querySelector('.ov:not(.out)')) return;
   let st={}; try{ st=JSON.parse(localStorage.getItem('pb_join')||'{}'); }catch(e){}
   if(st.joined) return;
   if(st.later && Date.now()-st.later < 3*864e5) return;   // asked again after 3 days
@@ -1873,6 +1889,7 @@ function clearHash(){ try{ history.replaceState(null,'',location.pathname+locati
 async function route(){
   const h=decodeURIComponent(location.hash||'');
   if(h==='#admin'){ clearHash(); const {data:{session}}=await sb.auth.getSession(); if(!session) openLogin(); return; }
+  if(h==='#howto'){ window.__noJoin=true; clearHash(); setTimeout(goHowto,600); return; }
   if(h.startsWith('#p-')){ const id=h.slice(3); clearHash(); if(S.products.find(x=>x.id===id)) openDetail(id); else toast('المنتج ده مش متاح دلوقتي'); return; }
   if(h.startsWith('#order-')){ const no=h.slice(7); clearHash(); openOrder(no); }
 }
