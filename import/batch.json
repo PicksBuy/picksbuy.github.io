@@ -151,6 +151,36 @@
    "name": "فيتامين د وماغنسيوم وكالسيوم",
    "parentId": "vitamins",
    "order": 5
+  },
+  {
+   "id": "kids-vit",
+   "name": "فيتامينات أطفال",
+   "parentId": "vitamins",
+   "order": 6
+  },
+  {
+   "id": "bodywash",
+   "name": "شاور جل وسكراب",
+   "parentId": "body",
+   "order": 3
+  },
+  {
+   "id": "babycare",
+   "name": "عناية بالبيبي",
+   "parentId": "body",
+   "order": 4
+  },
+  {
+   "id": "facewash",
+   "name": "غسول وش",
+   "parentId": "skin",
+   "order": 1
+  },
+  {
+   "id": "period",
+   "name": "راحة الدورة",
+   "parentId": "womenhealth",
+   "order": 4
   }
  ],
  "products": [
@@ -4292,6 +4322,174 @@
     "gbp": 7.35,
     "rate": 74.2,
     "url": "https://www.boots.com/10141602"
+   }
+  },
+  {
+   "id": "boots-kids-az-30",
+   "brand": "Boots",
+   "name": "3 Years Plus A-Z Multivitamin + Minerals – 30 Chewable Tablets",
+   "desc": "مالتي فيتامين للأطفال من 3 سنين: 20 فيتامين ومعدن منهم A و C و D وكالسيوم للمناعة والعظام والأسنان.\nأقراص مضغ بطعم الفراولة والڤانيليا – ڤيجان.\nقرص واحد في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "kids-vit",
+   "price": 540,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10326628?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 5.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10326628"
+   }
+  },
+  {
+   "id": "boots-kids-omega-60",
+   "brand": "Boots",
+   "name": "3 Years Plus Multivitamins + Omega 3 – 60 Gummies",
+   "desc": "جاميز مالتي فيتامين + أوميجا 3 للأطفال من 3 سنين، بطعم البرتقال.\nفيها فيتامين A و C و D بالجرعة الموصى بيها في إنجلترا.\nڤيجان ومن غير ألوان أو نكهات صناعية.\nقطعة واحدة في اليوم – تكفي شهرين.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "kids-vit",
+   "price": 930,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10362912?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 10.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10362912"
+   }
+  },
+  {
+   "id": "boots-teatree-toner",
+   "brand": "Boots",
+   "name": "Tea Tree & Witch Hazel Cleansing & Toning Lotion 150ml",
+   "desc": "لوشن منظف وتونر بزيت شجرة الشاي والويتش هيزل للبشرة الدهنية والمعرضة للحبوب.\nبينضف الوش من الزيوت والمكياج، بيحارب البكتيريا المسببة للحبوب وبيقفل المسام من غير ما ينشف البشرة.\nيُستخدم بقطنة صبح وبليل.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "facewash",
+   "price": 505,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10339072?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10339072"
+   }
+  },
+  {
+   "id": "sg-scrub-life",
+   "brand": "Soap & Glory",
+   "name": "Scrub Of Your Life Body Scrub 200ml",
+   "desc": "سكراب الجسم المشهور من سوب آند جلوري: بيشيل الجلد الميت وبيسيب الجسم ناعم جدًا وبيساعد يمنع الشعر تحت الجلد.\nبريحة Original Pink المميزة (ورد وبرجاموت). ڤيجان.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "bodywash",
+   "price": 775,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10295119?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 7.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10295119"
+   }
+  },
+  {
+   "id": "sg-clean-on-me",
+   "brand": "Soap & Glory",
+   "name": "Clean On Me Shower Gel 500ml",
+   "desc": "شاور جل كريمي من سوب آند جلوري بريحة Original Pink المميزة.\nرغوة غنية وبيسيب الجسم ناعم وريحته حلوة طول اليوم.\nحجم كبير 500 مل بطرمبة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "bodywash",
+   "price": 855,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10295115?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 8.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10295115"
+   }
+  },
+  {
+   "id": "mustela-hydra-300",
+   "brand": "Mustela",
+   "name": "Hydra Bébé Body Lotion 300ml",
+   "desc": "لوشن موستيلا للبيبي والأطفال: ترطيب فوري وبيدوم، بخلاصة الأڤوكادو الأورجانيك.\nبيحمي ويقوي بشرة البيبي، ومناسب للاستخدام اليومي من أول يوم.\nقوام خفيف وريحة موستيلا المعروفة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "babycare",
+   "price": 970,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10341471?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 10.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10341471"
+   }
+  },
+  {
+   "id": "curaheat-period",
+   "brand": "Cura-Heat",
+   "name": "Period Pain Heat Patches – 3 Pack",
+   "desc": "لصقات حرارية لتخفيف ألم ومغص الدورة – من غير أدوية.\nبتتلزق على الهدوم الداخلية ناحية البطن وبتدي دفا لحد 12 ساعة.\nرفيعة ومش باينة تحت الهدوم. العلبة فيها 3 لصقات.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "period",
+   "price": 455,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10052030?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T12:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.89,
+    "rate": 74.2,
+    "url": "https://www.boots.com/10052030"
    }
   }
  ],
