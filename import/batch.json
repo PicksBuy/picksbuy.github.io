@@ -181,6 +181,18 @@
    "name": "راحة الدورة",
    "parentId": "womenhealth",
    "order": 4
+  },
+  {
+   "id": "energy",
+   "name": "مناعة وطاقة (فيتامين سي و B وحديد)",
+   "parentId": "vitamins",
+   "order": 7
+  },
+  {
+   "id": "joints",
+   "name": "مفاصل",
+   "parentId": "vitamins",
+   "order": 8
   }
  ],
  "products": [
@@ -4490,6 +4502,981 @@
     "gbp": 3.89,
     "rate": 74.2,
     "url": "https://www.boots.com/10052030"
+   }
+  },
+  {
+   "id": "b-b12-180",
+   "brand": "Boots",
+   "name": "Vitamin B12 10µg – 180 Tablets",
+   "desc": "فيتامين B12 لتقليل التعب والإرهاق ودعم الأعصاب وتكوين كرات الدم الحمرا.\nمناسب للنباتيين والڤيجان.\nقرص في اليوم – تكفي 6 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 445,
+   "oldPrice": 735,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10302676?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.75,
+    "was": 7.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitc-zinc-180",
+   "brand": "Boots",
+   "name": "Vitamin C & Zinc – 180 Tablets",
+   "desc": "فيتامين سي + زنك لدعم المناعة.\nقرص في اليوم – تكفي 6 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 445,
+   "oldPrice": 735,
+   "images": [
+    "img/boots/boots-vitc-zinc-180.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.75,
+    "was": 7.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitd-180",
+   "brand": "Boots",
+   "name": "Vitamin D 10µg – 180 Tablets",
+   "desc": "فيتامين د3 10 ميكروجرام لدعم المناعة والعظام والعضلات والأسنان.\nقرص في اليوم – تكفي 6 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 465,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10302674?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.0,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitd-hs-90",
+   "brand": "Boots",
+   "name": "High Strength Vitamin D 25µg – 90 Tablets",
+   "desc": "فيتامين د3 تركيز عالي 25 ميكروجرام (1000 وحدة) للمناعة والعظام.\nقرص في اليوم – تكفي 3 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 465,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10292902?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.0,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-bcomplex-180",
+   "brand": "Boots",
+   "name": "Vitamin B Complex – 180 Tablets",
+   "desc": "فيتامين B المركب: 8 فيتامينات B للطاقة وتقليل التعب والإرهاق.\nقرص في اليوم – تكفي 6 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 465,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10114243?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.0,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vegan-omega-60",
+   "brand": "Boots",
+   "name": "Vegan Omega 3 Oil 1000mg – 60 Capsules",
+   "desc": "أوميجا 3 نباتي (ڤيجان) 1000 مجم.\n60 كبسولة.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 465,
+   "oldPrice": 775,
+   "images": [
+    "img/boots/boots-vegan-omega.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.0,
+    "was": 8.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-omega3-30",
+   "brand": "Boots",
+   "name": "Everyday Omega 3 Fish Oil 1000mg – 30 Capsules",
+   "desc": "أوميجا 3 زيت سمك 1000 مجم للاستخدام اليومي.\n30 كبسولة – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 465,
+   "oldPrice": null,
+   "images": [
+    "img/boots/boots-omega3-30.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.0,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-iron-180",
+   "brand": "Boots",
+   "name": "Iron 14mg – 180 Tablets",
+   "desc": "حديد 14 مجم لتقليل التعب والإرهاق ودعم تكوين كرات الدم الحمرا.\nمناسب للنباتيين والڤيجان.\nقرص في اليوم – تكفي 6 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 465,
+   "oldPrice": 775,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10302675?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.0,
+    "was": 8.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vite-90",
+   "brand": "Boots",
+   "name": "Skin Formula Vitamin E – 90 Capsules",
+   "desc": "فيتامين E من تركيبة البشرة: مضاد أكسدة بيحمي الخلايا.\n90 كبسولة – تكفي 3 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 465,
+   "oldPrice": 775,
+   "images": [
+    "img/boots/boots-vite-90.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 4.0,
+    "was": 8.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-b12-hs-60",
+   "brand": "Boots",
+   "name": "High Strength Vitamin B12 250µg – 60 Tablets",
+   "desc": "فيتامين B12 تركيز عالي 250 ميكروجرام للطاقة وتقليل التعب.\nمناسب للنباتيين والڤيجان.\nقرص في اليوم – تكفي شهرين.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 405,
+   "oldPrice": 660,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10285563?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.25,
+    "was": 6.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-codliver-240",
+   "brand": "Boots",
+   "name": "Everyday Cod Liver Oil – 240 Capsules",
+   "desc": "زيت كبد الحوت مع زيت السمك – عبوة التوفير 240 كبسولة (8 شهور).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 415,
+   "oldPrice": 505,
+   "images": [
+    "img/boots/boots-codliver-240.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.37,
+    "was": 4.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-multi-240",
+   "brand": "Boots",
+   "name": "Everyday Multivitamins – 240 Tablets",
+   "desc": "مالتي فيتامين يومي – عبوة التوفير 240 قرص (8 شهور).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 415,
+   "oldPrice": 505,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10327275?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.37,
+    "was": 4.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-glucosamine-240",
+   "brand": "Boots",
+   "name": "Everyday Glucosamine – 240 Tablets",
+   "desc": "جلوكوزامين للمفاصل – عبوة التوفير 240 قرص (8 شهور).\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "joints",
+   "price": 415,
+   "oldPrice": 505,
+   "images": [
+    "img/boots/boots-glucosamine-240.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.37,
+    "was": 4.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitc-zinc-60",
+   "brand": "Boots",
+   "name": "Vitamin C & Zinc – 60 Tablets",
+   "desc": "فيتامين سي + زنك لدعم المناعة. ڤيجان.\n60 قرص – تكفي شهرين.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 425,
+   "oldPrice": null,
+   "images": [
+    "img/boots/boots-vitc-zinc-60.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.5,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-max-codliver-60",
+   "brand": "Boots",
+   "name": "Max Strength Cod Liver Oil 1000mg – 60 Capsules",
+   "desc": "زيت كبد الحوت أقصى تركيز 1000 مجم مع زيت السمك، للعظام والعضلات.\n60 كبسولة – تكفي شهرين.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 430,
+   "oldPrice": 525,
+   "images": [
+    "img/boots/boots-max-codliver-60.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.56,
+    "was": 4.75,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitd-hs-180",
+   "brand": "Boots",
+   "name": "High Strength Vitamin D 25µg – 180 Tablets",
+   "desc": "فيتامين د3 تركيز عالي 25 ميكروجرام (1000 وحدة) للمناعة والعظام.\nقرص في اليوم – تكفي 6 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 445,
+   "oldPrice": 735,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10292902?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.75,
+    "was": 7.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-reenergise-orange",
+   "brand": "Boots",
+   "name": "Re-Energise Orange – 20 Effervescent Tablets",
+   "desc": "أقراص فوار للطاقة والتركيز بطعم البرتقال. ڤيجان.\n20 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 340,
+   "oldPrice": 530,
+   "images": [
+    "img/boots/boots-reenergise-orange.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.42,
+    "was": 4.85,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-reenergise-mango",
+   "brand": "Boots",
+   "name": "Re-Energise Mango – 20 Effervescent Tablets",
+   "desc": "أقراص فوار للطاقة والتركيز بطعم المانجو. ڤيجان.\n20 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 340,
+   "oldPrice": 530,
+   "images": [
+    "img/boots/boots-reenergise-mango.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.42,
+    "was": 4.85,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-reenergise-berry",
+   "brand": "Boots",
+   "name": "Re-Energise Berry – 20 Effervescent Tablets",
+   "desc": "أقراص فوار للطاقة والتركيز بطعم التوت. ڤيجان.\n20 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 340,
+   "oldPrice": 530,
+   "images": [
+    "img/boots/boots-reenergise-berry.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.42,
+    "was": 4.85,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-hsn-30",
+   "brand": "Boots",
+   "name": "Beauty Formula Skin, Hair & Nails – 30 Tablets",
+   "desc": "تركيبة الجمال من Boots: 22 عنصر غذائي منهم بيوتين وزنك وسيلينيوم للبشرة والشعر والأظافر.\nقرص في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "hsn",
+   "price": 345,
+   "oldPrice": 540,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10319613?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.47,
+    "was": 4.95,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-bcomplex-90",
+   "brand": "Boots",
+   "name": "Vitamin B Complex Slow Release – 90 Tablets",
+   "desc": "فيتامين B المركب ممتد المفعول للطاقة وتقليل التعب.\n90 قرص – تكفي 3 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 345,
+   "oldPrice": 540,
+   "images": [
+    "img/boots/boots-bcomplex-90.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.5,
+    "was": 5.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-teatree-oil",
+   "brand": "Boots",
+   "name": "Tea Tree Oil 10ml",
+   "desc": "زيت شجرة الشاي الطبيعي 100% – 10 مل. مناسب للڤيجان.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "serum",
+   "price": 345,
+   "oldPrice": 540,
+   "images": [
+    "img/boots/boots-teatree-oil.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.5,
+    "was": 5.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-magnesium-60",
+   "brand": "Boots",
+   "name": "Magnesium 375mg – 60 Tablets",
+   "desc": "ماغنسيوم 375 مجم لتقليل التعب والإرهاق.\nقرصين في اليوم – تكفي شهر. ڤيجان.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 360,
+   "oldPrice": 565,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10317534?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.65,
+    "was": 5.3,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-calcium-dk-60",
+   "brand": "Boots",
+   "name": "Calcium + Vitamins D & K – 60 Tablets",
+   "desc": "كالسيوم + فيتامين د + فيتامين K لدعم العظام والعضلات.\nقرصين في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 365,
+   "oldPrice": 580,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10115098?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.75,
+    "was": 5.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitd-90",
+   "brand": "Boots",
+   "name": "Vitamin D 10µg – 90 Tablets",
+   "desc": "فيتامين د3 10 ميكروجرام للمناعة والعظام.\nقرص في اليوم – تكفي 3 شهور.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "minerals",
+   "price": 365,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10292901?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.75,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-b12-60",
+   "brand": "Boots",
+   "name": "Vitamin B12 10µg – 60 Tablets",
+   "desc": "فيتامين B12 لتقليل التعب والإرهاق. مناسب للنباتيين والڤيجان.\nقرص في اليوم – تكفي شهرين.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 385,
+   "oldPrice": null,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10292906?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 3.0,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-folic-d-60",
+   "brand": "Boots",
+   "name": "Folic Acid 400µg + Vitamin D – 60 Tablets",
+   "desc": "حمض فوليك 400 ميكروجرام + فيتامين د للتخطيط للحمل وفترة الحمل.\n60 قرص. ڤيجان.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "pregnancy",
+   "price": 310,
+   "oldPrice": 465,
+   "images": [
+    "img/boots/boots-folic-d-60.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.0,
+    "was": 4.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-glucosamine-30",
+   "brand": "Boots",
+   "name": "Glucosamine 500mg + Vitamin C – 30 Tablets",
+   "desc": "جلوكوزامين 500 مجم مع فيتامين سي لدعم الغضاريف.\n30 قرص – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "joints",
+   "price": 325,
+   "oldPrice": 385,
+   "images": [
+    "img/boots/boots-glucosamine-30.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 2.24,
+    "was": 2.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitc-d-eff",
+   "brand": "Boots",
+   "name": "High Strength Vitamin C + Vitamin D – 20 Effervescent Tablets",
+   "desc": "فوار فيتامين سي 1000 مجم + فيتامين د 25 ميكروجرام لدعم المناعة، بطعم البرتقال.\n20 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 285,
+   "oldPrice": 330,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10298700?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.69,
+    "was": 2.25,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-az50-30",
+   "brand": "Boots",
+   "name": "A-Z 50+ – 30 Tablets",
+   "desc": "مالتي فيتامين ومعادن A-Z لفوق الـ50: 22 فيتامين ومعدن.\nقرص في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 300,
+   "oldPrice": 345,
+   "images": [
+    "img/boots/boots-az50-30.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.87,
+    "was": 2.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-max-codliver-30",
+   "brand": "Boots",
+   "name": "Max Strength Cod Liver Oil 1000mg – 30 Capsules",
+   "desc": "زيت كبد الحوت أقصى تركيز 1000 مجم مع زيت السمك، للعظام والعضلات.\n30 كبسولة – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 300,
+   "oldPrice": 345,
+   "images": [
+    "img/boots/boots-max-codliver-30.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.87,
+    "was": 2.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-az-30",
+   "brand": "Boots",
+   "name": "A-Z Multivitamins & Minerals – 30 Tablets",
+   "desc": "مالتي فيتامين ومعادن A-Z: 23 فيتامين ومعدن.\nقرص في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 300,
+   "oldPrice": 345,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10317539?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.87,
+    "was": 2.5,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-multi-iron-30",
+   "brand": "Boots",
+   "name": "Multivitamins with Iron – 30 Tablets",
+   "desc": "مالتي فيتامين: 12 فيتامين + حديد لتقليل التعب والإرهاق.\nقرص في اليوم – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 270,
+   "oldPrice": 310,
+   "images": [
+    "img/boots/boots-multi-iron-30.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.49,
+    "was": 1.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-folic-60",
+   "brand": "Boots",
+   "name": "Folic Acid 400µg – 60 Tablets",
+   "desc": "حمض فوليك 400 ميكروجرام للتخطيط للحمل وفترة الحمل.\n60 قرص – تكفي شهرين. ڤيجان.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "pregnancy",
+   "price": 270,
+   "oldPrice": 310,
+   "images": [
+    "img/boots/boots-folic-60.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.5,
+    "was": 2.0,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitc-zinc-eff",
+   "brand": "Boots",
+   "name": "High Strength Vitamin C & Zinc – 20 Effervescent Tablets",
+   "desc": "فوار فيتامين سي تركيز عالي + زنك لدعم المناعة، بطعم البرتقال.\n20 قرص.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 285,
+   "oldPrice": 330,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10275002?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.69,
+    "was": 2.25,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-multi-eff",
+   "brand": "Boots",
+   "name": "Multivitamin Effervescent Orange – 20 Tablets",
+   "desc": "فوار مالتي فيتامين بطعم البرتقال: 12 فيتامين.\n20 قرص. ڤيجان.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 285,
+   "oldPrice": 330,
+   "images": [
+    "img/boots/boots-multi-eff.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.69,
+    "was": 2.25,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-codliver-30",
+   "brand": "Boots",
+   "name": "Everyday Cod Liver Oil 500mg – 30 Capsules",
+   "desc": "زيت كبد الحوت 500 مجم مع زيت السمك.\n30 كبسولة – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "omega",
+   "price": 270,
+   "oldPrice": null,
+   "images": [
+    "img/boots/boots-codliver-30.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.49,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-vitc-1000-eff",
+   "brand": "Boots",
+   "name": "High Strength Vitamin C 1000mg – 20 Effervescent Tablets",
+   "desc": "فوار فيتامين سي 1000 مجم لدعم المناعة.\n20 قرص. ڤيجان.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "energy",
+   "price": 270,
+   "oldPrice": 310,
+   "images": [
+    "https://boots.scene7.com/is/image/Boots/10275000?wid=900"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.49,
+    "was": 1.99,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
+   }
+  },
+  {
+   "id": "b-glucosamine-s-30",
+   "brand": "Boots",
+   "name": "Everyday Glucosamine Sulphate – 30 Tablets",
+   "desc": "جلوكوزامين سلفات للمفاصل.\n30 قرص – تكفي شهر.\n\n📦 بيتطلب مخصوص من Boots إنجلترا، أصلي 100%.",
+   "countryId": "uk",
+   "categoryId": "joints",
+   "price": 270,
+   "oldPrice": null,
+   "images": [
+    "img/boots/boots-glucosamine-s-30.jpg"
+   ],
+   "sizes": [],
+   "qty": 20,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-11T13:00:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "gbp": 1.49,
+    "was": null,
+    "rate": 74.2,
+    "url": "https://www.boots.com/health-pharmacy/vitaminsandsupplements/3-for-2-vitamins"
    }
   }
  ],
