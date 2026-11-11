@@ -1838,6 +1838,12 @@ async function checkImports(){
     await Promise.all(['products','settings'].map(refresh));
     toast(`اتحدثت صور ${ups.length} منتج ✅`);
   }catch(e){ console.warn('updates',e); } }
+  const ro=(BATCH.reoffer||[]).filter(r=>!(S.settings.imported||[]).includes(r.key));
+  if(ro.length){ try{
+    const back=new Set(ro.flatMap(r=>r.ids||[]));
+    ok(await sb.from('settings').upsert({id:1,data:{...S.settings,imported:[...(S.settings.imported||[]).filter(i=>!back.has(i)),...ro.map(r=>r.key)]}}));
+    await refresh('settings');
+  }catch(e){ console.warn('reoffer',e); } }
   const seen=new Set([...(S.settings.imported||[]), ...S.products.map(p=>p.id)]);
   const items=(BATCH.products||[]).filter(p=>!seen.has(p.id)&&!isExpired({...p,id:p.id})).map(revertOne);
   if(!items.length) return;
