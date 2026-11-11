@@ -1887,7 +1887,7 @@ async function checkImports(){
     for(const u of ups) ok(await sb.from('products').update(toRow('products',{...u.set,updatedAt:now})).eq('id',u.id));
     ok(await sb.from('settings').upsert({id:1,data:{...S.settings,imported:[...new Set([...done,...ups.map(u=>u.key)])]}}));
     await Promise.all(['products','settings'].map(refresh));
-    toast(`اتحدثت صور ${ups.length} منتج ✅`);
+    toast(`اتحدّث ${ups.length} منتج ✅`);
   }catch(e){ console.warn('updates',e); } }
   const ro=(BATCH.reoffer||[]).filter(r=>!(S.settings.imported||[]).includes(r.key));
   if(ro.length){ try{
