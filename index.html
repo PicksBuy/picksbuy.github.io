@@ -948,7 +948,7 @@ function renderExtras(){
 function zoomImg(src){
   const z=document.createElement('div'); z.className='zoom'; z.innerHTML=`<img src="${src}" alt=""><button aria-label="قفل">×</button>`;
   document.body.appendChild(z); pushNav();
-  z.close=()=>{ z.remove(); popNav(); };
+  z.close=()=>{ if(z._closed) return; z._closed=true; z.remove(); if(!z._byBack) popNav(); };
   z.addEventListener('click',e=>{ if(e.target===z||e.target.closest('button')) z.close(); });
 }
 function paintFloat(){
@@ -966,13 +966,14 @@ function topLayer(){ const z=document.querySelectorAll('.zoom, .ov:not(.out)'); 
    an old marker is ignored, otherwise Back would leave to the previous copy of the page and reload the whole site */
 const NAV_T=Date.now().toString(36)+Math.random().toString(36).slice(2,7);
 const navOn=()=>!!(history.state&&history.state.pb===NAV_T);
-function pushNav(){ if(!navOn()) { try{ history.pushState({pb:NAV_T},''); }catch(e){} } }
-function popNav(){ if(!topLayer() && navOn()){ NAV_IGNORE++; history.back(); } }
+/* one history entry per open window, always added while the window opens (a real tap). Chrome skips entries added
+   without a tap, so re-adding one inside popstate made the next Back leave the site */
+function pushNav(){ try{ history.pushState({pb:NAV_T},''); }catch(e){} }
+function popNav(){ if(navOn()){ NAV_IGNORE++; history.back(); } }
 window.addEventListener('popstate',()=>{
-  if(NAV_IGNORE>0){ NAV_IGNORE--; if(topLayer()) pushNav(); return; }
+  if(NAV_IGNORE>0){ NAV_IGNORE--; return; }
   const t=topLayer(); if(!t) return;
   t._byBack=true; t.close();
-  if(topLayer()) pushNav();
 });
 
 /* ---------- filters & sort ---------- */
@@ -1205,6 +1206,9 @@ function openCart(){
 function drawCart(){
   if(!cartOv) return;
   const lines=cartLines(), cb=cartOv.querySelector('#cbody');
+  /* a live stock update must not rebuild the form under someone typing her name or address (the keyboard closes): wait until she leaves the field */
+  const fa=document.activeElement; if(lines.length && cb.contains(fa) && fa.tagName==='INPUT'){ drawCart.later=true; return; }
+  drawCart.later=false;
   if(!lines.length){ cb.innerHTML=`<div class="empty"><div class="big">🛒</div>السلة فاضية</div>`; cartOv.querySelector('#chk').disabled=true; return; }
   const keep=cb.querySelector('#oName')?{n:cb.querySelector('#oName').value,a:cb.querySelector('#oAddr').value,x:cb.querySelector('#oNote').value,p:cb.querySelector('#oPhone').value,g:cb.querySelector('#oGov')?.value||''}:null;
   const zones=shipZones(); let saved={}; try{ saved=JSON.parse(localStorage.getItem('pb_cust')||'{}'); }catch(e){}
@@ -1238,6 +1242,7 @@ function drawCart(){
   cb.querySelectorAll('[data-pick]').forEach(b=>b.onclick=()=>{ PICK=b.dataset.pick==='1'; drawCart(); });
   cartOv.querySelector('#chk').disabled=!lines.some(l=>l.ok);
 }
+document.addEventListener('focusout',()=>{ if(!drawCart.later) return; setTimeout(()=>{ if(drawCart.later) drawCart(); },120); });
 async function checkout(){
   const cb=cartOv.querySelector('#cbody'), name=cb.querySelector('#oName')?.value.trim()||'', addrIn=cb.querySelector('#oAddr')?.value.trim()||'', note=cb.querySelector('#oNote')?.value.trim()||'';
   const pick=!!PICK, addr=pick?('استلام من '+PICK_AT):addrIn;
