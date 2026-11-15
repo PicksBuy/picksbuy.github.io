@@ -42,8 +42,14 @@ for k,q in Q.items():
         td=best.get('tileData') or {}; ims=[i.get('tileSrc') for i in td.get('images') or [] if i.get('tileSrc')]
         rec={'title':best.get('title'),'brand':best.get('brandName'),'score':round(bs,2),'price':(((td.get('price') or {}).get('price') or {}).get('current') or {}).get('value'),'n_img':len(ims),'src':ims[:1]}
         if ims and bs>=1.15:
-            u=re.sub(r'/images/[^/]+/','/images/f_jpg,q_90,c_pad,b_white,h_1000,w_1000/',ims[0])
-            im=Image.open(io.BytesIO(getr(u,True))).convert('RGB'); im.save(f'img/dm/balea-{k}.jpg',quality=90); rec['saved']=im.size
+            for tr in ('f_auto,q_auto,c_fit,h_1200,w_1200','f_auto,q_auto,c_fit,h_1000,w_1000','f_auto,q_auto,c_fit,h_880,w_880','f_auto,q_auto,c_fit,h_640,w_640','f_auto,q_auto,c_fit,h_440,w_440',None):
+                u=ims[0] if tr is None else re.sub(r'/images/[^/]+/','/images/'+tr+'/',ims[0])
+                try:
+                    raw=Image.open(io.BytesIO(getr(u,True))).convert('RGBA')
+                except Exception as x:
+                    rec.setdefault('tried',[]).append((tr,str(x)[:40])); continue
+                S=max(raw.size); bg=Image.new('RGBA',(S,S),(255,255,255,255)); bg.alpha_composite(raw,((S-raw.width)//2,(S-raw.height)//2))
+                bg.convert('RGB').save(f'img/dm/balea-{k}.jpg',quality=90); rec['saved']=raw.size; rec['tr']=tr; break
         out[k]=rec
     except Exception as x: out[k]={'err':str(x)[:200]}
     time.sleep(2.5)
