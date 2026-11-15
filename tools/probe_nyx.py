@@ -12,23 +12,39 @@ Q={"bodylotion-glam":"Balea Bodylotion Glamorous Moment","peeling":"Balea Peelin
 "men-sens":"Balea MEN Deo Roll-on Sensitive","men-dry":"Balea MEN Antitranspirant Deo Roll-on Extra Dry","men-fresh":"Balea MEN Antitranspirant Deo Roll-on Fresh",
 "creme-natron":"Balea Deocreme mit Natron & Zink","creme-sens":"Balea Deocreme Sensitive","roll-soft":"Balea Deo Roll-on Soft Flower","roll-sweet":"Balea Deo Roll-on Sweet Sunshine",
 "roll-dry":"Balea Antitranspirant Deo Roll-on Extra Dry","roll-5in1":"Balea Antitranspirant Deo Roll-on Protection 5in1"}
-out={'tests':{}, 'res':{}}
-q0=urllib.parse.quote("Balea Hitzeschutzspray")
-EP=["https://product-search.services.dmtech.com/de/search?query=%s&searchType=product&type=search&pageSize=8",
-    "https://product-search.services.dmtech.com/de/search/crawl?query=%s&pageSize=8",
-    "https://product-search.services.dmtech.com/de/search/static?query=%s&pageSize=8",
-    "https://products.dm.de/product/de/search?query=%s&pageSize=8"]
-good=None
-for e in EP:
-    try:
-        t=get(e%q0); out['tests'][e]={'len':len(t),'head':t[:1500]}
-        if good is None and '"products"' in t: good=e
-    except Exception as x: out['tests'][e]={'err':str(x)[:200]}
-if good:
-    for k,q in Q.items():
+
+import re, io, os, difflib
+from PIL import Image
+T={'bodylotion-glam': 'Bodylotion Glamorous Moment, 200 ml', 'peeling': 'Peeling Cleanser Beauty Expert, Reisegröße, 20 ml', 'bodyspray-glam': 'Parfum Bodyspray Glamorous Moment, 200 ml', 'deo-golden': 'Deospray Parfum Deodorant Golden Moon, 150 ml', 'deo-pink': 'Deospray Pink Blossom, 150 ml', 'deo-pure': 'Deospray Parfum Pure Elegance, 150 ml', 'deo-glam': 'Deospray Parfum Glamorous Moment, 150 ml', 'schaum': 'Schaumfestiger Volume Effect, 250 ml', 'hitze': 'Hitzeschutzspray, 200 ml', 'foehn': 'Föhn-Spray Föhnen & Stärken, 150 ml', 'leicht': 'Leichtkämmspray, 200 ml', 'hp-brazil': 'Haarparfüm Brazilian Nights, 100 ml', 'hp-pink': 'Haarparfüm Pink Blossom, 100 ml', 'jl-coco': 'Haarparfum "you\'re my coco vanilla", 100 ml', 'ts-glam': 'Trockenshampoo Glamorous Moment, 200 ml', 'ts-sens': 'Trockenshampoo Kopfhaut Sensitive, 200 ml', 'ts-moon': 'Trockenshampoo Moonlight Flowers, 200 ml', 'men-sens': 'Deo Roll-on Sensitive, 50 ml', 'men-dry': 'Antitranspirant Deo Roll-on Extra Dry, 50 ml', 'men-fresh': 'Antitranspirant Deo Roll-on Fresh, 50 ml', 'creme-natron': 'Deocreme mit Natron & Zink, 50 ml', 'creme-sens': 'Deocreme Sensitive, 50 ml', 'roll-soft': 'Deo Roll-on Soft Flower, 50 ml', 'roll-sweet': 'Deo Roll-on Sweet Sunshine, 50 ml', 'roll-dry': 'Antitranspirant Deo Roll-on Extra Dry, 50 ml', 'roll-5in1': 'Antitranspirant Deo Roll-on Protection 5in1, 50 ml'}
+BR={'men-sens': 'Balea MEN', 'men-dry': 'Balea MEN', 'men-fresh': 'Balea MEN', 'jl-coco': 'Jean&Len'}
+EP="https://product-search.services.dmtech.com/de/search/static?query=%s&pageSize=12"
+def getr(u,raw=False):
+    for a in range(5):
         try:
-            d=json.loads(get(good%urllib.parse.quote(q))); ps=d.get('products') or []
-            out['res'][k]=[{kk:p.get(kk) for kk in ('gtin','dan','brandName','title','name','price','imageUrlTemplates','relativeProductUrl') if kk in p} or {'keys':list(p.keys())[:40]} for p in ps[:6]]
-        except Exception as x: out['res'][k]={'err':str(x)[:200]}
-        time.sleep(0.3)
-json.dump(out,open('import/dm-probe.json','w'),ensure_ascii=False,indent=1); print(good, len(out['res']))
+            if raw:
+                return urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':H['User-Agent']}),timeout=40).read()
+            return get(u)
+        except Exception as x:
+            if '429' in str(x): time.sleep(8+6*a); continue
+            raise
+    raise Exception('429 x5')
+out={}
+os.makedirs('img/dm',exist_ok=True)
+for k,q in Q.items():
+    try:
+        ps=json.loads(getr(EP%urllib.parse.quote(q))).get('products') or []
+        want=T[k].lower(); wb=BR.get(k,'Balea')
+        best=None;bs=0
+        for p in ps:
+            sc=difflib.SequenceMatcher(None,want,(p.get('title') or '').lower()).ratio()+(0.3 if p.get('brandName')==wb else -0.3)
+            if sc>bs: bs,best=sc,p
+        if not best: out[k]={'none':[p.get('title') for p in ps]}; continue
+        td=best.get('tileData') or {}; ims=[i.get('tileSrc') for i in td.get('images') or [] if i.get('tileSrc')]
+        rec={'title':best.get('title'),'brand':best.get('brandName'),'score':round(bs,2),'price':(((td.get('price') or {}).get('price') or {}).get('current') or {}).get('value'),'n_img':len(ims),'src':ims[:1]}
+        if ims and bs>=1.15:
+            u=re.sub(r'/images/[^/]+/','/images/f_jpg,q_90,c_pad,b_white,h_1000,w_1000/',ims[0])
+            im=Image.open(io.BytesIO(getr(u,True))).convert('RGB'); im.save(f'img/dm/balea-{k}.jpg',quality=90); rec['saved']=im.size
+        out[k]=rec
+    except Exception as x: out[k]={'err':str(x)[:200]}
+    time.sleep(2.5)
+json.dump(out,open('import/dm-probe.json','w'),ensure_ascii=False,indent=1); print(json.dumps(out,ensure_ascii=False)[:3000])
