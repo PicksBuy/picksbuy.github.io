@@ -1,144 +1,80 @@
 {
- "tests": {
-  "https://product-search.services.dmtech.com/de/search?query=%s&searchType=product&type=search&pageSize=8": {
-   "len": 16047,
-   "head": "{\"products\":[{\"gtin\":4070765016710,\"dan\":1712746,\"brandName\":\"Balea\",\"title\":\"Hitzeschutzspray Locken & Styling 2in1, 150 ml\",\"tileData\":{\"dan\":1712746,\"gtin\":4070765016710,\"self\":\"/p/d/1712746/balea-hitzeschutzspray-locken-und-styling-2in1\",\"brand\":{\"name\":\"Balea\"},\"price\":{\"price\":{\"current\":{\"value\":\"1,95 €\"}},\"prefix\":\"Einzelpreis\",\"tileInfos\":[\"0,15 l (13,00 € je 1 l)\"]},\"title\":{\"tileHeadline\":\"Hitzeschutzspray Locken & Styling 2in1, 150 ml\"},\"images\":[{\"alt\":\"Hitzeschutzspray Locken & Styling 2in1 Balea\",\"tileSrc\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1784416827/assets/pas/images/b233d41f-e8f9-43f2-ad5d-c0d68338b931/balea-hitzeschutzspray-locken-und-styling-2in1\",\"isAiGenerated\":false,\"backgroundColor\":\"#F9F3F1\"},{\"alt\":\"Hitzeschutzspray Locken & Styling 2in1 Balea\",\"tileSrc\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1784416824/assets/pas/images/7036612b-d6ef-4a3e-81ec-79e6fb813157/balea-hitzeschutzspray-locken-und-styling-2in1\",\"isAiGenerated\":false,\"backgroundColor\":\"#F9F3F1\"}],\"netPrice\":{\"price\":{\"current\":{\"value\":\"1,64 €\"}},\"prefix\":\"Einzelpreis\",\"tileInfos\":[\"0,15 l (10,92 € je 1 l)\"]},\"a11yLabel\":\"Marke: Balea; Produktname: Hitzeschutzspray Locken & Styling 2in1, 150 ml; Preis: 1,95 €; Grundpreis: 0,15 l (13,00 € je 1 l); Marke von dm Grafik\",\"isPharmacy\":false,\"eyecatchers\":[{\"alt\":\"Marke von dm Grafik\",\"src\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,w_150/v1782977607/assets/mp/hi"
-  },
-  "https://product-search.services.dmtech.com/de/search/crawl?query=%s&pageSize=8": {
-   "len": 16047,
-   "head": "{\"products\":[{\"gtin\":4070765016710,\"dan\":1712746,\"brandName\":\"Balea\",\"title\":\"Hitzeschutzspray Locken & Styling 2in1, 150 ml\",\"tileData\":{\"dan\":1712746,\"gtin\":4070765016710,\"self\":\"/p/d/1712746/balea-hitzeschutzspray-locken-und-styling-2in1\",\"brand\":{\"name\":\"Balea\"},\"price\":{\"price\":{\"current\":{\"value\":\"1,95 €\"}},\"prefix\":\"Einzelpreis\",\"tileInfos\":[\"0,15 l (13,00 € je 1 l)\"]},\"title\":{\"tileHeadline\":\"Hitzeschutzspray Locken & Styling 2in1, 150 ml\"},\"images\":[{\"alt\":\"Hitzeschutzspray Locken & Styling 2in1 Balea\",\"tileSrc\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1784416827/assets/pas/images/b233d41f-e8f9-43f2-ad5d-c0d68338b931/balea-hitzeschutzspray-locken-und-styling-2in1\",\"isAiGenerated\":false,\"backgroundColor\":\"#F9F3F1\"},{\"alt\":\"Hitzeschutzspray Locken & Styling 2in1 Balea\",\"tileSrc\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1784416824/assets/pas/images/7036612b-d6ef-4a3e-81ec-79e6fb813157/balea-hitzeschutzspray-locken-und-styling-2in1\",\"isAiGenerated\":false,\"backgroundColor\":\"#F9F3F1\"}],\"netPrice\":{\"price\":{\"current\":{\"value\":\"1,64 €\"}},\"prefix\":\"Einzelpreis\",\"tileInfos\":[\"0,15 l (10,92 € je 1 l)\"]},\"a11yLabel\":\"Marke: Balea; Produktname: Hitzeschutzspray Locken & Styling 2in1, 150 ml; Preis: 1,95 €; Grundpreis: 0,15 l (13,00 € je 1 l); Marke von dm Grafik\",\"isPharmacy\":false,\"eyecatchers\":[{\"alt\":\"Marke von dm Grafik\",\"src\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,w_150/v1782977607/assets/mp/hi"
-  },
-  "https://product-search.services.dmtech.com/de/search/static?query=%s&pageSize=8": {
-   "len": 15943,
-   "head": "{\"products\":[{\"gtin\":4070765016710,\"dan\":1712746,\"brandName\":\"Balea\",\"title\":\"Hitzeschutzspray Locken & Styling 2in1, 150 ml\",\"tileData\":{\"dan\":1712746,\"gtin\":4070765016710,\"self\":\"/p/d/1712746/balea-hitzeschutzspray-locken-und-styling-2in1\",\"brand\":{\"name\":\"Balea\"},\"price\":{\"price\":{\"current\":{\"value\":\"1,95 €\"}},\"prefix\":\"Einzelpreis\",\"tileInfos\":[\"0,15 l (13,00 € je 1 l)\"]},\"title\":{\"tileHeadline\":\"Hitzeschutzspray Locken & Styling 2in1, 150 ml\"},\"images\":[{\"alt\":\"Hitzeschutzspray Locken & Styling 2in1 Balea\",\"tileSrc\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1784416827/assets/pas/images/b233d41f-e8f9-43f2-ad5d-c0d68338b931/balea-hitzeschutzspray-locken-und-styling-2in1\",\"isAiGenerated\":false,\"backgroundColor\":\"#F9F3F1\"},{\"alt\":\"Hitzeschutzspray Locken & Styling 2in1 Balea\",\"tileSrc\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1784416824/assets/pas/images/7036612b-d6ef-4a3e-81ec-79e6fb813157/balea-hitzeschutzspray-locken-und-styling-2in1\",\"isAiGenerated\":false,\"backgroundColor\":\"#F9F3F1\"}],\"netPrice\":{\"price\":{\"current\":{\"value\":\"1,64 €\"}},\"prefix\":\"Einzelpreis\",\"tileInfos\":[\"0,15 l (10,92 € je 1 l)\"]},\"a11yLabel\":\"Marke: Balea; Produktname: Hitzeschutzspray Locken & Styling 2in1, 150 ml; Preis: 1,95 €; Grundpreis: 0,15 l (13,00 € je 1 l); Marke von dm Grafik\",\"isPharmacy\":false,\"eyecatchers\":[{\"alt\":\"Marke von dm Grafik\",\"src\":\"https://products.dm-static.com/images/f_auto,q_auto,c_fit,w_150/v1782977607/assets/mp/hi"
-  },
-  "https://products.dm.de/product/de/search?query=%s&pageSize=8": {
-   "err": "HTTP Error 404: Not Found"
-  }
+ "bodylotion-glam": {
+  "err": "HTTP Error 404: Not Found"
  },
- "res": {
-  "bodylotion-glam": [
-   {
-    "gtin": 4066447968729,
-    "dan": 1309587,
-    "brandName": "Balea",
-    "title": "Bodylotion Glamorous Moment, 200 ml"
-   }
-  ],
-  "peeling": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "bodyspray-glam": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "deo-golden": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "deo-pink": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "deo-pure": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "deo-glam": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "schaum": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "hitze": [
-   {
-    "gtin": 4070765016710,
-    "dan": 1712746,
-    "brandName": "Balea",
-    "title": "Hitzeschutzspray Locken & Styling 2in1, 150 ml"
-   },
-   {
-    "gtin": 4070765016758,
-    "dan": 1460813,
-    "brandName": "Balea",
-    "title": "Hitzeschutzspray, 200 ml"
-   },
-   {
-    "gtin": 4066447909562,
-    "dan": 3101587,
-    "brandName": "Balea",
-    "title": "Hitzeschutzspray Ultralight, 200 ml"
-   },
-   {
-    "gtin": 4070765016659,
-    "dan": 2978075,
-    "brandName": "Balea",
-    "title": "Föhn-Spray Föhnen & Stärken, 150 ml"
-   },
-   {
-    "gtin": 4070765016635,
-    "dan": 2978038,
-    "brandName": "Balea",
-    "title": "Glattspray Anti-Frizz, 200 ml"
-   },
-   {
-    "gtin": 4070765053333,
-    "dan": 3152719,
-    "brandName": "Balea",
-    "title": "Leave-In Pflege feuchtigkeitsspendend beauty essentials, 125 ml"
-   }
-  ],
-  "foehn": [
-   {
-    "gtin": 4070765016659,
-    "dan": 2978075,
-    "brandName": "Balea",
-    "title": "Föhn-Spray Föhnen & Stärken, 150 ml"
-   }
-  ],
-  "leicht": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "hp-brazil": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "hp-pink": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "jl-coco": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "ts-glam": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "ts-sens": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "ts-moon": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "men-sens": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "men-dry": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "men-fresh": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "creme-natron": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "creme-sens": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "roll-soft": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "roll-sweet": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "roll-dry": {
-   "err": "HTTP Error 429: Too Many Requests"
-  },
-  "roll-5in1": {
-   "err": "HTTP Error 429: Too Many Requests"
-  }
+ "peeling": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "bodyspray-glam": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "deo-golden": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "deo-pink": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "deo-pure": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "deo-glam": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "schaum": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "hitze": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "foehn": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "leicht": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "hp-brazil": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "hp-pink": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "jl-coco": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "ts-glam": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "ts-sens": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "ts-moon": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "men-sens": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "men-dry": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "men-fresh": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "creme-natron": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "creme-sens": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "roll-soft": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "roll-sweet": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "roll-dry": {
+  "err": "HTTP Error 404: Not Found"
+ },
+ "roll-5in1": {
+  "err": "HTTP Error 404: Not Found"
  }
 }
