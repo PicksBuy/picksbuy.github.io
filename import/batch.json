@@ -241,6 +241,36 @@
    "name": "أحذية وشنط وإكسسوارات",
    "parentId": "clothes",
    "order": 7
+  },
+  {
+   "id": "hairstyle",
+   "name": "ستايلنج وحماية من الحرارة",
+   "parentId": "hair",
+   "order": 5
+  },
+  {
+   "id": "hairperfume",
+   "name": "برفان شعر",
+   "parentId": "hair",
+   "order": 6
+  },
+  {
+   "id": "dryshampoo",
+   "name": "شامبو جاف",
+   "parentId": "hair",
+   "order": 7
+  },
+  {
+   "id": "bodylotion",
+   "name": "لوشن جسم",
+   "parentId": "body",
+   "order": 5
+  },
+  {
+   "id": "bodymist",
+   "name": "بادي ميست",
+   "parentId": "perfume",
+   "order": 5
   }
  ],
  "products": [
@@ -12312,6 +12342,630 @@
     "was": 4.5,
     "rate": 74.2,
     "url": "https://www.primark.com/en-gb/p/8pk-halloween-mini-claw-clips-gold-991190558935"
+   }
+  },
+  {
+   "id": "dm-bodylotion-glam",
+   "brand": "Balea",
+   "name": "Parfum Bodylotion Glamorous Moment 200ml",
+   "desc": "لوشن جسم معطر بريحة شرقية وردية (Glamorous Moment).\nلكل أنواع البشرة – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "bodylotion",
+   "price": 295,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-bodylotion-glam.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.45,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-peeling",
+   "brand": "Balea",
+   "name": "Beauty Expert Peeling Cleanser AHA + 3% PHA – 20ml (حجم سفر)",
+   "desc": "غسول مقشر للوش بأحماض AHA و 3% PHA، من غير عطر.\nحجم سفر 20 مل – مناسب للتجربة.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "facewash",
+   "price": 255,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-peeling.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.85,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-bodyspray-glam",
+   "brand": "Balea",
+   "name": "Parfum Bodyspray Glamorous Moment 200ml",
+   "desc": "بادي سبراي معطر بريحة شرقية وردية (Glamorous Moment).\n200 مل – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "bodymist",
+   "price": 315,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-bodyspray-glam.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.75,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-deo-golden",
+   "brand": "Balea",
+   "name": "Parfum Deodorant Spray Golden Moon 150ml",
+   "desc": "مزيل عرق سبراي معطر Golden Moon.\n0% ألومنيوم – حماية 48 ساعة – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 265,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-deo-golden.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-deo-pink",
+   "brand": "Balea",
+   "name": "Parfum Deodorant Spray Pink Blossom 150ml",
+   "desc": "مزيل عرق سبراي معطر Pink Blossom بريحة ورد منعشة.\n0% ألومنيوم – حماية 48 ساعة – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 265,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-deo-pink.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-deo-pure",
+   "brand": "Balea",
+   "name": "Parfum Deodorant Spray Pure Elegance 150ml",
+   "desc": "مزيل عرق سبراي معطر Pure Elegance بريحة ورد أنيقة.\n0% ألومنيوم – حماية 48 ساعة – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 265,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-deo-pure.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-deo-glam",
+   "brand": "Balea",
+   "name": "Parfum Deodorant Spray Glamorous Moment 150ml",
+   "desc": "مزيل عرق سبراي معطر Glamorous Moment بريحة شرقية وردية.\n0% ألومنيوم – حماية 48 ساعة – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 265,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-deo-glam.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-schaum",
+   "brand": "Balea",
+   "name": "Volume Effect Styling Mousse (Schaumfestiger) 250ml",
+   "desc": "موس لتكثيف الشعر وتثبيته – درجة تثبيت 4.\nبيدي حجم واضح وبيدوم طول اليوم. ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "hairstyle",
+   "price": 275,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-schaum.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.15,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-hitze",
+   "brand": "Balea",
+   "name": "Heat Protection Spray (Hitzeschutzspray) 200ml",
+   "desc": "سبراي حماية من الحرارة لحد 220 درجة، بتركيبة فازين.\nبيحمي الشعر وقت السشوار والمكواة وبيسيبه ناعم. ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "hairstyle",
+   "price": 325,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-hitze.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-foehn",
+   "brand": "Balea",
+   "name": "Blow Dry Spray Föhnen & Stärken 150ml",
+   "desc": "سبراي للسشوار بيقوي الشعر وبيحميه من الحرارة لحد 220 درجة.\nضد الهيشان، بمركب كولاجين – بيخلي تصفيفة السشوار تدوم.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "hairstyle",
+   "price": 325,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-foehn.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-leicht",
+   "brand": "Balea",
+   "name": "Detangling Spray (Leichtkämmspray) 200ml",
+   "desc": "سبراي لفك تشابك الشعر وتسهيل التسريح من غير ما يتقّل الشعر.\nبيسيب الشعر ناعم ومتغذي. ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "hairstyle",
+   "price": 325,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-leicht.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-hp-brazil",
+   "brand": "Balea",
+   "name": "Hair Perfume Brazilian Nights 100ml",
+   "desc": "برفان شعر Brazilian Nights بريحة صيفية.\nبيخلي الشعر ريحته حلوة وبيديله لمعة طبيعية. ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "hairperfume",
+   "price": 325,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-hp-brazil.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-hp-pink",
+   "brand": "Balea",
+   "name": "Hair Perfume Pink Blossom 100ml",
+   "desc": "برفان شعر Pink Blossom بريحة ورد.\nبيخلي الشعر ريحته حلوة وبيديله لمعة طبيعية. ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "hairperfume",
+   "price": 325,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-hp-pink.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-jl-coco",
+   "brand": "Jean&Len",
+   "name": "Hair Perfume \"you're my coco vanilla\" 100ml",
+   "desc": "برفان شعر من Jean&Len بريحة جوز الهند والڤانيليا.\nڤيجان، من غير بارافين أو زيوت معدنية.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "hairperfume",
+   "price": 455,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-jl-coco.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 3.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-ts-glam",
+   "brand": "Balea",
+   "name": "Dry Shampoo Glamorous Moment 200ml",
+   "desc": "شامبو جاف بريحة شرقية وردية – انتعاش بيدوم من غير غسيل.\n200 مل – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "dryshampoo",
+   "price": 325,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-ts-glam.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-ts-sens",
+   "brand": "Balea",
+   "name": "Dry Shampoo Scalp Sensitive (Kopfhaut Sensitive) 200ml",
+   "desc": "شامبو جاف لفروة الراس الحساسة، من غير عطر، بالبانثينول.\n200 مل – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "dryshampoo",
+   "price": 325,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-ts-sens.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-ts-moon",
+   "brand": "Balea",
+   "name": "Dry Shampoo Moonlight Flowers 200ml",
+   "desc": "شامبو جاف بريحة ورد – انتعاش بيدوم من غير غسيل.\n200 مل – ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "dryshampoo",
+   "price": 325,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-ts-moon.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-men-sens",
+   "brand": "Balea MEN",
+   "name": "Deo Roll-on Sensitive 50ml",
+   "desc": "مزيل عرق رول أون رجالي للبشرة الحساسة – حماية 24 ساعة.\n0% ألومنيوم و 0% كحول. ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 240,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-men-sens.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.6,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-men-dry",
+   "brand": "Balea MEN",
+   "name": "Antiperspirant Roll-on Extra Dry 50ml",
+   "desc": "مضاد تعرق رول أون رجالي Extra Dry – حماية 48 ساعة.\n0% كحول.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 240,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-men-dry.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.6,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-men-fresh",
+   "brand": "Balea MEN",
+   "name": "Antiperspirant Roll-on Fresh 50ml",
+   "desc": "مضاد تعرق رول أون رجالي Fresh – حماية وانتعاش 48 ساعة.\n0% كحول.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 240,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-men-fresh.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.6,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-creme-natron",
+   "brand": "Balea",
+   "name": "Deo Cream with Baking Soda & Zinc (Raspberry & Magnolia) 50ml",
+   "desc": "كريم مزيل عرق بالبيكنج صودا والزنك، بريحة التوت والماجنوليا.\n0% ألومنيوم – حماية 48 ساعة.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 315,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-creme-natron.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.75,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-creme-sens",
+   "brand": "Balea",
+   "name": "Deo Cream Sensitive with Coconut Oil 50ml",
+   "desc": "كريم مزيل عرق للبشرة الحساسة بزيت جوز الهند.\n0% ألومنيوم ومن غير كحول – حماية 48 ساعة. ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 315,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-creme-sens.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 1.75,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-roll-soft",
+   "brand": "Balea",
+   "name": "Deo Roll-on Soft Flower 50ml",
+   "desc": "مزيل عرق رول أون Soft Flower بريحة ورد – حماية 24 ساعة.\n0% ألومنيوم.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 240,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-roll-soft.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.6,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-roll-sweet",
+   "brand": "Balea",
+   "name": "Deo Roll-on Sweet Sunshine 50ml",
+   "desc": "مزيل عرق رول أون Sweet Sunshine بريحة فواكه استوائية – حماية 24 ساعة.\n0% ألومنيوم.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 240,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-roll-sweet.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.6,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-roll-dry",
+   "brand": "Balea",
+   "name": "Antiperspirant Roll-on Extra Dry 50ml",
+   "desc": "مضاد تعرق رول أون Extra Dry – حماية قوية 48 ساعة وإحساس جاف.\nمن غير كحول.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 240,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-roll-dry.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.6,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-roll-5in1",
+   "brand": "Balea",
+   "name": "Antiperspirant Roll-on Protection 5in1 50ml",
+   "desc": "مضاد تعرق رول أون 5 في 1 – حماية 48 ساعة، ضد البقع البيضا والصفرا، ولطيف على البشرة.\nمن غير كحول.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 240,
+   "oldPrice": null,
+   "images": [
+    "img/dm/balea-roll-5in1.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.6,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
    }
   }
  ],
