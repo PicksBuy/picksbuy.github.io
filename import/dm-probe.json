@@ -1,80 +1,964 @@
 {
  "bodylotion-glam": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Bodylotion Glamorous Moment, 200 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,45 €",
+  "n_img": 3,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1783746040/assets/pas/images/b02989a8-d9a8-4b01-9436-811f88aee4cc/balea-bodylotion-glamorous-moment"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   148,
+   320
+  ],
+  "tr": null
  },
  "peeling": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Peeling Cleanser Beauty Expert, Reisegröße, 20 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,85 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1747483829/assets/pas/images/6a477e31-b8fb-4929-8800-64d2c983a036/balea-peeling-cleanser-beauty-expert-reisegroesse"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   133,
+   320
+  ],
+  "tr": null
  },
  "bodyspray-glam": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Parfum Bodyspray Glamorous Moment, 200 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,75 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1785623502/assets/pas/images/9c49f9a1-2c55-4b17-9ec0-66f22a97a4d3/balea-parfum-bodyspray-glamorous-moment"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   80,
+   320
+  ],
+  "tr": null
  },
  "deo-golden": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deospray Parfum Deodorant Golden Moon, 150 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1764280086/assets/pas/images/6959723f-4596-405c-b0b6-6fdd384d05ab/balea-deospray-parfum-deodorant-golden-moon"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   77,
+   320
+  ],
+  "tr": null
  },
  "deo-pink": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deospray Pink Blossom, 150 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1793663428/assets/pas/images/bfb43ff0-906e-40f5-8675-1baf1f46bfbc/balea-deospray-pink-blossom"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   78,
+   320
+  ],
+  "tr": null
  },
  "deo-pure": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deospray Parfum Pure Elegance, 150 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1782343827/assets/pas/images/f7775a75-89c4-47bb-b03b-a001b8e0a50f/balea-deospray-parfum-pure-elegance"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   75,
+   320
+  ],
+  "tr": null
  },
  "deo-glam": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deospray Parfum Glamorous Moment, 150 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1787435459/assets/pas/images/21205ea9-59c4-42e7-9812-5b6e107e0a2e/balea-deospray-parfum-glamorous-moment"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   78,
+   320
+  ],
+  "tr": null
  },
  "schaum": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Schaumfestiger Volume Effect, 250 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,15 €",
+  "n_img": 3,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1789164797/assets/pas/images/d0b91feb-4581-495f-8a4d-15ed102a163c/balea-schaumfestiger-volume-effect"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   67,
+   320
+  ],
+  "tr": null
  },
  "hitze": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Hitzeschutzspray, 200 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1773791548/assets/pas/images/bb88652e-9469-4b46-bbe1-acb4516c621a/balea-hitzeschutzspray"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   82,
+   320
+  ],
+  "tr": null
  },
  "foehn": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Föhn-Spray Föhnen & Stärken, 150 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1792187991/assets/pas/images/c179b6f1-37d7-47d4-8abe-d25d0235f4e1/balea-foehn-spray-foehnen-und-staerken"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   80,
+   320
+  ],
+  "tr": null
  },
  "leicht": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Leichtkämmspray, 200 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1780786083/assets/pas/images/d32e044f-e8a7-447d-a770-c04e04c8eadc/balea-leichtkaemmspray"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   80,
+   320
+  ],
+  "tr": null
  },
  "hp-brazil": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Haarparfüm Brazilian Nights, 100 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1774606468/assets/pas/images/cbea6bab-1e1c-46c9-96e1-96ccbda5d97f/balea-haarparfuem-brazilian-nights"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   86,
+   320
+  ],
+  "tr": null
  },
  "hp-pink": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Haarparfüm Pink Blossom, 100 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1787436837/assets/pas/images/85fb85de-c1b7-4ee9-9ed6-0a6ef50a0197/balea-haarparfuem-pink-blossom"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   80,
+   320
+  ],
+  "tr": null
  },
  "jl-coco": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Haarparfum \"you're my coco vanilla\", 100 ml",
+  "brand": "Jean&Len",
+  "score": 1.3,
+  "price": "3,95 €",
+  "n_img": 3,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1768606136/assets/pas/images/975b8bad-5407-4130-96b9-98852d4b9e6c/jean-und-len-haarparfum-you-re-my-coco-vanilla"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   148,
+   320
+  ],
+  "tr": null
  },
  "ts-glam": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Trockenshampoo Glamorous Moment, 200 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1782339943/assets/pas/images/28a597c7-6a0e-43d6-b350-39676f4d4279/balea-trockenshampoo-glamorous-moment"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   67,
+   320
+  ],
+  "tr": null
  },
  "ts-sens": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Trockenshampoo Kopfhaut Sensitive, 200 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1790248071/assets/pas/images/0b0a5f33-ded1-4f9e-880a-b178ffb2e737/balea-trockenshampoo-kopfhaut-sensitive"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   66,
+   320
+  ],
+  "tr": null
  },
  "ts-moon": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Trockenshampoo Moonlight Flowers, 200 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,95 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1792705564/assets/pas/images/30d8203d-223a-44cd-b457-5de4ca47006e/balea-trockenshampoo-moonlight-flowers"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   68,
+   320
+  ],
+  "tr": null
  },
  "men-sens": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deo Roll-on Sensitive, 50 ml",
+  "brand": "Balea MEN",
+  "score": 1.3,
+  "price": "0,60 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1777686334/assets/pas/images/0fcb082c-4990-4222-b772-10f51e79c049/balea-men-deo-roll-on-sensitive"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   122,
+   320
+  ],
+  "tr": null
  },
  "men-dry": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Antitranspirant Deo Roll-on Extra Dry, 50 ml",
+  "brand": "Balea MEN",
+  "score": 1.3,
+  "price": "0,60 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1779237603/assets/pas/images/59288516-95af-47d9-a9df-a0717c0373ad/balea-men-antitranspirant-deo-roll-on-extra-dry"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   122,
+   320
+  ],
+  "tr": null
  },
  "men-fresh": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Antitranspirant Deo Roll-on Fresh, 50 ml",
+  "brand": "Balea MEN",
+  "score": 1.3,
+  "price": "0,60 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1782858295/assets/pas/images/77317e67-176b-4534-be1c-105bfd979c45/balea-men-antitranspirant-deo-roll-on-fresh"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   122,
+   320
+  ],
+  "tr": null
  },
  "creme-natron": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deocreme mit Natron & Zink, 50 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,75 €",
+  "n_img": 4,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1773358365/assets/pas/images/6e81356b-af32-4f41-b57a-adf6afc36211/balea-deocreme-mit-natron-und-zink"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   301,
+   320
+  ],
+  "tr": null
  },
  "creme-sens": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deocreme Sensitive, 50 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "1,75 €",
+  "n_img": 4,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1790207938/assets/pas/images/359bf25e-11b6-4394-a574-4c3ad8e63319/balea-deocreme-sensitive"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   306,
+   320
+  ],
+  "tr": null
  },
  "roll-soft": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deo Roll-on Soft Flower, 50 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,60 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1773101874/assets/pas/images/1547e69c-fb0c-4057-8723-57b51459f95c/balea-deo-roll-on-soft-flower"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   126,
+   320
+  ],
+  "tr": null
  },
  "roll-sweet": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Deo Roll-on Sweet Sunshine, 50 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,60 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1771026409/assets/pas/images/284b0f88-af63-41d7-b1c0-799d09d4e7fc/balea-deo-roll-on-sweet-sunshine"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   125,
+   320
+  ],
+  "tr": null
  },
  "roll-dry": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Antitranspirant Deo Roll-on Extra Dry, 50 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,60 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1765059858/assets/pas/images/84122397-f614-4124-8f69-971e071b3d82/balea-antitranspirant-deo-roll-on-extra-dry"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   125,
+   320
+  ],
+  "tr": null
  },
  "roll-5in1": {
-  "err": "HTTP Error 404: Not Found"
+  "title": "Antitranspirant Deo Roll-on Protection 5in1, 50 ml",
+  "brand": "Balea",
+  "score": 1.3,
+  "price": "0,60 €",
+  "n_img": 2,
+  "src": [
+   "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1772151066/assets/pas/images/69a0d4b4-7d70-4b76-ae34-7a4a3edfeceb/balea-antitranspirant-deo-roll-on-protection-5in1"
+  ],
+  "tried": [
+   [
+    "f_auto,q_auto,c_fit,h_1200,w_1200",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_1000,w_1000",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_880,w_880",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_640,w_640",
+    "HTTP Error 404: Not Found"
+   ],
+   [
+    "f_auto,q_auto,c_fit,h_440,w_440",
+    "HTTP Error 404: Not Found"
+   ]
+  ],
+  "saved": [
+   125,
+   320
+  ],
+  "tr": null
  }
 }
