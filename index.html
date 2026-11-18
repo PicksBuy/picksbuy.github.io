@@ -1959,6 +1959,9 @@ async function route(){
   if(h==='#admin'){ clearHash(); const {data:{session}}=await sb.auth.getSession(); if(!session) openLogin(); return; }
   if(h==='#howto'){ window.__noJoin=true; clearHash(); setTimeout(goHowto,600); return; }
   if(h.startsWith('#p-')){ const id=h.slice(3); clearHash(); if(S.products.find(x=>x.id===id)) openDetail(id); else toast('المنتج ده مش متاح دلوقتي'); return; }
+  if(h.startsWith('#c-')){ const id=h.slice(3); clearHash(); window.__noJoin=true;
+    if(S.countries.find(c=>c.id===id)){ S.country=id; S.cat='all'; S.sub='all'; render(); setTimeout(()=>{ const g=$('#countries'); if(g) g.scrollIntoView({behavior:'smooth',block:'start'}); },400); }
+    return; }
   if(h.startsWith('#order-')){ const no=h.slice(7); clearHash(); openOrder(no); }
 }
 async function openOrder(no){
