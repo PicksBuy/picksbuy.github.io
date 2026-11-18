@@ -165,6 +165,7 @@ body:not(.admin) .cartbtn.has{display:flex}
 .ordv .cl img,.ordv .cl .ni{width:96px;height:118px;cursor:zoom-in}.ordv .cl .i .n{white-space:normal;font-size:16px;line-height:1.5}.ordv .cl .i .v{font-size:15px;font-weight:800;color:var(--ink);background:var(--soft);display:inline-block;border-radius:8px;padding:2px 10px;margin:4px 0}.ordv .cl .i .p{font-size:16px}
 .ordv .who{font-weight:800;font-size:18px;margin-top:8px}.ordv .hint{font-size:14.5px;line-height:1.8}.ordv .obtns button,.ordv .obtns a{font-size:15px;padding:11px 16px}
 .xls{display:flex;gap:8px;margin:8px 0}.xls button{flex:1;border-radius:12px;padding:11px;font-weight:800;font-size:14.5px;background:#E7F8EE;color:#1F7A47}
+.pushpop .bell{font-size:58px;line-height:1.1;margin:2px 0 6px;display:inline-block;animation:pbring 2.4s ease-in-out infinite;transform-origin:50% 10%}
 .pushc{display:flex;align-items:center;gap:12px;margin:10px 0 4px;padding:13px 14px;border-radius:18px;background:linear-gradient(135deg,#fff 0%,#FBEAE5 100%);border:1px solid var(--line);box-shadow:0 4px 14px rgba(60,20,20,.06)}
 .pushc .bl{font-size:26px;animation:pbring 2.4s ease-in-out infinite;transform-origin:50% 10%}@keyframes pbring{0%,70%,100%{transform:rotate(0)}76%{transform:rotate(14deg)}82%{transform:rotate(-12deg)}88%{transform:rotate(8deg)}94%{transform:rotate(-4deg)}}
 .pushc .tx{flex:1;min-width:0}.pushc .tx b{display:block;font-size:14.5px}.pushc .tx span{font-size:12.5px;color:var(--muted);line-height:1.6}
@@ -1836,30 +1837,38 @@ async function pushInit(){
     /* keep the server copy fresh: browsers rotate the endpoint from time to time */
     if(PUSH.sub && Notification.permission==='granted'){ let last=''; try{ last=localStorage.getItem('pb_push_ep')||''; }catch(e){} if(last!==PUSH.sub.endpoint) pushSave(PUSH.sub).catch(()=>{}); }
   }catch(e){ console.warn('sw',e); } }
-  setTimeout(pushBar,6000);
+  setTimeout(pushBar,2500);
 }
-function pushBar(){
-  const box=$('#pushbar'); if(!box) return; box.innerHTML='';
-  if(!PUSH.ok) return;
+function pushBar(n=0){
+  if(!PUSH.ok || PUSH.ov) return;
   const ios=isIOS(), needInstall=ios&&!isStandalone();
   if(!needInstall && (!pushCan() || PUSH.sub || Notification.permission==='denied')) return;
   let st={}; try{ st=JSON.parse(localStorage.getItem('pb_pushbar')||'{}'); }catch(e){}
   if(st.t && Date.now()-st.t < (st.n>=3?30:4)*864e5) return;
-  box.innerHTML=`<div class="pushc"><span class="bl">🔔</span><div class="tx"><b>خلّي العروض توصلك أول بأول</b><span>${needInstall?'نزّلي الموقع كأبلكيشن على الآيفون عشان توصلك إشعارات بالجديد والخصومات':'إشعار لما ينزل منتج جديد أو خصم — من غير إزعاج'}</span></div><button class="go" id="pushGo">${needInstall?'إزاي؟':'فعّلي'}</button><button class="x" id="pushX" aria-label="إقفال">✕</button></div>`;
-  $('#pushX').onclick=()=>{ try{ localStorage.setItem('pb_pushbar',JSON.stringify({t:Date.now(),n:(st.n||0)+1})); }catch(e){} box.innerHTML=''; };
-  $('#pushGo').onclick=()=>{ if(needInstall){ goHowto(); return; } pushEnable(); };
+  /* wait for any open window (the join-the-group popup, a product) to close first */
+  if(document.querySelector('.ov:not(.out)')||document.querySelector('.zoom')){ if(n<80) setTimeout(()=>pushBar(n+1),1500); return; }
+  const later=()=>{ try{ localStorage.setItem('pb_pushbar',JSON.stringify({t:Date.now(),n:(st.n||0)+1})); }catch(e){} };
+  const ov=sheet('',`<div class="joinpop pushpop"><div class="bell">🔔</div>
+      <h4>خلّي العروض توصلك أول بأول</h4>
+      <p>${needInstall?'نزّلي الموقع كأبلكيشن على الآيفون الأول، وبعدها فعّلي الإشعارات من جوّه.':'هنبعتلك إشعار على موبايلك — من غير إزعاج.'}</p>
+      <ul><li>✨ أول ما ينزل منتج جديد</li><li>🔥 الخصومات قبل ما تخلص</li><li>🤍 تقدري تقفليها في أي وقت</li></ul></div>`,
+    `<button class="btn" id="pushX">مش دلوقتي</button><button class="btn p" id="pushGo">${needInstall?'وريني إزاي':'فعّلي الإشعارات 🔔'}</button>`);
+  PUSH.ov=ov; ov.onclosed=()=>{ PUSH.ov=null; if(!PUSH.done) later(); };
+  ov.querySelector('#pushX').onclick=()=>ov.close();
+  ov.querySelector('#pushGo').onclick=()=>{ if(needInstall){ PUSH.done=true; later(); ov.close(); setTimeout(goHowto,350); return; } pushEnable(); };
 }
 async function pushEnable(){
-  const b=$('#pushGo'); if(b){ b.disabled=true; b.textContent='ثواني…'; }
+  const b=$('#pushGo'), shut=()=>{ PUSH.done=true; if(PUSH.ov) PUSH.ov.close(); };
+  if(b){ b.disabled=true; b.textContent='ثواني…'; }
   try{
     const perm=await Notification.requestPermission();
-    if(perm!=='granted'){ toast('الإشعارات مقفولة من المتصفح. تقدري تفتحيها من إعدادات الموقع'); try{ localStorage.setItem('pb_pushbar',JSON.stringify({t:Date.now(),n:3})); }catch(e){} $('#pushbar').innerHTML=''; return; }
+    if(perm!=='granted'){ try{ localStorage.setItem('pb_pushbar',JSON.stringify({t:Date.now(),n:3})); }catch(e){} shut(); toast('الإشعارات مقفولة من المتصفح. تقدري تفتحيها من إعدادات الموقع'); return; }
     const reg=PUSH.reg||await navigator.serviceWorker.register('sw.js'); await navigator.serviceWorker.ready;
     PUSH.sub=await reg.pushManager.getSubscription() || await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64u(VAPID_PUB)});
     await pushSave(PUSH.sub);
-    $('#pushbar').innerHTML=''; toast('تمام 🔔 هنبعتلك الجديد والخصومات أول بأول');
+    shut(); toast('تمام 🔔 هنبعتلك الجديد والخصومات أول بأول');
     try{ reg.showNotification('PicksBuy 🔔',{body:'الإشعارات اتفعّلت. هنقولك أول ما ينزل جديد أو خصم 💕',icon:'img/icon-192.png?v=2',badge:'img/icon-192.png?v=2',dir:'rtl',lang:'ar',data:{url:'./'}}); }catch(e){}
-  }catch(e){ console.warn('push',e); toast('الإشعارات ماتفعّلتش، جرّبي تاني'); if(b){ b.disabled=false; b.textContent='فعّلي'; } }
+  }catch(e){ console.warn('push',e); toast('الإشعارات ماتفعّلتش، جرّبي تاني'); if(b){ b.disabled=false; b.textContent='فعّلي الإشعارات 🔔'; } }
 }
 async function setOrderStatus(id,st){
   if(st==='cancelled' && !await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return false;
