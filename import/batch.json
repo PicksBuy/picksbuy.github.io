@@ -271,6 +271,12 @@
    "name": "بادي ميست",
    "parentId": "perfume",
    "order": 5
+  },
+  {
+   "id": "mascara",
+   "name": "ماسكرا",
+   "parentId": "makeup",
+   "order": 2
   }
  ],
  "products": [
@@ -12961,6 +12967,106 @@
    "promo": false,
    "hidden": false,
    "createdAt": "2026-11-15T20:30:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 0.6,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-es-extreme-wp",
+   "brand": "essence",
+   "name": "I Love Extreme Volume Mascara Waterproof – Black 12ml",
+   "desc": "ماسكرا I Love Extreme من إيسنس – ضد الماية.\nبتدي حجم وكثافة قوية للرموش بلون أسود غامق، وبتثبت طول اليوم.\nمن غير عطر ومن غير كحول.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "mascara",
+   "price": 390,
+   "oldPrice": null,
+   "images": [
+    "img/dm/es-extreme-wp-1.jpg",
+    "img/dm/es-extreme-wp-2.jpg",
+    "img/dm/es-extreme-wp-3.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-18T07:35:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 2.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-es-lash-princess",
+   "brand": "essence",
+   "name": "Lash Princess False Lash Effect Mascara – Black 12ml",
+   "desc": "ماسكرا Lash Princess المشهورة من إيسنس – تأثير الرموش الصناعية.\nبتطوّل وتكثّف الرموش وتفصلها من أول وش.\nڤيجان، من غير عطر ومن غير كحول.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "mascara",
+   "price": 455,
+   "oldPrice": null,
+   "images": [
+    "img/dm/es-lash-princess-1.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-18T07:35:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 3.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-es-extreme-crazy",
+   "brand": "essence",
+   "name": "I Love Extreme Crazy Volume Mascara – Black 12ml",
+   "desc": "ماسكرا I Love Extreme Crazy Volume من إيسنس.\nفرشة كبيرة بتدي أقصى حجم وكثافة للرموش بلون أسود غامق.\nمن غير عطر، من غير كحول، ومن غير بارابين.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "mascara",
+   "price": 390,
+   "oldPrice": null,
+   "images": [
+    "img/dm/es-extreme-crazy-1.jpg",
+    "img/dm/es-extreme-crazy-2.jpg",
+    "img/dm/es-extreme-crazy-3.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-18T07:35:00+02:00",
+   "needsPrice": false,
+   "src": {
+    "eur": 2.95,
+    "rate": 60.63,
+    "url": "https://www.dm.de"
+   }
+  },
+  {
+   "id": "dm-roll-sens",
+   "brand": "Balea",
+   "name": "Deo Roll-on Sensitive with Aloe Vera 50ml",
+   "desc": "مزيل عرق رول أون للبشرة الحساسة بالألوفيرا – حماية 24 ساعة.\nلطيف على البشرة حتى بعد إزالة الشعر.\n0% ألومنيوم ومن غير كحول. ڤيجان.\n\n📦 بيتطلب مخصوص من dm ألمانيا 🇩🇪، أصلي 100%.",
+   "countryId": "de",
+   "categoryId": "deo",
+   "price": 240,
+   "oldPrice": null,
+   "images": [
+    "img/dm/roll-sens-1.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-18T07:35:00+02:00",
    "needsPrice": false,
    "src": {
     "eur": 0.6,
