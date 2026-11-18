@@ -1,0 +1,31 @@
+name: Notify subscribers
+on:
+  schedule:
+    - cron: '7,27,47 * * * *'
+  workflow_dispatch:
+    inputs:
+      test:
+        description: 'Send a test notification to everyone (1 = yes)'
+        default: '0'
+permissions:
+  contents: write
+concurrency: notify
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i --no-save --silent web-push@3
+      - run: node tools/notify.mjs
+        env:
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          PB_TEST: ${{ github.event.inputs.test }}
+      - name: Save state
+        run: |
+          git config user.name "picksbuy-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add import/notify-state.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -qm "notify state" && git pull -q --rebase && git push -q)
