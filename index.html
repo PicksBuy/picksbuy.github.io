@@ -1829,7 +1829,7 @@ function b64u(s){ const p='='.repeat((4-s.length%4)%4), r=atob((s+p).replace(/-/
 async function pushSave(sub){ const j=sub.toJSON(); ok(await sb.rpc('push_subscribe',{p_endpoint:j.endpoint,p_p256dh:j.keys.p256dh,p_auth:j.keys.auth})); try{ localStorage.setItem('pb_push_ep',j.endpoint); }catch(e){} }
 async function pushInit(){
   if(!sb) return;
-  try{ let r=sessionStorage.getItem('pb_push_ok'); if(r==null){ const {data,error}=await sb.rpc('push_ready'); r=(!error&&data===true)?'1':'0'; sessionStorage.setItem('pb_push_ok',r); } PUSH.ok=r==='1'; }catch(e){ PUSH.ok=false; }
+  try{ let r=localStorage.getItem('pb_push_ok'); if(r!=='1'){ const {data,error}=await sb.rpc('push_ready'); r=(!error&&data===true)?'1':'0'; localStorage.setItem('pb_push_ok',r); } PUSH.ok=r==='1'; }catch(e){ PUSH.ok=false; }
   if(!PUSH.ok) return;
   if(pushCan()){ try{
     const reg=await navigator.serviceWorker.register('sw.js'); PUSH.reg=reg;
@@ -1837,14 +1837,22 @@ async function pushInit(){
     /* keep the server copy fresh: browsers rotate the endpoint from time to time */
     if(PUSH.sub && Notification.permission==='granted'){ let last=''; try{ last=localStorage.getItem('pb_push_ep')||''; }catch(e){} if(last!==PUSH.sub.endpoint) pushSave(PUSH.sub).catch(()=>{}); }
   }catch(e){ console.warn('sw',e); } }
-  setTimeout(pushBar,2500);
+  setTimeout(pushBar,1700);
+}
+function pushSnoozed(){ let st={}; try{ st=JSON.parse(localStorage.getItem('pb_pushbar')||'{}'); }catch(e){} return !!(st.t && Date.now()-st.t < (st.n>=3?30:4)*864e5); }
+/* will the notifications popup be offered on this visit? (answers without waiting for the network) */
+function pushWanted(){
+  let ok=PUSH.ok; if(!ok){ try{ ok=localStorage.getItem('pb_push_ok')==='1'; }catch(e){} } if(!ok) return false;
+  if(pushSnoozed()) return false;
+  if(isIOS()&&!isStandalone()) return true;
+  return pushCan() && Notification.permission==='default' && !PUSH.sub;
 }
 function pushBar(n=0){
   if(!PUSH.ok || PUSH.ov) return;
   const ios=isIOS(), needInstall=ios&&!isStandalone();
-  if(!needInstall && (!pushCan() || PUSH.sub || Notification.permission==='denied')) return;
+  if(!needInstall && (!pushCan() || PUSH.sub || Notification.permission==='denied')) { pushAfter(); return; }
   let st={}; try{ st=JSON.parse(localStorage.getItem('pb_pushbar')||'{}'); }catch(e){}
-  if(st.t && Date.now()-st.t < (st.n>=3?30:4)*864e5) return;
+  if(pushSnoozed()) { pushAfter(); return; }
   /* wait for any open window (the join-the-group popup, a product) to close first */
   if(document.querySelector('.ov:not(.out)')||document.querySelector('.zoom')){ if(n<80) setTimeout(()=>pushBar(n+1),1500); return; }
   const later=()=>{ try{ localStorage.setItem('pb_pushbar',JSON.stringify({t:Date.now(),n:(st.n||0)+1})); }catch(e){} };
@@ -1853,10 +1861,12 @@ function pushBar(n=0){
       <p>${needInstall?'نزّلي الموقع كأبلكيشن على الآيفون الأول، وبعدها فعّلي الإشعارات من جوّه.':'هنبعتلك إشعار على موبايلك — من غير إزعاج.'}</p>
       <ul><li>✨ أول ما ينزل منتج جديد</li><li>🔥 الخصومات قبل ما تخلص</li><li>🤍 تقدري تقفليها في أي وقت</li></ul></div>`,
     `<button class="btn" id="pushX">مش دلوقتي</button><button class="btn p" id="pushGo">${needInstall?'وريني إزاي':'فعّلي الإشعارات 🔔'}</button>`);
-  PUSH.ov=ov; ov.onclosed=()=>{ PUSH.ov=null; if(!PUSH.done) later(); };
+  PUSH.ov=ov; ov.onclosed=()=>{ PUSH.ov=null; if(!PUSH.done) later(); setTimeout(pushAfter,900); };
   ov.querySelector('#pushX').onclick=()=>ov.close();
   ov.querySelector('#pushGo').onclick=()=>{ if(needInstall){ PUSH.done=true; later(); ov.close(); setTimeout(goHowto,350); return; } pushEnable(); };
 }
+/* whatever was waiting for the notifications popup (the join-the-group popup) runs once it is done */
+function pushAfter(){ const f=PUSH.after; PUSH.after=null; if(f) f(); }
 async function pushEnable(){
   const b=$('#pushGo'), shut=()=>{ PUSH.done=true; if(PUSH.ov) PUSH.ov.close(); };
   if(b){ b.disabled=true; b.textContent='ثواني…'; }
@@ -1994,6 +2004,7 @@ function openImport(items){
 function groupLink(){ const g=String(S.settings.group||'').trim(); return /^https:\/\/(chat\.whatsapp\.com|wa\.me|whatsapp\.com)\//i.test(g)?g:''; }
 function paintGroup(){ const g=groupLink(), a=$('#grpLink'); a.style.display=g?'inline':'none'; $('#grpSep').style.display=g?'inline':'none'; if(g) a.href=g; }
 function maybeJoinPopup(){
+  if(pushWanted() && !PUSH.joinWaited){ PUSH.joinWaited=true; PUSH.after=maybeJoinPopup; setTimeout(()=>{ if(PUSH.after===maybeJoinPopup && !PUSH.ov) pushAfter(); },9000); return; }
   const g=groupLink(); if(!g || S.canEdit || window.__noJoin || document.querySelector('.ov:not(.out)')) return;
   let st={}; try{ st=JSON.parse(localStorage.getItem('pb_join')||'{}'); }catch(e){}
   if(st.joined) return;
