@@ -36,12 +36,12 @@ function compose(fresh, sales) {
   const brands = l => [...new Set(l.map(p => p.brand).filter(Boolean))].slice(0, 3).join(' · ');
   if (fresh.length && sales.length) {
     const top = Math.max(...sales.map(pct));
-    return { title: `🛍️ ${fresh.length} منتج جديد و${sales.length} خصم على PicksBuy`, body: cut(`خصومات لحد ${top}% — ${brands([...sales, ...fresh])}`, 120), image: imgUrl(sales[0]) || imgUrl(fresh[0]), url: './' };
+    return { title: `🛍️ ${fresh.length} منتج جديد و${sales.length} خصم على PicksBuy`, body: cut(`خصومات لحد ${top}% — ${brands([...sales, ...fresh])}`, 120), image: imgUrl(sales[0]) || imgUrl(fresh[0]), url: './#offers' };
   }
   if (sales.length === 1) { const p = sales[0];
     return { title: `🔥 خصم ${pct(p)}% على PicksBuy`, body: cut(`${label(p)} بـ ${fmt(p.price)} بدل ${fmt(p.old_price)} L.E`, 140), image: imgUrl(p), url: './#p-' + p.id }; }
   if (sales.length) { const top = Math.max(...sales.map(pct));
-    return { title: `🔥 ${sales.length} عروض جديدة — خصومات لحد ${top}%`, body: cut(brands(sales) || 'الحقي قبل ما تخلص', 120), image: imgUrl(sales.sort((a, b) => pct(b) - pct(a))[0]), url: './' }; }
+    return { title: `🔥 ${sales.length} عروض جديدة — خصومات لحد ${top}%`, body: cut(brands(sales) || 'الحقي قبل ما تخلص', 120), image: imgUrl(sales.sort((a, b) => pct(b) - pct(a))[0]), url: './#offers' }; }
   if (fresh.length === 1) { const p = fresh[0];
     return { title: '✨ وصل جديد على PicksBuy', body: cut(`${label(p)} — ${fmt(p.price)} L.E`, 140), image: imgUrl(p), url: './#p-' + p.id }; }
   return { title: `✨ ${fresh.length} منتج جديد نزلوا دلوقتي`, body: cut(brands(fresh) ? `${brands(fresh)} وغيرهم — شوفيهم قبل ما يخلصوا` : 'شوفيهم قبل ما يخلصوا', 120), image: imgUrl(fresh[0]), url: './' };
@@ -65,6 +65,23 @@ async function send(payload) {
   return { sent, total: subs.length };
 }
 
+async function broadcast(st) {
+  // a message the shop owner wrote in the site (settings.broadcast); sent once, at any hour
+  let b = null;
+  try {
+    if (process.env.PB_FAKE_SET) b = JSON.parse(fs.readFileSync(process.env.PB_FAKE_SET, 'utf8')).broadcast;
+    else { const r = await fetch(`${SB_URL}/rest/v1/settings?id=eq.1&select=data`, { headers: H }); if (r.ok) b = ((await r.json())[0] || {}).data?.broadcast; }
+  } catch (e) { console.log('settings', e.message); }
+  if (!b || !b.id || b.id === st.bid) return false;
+  const fresh = b.at && Date.now() - Date.parse(b.at) < 24 * 3600e3;
+  const title = String(b.title || '').trim().slice(0, 70), body = String(b.body || '').trim().slice(0, 160);
+  if (!fresh || title.length < 3 || body.length < 3 || !KEY) { st.bid = b.id; return true; }
+  console.log('broadcast:', JSON.stringify({ title, body }));
+  if (DRY) return false;
+  try { await send({ title, body, url: './', tag: 'pb-msg' }); } catch (e) { console.log('broadcast send error:', e.message); return false; }
+  st.bid = b.id; st.last = Date.now(); return true;
+}
+
 const main = async () => {
   if (TEST) { if (!KEY) throw new Error('PUSH_KEY secret is missing'); await send({ title: 'PicksBuy 🔔 تجربة', body: 'ده إشعار تجربة — الإشعارات شغالة تمام ✅', url: './', tag: 'pb-test' }); return; }
   const ps = await products();
@@ -72,6 +89,7 @@ const main = async () => {
   const snap = p => [num(p.price), num(p.old_price)];
   const save = s => { if (!DRY) fs.writeFileSync(STATE, JSON.stringify(s)); };
   if (!st) { const seen = {}; for (const p of ps) if (live(p)) seen[p.id] = snap(p); save({ last: 0, seen }); console.log('first run: remembered', Object.keys(seen).length, 'products, nothing sent'); return; }
+  if (await broadcast(st)) save(st);
   const fresh = [], sales = [];
   for (const p of ps) { if (!live(p)) continue; const prev = st.seen[p.id];
     if (!prev) fresh.push(p);
