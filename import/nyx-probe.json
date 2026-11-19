@@ -1,729 +1,1053 @@
 {
-"amz": {
-"51zdLqgadJL": [
-200,
-40305
-],
-"71nm1zw-ZmL": [
-200,
-68280
-],
-"81cbDonQkoL": [
-200,
-115626
-],
-"51XVmCC3eHL": [
-200,
-40722
-],
-"61X+aBGeBVL": [
-200,
-73703
-],
-"71qDC28ARaL": [
-200,
-78754
-],
-"71AEE6k6QaL": [
-200,
-65813
-],
-"81CTdR7Kd8L": [
-200,
-93479
-],
-"81+8nDrB6VL": [
-200,
-88449
-],
-"61voDIqUmoL": [
-200,
-41694
-],
-"61xVuNiZMaL": [
-200,
-68629
-],
-"61221B2a-ZL": [
-200,
-70212
-],
-"51zdKvYNFCL": [
-200,
-29820
-],
-"71kZ6xfi0iL": [
-200,
-74737
-],
-"71LoNpmEcjL": [
-200,
-76800
-],
-"71Q6d3MbunL": [
-200,
-92505
-],
-"617Bp6-pltL": [
-200,
-64750
-],
-"81iw-2je-cL": [
-200,
-99478
-],
-"61czIPvF9rL": [
-200,
-31400
-],
-"71MMf4tlLwL": [
-200,
-62610
-],
-"91Z7TJQcGKL": [
-200,
-171151
-],
-"615weN41jHL": [
-200,
-42342
-],
-"81OzzD-Oh9L": [
-200,
-97663
-],
-"71wHMS9flaL": [
-200,
-46606
-],
-"51Nj0hcoopL": [
-200,
-32178
-],
-"81655oLP9tL": [
-200,
-139012
-],
-"81An7rTlkcL": [
-200,
-156706
-],
-"41OS9mEsH+L": [
-200,
-18053
-],
-"51B-0WXaZBL": [
-200,
-52374
-],
-"51FWDBp5BWL": [
-200,
-43714
-],
-"51GM9aEfo8L": [
-200,
-29591
-],
-"71qcruy1UPL": [
-200,
-76601
-],
-"61vtntxSs4L": [
-200,
-74471
-],
-"51KVwGgTx0L": [
-200,
-33219
-],
-"61cH1bh+04L": [
-200,
-100444
-],
-"61WxnSWvvDL": [
-200,
-106231
-],
-"51pkKaAVN3L": [
-200,
-30663
-],
-"61d1uBBT6UL": [
-200,
-87478
-],
-"61SCW3gtqbL": [
-200,
-91147
-],
-"41cqM3FYB-L": [
-200,
-21237
-],
-"51w8qZ-m2dL": [
-200,
-57862
-],
-"611ME-xXHvL": [
-200,
-78000
-],
-"410SRlLUJ0L": [
-200,
-24996
-],
-"610KFHuZSnL": [
-200,
-75926
-],
-"61rUV+DMyQL": [
-200,
-88782
-],
-"61xwNVsIS+L": [
-200,
-54922
-],
-"817w1OvcNmL": [
-200,
-169712
-],
-"71nW0osgYAL": [
-200,
-93595
-],
-"61Nb1XUUeDL": [
-200,
-32785
-],
-"71a9iJtiWFL": [
-200,
-87397
-],
-"81Uyf7W6gBL": [
-200,
-92928
-]
-},
-"kiko": {
-"409": [
-200,
-68650,
-"image/webp",
-"webp"
-],
-"410": [
-200,
-62562,
-"image/webp",
-"webp"
-],
-"411": [
-200,
-65516,
-"image/webp",
-"webp"
-],
-"412": [
-200,
-68254,
-"image/webp",
-"webp"
-],
-"413": [
-200,
-142988,
-"image/webp",
-"webp"
-],
-"414": [
-200,
-61994,
-"image/webp",
-"webp"
-],
-"421": [
-200,
-61000,
-"image/webp",
-"webp"
-],
-"422": [
-200,
-61730,
-"image/webp",
-"webp"
-],
-"427": [
-200,
-60936,
-"image/webp",
-"webp"
-],
-"435": [
-200,
-61858,
-"image/webp",
-"webp"
-],
-"435b": [
-200,
-122898,
-"image/webp",
-"webp"
-]
-},
-"categories": [
+"n": 268,
+"sized": 39,
+"amz": [
+[
+"earth-strata-off-white-aurora-coffee",
+3760,
+95,
+false,
+19,
+19,
+[
 {
-"id": "makeup",
-"name": "ميكب",
-"parent_id": null,
-"ord": 1
+"p": 3210,
+"q": 5,
+"s": "36 (US 4)"
 },
 {
-"id": "skin",
-"name": "عناية بالبشرة",
-"parent_id": null,
-"ord": 2
-},
-{
-"id": "hair",
-"name": "عناية بالشعر",
-"parent_id": null,
-"ord": 3
-},
-{
-"id": "clothes",
-"name": "ملابس",
-"parent_id": null,
-"ord": 4
-},
-{
-"id": "perfume",
-"name": "عطور",
-"parent_id": null,
-"ord": 5
-},
-{
-"id": "acc",
-"name": "إكسسوارات",
-"parent_id": null,
-"ord": 6
-},
-{
-"id": "body",
-"name": "عناية بالجسم",
-"parent_id": null,
-"ord": 7
-},
-{
-"id": "vitamins",
-"name": "فيتامينات ومكملات",
-"parent_id": null,
-"ord": 8
-},
-{
-"id": "mascara",
-"name": "ماسكرا",
-"parent_id": "makeup",
-"ord": 1
-},
-{
-"id": "lips",
-"name": "روج وليب",
-"parent_id": "makeup",
-"ord": 2
-},
-{
-"id": "powder",
-"name": "بودرة",
-"parent_id": "makeup",
-"ord": 3
-},
-{
-"id": "facewash",
-"name": "غسول وش",
-"parent_id": "skin",
-"ord": 1
-},
-{
-"id": "moist",
-"name": "مرطبات",
-"parent_id": "skin",
-"ord": 2
-},
-{
-"id": "bodymist",
-"name": "بادي ميست",
-"parent_id": "perfume",
-"ord": 1
-},
-{
-"id": "serum",
-"name": "سيروم",
-"parent_id": "skin",
-"ord": 3
-},
-{
-"id": "sunscreen",
-"name": "صن سكرين",
-"parent_id": "skin",
-"ord": 4
-},
-{
-"id": "eyes",
-"name": "آيلاينر وكحل",
-"parent_id": "makeup",
-"ord": 4
-},
-{
-"id": "cheeks",
-"name": "بلاشر",
-"parent_id": "makeup",
-"ord": 5
-},
-{
-"id": "deo",
-"name": "مزيل عرق",
-"parent_id": "body",
-"ord": 1
-},
-{
-"id": "handcream",
-"name": "كريم إيد",
-"parent_id": "body",
-"ord": 2
-},
-{
-"id": "womenhealth",
-"name": "صحة المرأة",
-"parent_id": null,
-"ord": 9
-},
-{
-"id": "meno-supp",
-"name": "مكملات المينوبوز",
-"parent_id": "womenhealth",
-"ord": 1
-},
-{
-"id": "intimate",
-"name": "عناية حساسة",
-"parent_id": "womenhealth",
-"ord": 2
-},
-{
-"id": "cooling",
-"name": "تبريد وراحة",
-"parent_id": "womenhealth",
-"ord": 3
-},
-{
-"id": "women-vit",
-"name": "فيتامينات للستات",
-"parent_id": "vitamins",
-"ord": 1
-},
-{
-"id": "hsn",
-"name": "شعر وبشرة وأظافر",
-"parent_id": "vitamins",
-"ord": 2
-},
-{
-"id": "omega",
-"name": "أوميجا 3 وفيتامينات شاملة",
-"parent_id": "vitamins",
-"ord": 3
-},
-{
-"id": "pregnancy",
-"name": "حمل ورضاعة",
-"parent_id": "vitamins",
-"ord": 4
-},
-{
-"id": "foundation",
-"name": "فاونديشن وكونسيلر",
-"parent_id": "makeup",
-"ord": 5
-},
-{
-"id": "setting",
-"name": "برايمر وسبراي تثبيت",
-"parent_id": "makeup",
-"ord": 6
-},
-{
-"id": "brows",
-"name": "حواجب",
-"parent_id": "makeup",
-"ord": 7
-},
-{
-"id": "home",
-"name": "للبيت",
-"parent_id": null,
-"ord": 9
-},
-{
-"id": "candles",
-"name": "شموع معطرة",
-"parent_id": "home",
-"ord": 1
-},
-{
-"id": "perfume-w",
-"name": "برفانات حريمي",
-"parent_id": "perfume",
-"ord": 1
-},
-{
-"id": "perfume-m",
-"name": "برفانات رجالي",
-"parent_id": "perfume",
-"ord": 2
-},
-{
-"id": "perfume-gift",
-"name": "أطقم هدايا",
-"parent_id": "perfume",
-"ord": 3
-},
-{
-"id": "perfume-u",
-"name": "برفانات للجنسين",
-"parent_id": "perfume",
-"ord": 3
-},
-{
-"id": "minerals",
-"name": "فيتامين د وماغنسيوم وكالسيوم",
-"parent_id": "vitamins",
-"ord": 5
-},
-{
-"id": "kids-vit",
-"name": "فيتامينات أطفال",
-"parent_id": "vitamins",
-"ord": 6
-},
-{
-"id": "bodywash",
-"name": "شاور جل وسكراب",
-"parent_id": "body",
-"ord": 3
-},
-{
-"id": "babycare",
-"name": "عناية بالبيبي",
-"parent_id": "body",
-"ord": 4
-},
-{
-"id": "period",
-"name": "راحة الدورة",
-"parent_id": "womenhealth",
-"ord": 4
-},
-{
-"id": "energy",
-"name": "مناعة وطاقة (فيتامين سي و B وحديد)",
-"parent_id": "vitamins",
-"ord": 7
-},
-{
-"id": "joints",
-"name": "مفاصل",
-"parent_id": "vitamins",
-"ord": 8
-},
-{
-"id": "pk-pj",
-"name": "بيجامات ولانجري",
-"parent_id": "clothes",
-"ord": 1
-},
-{
-"id": "pk-tops",
-"name": "توبات وتيشيرتات",
-"parent_id": "clothes",
-"ord": 2
-},
-{
-"id": "pk-bottoms",
-"name": "بناطيل وجينز وجيبات",
-"parent_id": "clothes",
-"ord": 3
-},
-{
-"id": "pk-dress",
-"name": "فساتين",
-"parent_id": "clothes",
-"ord": 4
-},
-{
-"id": "pk-active",
-"name": "لبس رياضي",
-"parent_id": "clothes",
-"ord": 5
-},
-{
-"id": "pk-outer",
-"name": "جاكيتات وهوديز وبليزرات",
-"parent_id": "clothes",
-"ord": 6
-},
-{
-"id": "pk-acc",
-"name": "أحذية وشنط وإكسسوارات",
-"parent_id": "clothes",
-"ord": 7
-},
-{
-"id": "hairstyle",
-"name": "ستايلنج وحماية من الحرارة",
-"parent_id": "hair",
-"ord": 5
-},
-{
-"id": "hairperfume",
-"name": "برفان شعر",
-"parent_id": "hair",
-"ord": 6
-},
-{
-"id": "dryshampoo",
-"name": "شامبو جاف",
-"parent_id": "hair",
-"ord": 7
-},
-{
-"id": "bodylotion",
-"name": "لوشن جسم",
-"parent_id": "body",
-"ord": 5
-},
-{
-"id": "sneakers",
-"name": "كوتشيات وأحذية",
-"parent_id": "clothes",
-"ord": 8
+"p": 3605,
+"q": 5,
+"s": "36⅔ (US 4.5)"
 }
 ],
-"countries": [
+"2026-11-19T17:47:04"
+],
+[
+"dusky-bronze-carbon-white",
+3605,
+35,
+false,
+7,
+7,
+[
 {
-"id": "uk",
-"name": "UK",
-"flag": "🇬🇧",
-"ord": 1,
-"info": ""
+"p": 3605,
+"q": 5,
+"s": "36 (US 4)"
 },
 {
-"id": "us",
-"name": "USA",
-"flag": "🇺🇸",
-"ord": 2,
-"info": ""
-},
-{
-"id": "fr",
-"name": "France",
-"flag": "🇫🇷",
-"ord": 3,
-"info": ""
-},
-{
-"id": "es",
-"name": "Spain",
-"flag": "🇪🇸",
-"ord": 4,
-"info": ""
-},
-{
-"id": "de",
-"name": "Germany",
-"flag": "🇩🇪",
-"ord": 5,
-"info": ""
-},
-{
-"id": "nl",
-"name": "Netherlands",
-"flag": "🇳🇱",
-"ord": 6,
-"info": ""
-},
-{
-"id": "ae",
-"name": "Dubai",
-"flag": "🇦🇪",
-"ord": 7,
-"info": ""
-},
-{
-"id": "kr",
-"name": "Korea",
-"flag": "🇰🇷",
-"ord": 8,
-"info": ""
-},
-{
-"id": "jp",
-"name": "Japan",
-"flag": "🇯🇵",
-"ord": 9,
-"info": ""
-},
-{
-"id": "cn",
-"name": "China",
-"flag": "🇨🇳",
-"ord": 10,
-"info": ""
-},
-{
-"id": "in",
-"name": "India",
-"flag": "🇮🇳",
-"ord": 11,
-"info": ""
-},
-{
-"id": "id",
-"name": "Indonesia",
-"flag": "🇮🇩",
-"ord": 12,
-"info": ""
-},
-{
-"id": "ca",
-"name": "Canada",
-"flag": "🇨🇦",
-"ord": 13,
-"info": ""
-},
-{
-"id": "ma",
-"name": "Morocco",
-"flag": "🇲🇦",
-"ord": 14,
-"info": ""
-},
-{
-"id": "ru",
-"name": "Russia",
-"flag": "🇷🇺",
-"ord": 15,
-"info": ""
-},
-{
-"id": "gh",
-"name": "Ghana",
-"flag": "🇬🇭",
-"ord": 16,
-"info": ""
+"p": 3450,
+"q": 5,
+"s": "36⅔ (US 4.5)"
 }
 ],
-"ver": "2"
+"2026-11-19T17:47:04"
+],
+[
+"clay-black-white",
+3605,
+80,
+false,
+16,
+16,
+[
+{
+"p": 3605,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3210,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"blanch-cargo-wonder-beige-off-white",
+3605,
+45,
+false,
+9,
+9,
+[
+{
+"p": 3605,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3605,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"cardboard-gum-black",
+3605,
+90,
+false,
+18,
+18,
+[
+{
+"p": 3475,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3475,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"black-white-black",
+3830,
+100,
+false,
+20,
+20,
+[
+{
+"p": 2585,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 2860,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"dark-blue-white-off-white",
+3605,
+95,
+false,
+19,
+19,
+[
+{
+"p": 2960,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3605,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"shadow-navy-glory-grey-off-white",
+3230,
+5,
+false,
+1,
+1,
+[
+{
+"p": 3230,
+"q": 5,
+"s": "36 (US 4)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"shadow-brown-black-white",
+3475,
+25,
+false,
+5,
+5,
+[
+{
+"p": 3475,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3375,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"white-black-off-white",
+3465,
+15,
+false,
+3,
+3,
+[
+{
+"p": 3315,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3465,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"black-white-gum",
+3210,
+85,
+false,
+17,
+17,
+[
+{
+"p": 3210,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3210,
+"q": 5,
+"s": "38⅔ (US 6)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"bronze-strata-dark-brown-off-white",
+4960,
+45,
+false,
+9,
+9,
+[
+{
+"p": 4960,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+},
+{
+"p": 4960,
+"q": 5,
+"s": "37⅓ (US 5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"ink-utility-yellow-gum",
+2975,
+5,
+false,
+1,
+1,
+[
+{
+"p": 2975,
+"q": 5,
+"s": "36 (US 4)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"black-white-white",
+3605,
+85,
+false,
+17,
+17,
+[
+{
+"p": 3100,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+},
+{
+"p": 3605,
+"q": 5,
+"s": "37⅓ (US 5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"grey-grey-crystal-white",
+3605,
+5,
+false,
+1,
+1,
+[
+{
+"p": 3605,
+"q": 5,
+"s": "36 (US 4)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"black-carbon-gum",
+4960,
+30,
+false,
+6,
+6,
+[
+{
+"p": 3575,
+"q": 5,
+"s": "40 (US 7)"
+},
+{
+"p": 4960,
+"q": 5,
+"s": "40⅔ (US 7.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"grey-team-royal-blue-grey",
+4960,
+20,
+false,
+4,
+4,
+[
+{
+"p": 3605,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 2925,
+"q": 5,
+"s": "38 (US 5.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"grey-white-off-white",
+3605,
+100,
+false,
+20,
+20,
+[
+{
+"p": 2640,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3605,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"collegiate-burgundy-crystal-linen-off-white",
+4310,
+70,
+false,
+14,
+14,
+[
+{
+"p": 3660,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3170,
+"q": 5,
+"s": "37⅓ (US 5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"olive-strata-shadow-olive-gum",
+3760,
+90,
+false,
+18,
+18,
+[
+{
+"p": 3575,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 3760,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"grey-gum-collegiate-green",
+4310,
+100,
+false,
+20,
+20,
+[
+{
+"p": 3665,
+"q": 5,
+"s": "36 (US 4)"
+},
+{
+"p": 2870,
+"q": 5,
+"s": "36⅔ (US 4.5)"
+}
+],
+"2026-11-19T17:47:04"
+],
+[
+"grey-black-white",
+2925,
+70,
+false,
+14,
+14,
+[
+{
+"p": 2925,
+"q": 5,
+"s": "40 (US 7)"
+},
+{
+"p": 2925,
+"q": 5,
+"s": "40⅔ (US 7.5)"
+}
+],
+"2026-11-19T17:47:04"
+]
+],
+"bf24": [
+[
+"bf24-celimax",
+995,
+1560,
+5,
+0
+],
+[
+"bf24-skin1004-retinol",
+950,
+1560,
+5,
+0
+],
+[
+"bf24-skin1004-clay",
+890,
+1335,
+5,
+0
+],
+[
+"bf24-skin1004-ampoule",
+970,
+1615,
+5,
+0
+],
+[
+"bf24-skin1004-cream",
+975,
+1275,
+5,
+0
+],
+[
+"bf24-abh-sugarplum",
+940,
+1675,
+5,
+0
+],
+[
+"bf24-lancome-flutter",
+1220,
+1900,
+5,
+0
+],
+[
+"bf24-lancome-drama",
+1290,
+2015,
+5,
+0
+],
+[
+"bf24-lancome-idole-black",
+995,
+1900,
+5,
+0
+],
+[
+"bf24-chi-helmet",
+860,
+1785,
+5,
+0
+],
+[
+"bf24-chi-iron",
+2270,
+5860,
+5,
+0
+],
+[
+"bf24-chi-silk-59",
+765,
+1390,
+5,
+0
+],
+[
+"bf24-chi-keratin-mist",
+890,
+1275,
+5,
+0
+],
+[
+"bf24-tarte-duo",
+1785,
+3370,
+5,
+0
+],
+[
+"bf24-lancome-idole-brown",
+995,
+1900,
+5,
+0
+],
+[
+"bf24-chi-ironguard",
+990,
+1335,
+5,
+0
+],
+[
+"bf24-chi-silk-177",
+1100,
+2135,
+5,
+0
+],
+[
+"bf24-kiko-smart-fusion",
+490,
+null,
+null,
+10
+]
+],
+"other_sized": [
+[
+"bf-lotion",
+null,
+false,
+[
+[
+"Spring Blossom",
+1
+],
+[
+"Fresh Flower",
+1
+]
+]
+],
+[
+"bf-fitme",
+null,
+false,
+[
+[
+"128",
+2
+]
+]
+],
+[
+"nyx-slim-lip-liner",
+40,
+false,
+[
+[
+"Mauve",
+5
+],
+[
+"Natural",
+5
+],
+[
+"Nude Pink",
+5
+],
+[
+"Peekaboo Neutral",
+5
+],
+[
+"Nude Beige",
+5
+],
+[
+"Pale Pink",
+5
+]
+]
+],
+[
+"nyx-lip-lingerie-stain",
+70,
+false,
+[
+[
+"Tease U Later",
+5
+],
+[
+"Naughty Nude",
+5
+],
+[
+"Barely There",
+5
+],
+[
+"Steamy Spice",
+5
+],
+[
+"Lip Lock",
+5
+],
+[
+"Up To No Good",
+5
+]
+]
+],
+[
+"nyx-butter-gloss",
+35,
+false,
+[
+[
+"Madeleine",
+5
+],
+[
+"Angel Food Cake",
+5
+],
+[
+"Creme Brulee",
+5
+],
+[
+"Fortune Cookie",
+5
+],
+[
+"Ginger Snap",
+5
+],
+[
+"Praline",
+5
+]
+]
+],
+[
+"nyx-fat-oil",
+40,
+false,
+[
+[
+"Missed Call",
+5
+],
+[
+"Newsfeed",
+5
+],
+[
+"My Main",
+5
+],
+[
+"Follow Back",
+5
+],
+[
+"Status Update",
+5
+],
+[
+"Supermodel",
+5
+]
+]
+],
+[
+"nyx-cswsfoundation",
+40,
+false,
+[
+[
+"Porcelain",
+5
+],
+[
+"Buff",
+5
+],
+[
+"Medium Olive",
+5
+],
+[
+"Cappuccino",
+5
+],
+[
+"Chestnut",
+5
+],
+[
+"Deep Sable",
+5
+]
+]
+],
+[
+"nyx-epic-ink",
+5,
+false,
+[
+[
+"Black",
+5
+]
+]
+],
+[
+"nyx-brow-glue",
+25,
+false,
+[
+[
+"Clear",
+5
+],
+[
+"Taupe",
+5
+],
+[
+"Medium Brown",
+5
+],
+[
+"Dark Brown",
+5
+],
+[
+"Black",
+5
+]
+]
+],
+[
+"nyx-duck-plump-liner",
+40,
+false,
+[
+[
+"Dash of Cocoa",
+5
+],
+[
+"Touch Up Taupe",
+5
+],
+[
+"Nude Flip",
+5
+],
+[
+"Fill Em' In",
+5
+],
+[
+"Ducking Clear",
+5
+],
+[
+"Swollen Spice",
+5
+]
+]
+],
+[
+"nyx-buttermelt-blush",
+40,
+false,
+[
+[
+"All The Butta",
+5
+],
+[
+"Had Butta",
+5
+],
+[
+"My Butta Half",
+5
+],
+[
+"Butta Together",
+5
+],
+[
+"Butta With Time",
+5
+],
+[
+"U Know Butta",
+5
+]
+]
+],
+[
+"nyx-buttermelt-bronzer",
+40,
+false,
+[
+[
+"Butta Cup",
+5
+],
+[
+"Butta Than U",
+5
+],
+[
+"Do Butta",
+5
+],
+[
+"All Butta'd Up",
+5
+],
+[
+"Deserve Butta",
+5
+],
+[
+"Butta Biscuit",
+5
+]
+]
+],
+[
+"nyx-lip-iv",
+100,
+false,
+[
+[
+"Caramel Drip",
+5
+],
+[
+"Hydra Honey",
+5
+],
+[
+"Splash N Spice",
+5
+],
+[
+"Cocoa Quench",
+5
+],
+[
+"Mocha Me Wet",
+5
+],
+[
+"Espresso Soak",
+5
+]
+]
+],
+[
+"nyx-csws-powder",
+30,
+false,
+[
+[
+"Brightening Translucent",
+5
+],
+[
+"Fair",
+5
+],
+[
+"Light",
+5
+],
+[
+"Light Medium",
+5
+],
+[
+"Medium",
+5
+],
+[
+"Rich",
+5
+]
+]
+],
+[
+"nyx-bare-with-me-concealer",
+85,
+false,
+[
+[
+"Fair",
+5
+],
+[
+"Light",
+5
+],
+[
+"Medium Vanilla",
+5
+],
+[
+"Vanilla",
+5
+],
+[
+"Beige",
+5
+],
+[
+"Golden",
+5
+]
+]
+],
+[
+"bbw-candles-bf",
+null,
+false,
+[
+[
+"'Tis the Season",
+0
+],
+[
+"The Perfect Christmas",
+0
+],
+[
+"Winter",
+0
+],
+[
+"Cinnamon Pinecone",
+0
+],
+[
+"Tree Farm",
+0
+],
+[
+"Coffee & Whiskey",
+0
+]
+]
+],
+[
+"bf24-kiko-smart-fusion",
+null,
+false,
+[
+[
+"409 Peach",
+5
+],
+[
+"410 Watermelon",
+5
+],
+[
+"411 Coral",
+5
+],
+[
+"412 Strawberry Pink",
+5
+],
+[
+"413 Red Papaya",
+5
+],
+[
+"414 Poppy Red",
+5
+]
+]
+]
+],
+"types": [
+"int"
+]
 }
