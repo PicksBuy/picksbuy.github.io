@@ -1,908 +1,1220 @@
 {
-"sized": [
+"cats": [
 {
-"id": "bf-lotion",
-"b": "",
-"n": "Hand & Body Lotion",
-"c": null,
-"k": "body",
-"h": false,
-"im": 1,
-"img0": "img/lotion.jpg",
-"s": [
-[
-"Spring Blossom",
-1,
-0
-],
-[
-"Fresh Flower",
-1,
-0
-]
-]
+"id": "makeup",
+"name": "ميكب",
+"parent_id": null
 },
 {
-"id": "bf-fitme",
-"b": "Maybelline",
-"n": "Fit Me Compact Powder SPF32",
-"c": "in",
-"k": "powder",
-"h": false,
-"im": 1,
-"img0": "img/fitme.jpg",
-"s": [
-[
-"128",
-2,
-0
-]
-]
+"id": "skin",
+"name": "عناية بالبشرة",
+"parent_id": null
 },
 {
-"id": "nyx-slim-lip-liner",
-"b": "NYX Professional Makeup",
-"n": "Slim Lip Liner",
-"c": "fr",
-"k": "lips",
-"h": false,
-"im": 1,
-"img0": "img/nyx/nyx-slim-lip-liner-1.jpg",
-"s": [
-[
-"Mauve",
-5,
-1
-],
-[
-"Natural",
-5,
-1
-],
-[
-"Nude Pink",
-5,
-1
-],
-[
-"Peekaboo Neutral",
-5,
-1
-],
-[
-"Nude Beige",
-5,
-1
-],
-[
-"Pale Pink",
-5,
-1
-],
-[
-"Mahogany",
-5,
-1
-],
-[
-"Nude Truffle",
-5,
-1
-]
-]
+"id": "hair",
+"name": "عناية بالشعر",
+"parent_id": null
 },
 {
-"id": "nyx-lip-lingerie-stain",
-"b": "NYX Professional Makeup",
-"n": "Lip Lingerie Stain",
-"c": "fr",
-"k": "lips",
-"h": false,
-"im": 1,
-"img0": "img/nyx-lip-lingerie-stain.jpg",
-"s": [
-[
-"Tease U Later",
-5,
-1
-],
-[
-"Naughty Nude",
-5,
-1
-],
-[
-"Barely There",
-5,
-1
-],
-[
-"Steamy Spice",
-5,
-1
-],
-[
-"Lip Lock",
-5,
-1
-],
-[
-"Up To No Good",
-5,
-1
-],
-[
-"Cuff Me",
-5,
-1
-],
-[
-"After Hours",
-5,
-1
-],
-[
-"Send Nudes",
-5,
-1
-],
-[
-"Up All Night",
-5,
-1
-],
-[
-"Hot N Heavy",
-5,
-1
-],
-[
-"Wild Side",
-5,
-1
-],
-[
-"Tied Up",
-5,
-1
-],
-[
-"Flirt Alert",
-5,
-1
-]
-]
+"id": "clothes",
+"name": "ملابس",
+"parent_id": null
 },
 {
-"id": "nyx-butter-gloss",
-"b": "NYX Professional Makeup",
-"n": "Butter Gloss",
-"c": "fr",
-"k": "lips",
-"h": false,
-"im": 1,
-"img0": "img/nyx/nyx-butter-gloss-1.jpg",
-"s": [
-[
-"Madeleine",
-5,
-1
-],
-[
-"Angel Food Cake",
-5,
-1
-],
-[
-"Creme Brulee",
-5,
-1
-],
-[
-"Fortune Cookie",
-5,
-1
-],
-[
-"Ginger Snap",
-5,
-1
-],
-[
-"Praline",
-5,
-1
-],
-[
-"Tiramisu",
-5,
-1
-]
-]
+"id": "perfume",
+"name": "عطور",
+"parent_id": null
 },
 {
-"id": "nyx-fat-oil",
-"b": "NYX Professional Makeup",
-"n": "Fat Oil Lip Drip",
-"c": "fr",
-"k": "lips",
-"h": false,
-"im": 3,
-"img0": "img/nyx/nyx-fat-oil-1.jpg",
-"s": [
-[
-"Missed Call",
-5,
-1
-],
-[
-"Newsfeed",
-5,
-1
-],
-[
-"My Main",
-5,
-1
-],
-[
-"Follow Back",
-5,
-1
-],
-[
-"Status Update",
-5,
-1
-],
-[
-"Supermodel",
-5,
-1
-],
-[
-"Scrollin",
-5,
-1
-],
-[
-"That's Chic",
-5,
-1
-]
-]
+"id": "acc",
+"name": "إكسسوارات",
+"parent_id": null
 },
 {
-"id": "nyx-cswsfoundation",
-"b": "NYX Professional Makeup",
-"n": "Can't Stop Won't Stop Foundation",
-"c": "fr",
-"k": "foundation",
-"h": false,
-"im": 2,
-"img0": "img/nyx/nyx-cswsfoundation-light.jpg",
-"s": [
-[
-"Porcelain",
-5,
-1
-],
-[
-"Buff",
-5,
-1
-],
-[
-"Medium Olive",
-5,
-1
-],
-[
-"Cappuccino",
-5,
-1
-],
-[
-"Chestnut",
-5,
-1
-],
-[
-"Deep Sable",
-5,
-1
-],
-[
-"Deep Espresso",
-5,
-1
-],
-[
-"Deep Ebony",
-5,
-1
-]
-]
+"id": "body",
+"name": "عناية بالجسم",
+"parent_id": null
 },
 {
-"id": "nyx-epic-ink",
-"b": "NYX Professional Makeup",
-"n": "Epic Ink Liner",
-"c": "fr",
-"k": "eyes",
-"h": false,
-"im": 1,
-"img0": "img/nyx/nyx-epic-ink-1.jpg",
-"s": [
-[
-"Black",
-5,
-1
-]
-]
+"id": "vitamins",
+"name": "فيتامينات ومكملات",
+"parent_id": null
 },
 {
-"id": "nyx-brow-glue",
-"b": "NYX Professional Makeup",
-"n": "The Brow Glue",
-"c": "fr",
-"k": "brows",
-"h": false,
-"im": 1,
-"img0": "img/nyx/nyx-brow-glue-1.jpg",
-"s": [
-[
-"Clear",
-5,
-1
-],
-[
-"Taupe",
-5,
-1
-],
-[
-"Medium Brown",
-5,
-1
-],
-[
-"Dark Brown",
-5,
-1
-],
-[
-"Black",
-5,
-1
-]
-]
+"id": "mascara",
+"name": "ماسكرا",
+"parent_id": "makeup"
 },
 {
-"id": "nyx-duck-plump-liner",
-"b": "NYX Professional Makeup",
-"n": "Duck Plump Liner",
-"c": "fr",
-"k": "lips",
-"h": false,
-"im": 2,
-"img0": "img/nyx/nyx-duck-plump-liner-1.jpg",
-"s": [
-[
-"Dash of Cocoa",
-5,
-1
-],
-[
-"Touch Up Taupe",
-5,
-1
-],
-[
-"Nude Flip",
-5,
-1
-],
-[
-"Fill Em' In",
-5,
-1
-],
-[
-"Ducking Clear",
-5,
-1
-],
-[
-"Swollen Spice",
-5,
-1
-],
-[
-"Subtle Touch",
-5,
-1
-],
-[
-"Syringe Sienna",
-5,
-1
-]
-]
+"id": "lips",
+"name": "روج وليب",
+"parent_id": "makeup"
 },
 {
-"id": "nyx-buttermelt-blush",
-"b": "NYX Professional Makeup",
-"n": "Buttermelt Blush",
-"c": "fr",
-"k": "cheeks",
-"h": false,
-"im": 2,
-"img0": "img/nyx/nyx-buttermelt-blush-1.jpg",
-"s": [
-[
-"All The Butta",
-5,
-1
-],
-[
-"Had Butta",
-5,
-1
-],
-[
-"My Butta Half",
-5,
-1
-],
-[
-"Butta Together",
-5,
-1
-],
-[
-"Butta With Time",
-5,
-1
-],
-[
-"U Know Butta",
-5,
-1
-],
-[
-"Butta Than Before",
-5,
-1
-],
-[
-"Feeling Butta",
-5,
-1
-]
-]
+"id": "powder",
+"name": "بودرة",
+"parent_id": "makeup"
 },
 {
-"id": "nyx-buttermelt-bronzer",
-"b": "NYX Professional Makeup",
-"n": "Buttermelt Bronzer",
-"c": "fr",
-"k": "cheeks",
-"h": false,
-"im": 2,
-"img0": "img/nyx/nyx-buttermelt-bronzer-1.jpg",
-"s": [
-[
-"Butta Cup",
-5,
-1
-],
-[
-"Butta Than U",
-5,
-1
-],
-[
-"Do Butta",
-5,
-1
-],
-[
-"All Butta'd Up",
-5,
-1
-],
-[
-"Deserve Butta",
-5,
-1
-],
-[
-"Butta Biscuit",
-5,
-1
-],
-[
-"Butta Match",
-5,
-1
-],
-[
-"Butta Ballin",
-5,
-1
-]
-]
+"id": "facewash",
+"name": "غسول وش",
+"parent_id": "skin"
 },
 {
-"id": "nyx-lip-iv",
-"b": "NYX Professional Makeup",
-"n": "Lip IV Hydrating Gloss Stain",
-"c": "fr",
-"k": "lips",
-"h": false,
-"im": 2,
-"img0": "img/nyx/nyx-lip-iv-light.jpg",
-"s": [
-[
-"Caramel Drip",
-5,
-1
-],
-[
-"Hydra Honey",
-5,
-1
-],
-[
-"Splash N Spice",
-5,
-1
-],
-[
-"Cocoa Quench",
-5,
-1
-],
-[
-"Mocha Me Wet",
-5,
-1
-],
-[
-"Espresso Soak",
-5,
-1
-],
-[
-"Bubblegum Burst",
-5,
-1
-],
-[
-"Drippin In Rose",
-5,
-1
-],
-[
-"Blush Rush",
-5,
-1
-],
-[
-"Berry Thirsty",
-5,
-1
-],
-[
-"Red-y Set Wet",
-5,
-1
-],
-[
-"Burst That Tang",
-5,
-1
-],
-[
-"Cranberry Splash",
-5,
-1
-],
-[
-"Mauve N Moist",
-5,
-1
-],
-[
-"Water Bout Wine",
-5,
-1
-],
-[
-"Grape Gushin",
-5,
-1
-],
-[
-"Petal Pourin",
-5,
-1
-],
-[
-"Drippin Nude",
-5,
-1
-],
-[
-"Magenta Mist",
-5,
-1
-],
-[
-"Cherry Drenched",
-5,
-1
-]
-]
+"id": "moist",
+"name": "مرطبات",
+"parent_id": "skin"
 },
 {
-"id": "nyx-csws-powder",
-"b": "NYX Professional Makeup",
-"n": "Can't Stop Won't Stop Setting Powder",
-"c": "fr",
-"k": "powder",
-"h": false,
-"im": 1,
-"img0": "img/nyx/nyx-csws-powder-1.jpg",
-"s": [
-[
-"Brightening Translucent",
-5,
-1
-],
-[
-"Fair",
-5,
-1
-],
-[
-"Light",
-5,
-1
-],
-[
-"Light Medium",
-5,
-1
-],
-[
-"Medium",
-5,
-1
-],
-[
-"Rich",
-5,
-1
-]
-]
+"id": "bodymist",
+"name": "بادي ميست",
+"parent_id": "perfume"
 },
 {
-"id": "nyx-bare-with-me-concealer",
-"b": "NYX Professional Makeup",
-"n": "Bare With Me Concealer Serum",
-"c": "fr",
-"k": "foundation",
-"h": false,
-"im": 2,
-"img0": "img/nyx/nyx-bare-with-me-concealer-light.jpg",
-"s": [
-[
-"Fair",
-5,
-1
-],
-[
-"Light",
-5,
-1
-],
-[
-"Medium Vanilla",
-5,
-1
-],
-[
-"Vanilla",
-5,
-1
-],
-[
-"Beige",
-5,
-1
-],
-[
-"Golden",
-5,
-1
-],
-[
-"Medium Golden",
-5,
-1
-],
-[
-"Light Tan",
-5,
-1
-],
-[
-"Tan",
-5,
-1
-],
-[
-"Medium",
-5,
-1
-],
-[
-"Sand",
-5,
-1
-],
-[
-"Caramel",
-5,
-1
-],
-[
-"Deep Golden",
-5,
-1
-],
-[
-"Camel",
-5,
-1
-],
-[
-"Mocha",
-5,
-1
-],
-[
-"Rich",
-5,
-1
-],
-[
-"Deep",
-5,
-1
-]
-]
+"id": "serum",
+"name": "سيروم",
+"parent_id": "skin"
 },
 {
-"id": "bbw-candles-bf",
-"b": "Bath & Body Works",
-"n": "Single Wick Candles",
-"c": "us",
-"k": "candles",
-"h": false,
-"im": 7,
-"img0": "img/bbw/bbw-candles.jpg",
-"s": [
-[
-"'Tis the Season",
-0,
-1
-],
-[
-"The Perfect Christmas",
-0,
-1
-],
-[
-"Winter",
-0,
-1
-],
-[
-"Cinnamon Pinecone",
-0,
-1
-],
-[
-"Tree Farm",
-0,
-1
-],
-[
-"Coffee & Whiskey",
-0,
-1
-],
-[
-"Pumpkin Apple",
-0,
-1
-],
-[
-"Cranberry & Pomegranate",
-0,
-1
-],
-[
-"Leaves",
-0,
-1
-]
-]
+"id": "sunscreen",
+"name": "صن سكرين",
+"parent_id": "skin"
 },
 {
-"id": "bf24-kiko-smart-fusion",
-"b": "KIKO Milano",
-"n": "Smart Fusion Lipstick 3g",
-"c": "fr",
-"k": "lips",
-"h": false,
-"im": 4,
-"img0": "img/kiko/sfl-435.jpg",
-"s": [
-[
-"409 Peach",
-5,
-1
-],
-[
-"410 Watermelon",
-5,
-1
-],
-[
-"411 Coral",
-5,
-1
-],
-[
-"412 Strawberry Pink",
-5,
-1
-],
-[
-"413 Red Papaya",
-5,
-1
-],
-[
-"414 Poppy Red",
-5,
-1
-],
-[
-"421 Fuchsia",
-5,
-1
-],
-[
-"422 Crimson Red",
-5,
-1
-],
-[
-"427 Lively Pink",
-5,
-1
-],
-[
-"435 Scarlet Red",
-5,
-1
-]
-]
+"id": "eyes",
+"name": "آيلاينر وكحل",
+"parent_id": "makeup"
+},
+{
+"id": "cheeks",
+"name": "بلاشر",
+"parent_id": "makeup"
+},
+{
+"id": "deo",
+"name": "مزيل عرق",
+"parent_id": "body"
+},
+{
+"id": "handcream",
+"name": "كريم إيد",
+"parent_id": "body"
+},
+{
+"id": "womenhealth",
+"name": "صحة المرأة",
+"parent_id": null
+},
+{
+"id": "meno-supp",
+"name": "مكملات المينوبوز",
+"parent_id": "womenhealth"
+},
+{
+"id": "intimate",
+"name": "عناية حساسة",
+"parent_id": "womenhealth"
+},
+{
+"id": "cooling",
+"name": "تبريد وراحة",
+"parent_id": "womenhealth"
+},
+{
+"id": "women-vit",
+"name": "فيتامينات للستات",
+"parent_id": "vitamins"
+},
+{
+"id": "hsn",
+"name": "شعر وبشرة وأظافر",
+"parent_id": "vitamins"
+},
+{
+"id": "omega",
+"name": "أوميجا 3 وفيتامينات شاملة",
+"parent_id": "vitamins"
+},
+{
+"id": "pregnancy",
+"name": "حمل ورضاعة",
+"parent_id": "vitamins"
+},
+{
+"id": "foundation",
+"name": "فاونديشن وكونسيلر",
+"parent_id": "makeup"
+},
+{
+"id": "setting",
+"name": "برايمر وسبراي تثبيت",
+"parent_id": "makeup"
+},
+{
+"id": "brows",
+"name": "حواجب",
+"parent_id": "makeup"
+},
+{
+"id": "home",
+"name": "للبيت",
+"parent_id": null
+},
+{
+"id": "candles",
+"name": "شموع معطرة",
+"parent_id": "home"
+},
+{
+"id": "perfume-w",
+"name": "برفانات حريمي",
+"parent_id": "perfume"
+},
+{
+"id": "perfume-m",
+"name": "برفانات رجالي",
+"parent_id": "perfume"
+},
+{
+"id": "perfume-gift",
+"name": "أطقم هدايا",
+"parent_id": "perfume"
+},
+{
+"id": "perfume-u",
+"name": "برفانات للجنسين",
+"parent_id": "perfume"
+},
+{
+"id": "minerals",
+"name": "فيتامين د وماغنسيوم وكالسيوم",
+"parent_id": "vitamins"
+},
+{
+"id": "kids-vit",
+"name": "فيتامينات أطفال",
+"parent_id": "vitamins"
+},
+{
+"id": "bodywash",
+"name": "شاور جل وسكراب",
+"parent_id": "body"
+},
+{
+"id": "babycare",
+"name": "عناية بالبيبي",
+"parent_id": "body"
+},
+{
+"id": "period",
+"name": "راحة الدورة",
+"parent_id": "womenhealth"
+},
+{
+"id": "energy",
+"name": "مناعة وطاقة (فيتامين سي و B وحديد)",
+"parent_id": "vitamins"
+},
+{
+"id": "joints",
+"name": "مفاصل",
+"parent_id": "vitamins"
+},
+{
+"id": "pk-pj",
+"name": "بيجامات ولانجري",
+"parent_id": "clothes"
+},
+{
+"id": "pk-tops",
+"name": "توبات وتيشيرتات",
+"parent_id": "clothes"
+},
+{
+"id": "pk-bottoms",
+"name": "بناطيل وجينز وجيبات",
+"parent_id": "clothes"
+},
+{
+"id": "pk-dress",
+"name": "فساتين",
+"parent_id": "clothes"
+},
+{
+"id": "pk-active",
+"name": "لبس رياضي",
+"parent_id": "clothes"
+},
+{
+"id": "pk-outer",
+"name": "جاكيتات وهوديز وبليزرات",
+"parent_id": "clothes"
+},
+{
+"id": "pk-acc",
+"name": "أحذية وشنط وإكسسوارات",
+"parent_id": "clothes"
+},
+{
+"id": "hairstyle",
+"name": "ستايلنج وحماية من الحرارة",
+"parent_id": "hair"
+},
+{
+"id": "hairperfume",
+"name": "برفان شعر",
+"parent_id": "hair"
+},
+{
+"id": "dryshampoo",
+"name": "شامبو جاف",
+"parent_id": "hair"
+},
+{
+"id": "bodylotion",
+"name": "لوشن جسم",
+"parent_id": "body"
+},
+{
+"id": "sneakers",
+"name": "كوتشيات وأحذية",
+"parent_id": "clothes"
+},
+{
+"id": "masks",
+"name": "ماسكات",
+"parent_id": "skin"
+},
+{
+"id": "hairtreat",
+"name": "ليف إن وعلاج الشعر",
+"parent_id": "hair"
+},
+{
+"id": "hairtools",
+"name": "مكواة وأدوات تصفيف",
+"parent_id": "hair"
 }
-]
+],
+"rows": [
+{
+"id": "dm-bodyspray-glam",
+"brand": "Balea",
+"name": "Perfumed Body Spray Glamorous Moment 200ml",
+"category_id": "bodymist",
+"price": 315,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "dm-hp-brazil",
+"brand": "Balea",
+"name": "Hair Perfume Brazilian Nights 100ml",
+"category_id": "hairperfume",
+"price": 325,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "dm-hp-pink",
+"brand": "Balea",
+"name": "Hair Perfume Pink Blossom 100ml",
+"category_id": "hairperfume",
+"price": 325,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "dm-jl-coco",
+"brand": "Jean&Len",
+"name": "Hair Perfume \"you're my coco vanilla\" 100ml",
+"category_id": "hairperfume",
+"price": 455,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-jean-paul-gaultier-le-beau-eau-de-toilette-75ml",
+"brand": "Jean Paul Gaultier",
+"name": "Le Beau Eau de Toilette 75ml",
+"category_id": "perfume-m",
+"price": 4910,
+"old_price": 7035,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-versace-dylan-blue-pour-homme-eau-de-toilette-100m",
+"brand": "Versace",
+"name": "Dylan Blue Pour Homme Eau de Toilette 100ml",
+"category_id": "perfume-m",
+"price": 4985,
+"old_price": 8580,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-boss-the-scent-magnetic-eau-de-parfum-for-him-100m",
+"brand": "BOSS",
+"name": "The Scent Magnetic Eau de Parfum for Him 100ml",
+"category_id": "perfume-m",
+"price": 5295,
+"old_price": 9395,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-marc-jacobs-daisy-dream-eau-de-toilette-100ml",
+"brand": "Marc Jacobs",
+"name": "Daisy Dream Eau de Toilette 100ml",
+"category_id": "perfume-w",
+"price": 4445,
+"old_price": 9170,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-hugo-man-eau-de-toilette-200ml",
+"brand": "HUGO",
+"name": "Man Eau de Toilette 200ml",
+"category_id": "perfume-m",
+"price": 4060,
+"old_price": 7845,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-ariana-grande-cloud-eau-de-parfum-50ml",
+"brand": "Ariana Grande",
+"name": "Cloud Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 3050,
+"old_price": 4820,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-boss-bottled-infinite-eau-de-parfum-200ml",
+"brand": "BOSS",
+"name": "Bottled Infinite Eau de Parfum 200ml",
+"category_id": "perfume-m",
+"price": 5375,
+"old_price": 11385,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-calvin-klein-ck-one-eau-de-toilette-200ml",
+"brand": "Calvin Klein",
+"name": "CK One Eau de Toilette 200ml",
+"category_id": "perfume-w",
+"price": 3440,
+"old_price": 7105,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-kylie-jenner-cosmic-eau-de-parfum-100ml",
+"brand": "Kylie Jenner",
+"name": "Cosmic Eau de Parfum 100ml",
+"category_id": "perfume-w",
+"price": 4060,
+"old_price": 5780,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-jimmy-choo-flash-eau-de-parfum-60ml",
+"brand": "Jimmy Choo",
+"name": "Flash Eau de Parfum 60ml",
+"category_id": "perfume-w",
+"price": 3285,
+"old_price": 5780,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-emporio-armani-stronger-with-you-eau-de-toilette-1",
+"brand": "Emporio Armani",
+"name": "Stronger With You Eau de Toilette 150ml",
+"category_id": "perfume-m",
+"price": 6615,
+"old_price": 9615,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-versace-eros-flame-eau-de-parfum-100ml",
+"brand": "Versace",
+"name": "Eros Flame Eau de Parfum 100ml",
+"category_id": "perfume-m",
+"price": 5375,
+"old_price": 9245,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-marc-jacobs-daisy-love-eau-so-sweet-eau-de-toilett",
+"brand": "Marc Jacobs",
+"name": "Daisy Love Eau So Sweet Eau de Toilette 50ml",
+"category_id": "perfume-w",
+"price": 3710,
+"old_price": 7180,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-diesel-only-the-brave-eau-de-toilette-200ml",
+"brand": "Diesel",
+"name": "Only The Brave Eau de Toilette 200ml",
+"category_id": "perfume-m",
+"price": 5760,
+"old_price": 9395,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-dolce-gabbana-l-imperatrice-eau-de-toilette-100ml",
+"brand": "Dolce & Gabbana",
+"name": "L'Imperatrice Eau de Toilette 100ml",
+"category_id": "perfume-w",
+"price": 3980,
+"old_price": 8360,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-versace-men-s-mini-gift-set",
+"brand": "Versace",
+"name": "Men's Mini Gift Set",
+"category_id": "perfume-gift",
+"price": 2975,
+"old_price": 3715,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-versace-pour-femme-dylan-turquoise-eau-de-toilette",
+"brand": "Versace",
+"name": "Pour Femme Dylan Turquoise Eau de Toilette 50ml",
+"category_id": "perfume-w",
+"price": 4060,
+"old_price": 7625,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-versace-dylan-blue-pour-femme-eau-de-parfum-50ml",
+"brand": "Versace",
+"name": "Dylan Blue Pour Femme Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 4755,
+"old_price": 8215,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-billie-eilish-eilish-eau-de-parfum-100ml",
+"brand": "Billie Eilish",
+"name": "Eilish Eau de Parfum 100ml",
+"category_id": "perfume-w",
+"price": 3670,
+"old_price": 5630,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-billie-eilish-eilish-no-2-eau-de-parfum-100ml",
+"brand": "Billie Eilish",
+"name": "Eilish No. 2 Eau de Parfum 100ml",
+"category_id": "perfume-w",
+"price": 3670,
+"old_price": 5630,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-dkny-golden-delicious-eau-de-parfum-50ml",
+"brand": "DKNY",
+"name": "Golden Delicious Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 3440,
+"old_price": 3715,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-dkny-be-delicious-fresh-blossom-eau-de-parfum-30ml",
+"brand": "DKNY",
+"name": "Be Delicious Fresh Blossom Eau de Parfum 30ml",
+"category_id": "perfume-w",
+"price": 3050,
+"old_price": 3200,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6",
+"brand": "Jimmy Choo",
+"name": "Blossom Special Edition Eau de Parfum 60ml",
+"category_id": "perfume-w",
+"price": 4060,
+"old_price": 5780,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-rabanne-fame-eau-de-parfum-50ml",
+"brand": "Rabanne",
+"name": "Fame Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 5685,
+"old_price": 8805,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml",
+"brand": "Rabanne",
+"name": "Pure XS For Her Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 5295,
+"old_price": 7845,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-marc-jacobs-daisy-ever-so-fresh-eau-de-parfum-75ml",
+"brand": "Marc Jacobs",
+"name": "Daisy Ever So Fresh Eau de Parfum 75ml",
+"category_id": "perfume-w",
+"price": 8700,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-rabanne-lady-million-eau-de-parfum-50ml",
+"brand": "Rabanne",
+"name": "Lady Million Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 6305,
+"old_price": 8065,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-versace-eros-pour-femme-eau-de-toilette-100ml",
+"brand": "Versace",
+"name": "Eros Pour Femme Eau de Toilette 100ml",
+"category_id": "perfume-w",
+"price": 5375,
+"old_price": 9245,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-versace-dylan-purple-eau-de-parfum-50ml",
+"brand": "Versace",
+"name": "Dylan Purple Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 4910,
+"old_price": 8215,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-moschino-toy-2-pearl-eau-de-parfum-50ml",
+"brand": "Moschino",
+"name": "Toy 2 Pearl Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 3980,
+"old_price": 6810,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-elegant-pink-100ml",
+"brand": "Arabian Oud",
+"name": "Elegant Pink 100ml",
+"category_id": "perfume-w",
+"price": 7040,
+"old_price": 9615,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-taraf-women-parfum-100ml",
+"brand": "Arabian Oud",
+"name": "Taraf Women Parfum 100ml",
+"category_id": "perfume-w",
+"price": 13080,
+"old_price": 18465,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-360-for-women-100ml",
+"brand": "Arabian Oud",
+"name": "360 For Women 100ml",
+"category_id": "perfume-w",
+"price": 4020,
+"old_price": 5190,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-bella-100ml",
+"brand": "Arabian Oud",
+"name": "Bella 100ml",
+"category_id": "perfume-w",
+"price": 6285,
+"old_price": 8510,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-bella-200ml",
+"brand": "Arabian Oud",
+"name": "Bella 200ml",
+"category_id": "perfume-w",
+"price": 8045,
+"old_price": 11090,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-arabella-100ml",
+"brand": "Arabian Oud",
+"name": "Arabella 100ml",
+"category_id": "perfume-w",
+"price": 9810,
+"old_price": 13670,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-madawi-50ml",
+"brand": "Arabian Oud",
+"name": "Madawi 50ml",
+"category_id": "perfume-w",
+"price": 8300,
+"old_price": 11460,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-rabanne-phantom-eau-de-toilette-50ml",
+"brand": "Rabanne",
+"name": "Phantom Eau de Toilette 50ml",
+"category_id": "perfume-m",
+"price": 4755,
+"old_price": 6810,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-rabanne-invictus-victory-eau-de-parfum-50ml",
+"brand": "Rabanne",
+"name": "Invictus Victory Eau de Parfum 50ml",
+"category_id": "perfume-m",
+"price": 5065,
+"old_price": 7330,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-rabanne-1-million-lucky-eau-de-toilette-100ml",
+"brand": "Rabanne",
+"name": "1 Million Lucky Eau de Toilette 100ml",
+"category_id": "perfume-m",
+"price": 5140,
+"old_price": 8140,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-issey-miyake-l-eau-d-issey-pour-homme-intense-eau-",
+"brand": "Issey Miyake",
+"name": "L'Eau d'Issey Pour Homme Intense Eau de Toilette 75ml",
+"category_id": "perfume-m",
+"price": 3285,
+"old_price": 5705,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-calvin-klein-eternity-for-men-eau-de-toilette-100m",
+"brand": "Calvin Klein",
+"name": "Eternity for Men Eau de Toilette 100ml",
+"category_id": "perfume-m",
+"price": 3905,
+"old_price": 7400,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-w-100ml",
+"brand": "Arabian Oud",
+"name": "W 100ml",
+"category_id": "perfume-m",
+"price": 7545,
+"old_price": 10350,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-arabian-knight-100ml",
+"brand": "Arabian Oud",
+"name": "Arabian Knight 100ml",
+"category_id": "perfume-u",
+"price": 8045,
+"old_price": 11090,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-arabian-knight-silver-100ml",
+"brand": "Arabian Oud",
+"name": "Arabian Knight Silver 100ml",
+"category_id": "perfume-u",
+"price": 7545,
+"old_price": 10350,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-vanilla-rose-100ml",
+"brand": "Arabian Oud",
+"name": "Vanilla Rose 100ml",
+"category_id": "perfume-u",
+"price": 8300,
+"old_price": 11460,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-kashmir-musk-100ml",
+"brand": "Arabian Oud",
+"name": "Kashmir Musk 100ml",
+"category_id": "perfume-u",
+"price": 9555,
+"old_price": 13300,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-yacht-mood-75ml",
+"brand": "Arabian Oud",
+"name": "Yacht Mood 75ml",
+"category_id": "perfume-u",
+"price": 8600,
+"old_price": 11900,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-sehr-al-kalemat-100ml",
+"brand": "Arabian Oud",
+"name": "Sehr Al Kalemat 100ml",
+"category_id": "perfume-u",
+"price": 8045,
+"old_price": 11090,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-musk-mubakhar-100ml",
+"brand": "Arabian Oud",
+"name": "Musk Mubakhar 100ml",
+"category_id": "perfume-u",
+"price": 8300,
+"old_price": 11460,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-tarteel-silver-75ml",
+"brand": "Arabian Oud",
+"name": "Tarteel Silver 75ml",
+"category_id": "perfume-u",
+"price": 12075,
+"old_price": 16990,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-michael-kors-pour-homme-edp-50ml-gift-set",
+"brand": "Michael Kors",
+"name": "Pour Homme EDP 50ml Gift Set",
+"category_id": "perfume-gift",
+"price": 3825,
+"old_price": 7400,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-joop-homme-edt-75ml-shower-gel-75ml-gift-set",
+"brand": "Joop!",
+"name": "Homme EDT 75ml + Shower Gel 75ml Gift Set",
+"category_id": "perfume-gift",
+"price": 3515,
+"old_price": 5335,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-moschino-mini-gift-set-collection-4-x-5ml",
+"brand": "Moschino",
+"name": "Mini Gift Set Collection 4 x 5ml",
+"category_id": "perfume-gift",
+"price": 2860,
+"old_price": 3530,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-calvin-klein-ck-one-edt-50ml-shower-gel-100ml-gift",
+"brand": "Calvin Klein",
+"name": "CK One EDT 50ml + Shower Gel 100ml Gift Set",
+"category_id": "perfume-gift",
+"price": 2975,
+"old_price": 4305,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-michael-kors-pour-femme-edp-50ml-gift-set",
+"brand": "Michael Kors",
+"name": "Pour Femme EDP 50ml Gift Set",
+"category_id": "perfume-gift",
+"price": 3905,
+"old_price": 7845,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-davidoff-cool-water-man-gift-set",
+"brand": "Davidoff",
+"name": "Cool Water Man Gift Set",
+"category_id": "perfume-gift",
+"price": 3360,
+"old_price": 5190,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-versace-women-s-mini-gift-set",
+"brand": "Versace",
+"name": "Women's Mini Gift Set",
+"category_id": "perfume-gift",
+"price": 2975,
+"old_price": 3715,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-arabian-oud-only-collection-gift-set-400ml",
+"brand": "Arabian Oud",
+"name": "Only Collection Gift Set 400ml",
+"category_id": "perfume-gift",
+"price": 12325,
+"old_price": 17360,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-rabanne-pure-xs-eau-de-toilette-50ml",
+"brand": "Rabanne",
+"name": "Pure XS Eau de Toilette 50ml",
+"category_id": "perfume-m",
+"price": 3825,
+"old_price": 6000,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-hugo-man-edt-75ml-deodorant-150ml-gift-set",
+"brand": "HUGO",
+"name": "Man EDT 75ml + Deodorant 150ml Gift Set",
+"category_id": "perfume-gift",
+"price": 4290,
+"old_price": 6000,
+"promo": true,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-ariana-grande-ari-eau-de-parfum-50ml",
+"brand": "Ariana Grande",
+"name": "ARI Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 4500,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-boss-the-scent-magnetic-eau-de-parfum-for-her-50ml",
+"brand": "BOSS",
+"name": "The Scent Magnetic Eau de Parfum for Her 50ml",
+"category_id": "perfume-w",
+"price": 9500,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-ysl-black-opium-illicit-green-eau-de-parfum-75ml",
+"brand": "YSL",
+"name": "Black Opium Illicit Green Eau de Parfum 75ml",
+"category_id": "perfume-w",
+"price": 9900,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-marc-jacobs-dot-eau-de-parfum-50ml",
+"brand": "Marc Jacobs",
+"name": "Dot Eau de Parfum 50ml",
+"category_id": "perfume-w",
+"price": 6900,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-michael-kors-mini-gift-set",
+"brand": "Michael Kors",
+"name": "Mini Gift Set",
+"category_id": "perfume-gift",
+"price": 4200,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+},
+{
+"id": "sd-dkny-be-delicious-coconuts-about-summer-eau-de-toi",
+"brand": "DKNY",
+"name": "Be Delicious Coconuts About Summer Eau de Toilette 50ml",
+"category_id": "perfume-w",
+"price": 3800,
+"old_price": null,
+"promo": false,
+"hidden": false,
+"qty": 5,
+"sizes": []
+}
+],
+"expire": [
+{
+"key": "superdrug-bf-2026",
+"until": "2026-12-02T00:00:00+02:00",
+"prefix": "sd-"
+},
+{
+"key": "primark-sale-2026-11-11",
+"until": "2026-11-12T00:00:00+02:00",
+"prefix": "pk-"
+},
+{
+"key": "amazon-adidas-2026-11-19",
+"until": "2026-11-20T20:00:00+02:00",
+"prefix": "amz-"
+},
+{
+"key": "bf24-2026-11-19",
+"until": "2026-11-20T20:00:00+02:00",
+"prefix": "bf24-"
+}
+],
+"revert": [
+{
+"ids": [
+"b-b12-180",
+"b-vitc-zinc-180",
+"b-vegan-omega-60",
+"b-iron-180",
+"b-vite-90",
+"b-b12-hs-60",
+"b-codliver-240",
+"b-multi-240",
+"b-glucosamine-240",
+"b-max-codliver-60",
+"b-vitd-hs-180",
+"b-reenergise-orange",
+"b-reenergise-mango",
+"b-reenergise-berry",
+"b-hsn-30",
+"b-bcomplex-90",
+"b-teatree-oil",
+"b-magnesium-60",
+"b-calcium-dk-60",
+"b-folic-d-60",
+"b-glucosamine-30",
+"b-vitc-d-eff",
+"b-az50-30",
+"b-max-codliver-30",
+"b-az-30",
+"b-multi-iron-30",
+"b-folic-60",
+"b-vitc-zinc-eff",
+"b-multi-eff",
+"b-vitc-1000-eff"
+],
+"key": "boots-bf-2026-11-11",
+"until": "2026-11-12T00:00:00+02:00"
+}
+],
+"promo": {
+"ends": "",
+"title": "Black Friday",
+"active": true,
+"subtitle": "عروض تبدأ من 50 L.E"
+},
+"promoCount": 69
 }
