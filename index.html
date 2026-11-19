@@ -463,10 +463,10 @@ html.rv .card.in{opacity:1;transform:none}
 /* ===== App shell v3: world rings, shelf tiles, dock ===== */
 .lbl{font-family:"El Messiri",Cairo,sans-serif;font-size:15px;font-weight:700;color:var(--ink);margin-top:16px}
 .lbl.fly{display:flex;align-items:center;gap:10px}
-.lbl.fly .trail{flex:1;position:relative;height:0;border-top:1.5px dashed #E6C9C2}
-.lbl.fly .trail i{position:absolute;top:-11px;inset-inline-start:0;width:100%;font-style:normal;font-size:15px;color:var(--rose);pointer-events:none;animation:flyby 2.6s .5s var(--ease) both}
+.lbl.fly .trail{flex:1;position:relative;height:0;border-top:1.5px dashed #E6C9C2;container-type:inline-size}
+.lbl.fly .trail i{position:absolute;top:-11px;inset-inline-start:0;font-style:normal;font-size:15px;color:var(--rose);pointer-events:none;animation:flyby 2.6s .5s var(--ease) both}
 .lbl.fly .trail i b{display:inline-block;font-weight:400;transform:scaleX(-1)}
-@keyframes flyby{from{transform:translateX(0);opacity:0}15%{opacity:1}to{transform:translateX(calc(-100% + 16px));opacity:1}}
+@keyframes flyby{from{transform:translateX(0);opacity:0}15%{opacity:1}to{transform:translateX(calc(16px - 100cqw));opacity:1}}
 .rail.world{gap:14px;padding:12px 2px 4px}
 .cring{flex:none;display:flex;flex-direction:column;align-items:center;gap:5px;width:66px;position:relative;transition:transform .25s var(--spring)}
 .cring:active{transform:scale(.93)}
