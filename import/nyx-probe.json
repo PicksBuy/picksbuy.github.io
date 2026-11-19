@@ -1,14 +1,327 @@
 {
- "https://www.cbe.org.eg/ar/economic-research/statistics/cbe-exchange-rates": {
-  "status": 200,
-  "len": 127160,
-  "title": "أسعار صرف البنك المركزى",
-  "around": "النقد والمال​ تنفيذ السياسة النقدية علاقات المستثمرين الشمول المالي نظرة عامة قياس الشمول المالي و التقارير إستراتيجية الشمول المالي المشروعات الفعاليات التعليمات الرقابية للشمول المالي الأوراق النقدية إصدار النقد دار طباعة النقد حماية المنافسة نبذة عامة عن حماية المنافسة التوعية بحماية المنافسة عطاءات نبذة عامة أذون الخزانة سندات الخزانة الصكوك السيادية ودائع السوق المفتوحة إعادة الشراء عطاءات الدولار وثائق خزانة المسؤولية المجتمعية المشروعات متناهية الصغر والصغيرة والمتوسطة وريادة الأعمال المشروعات متناهية الصغر والصغيرة والمتوسطة ريادة الأعمال مكافحة غسل الأموال وتمويل الإرهاب عن وحدة مكافحة غسل الأموال وتمويل الإرهاب نبذة عن النظام المصرى لمكافحة غسل الأموال وتمويل الإرهاب القوانين ذات الصلة الإطار الرقابى روابط ذات صلة التوظيف عملية التوظيف العمل في البنك المركزي وظائف متاحة برنامج تدريب الطلبة “EXPLORE” برنامج تدريب الخريجين “ EVOLVE” عن البنك المركزي نظرة عامة الإستراتيجية مجلس الإدارة تشكيل مجلس الإدارة اللجان المنبثقة من مجلس الإدارة إنجازات مجلس الإدارة محافظي البنك المركزي السابقين الهيكل التنظيمي المشتريات مكتبة البنك المركزي المصري الأخبار والمنشورات الأخبار المنشورات الاستدامة نظرة عامة الرؤية التمويل المستدام المبادئ و الإطار الرقابي التثقيف المالي تعلم الأدوات المالية إغلاق Header Banner Search --> A A contrast ... الصفحة الرئيسية البحوث الاقتصادية إحصائيات أسعار "
- },
- "https://www.cbe.org.eg/en/economic-research/statistics/cbe-exchange-rates": {
-  "status": 200,
-  "len": 126814,
-  "title": "CBE Exchange Rates",
-  "around": "ainable Finance Principles and Regulatory Framework Financial Literacy Learn Financial Tools Close Header Banner Search --> A A contrast ... Home Economic Research Statistics CBE Exchange Rates CBE Exchange Rates Most Searched Inflation Targets Financial Stability Last Updated: 19 Nov 2026 CBE Official Exchange rates and prices are expressed in pounds. Rates for Date: 19/11/2026 Currency Buy Sell US Dollar 53.7418 53.8797 Euro 59.0730 59.2300 Pound Sterling 70.6919 70.8842 Canadian Dollar 37.5528 37.6544 Danish Krone 7.9026 7.9249 Norwegian Krone 5.5452 5.5623 Swedish Krona 5.2989 5.3151 Swiss Franc 63.7582 63.9370 Japanese Yen 100 33.6033 33.6959 Saudi Riyal 14.3258 14.3641 Kuwaiti Dinar 173.8935 174.3962 UAE Dirham 14.6304 14.6695 Australian Dollar 36.0500 36.1533 Bahraini Dinar 142.4001 142.8791 Omani Riyal 139.5782 139.9546 Qatari Riyal 14.7420 14.7818 Jordanian Dinar 75.6927 76.1013 Chinese Yuan 8.0611 8.0822 View Historical Data This page was last updated 19 Nov 2026 The official website for the Central Bank of Egypt Explore Financial Stability Monetary Policy Payment Systems and Services Cybersecurity Economic Research African Cooperation Financial Technology Governance Markets Financial Inclusion Banknote Competition Protection Auctions Corporate Social Responsibility MSM"
- }
+"61GtSOAo+kL": [
+200,
+53381,
+"image/jpeg"
+],
+"81b-8vbhiWL": [
+200,
+95169,
+"image/jpeg"
+],
+"71GK+RlB-LL": [
+200,
+53830,
+"image/jpeg"
+],
+"61zagtc3-PL": [
+200,
+58917,
+"image/jpeg"
+],
+"81phT8pFJ7L": [
+200,
+81157,
+"image/jpeg"
+],
+"71yQowWwqiL": [
+200,
+72601,
+"image/jpeg"
+],
+"71cl0ffqLGL": [
+200,
+61731,
+"image/jpeg"
+],
+"81tfH+o9RvL": [
+200,
+81730,
+"image/jpeg"
+],
+"71aIIESJQGL": [
+200,
+69871,
+"image/jpeg"
+],
+"61jEpH1lH4L": [
+200,
+73033,
+"image/jpeg"
+],
+"71pPIxNflXL": [
+200,
+77682,
+"image/jpeg"
+],
+"61e+HEwKgQL": [
+200,
+52506,
+"image/jpeg"
+],
+"514Eof1U4nL": [
+200,
+40899,
+"image/jpeg"
+],
+"81Ut6tJ8mHL": [
+200,
+75924,
+"image/jpeg"
+],
+"61pcqDFumwL": [
+200,
+71093,
+"image/jpeg"
+],
+"81o3eofymxL": [
+200,
+133171,
+"image/jpeg"
+],
+"71yl4ZHsLGL": [
+200,
+56644,
+"image/jpeg"
+],
+"61FNUcdd1KL": [
+200,
+70720,
+"image/jpeg"
+],
+"71AaETSAbKL": [
+200,
+65289,
+"image/jpeg"
+],
+"612iF1NikDL": [
+200,
+51511,
+"image/jpeg"
+],
+"61ySu9Bh0AL": [
+200,
+81102,
+"image/jpeg"
+],
+"71vrTFJup-L": [
+200,
+82872,
+"image/jpeg"
+],
+"61x5gjj-4vL": [
+200,
+53609,
+"image/jpeg"
+],
+"616CtdXw-zL": [
+200,
+56735,
+"image/jpeg"
+],
+"81aDLA0L2PL": [
+200,
+74248,
+"image/jpeg"
+],
+"71Cw4FpN4WL": [
+200,
+75196,
+"image/jpeg"
+],
+"714ftqYlrjL": [
+200,
+64921,
+"image/jpeg"
+],
+"81JNKOTF37L": [
+200,
+76420,
+"image/jpeg"
+],
+"71JTbcCdW3L": [
+200,
+68750,
+"image/jpeg"
+],
+"61VzzGPTaBL": [
+200,
+72694,
+"image/jpeg"
+],
+"81ZE04qaRLL": [
+200,
+82273,
+"image/jpeg"
+],
+"71vvaMoFcJL": [
+200,
+79748,
+"image/jpeg"
+],
+"71J2VHZH5iL": [
+200,
+57302,
+"image/jpeg"
+],
+"81fVNHLD5EL": [
+200,
+124743,
+"image/jpeg"
+],
+"7116EalGoYL": [
+200,
+60420,
+"image/jpeg"
+],
+"61bYro2o3VL": [
+200,
+76768,
+"image/jpeg"
+],
+"71OxUxgyiGL": [
+200,
+84343,
+"image/jpeg"
+],
+"61M-JjbBBnL": [
+200,
+54329,
+"image/jpeg"
+],
+"51n78Qj3CmL": [
+200,
+31273,
+"image/jpeg"
+],
+"51vvgQ7VqKL": [
+200,
+31536,
+"image/jpeg"
+],
+"41hPg9oyDSL": [
+200,
+28571,
+"image/jpeg"
+],
+"61yH6KSPsxL": [
+200,
+68934,
+"image/jpeg"
+],
+"71quLaNRmgL": [
+200,
+56555,
+"image/jpeg"
+],
+"716cxp7zkiL": [
+200,
+84407,
+"image/jpeg"
+],
+"71u50igMLDL": [
+200,
+72445,
+"image/jpeg"
+],
+"81EDYbEze+L": [
+200,
+83756,
+"image/jpeg"
+],
+"71RjzryJHbL": [
+200,
+87153,
+"image/jpeg"
+],
+"710A7SiJHuL": [
+200,
+59958,
+"image/jpeg"
+],
+"71xuLxReycL": [
+200,
+63849,
+"image/jpeg"
+],
+"71SFBEc1oSL": [
+200,
+54728,
+"image/jpeg"
+],
+"71veqMQhrbL": [
+200,
+61437,
+"image/jpeg"
+],
+"71r-y447+OL": [
+200,
+74423,
+"image/jpeg"
+],
+"61DfM9JOnnL": [
+200,
+53479,
+"image/jpeg"
+],
+"41ukzhKgZKL": [
+200,
+25910,
+"image/jpeg"
+],
+"71tpkYhYhjL": [
+200,
+104891,
+"image/jpeg"
+],
+"81dVBKQHf9L": [
+200,
+137166,
+"image/jpeg"
+],
+"71AL4vw6YIL": [
+200,
+47922,
+"image/jpeg"
+],
+"71K4o6onIQL": [
+200,
+99982,
+"image/jpeg"
+],
+"71XDndUHoxL": [
+200,
+93326,
+"image/jpeg"
+],
+"712FGbCJ6CL": [
+200,
+49884,
+"image/jpeg"
+],
+"71WXYGXNgpL": [
+200,
+55590,
+"image/jpeg"
+],
+"61w3npfrcEL": [
+200,
+53952,
+"image/jpeg"
+],
+"813UaQJjb5L": [
+200,
+82113,
+"image/jpeg"
+],
+"712GOQ8yDkL": [
+200,
+111443,
+"image/jpeg"
+],
+"61wCOUSg7pL": [
+200,
+53928,
+"image/jpeg"
+]
 }
