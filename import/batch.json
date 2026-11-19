@@ -15774,6 +15774,25 @@
    "hidden": false,
    "createdAt": "2026-11-19T21:50:00+02:00",
    "needsPrice": false
+  },
+  {
+   "id": "fr22-elseve-fiber-booster",
+   "brand": "L'Oréal Paris",
+   "name": "Elseve Fiber Booster Anti-Hair Fall Routine – Shampoo + Conditioner + Serum",
+   "desc": "روتين كامل ضد تساقط الشعر: شامبو من غير سلفات + بلسم من غير سيليكون + سيروم، بمركب الأمينيكسيل. لتقوية الشعر وكثافته.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "shampoo",
+   "price": 1320,
+   "oldPrice": 1850,
+   "images": [
+    "img/fr/elseve-fiber-booster.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
   }
  ],
  "settingsPatch": {
