@@ -16,6 +16,7 @@ jobs:
       - run: pip install pillow numpy
       - run: python tools/fetch_images.py
       - run: python tools/probe_nyx.py || true
+      - run: python tools/thumbs.py || true
       - name: Commit images
         run: |
           git config user.name "picksbuy-bot"

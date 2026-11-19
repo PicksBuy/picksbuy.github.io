@@ -39,8 +39,8 @@ d.emptyCats = cats.filter(c => !used.has(c.id) && !parentsUsed.has(c.id)).map(c 
 d.byCountry = products.reduce((a, p) => (a[p.country_id] = (a[p.country_id] || 0) + 1, a), {});
 d.settings = { whatsapp: !!settings.whatsapp, group: !!settings.group, shipping: (settings.shipping || []).length, holdHours: settings.holdHours, currency: settings.currency, promo: settings.promo, expireRules: (settings.expire || []).length, revertRules: (settings.revert || []).length, best: (settings.best || []).length, imported: (settings.imported || []).length };
 d.longNames = products.filter(p => (p.name || '').length > 70).map(p => p.id + ':' + p.name.length);
-d.descLatinOnly = products.filter(p => p.desc && !/[؀-ۿ]/.test(p.desc)).map(p => p.id);
-d.noDesc = products.filter(p => !p.hidden && !(p.desc || '').trim()).map(p => p.id);
+d.descLatinOnly = products.filter(p => p.descr && !/[؀-ۿ]/.test(p.desc)).map(p => p.id);
+d.noDesc = products.filter(p => !p.hidden && !(p.descr || '').trim()).map(p => p.id);
 // image check (HEAD/GET every distinct image)
 const urls = [...new Set(products.flatMap(p => [...(p.images || []), ...(p.sizes || []).flatMap(s => [s.img, s.photo].filter(Boolean))]))].map(imgUrl);
 const bad = [], sizes = []; let i = 0;

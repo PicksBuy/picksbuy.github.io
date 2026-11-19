@@ -12,11 +12,16 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#FCF5F3">
-<link rel="icon" href="img/icon.jpg">
+<link rel="icon" href="img/icon-192.png?v=2" type="image/png">
 <link rel="apple-touch-icon" href="img/icon-512.png?v=2">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&family=Pacifico&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://iozwfbafomkwlhlbkcuq.supabase.co" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://m.media-amazon.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&family=Pacifico&family=Playfair+Display:ital,wght@1,600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&family=Pacifico&family=Playfair+Display:ital,wght@1,600&display=swap"></noscript>
 <style>
 :root{
   --bg:#F7F2F0; --card:#fff; --ink:#1C1417; --muted:#7D6F72; --line:#ECDFDB; --soft:#F4E6E2;
@@ -589,17 +594,21 @@ footer.wrap{padding-bottom:130px!important}
 .dlv button.on{background:var(--rg2);border-color:transparent;color:#fff;box-shadow:0 8px 18px rgba(90,42,51,.25)}
 .pickn{margin:0 0 12px;padding:10px 12px;border-radius:14px;background:#FBEAE5;font-size:13.5px;line-height:1.7}
 .vshare{display:block;width:100%;max-width:360px;margin:10px auto 14px;background:var(--rg);color:#fff;font-weight:800;box-shadow:0 8px 20px rgba(183,110,121,.35)}
+.gmore{grid-column:1/-1;height:1px}
+.fav:after,.addq:after{content:"";position:absolute;inset:-7px;border-radius:50%}
+footer a,footer button{display:inline-block;padding:10px 6px}
+#countries:empty{min-height:112px}#cats:empty{min-height:123px}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
-<div id="splash"><div class="in"><img src="img/logo.png" alt=""><b>Picks<span>Buy</span></b><small>منتجات أصلية من كل العالم</small><i></i></div></div>
+<div id="splash"><div class="in"><img src="img/logo.webp" alt="" width="150" height="131" fetchpriority="high"><b>Picks<span>Buy</span></b><small>منتجات أصلية من كل العالم</small><i></i></div></div>
 <script>(function(){var s=document.getElementById('splash'),t0=Date.now();try{if(sessionStorage.getItem('pb_spl')){s.remove();return;}sessionStorage.setItem('pb_spl','1');}catch(e){}
 window.__splashOff=function(){var w=Math.max(0,1300-(Date.now()-t0));setTimeout(function(){s.classList.add('go');setTimeout(function(){s.remove();},700);},w);};setTimeout(window.__splashOff,4500);})();</script>
 <header>
   <div class="wrap">
     <div class="hd">
-      <img class="mark" src="img/icon.jpg?v=2" alt="PicksBuy">
+      <img class="mark" src="img/icon.jpg?v=2" alt="PicksBuy" width="46" height="46">
       <div class="brand"><b>Picks<span>Buy</span></b><small id="tagline">منتجات أصلية من كل العالم 🌍</small></div>
       <button class="mode" id="modeBtn"></button>
     </div>
@@ -648,7 +657,7 @@ window.__splashOff=function(){var w=Math.max(0,1300-(Date.now()-t0));setTimeout(
 </nav>
 <div class="toast" id="toast"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js"></script>
 <script>
 const SB_URL = "https://iozwfbafomkwlhlbkcuq.supabase.co";
 const SB_KEY = "sb_publishable_JdmfjPIw0VthxJSCGbzN3g_6Ymo-DhQ";
@@ -664,6 +673,15 @@ const num = v => { const n = parseFloat(String(v ?? '').replace(/,/g,'')); retur
 const fmt = n => Number(n).toLocaleString('en-US');
 const cur = () => S.settings.currency || 'L.E';
 const img = id => /^(https?:|img\/)/.test(id) ? id : `${SB_URL}/storage/v1/object/public/products/${id}`;
+/* card-size copy of a photo: the shop's own photos have a small .webp twin under img/t/, the big shops' CDNs resize on request */
+function thumb(u){ if(!u) return u;
+  if(/^img\/(?!t\/)/.test(u) && /\.(jpe?g|png|webp)(\?.*)?$/i.test(u) && !/^img\/(howto|icon|logo|og\.|ph\.)/.test(u)) return 'img/t/'+u.slice(4).replace(/\?.*$/,'').replace(/\.(jpe?g|png|webp)$/i,'.webp');
+  if(/^https:\/\/m\.media-amazon\.com\/images\/I\//.test(u)) return u.replace(/\._[A-Z0-9_,]+_\.(jpe?g|png)$/i,'._AC_SL500_.$1');
+  if(/^https:\/\/cdn\.media\.amplience\.net\//.test(u)) return u.replace(/([?&])w=\d+/,'$1w=480');
+  if(/scene7\.com\/is\/image\//.test(u)) return u.replace(/([?&])wid=\d+/,'$1wid=480');
+  return u; }
+/* <img> for cards and rails: small copy first, the full photo if the small one is missing */
+function timg(id,attrs='loading="lazy"'){ const u=img(id), t=thumb(u); return `<img src="${esc(t)}"${t!==u?` data-full="${esc(u)}"`:''} ${attrs} alt="">`; }
 const byOrder = (a,b) => (a.order ?? 0) - (b.order ?? 0) || String(a.name).localeCompare(String(b.name));
 
 function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('on'),2200); }
@@ -700,6 +718,7 @@ function dealLeft(end){ const ms=end-Date.now(); if(ms<=0) return ''; const h=Ma
 let CART=[]; try{ CART=JSON.parse(localStorage.getItem('pb_cart')||'[]')||[]; }catch(e){ CART=[]; }
 const HOLDER='h'+Math.random().toString(36).slice(2);
 function saveCart(){ try{ localStorage.setItem('pb_cart',JSON.stringify(CART)); }catch(e){} drawCartBtn(); }
+function vkind(p){ const vs=variants(p); return !vs?'':vs.some(s=>s.img)?'الدرجة':(mainCatOf(p)==='clothes'?'المقاس':'النوع'); }
 function variants(p){ return (Array.isArray(p.sizes)&&p.sizes.length) ? p.sizes : null; }
 /* a size can carry its own price (p). The server charges it from version 3 on; before that everything stays on the product price */
 function szP(p,s){ const n=S.v3&&s?num(s.p):null; return n>0?n:num(p.price); }
@@ -728,14 +747,23 @@ function drawCartBtn(){
 }
 function discount(p){ const o=num(p.oldPrice), n=num(p.price); return (o && n && o>n) ? Math.round((1-n/o)*100) : 0; }
 
-function tileImg(list,catId){ const ps=list.filter(p=>mainCatOf(p)===catId&&p.images&&p.images.length); const p=ps.find(x=>stock(x)>0&&!x.hidden)||ps[0]; return p?img(p.images[0]):''; }
+function tileImg(list,catId){ const ps=list.filter(p=>mainCatOf(p)===catId&&p.images&&p.images.length); const p=ps.find(x=>stock(x)>0&&!x.hidden)||ps[0]; return p?p.images[0]:''; }
 let SEEN=[]; try{ SEEN=JSON.parse(localStorage.getItem('pb_seen')||'[]')||[]; }catch(e){ SEEN=[]; }
 function markSeen(id){ SEEN=[id,...SEEN.filter(x=>x!==id)].slice(0,12); try{ localStorage.setItem('pb_seen',JSON.stringify(SEEN)); }catch(e){} }
-function miniCard(p){ const d=discount(p); return `<div class="mini ${stock(p)>0?'':'sold'}" data-mid="${esc(p.id)}"><div class="im">${p.images?.length?`<img src="${img(p.images[0])}" loading="lazy" alt="">`:''}${d&&stock(p)>0?`<span>-${d}%</span>`:''}</div><div class="t">${p.brand?`<div class="br">${esc(p.brand)}</div>`:''}<div class="nm">${esc(p.name)}</div>${num(p.price)!=null?`<div class="pr">${fmt(lowP(p))} ${esc(cur())}${frm(p)}</div>`:''}</div></div>`; }
+function miniCard(p){ const d=discount(p); return `<div class="mini ${stock(p)>0?'':'sold'}" data-mid="${esc(p.id)}"><div class="im">${p.images?.length?timg(p.images[0]):''}${d&&stock(p)>0?`<span>-${d}%</span>`:''}</div><div class="t">${p.brand?`<div class="br">${esc(p.brand)}</div>`:''}<div class="nm">${esc(p.name)}</div>${num(p.price)!=null?`<div class="pr">${fmt(lowP(p))} ${esc(cur())}${frm(p)}</div>`:''}</div></div>`; }
 function seenRail(){ if(S.admin) return ''; const ps=SEEN.map(id=>S.products.find(p=>p.id===id)).filter(p=>p&&!p.hidden&&stock(p)>0); return ps.length>=2?`<div class="xsec"><h2>كمّلي من مكان ما وقفتي</h2><div class="mrail">${ps.map(miniCard).join('')}</div></div>`:''; }
 document.addEventListener('click',e=>{ const m=e.target.closest('[data-mid]'); if(!m) return; const o=m.closest('.ov'); if(o&&o.close) o.close(); setTimeout(()=>openDetail(m.dataset.mid),o?240:0); });
 const nrm=s=>String(s||'').toLowerCase().replace(/[\u064B-\u0652\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');
 /* ---------- rendering ---------- */
+/* the product grid is drawn in steps of 24 as the shopper scrolls: a few hundred cards at once made phones slow */
+const GRID={key:'',n:0,list:[],tail:'',eager:0}, CHUNK=24;
+const GIO=('IntersectionObserver' in window)?new IntersectionObserver(es=>{ if(es.some(e=>e.isIntersecting)) growGrid(); },{rootMargin:'1400px 0px'}):null;
+function growGrid(){ const m=$('#gmore'); if(!m) return; const next=GRID.list.slice(GRID.n,GRID.n+CHUNK); GRID.n+=next.length;
+  m.insertAdjacentHTML('beforebegin',next.map(card).join(''));
+  if(GRID.n>=GRID.list.length){ if(GIO) GIO.unobserve(m); m.insertAdjacentHTML('afterend',GRID.tail); m.remove(); }
+  try{ afterRender(); }catch(e){}
+  /* still close to the end (a fast fling, or the phone kept the bottom of the page in view): keep going */
+  requestAnimationFrame(()=>{ const g=$('#gmore'); if(g&&g.getBoundingClientRect().top<innerHeight+1400) growGrid(); }); }
 function render(){
   const all = visible();
   renderPromo(all);
@@ -755,8 +783,8 @@ function render(){
   if (S.cat!=='all' && !shownMains.find(c=>c.id===S.cat)) { S.cat='all'; S.sub='all'; }
   $('#cats').innerHTML =
     (promoOn() && inCountry.some(isPromo) ? `<button class="ctile bf ${S.promoOnly?'on':''}" data-bf="1"><span class="ti">🔥</span><span class="tn">${esc(S.settings.promo.title||'العروض')}</span></button>` : '') +
-    `<button class="ctile all ${S.cat==='all'&&!S.promoOnly?'on':''}" data-k="all"><span class="ti">${(m=>m.length>=4?`<span class="mos">${m.map(u=>`<img src="${u}" alt="" loading="lazy">`).join('')}</span>`:'✦')(shownMains.map(c=>tileImg(inCountry,c.id)).filter(Boolean).slice(0,4))}</span><span class="tn">الكل</span></button>` +
-    shownMains.map(c=>{ const u=tileImg(inCountry,c.id); return `<button class="ctile ${S.cat===c.id?'on':''}" data-k="${esc(c.id)}"><span class="ti">${u?`<img src="${u}" alt="" loading="lazy">`:'🛍️'}</span><span class="tn">${esc(c.name)}</span></button>`; }).join('');
+    `<button class="ctile all ${S.cat==='all'&&!S.promoOnly?'on':''}" data-k="all"><span class="ti">${(m=>m.length>=4?`<span class="mos">${m.map(u=>timg(u)).join('')}</span>`:'✦')(shownMains.map(c=>tileImg(inCountry,c.id)).filter(Boolean).slice(0,4))}</span><span class="tn">الكل</span></button>` +
+    shownMains.map(c=>{ const u=tileImg(inCountry,c.id); return `<button class="ctile ${S.cat===c.id?'on':''}" data-k="${esc(c.id)}"><span class="ti">${u?timg(u):'🛍️'}</span><span class="tn">${esc(c.name)}</span></button>`; }).join('');
 
   // sub categories
   const subs = S.cat==='all' ? [] : S.cats.filter(c=>c.parentId===S.cat).sort(byOrder);
@@ -766,7 +794,7 @@ function render(){
   $('#subs').style.display = shownSubs.length ? 'flex' : 'none';
   $('#subs').innerHTML = shownSubs.length ?
     `<div class="subh">جوّه ${esc(cat(S.cat)?.name||'')} فيه إيه؟</div><button class="schip ${S.sub==='all'?'on':''}" data-s="all"><span class="si">✦</span>الكل<span class="n">${mCount(S.cat)}</span></button>` +
-    shownSubs.map(c=>{ const ps=inCountry.filter(p=>p.categoryId===c.id&&p.images&&p.images.length), pp=ps.find(x=>stock(x)>0)||ps[0]; return `<button class="schip ${S.sub===c.id?'on':''}" data-s="${esc(c.id)}"><span class="si">${pp?`<img src="${img(pp.images[0])}" alt="" loading="lazy">`:'🛍️'}</span>${esc(c.name)}<span class="n">${sCount(c.id)}</span></button>`; }).join('') : '';
+    shownSubs.map(c=>{ const ps=inCountry.filter(p=>p.categoryId===c.id&&p.images&&p.images.length), pp=ps.find(x=>stock(x)>0)||ps[0]; return `<button class="schip ${S.sub===c.id?'on':''}" data-s="${esc(c.id)}"><span class="si">${pp?timg(pp.images[0]):'🛍️'}</span>${esc(c.name)}<span class="n">${sCount(c.id)}</span></button>`; }).join('') : '';
 
   // products
   if (S.promoOnly && !promoOn()) S.promoOnly=false;
@@ -811,14 +839,21 @@ function render(){
     if(!S.admin) $('#grid').insertAdjacentHTML('beforeend',`<div class="reqcard"><div class="box3d" aria-hidden="true"><div class="cube"><i class="f f1"><span>✈</span></i><i class="f f2"><span>♥</span></i><i class="f f3"><span>✦</span></i><i class="f f4"><span>♥</span></i><i class="f f5"></i><i class="f f6"></i></div><i class="sh"></i></div><b>مش لاقية اللي عايزاه؟ ✨</b><span class="hint">ابعتيلنا اسم المنتج أو لينكه ونجيبهولك من أي بلد</span><br><button data-req="1">اطلبي منتج من بره</button></div>`);
     return;
   }
-  $('#grid').innerHTML = list.map(card).join('') + (S.admin ? '' : `<div class="reqcard"><div class="box3d" aria-hidden="true"><div class="cube"><i class="f f1"><span>✈</span></i><i class="f f2"><span>♥</span></i><i class="f f3"><span>✦</span></i><i class="f f4"><span>♥</span></i><i class="f f5"></i><i class="f f6"></i></div><i class="sh"></i></div><b>مش لاقية اللي عايزاه؟ ✨</b><span class="hint">ابعتيلنا اسم المنتج أو لينكه ونجيبهولك من أي بلد</span><br><button data-req="1">اطلبي منتج من بره</button></div>`);
+  const key=JSON.stringify([S.country,S.cat,S.sub,S.q,S.sort,S.promoOnly,S.favOnly,S.inStock,S.minP,S.maxP,S.brands,S.admin]);
+  const n=GIO ? Math.min(list.length, Math.max(CHUNK, key===GRID.key?GRID.n:0)) : list.length;
+  Object.assign(GRID,{key,list,n,tail:(S.admin ? '' : `<div class="reqcard"><div class="box3d" aria-hidden="true"><div class="cube"><i class="f f1"><span>✈</span></i><i class="f f2"><span>♥</span></i><i class="f f3"><span>✦</span></i><i class="f f4"><span>♥</span></i><i class="f f5"></i><i class="f f6"></i></div><i class="sh"></i></div><b>مش لاقية اللي عايزاه؟ ✨</b><span class="hint">ابعتيلنا اسم المنتج أو لينكه ونجيبهولك من أي بلد</span><br><button data-req="1">اطلبي منتج من بره</button></div>`),eager:key===GRID.key?0:2});
+  if(GIO) GIO.disconnect();
+  $('#grid').innerHTML = list.slice(0,n).map(card).join('') + (n<list.length ? '<div id="gmore" class="gmore" aria-hidden="true"></div>' : GRID.tail);
+  if(n<list.length&&GIO) GIO.observe($('#gmore'));
 }
 
 function renderPromo(all){
   const box=$('#promo');
   const allP = promoOn() ? all.filter(isPromo) : [];
   const items = allP.slice().sort((a,b)=>(stock(b)>0)-(stock(a)>0)||discount(b)-discount(a)||(b.createdAt||'').localeCompare(a.createdAt||'')).slice(0,12);
-  if(!items.length){ box.innerHTML=''; return; }
+  if(!items.length){ box.innerHTML=''; box._sig=''; return; }
+  const sig=JSON.stringify([items.map(p=>[p.id,p.price,p.oldPrice,stock(p),lowP(p),(p.images||[])[0]]),S.settings.promo,allP.length,cur()]);
+  if(sig===box._sig && box.firstElementChild) return; box._sig=sig;
   const pr=S.settings.promo, t=String(pr.title||'').trim(), words=t.split(/\s+/);
   const title = words.length>1 ? esc(words.slice(0,-1).join(' '))+' <span>'+esc(words[words.length-1])+'</span>' : esc(t);
   box.innerHTML=`<section class="promo">
@@ -826,10 +861,10 @@ function renderPromo(all){
     <button class="pall" id="pall">شوف الكل (${allP.length})</button></div>
     ${pr.ends?`<div class="cd" id="cd"></div>`:''}
     <div class="bfx" id="bfx"><div class="bft">${items.map((p,i)=>{ const d=discount(p), so=stock(p)<=0; return `<div class="bfs ${so?'sold':''}" data-pid="${esc(p.id)}">
-      <div class="bfi">${p.images?.length?`<img src="${img(p.images[0])}" ${i?'loading="lazy"':''} alt="">`:''}${d&&!so?`<span class="bfoff">-${d}%</span>`:''}</div>
+      <div class="bfi">${p.images?.length?timg(p.images[0],i?'loading="lazy" decoding="async"':'fetchpriority="high"'):''}${d&&!so?`<span class="bfoff">-${d}%</span>`:''}</div>
       <div class="bfc">${p.brand?`<div class="br">${esc(p.brand)}</div>`:''}<div class="nm">${esc(p.name)}</div>
         <div class="pr">${so?'<span class="so">نفدت</span>':`${frm(p)}<b>${fmt(lowP(p))} ${esc(cur())}</b>${num(p.oldPrice)>num(p.price)?`<s>${fmt(num(p.oldPrice))}</s>`:''}`}</div>
-        ${so?'':`<span class="bfgo">${variants(p)?'اختاري الدرجة ←':'أضيفي للسلة ＋'}</span>`}</div></div>`; }).join('')}</div>
+        ${so?'':`<span class="bfgo">${variants(p)?`اختاري ${vkind(p)} ←`:'أضيفي للسلة ＋'}</span>`}</div></div>`; }).join('')}</div>
       ${items.length>1?`<div class="bfd">${items.map((_,i)=>`<i data-bi="${i}"></i>`).join('')}</div>`:''}</div>
     <i class="spk s1">✦</i><i class="spk s2">✧</i><i class="spk s3">✦</i><i class="spk s4">✧</i>
   </section>`;
@@ -927,7 +962,7 @@ function card(p){
   const sizes = (p.sizes||[]).filter(s=>num(s.q)>0).map(s=>s.s).join(' · ');
   return `<article class="card" data-id="${esc(p.id)}">
     <div class="ph">
-      ${p.images?.length ? `<img src="${img(p.images[0])}" loading="lazy" alt="">` : `<div class="noimg">🛍️</div>`}
+      ${p.images?.length ? timg(p.images[0], GRID.eager>0&&GRID.eager--?'fetchpriority="high"':'loading="lazy" decoding="async"') : `<div class="noimg">🛍️</div>`}
       ${c ? `<span class="flag">${esc(c.flag||'')} ${esc(c.name)}</span>` : ''}
       ${isPromo(p) && st>0 ? `<span class="tg-bf">${esc(S.settings.promo.title||'عرض')}</span>` : ''}<div class="tags">${d && st>0 ? `<span class="tg-off">-${d}%</span>` : ''}${st>0 && isNewP(p) ? '<span class="tg-new">✨ جديد</span>' : ''}${(e=>st>0&&e&&e-Date.now()<3*864e5?`<span class="tg-last">⏰ ${dealLeft(e)}</span>`:'')(dealEnds(p))}</div>
       ${st<=0 ? `<div class="sold"><b>نفدت الكمية</b></div>` : ''}
@@ -947,7 +982,7 @@ function card(p){
 }
 
 /* any picture that fails to load shows the PicksBuy placeholder instead of a broken icon */
-document.addEventListener('error',e=>{ const t=e.target; if(t&&t.tagName==='IMG'&&!t.dataset.fb){ t.dataset.fb='1'; t.src='img/ph.jpg'; t.style.objectFit='cover'; t.style.padding='0'; } },true);
+document.addEventListener('error',e=>{ const t=e.target; if(t&&t.tagName==='IMG'&&t.dataset.full&&!t.dataset.fz){ t.dataset.fz='1'; t.src=t.dataset.full; return; } if(t&&t.tagName==='IMG'&&!t.dataset.fb){ t.dataset.fb='1'; t.src='img/ph.jpg'; t.style.objectFit='cover'; t.style.padding='0'; } },true);
 
 /* ---------- share the how-to video ---------- */
 let VID_FILE=null;
@@ -979,7 +1014,7 @@ function renderExtras(){
     </div></div>`;
 }
 function zoomImg(src){
-  const z=document.createElement('div'); z.className='zoom'; z.innerHTML=`<img src="${src}" alt=""><button aria-label="قفل">×</button>`;
+  const z=document.createElement('div'); z.className='zoom'; z.innerHTML=`<img alt=""><button aria-label="قفل">×</button>`; z.querySelector('img').src=src;
   document.body.appendChild(z); pushNav();
   z.close=()=>{ if(z._closed) return; z._closed=true; z.remove(); if(!z._byBack) popNav(); };
   z.addEventListener('click',e=>{ if(e.target===z||e.target.closest('button')) z.close(); });
@@ -1060,8 +1095,8 @@ function openFilters(){
     ov.querySelector('#fb').innerHTML=`
       ${promoOn()&&base.some(isPromo)?`<div class="fsec"><div class="fchips"><button data-t="promo" class="${T.promoOnly?'on':''}">🔥 ${esc(S.settings.promo.title||'العروض')} بس</button><button data-t="stock" class="${T.inStock?'on':''}">✅ المتاح بس</button>${FAV.length?`<button data-t="fav" class="${T.favOnly?'on':''}">❤️ المفضلة (${FAV.length})</button>`:''}</div></div>`:`<div class="fsec"><div class="fchips"><button data-t="stock" class="${T.inStock?'on':''}">✅ المتاح بس</button>${FAV.length?`<button data-t="fav" class="${T.favOnly?'on':''}">❤️ المفضلة (${FAV.length})</button>`:''}</div></div>`}
       <div class="fsec"><b>البلد</b><div class="rail world frail"><button class="cring ${T.country==='all'?'on':''}" data-c="all"><span class="ring"><span class="fl">🌍</span></span><span class="cn" style="direction:rtl">الكل</span></button>${countriesAll.map(c=>`<button class="cring ${T.country===c.id?'on':''}" data-c="${esc(c.id)}"><span class="ring"><span class="fl">${esc(c.flag||'🏳️')}</span></span><span class="cn">${esc(c.name)}</span></button>`).join('')}</div></div>
-      <div class="fsec"><b>القسم</b><div class="rail shelf frail"><button class="ctile all ${T.cat==='all'?'on':''}" data-k="all"><span class="ti">✦</span><span class="tn">الكل</span></button>${mains.map(m=>{ const u=tileImg(inC,m.id); return `<button class="ctile ${T.cat===m.id?'on':''}" data-k="${esc(m.id)}"><span class="ti">${u?`<img src="${u}" alt="" loading="lazy">`:'🛍️'}</span><span class="tn">${esc(m.name)}</span></button>`; }).join('')}</div>
-        ${subs.length?`<div class="rail sub" style="display:flex"><div class="subh">جوّه ${esc(cat(T.cat)?.name||'')} فيه إيه؟</div>${subs.map(s2=>{ const ps=inC.filter(p=>p.categoryId===s2.id&&p.images&&p.images.length), pp=ps.find(x=>stock(x)>0)||ps[0]; return `<button class="schip ${T.sub===s2.id?'on':''}" data-s="${esc(s2.id)}"><span class="si">${pp?`<img src="${img(pp.images[0])}" alt="" loading="lazy">`:'🛍️'}</span>${esc(s2.name)}<span class="n">${inC.filter(p=>p.categoryId===s2.id).length}</span></button>`; }).join('')}</div>`:''}</div>
+      <div class="fsec"><b>القسم</b><div class="rail shelf frail"><button class="ctile all ${T.cat==='all'?'on':''}" data-k="all"><span class="ti">✦</span><span class="tn">الكل</span></button>${mains.map(m=>{ const u=tileImg(inC,m.id); return `<button class="ctile ${T.cat===m.id?'on':''}" data-k="${esc(m.id)}"><span class="ti">${u?timg(u):'🛍️'}</span><span class="tn">${esc(m.name)}</span></button>`; }).join('')}</div>
+        ${subs.length?`<div class="rail sub" style="display:flex"><div class="subh">جوّه ${esc(cat(T.cat)?.name||'')} فيه إيه؟</div>${subs.map(s2=>{ const ps=inC.filter(p=>p.categoryId===s2.id&&p.images&&p.images.length), pp=ps.find(x=>stock(x)>0)||ps[0]; return `<button class="schip ${T.sub===s2.id?'on':''}" data-s="${esc(s2.id)}"><span class="si">${pp?timg(pp.images[0]):'🛍️'}</span>${esc(s2.name)}<span class="n">${inC.filter(p=>p.categoryId===s2.id).length}</span></button>`; }).join('')}</div>`:''}</div>
       <div class="fsec"><b>السعر (${esc(cur())})</b><div class="fchips">${presets.map(([a,b,l],i)=>`<button data-pr="${i}" class="${T.minP===a&&T.maxP===b?'on':''}">${l}</button>`).join('')}</div>
         <div class="prange"><input id="pMin" inputmode="numeric" placeholder="من" value="${T.minP??''}"><span class="hint">—</span><input id="pMax" inputmode="numeric" placeholder="لحد" value="${T.maxP??''}"></div></div>
       ${brandsAll.length?`<div class="fsec"><b>البراند</b><div class="fchips">${brandsAll.map(b=>`<button data-b="${esc(b)}" class="${T.brands.includes(b)?'on':''}" style="direction:ltr">${esc(b)}</button>`).join('')}</div></div>`:''}`;
@@ -1170,7 +1205,7 @@ function openDetail(id){
   const sim=S.admin?[]:visible().filter(x=>x.id!==p.id&&stock(x)>0&&mainCatOf(x)===mainCatOf(p)).sort((a,b)=>(b.categoryId===p.categoryId)-(a.categoryId===p.categoryId)||(b.brand===p.brand)-(a.brand===p.brand)||discount(b)-discount(a)).slice(0,10);
   const gal = ims.length ? `<div class="galw">${!S.admin?`<div class="galbtns"><button id="dShare" aria-label="مشاركة">↗</button><button id="dFav" class="${isFav(p.id)?'on':''}" aria-label="المفضلة">${isFav(p.id)?'♥':'♡'}</button></div>`:''}<div class="gal" id="gal">${ims.map(i=>`<img src="${img(i)}" alt="">`).join('')}</div>${ims.length>1?`<div class="dots" id="dots">${ims.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`:''}</div>` : '';
   const vs=variants(p), rg=ranged(p);
-  const kind=!vs?'':vs.some(s=>s.img)?'الدرجة':(mainCatOf(p)==='clothes'?'المقاس':'النوع');
+  const kind=vkind(p);
   const sizes=!vs ? '' : `<div class="lbl" id="vlbl">${S.admin?'المتاح':'اختاري '+kind}</div><div class="szl" id="vsel">${vs.map((s,i)=>{ const live=num(s.q)>0; const sub=S.admin?`(${num(s.q)||0})${num(s.p)>0?' · '+fmt(num(s.p)):''}`:(rg?`${fmt(szP(p,s))} ${esc(cur())}`:''); return `<button class="vch${s.img?' sw':''}${live?'':' zero'}" data-vi="${i}" ${live||S.admin?'':'disabled'}>${s.img?`<img src="${img(s.img)}" alt="" loading="lazy">`:''}${sub?`<i class="vt">${esc(s.s)}<small>${sub}</small></i>`:esc(s.s)}</button>`; }).join('')}</div><div class="swbig" id="swbig"><img alt=""><b></b></div>`;
   const foot = S.admin
     ? `<button class="btn" id="cpy" style="flex:1.2">📋 بوست</button><button class="btn" id="sty">📸 ستوري</button><button class="btn p" id="ed">✏️ تعديل</button>`
@@ -1254,7 +1289,7 @@ function drawCart(){
   const gsel=keep?keep.g:(saved.g||''), z=zones.find(x=>x.name===gsel), fee=PICK?0:(z&&num(z.fee)!=null?num(z.fee):null), sub=cartTotal();
   cb.innerHTML=lines.map((l,i)=>{ const p=l.p;
     return `<div class="cl ${l.ok?'':'bad'}">
-      ${p&&p.images?.length?`<img src="${img(p.images[0])}" alt="">`:'<div class="ni"></div>'}
+      ${p&&p.images?.length?timg(p.images[0],'loading="lazy"'):'<div class="ni"></div>'}
       <div class="i">${p?.brand?`<div class="brand-l" style="font-size:10px">${esc(p.brand)}</div>`:''}
         <div class="n">${esc(p?p.name:'منتج اتشال')}</div>
         ${l.v?`<div class="v">${esc(l.v)}</div>`:''}
@@ -1733,7 +1768,11 @@ const ASSETS = {
   },
   delete: async id => { if(/^(https?:|img\/)/.test(id)) return; await sb.storage.from('products').remove([id]); }
 };
-async function refresh(t){
+/* the last products seen are kept on the phone: the shop shows them at once on the next visit and swaps in the fresh list a moment later */
+const CK='pb_cache_v1';
+function cacheSave(){ clearTimeout(cacheSave.t); cacheSave.t=setTimeout(()=>{ if(!S.loaded) return; try{ localStorage.setItem(CK,JSON.stringify({t:Date.now(),v2:!!S.v2,v3:!!S.v3,countries:S.countries,cats:S.cats,products:S.products,settings:S.settings})); }catch(e){ try{ localStorage.removeItem(CK); }catch(x){} } },700); }
+function cacheLoad(){ try{ const c=JSON.parse(localStorage.getItem(CK)||'null'); if(!c||!Array.isArray(c.products)||!c.products.length||Date.now()-c.t>3*864e5) return null; return c; }catch(e){ return null; } }
+async function refresh(t,quiet){
   if(t==='settings'){
     const d=ok(await sb.from('settings').select('data').eq('id',1).maybeSingle());
     S.settings=d?.data||{};
@@ -1743,7 +1782,8 @@ async function refresh(t){
     S[KEY[t]] = ok(await sb.from(t).select('*')).map(r=>fromRow(t,r));
     if(t==='products'){ dropExpired(); applyRevert(); }
   }
-  render(); drawManage(); drawCart();
+  if(quiet) return;
+  render(); drawManage(); drawCart(); cacheSave();
 }
 async function loadOrders(){
   if(S.v2){ try{ const r=await sb.rpc('release_expired'); if(r.data>0) refresh('products').catch(()=>{}); }catch(e){} }
@@ -2122,13 +2162,20 @@ async function openOrder(no){
 (async()=>{
   if(!sb){ S.ready=true; note('الموقع لسه متوصلش بقاعدة البيانات.'); render(); return; }
   S.db=DB;
-  S.timer=setTimeout(()=>{ if(!S.ready){ note('النت بطيء شوية… لسه بنحمّل المنتجات.'); } },10000);
+  const C=cacheLoad();
+  if(C){ try{ S.v2=!!C.v2; S.v3=!!C.v3; S.countries=C.countries||[]; S.cats=C.cats||[]; S.products=C.products; S.settings=C.settings||{};
+    $('#tagline').textContent=S.settings.tagline||'منتجات أصلية من كل العالم 🌍'; paintGroup(); paintFloat(); renderExtras(); dropExpired(); applyRevert();
+    S.ready=true; render(); if(window.__splashOff) window.__splashOff();
+    if(/^#(p-|c-|offers|howto)/.test(location.hash)) route(); }catch(e){ S.ready=false; } }
+  S.timer=setTimeout(()=>{ if(!S.loaded&&!C){ note('النت بطيء شوية… لسه بنحمّل المنتجات.'); } },10000);
   try{
-    try{ const v=await sb.rpc('pb_version'); S.v2=!v.error && v.data>=2; S.v3=!v.error && v.data>=3; }catch(e){ S.v2=false; S.v3=false; }
-    if(S.v2){ try{ await sb.rpc('release_expired'); }catch(e){} }
-    await Promise.all(['countries','categories','products','settings'].map(refresh));
-    S.ready=true; clearTimeout(S.timer); note(''); render(); if(window.__splashOff) window.__splashOff(); pushInit();
-  }catch(e){ S.ready=true; clearTimeout(S.timer); note('مقدرناش نحمّل المنتجات دلوقتي. جرّب تفتح الصفحة تاني.'); render(); }
+    const ver=sb.rpc('pb_version').then(v=>{ S.v2=!v.error && v.data>=2; S.v3=!v.error && v.data>=3; },()=>{ S.v2=false; S.v3=false; });
+    await Promise.all([ver,...['countries','categories','products','settings'].map(t=>refresh(t,true))]);
+    S.ready=true; S.loaded=true; clearTimeout(S.timer); note(''); render(); drawCart(); cacheSave(); if(window.__splashOff) window.__splashOff();
+    if(S.v2) sb.rpc('release_expired').then(r=>{ if(r&&r.data>0) refresh('products').catch(()=>{}); },()=>{});
+    if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+    pushInit();
+  }catch(e){ S.ready=true; clearTimeout(S.timer); if(!C) note('مقدرناش نحمّل المنتجات دلوقتي. جرّب تفتح الصفحة تاني.'); render(); }
   const pend={};
   sb.channel('pb-live').on('postgres_changes',{event:'*',schema:'public'},p=>{
     const t=p.table; if(!['products','countries','categories','settings'].includes(t)) return;
