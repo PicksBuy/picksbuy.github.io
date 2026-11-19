@@ -670,6 +670,10 @@ const S = {
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num = v => { const n = parseFloat(String(v ?? '').replace(/,/g,'')); return isNaN(n) ? null : n; };
+/* Arabic and Persian digits (٠١٢ / ۰۱۲) typed on Arabic keyboards become 0-9 */
+const latinDigits = v => String(v ?? '').replace(/[\u0660-\u0669]/g,d=>d.charCodeAt(0)-1632).replace(/[\u06F0-\u06F9]/g,d=>d.charCodeAt(0)-1776);
+/* an Egyptian mobile in any common form (+20, 0020, 20, 01..) becomes 01xxxxxxxxx; anything else keeps its digits */
+function cleanPhone(v){ let d=latinDigits(v).replace(/\D/g,''); const m=d.match(/^(?:0020|20|0)?(1[0125]\d{8})$/); return m?'0'+m[1]:(d.length>=10?latinDigits(v).trim():''); }
 const fmt = n => Number(n).toLocaleString('en-US');
 const cur = () => S.settings.currency || 'L.E';
 const img = id => /^(https?:|img\/)/.test(id) ? id : `${SB_URL}/storage/v1/object/public/products/${id}`;
@@ -1319,11 +1323,11 @@ document.addEventListener('focusout',()=>{ if(!drawCart.later) return; setTimeou
 async function checkout(){
   const cb=cartOv.querySelector('#cbody'), name=cb.querySelector('#oName')?.value.trim()||'', addrIn=cb.querySelector('#oAddr')?.value.trim()||'', note=cb.querySelector('#oNote')?.value.trim()||'';
   const pick=!!PICK, addr=pick?('استلام من '+PICK_AT):addrIn;
-  const phone=(cb.querySelector('#oPhone')?.value||'').trim(), govIn=cb.querySelector('#oGov')?.value||'', gov=pick?'':govIn, zones=shipZones();
+  const phoneIn=(cb.querySelector('#oPhone')?.value||'').trim(), phone=cleanPhone(phoneIn), govIn=cb.querySelector('#oGov')?.value||'', gov=pick?'':govIn, zones=shipZones();
   const wa=(S.settings.whatsapp||'').replace(/[^\d]/g,'');
   if(!wa){ toast('رقم الواتساب مش متسجل'); return; }
   if(!name){ toast('اكتب اسمك'); cb.querySelector('#oName').focus(); return; }
-  if(phone.replace(/\D/g,'').length<10){ toast('اكتبي رقم الموبايل صح'); cb.querySelector('#oPhone').focus(); return; }
+  if(!phone){ toast('اكتبي رقم الموبايل صح (11 رقم يبدأ بـ 01)'); cb.querySelector('#oPhone').focus(); return; }
   if(!pick && zones.length && !gov){ toast('اختاري المحافظة'); cb.querySelector('#oGov').focus(); return; }
   if(!addr){ toast('اكتبي العنوان'); cb.querySelector('#oAddr').focus(); return; }
   try{ localStorage.setItem('pb_cust',JSON.stringify({n:name,a:addrIn,p:phone,g:govIn,pick})); }catch(e){}
@@ -1835,7 +1839,7 @@ const DEFAULT_ZONES=['القاهرة','الجيزة','الإسكندرية','ا�
 function shipZones(){ return Array.isArray(S.settings.shipping)?S.settings.shipping.filter(z=>z&&z.name):[]; }
 function zoneRow(z){ return `<div class="zrow"><input data-zn value="${esc(z.name)}" placeholder="المحافظة / المنطقة"><input data-zf inputmode="numeric" value="${esc(z.fee??'')}" placeholder="السعر"><button data-zrm="1">×</button></div>`; }
 const ST={new:'جديد',confirmed:'متأكد',shipped:'اتشحن',delivered:'اتسلم',cancelled:'اتلغى',expired:'انتهى الحجز'};
-function waPhone(ph){ let d=String(ph||'').replace(/\D/g,''); if(d.startsWith('00')) d=d.slice(2); if(d.startsWith('0')) d='2'+d; if(d.length===10&&d.startsWith('1')) d='20'+d; return d; }
+function waPhone(ph){ let d=latinDigits(ph).replace(/\D/g,''); if(d.startsWith('00')) d=d.slice(2); if(d.startsWith('0')) d='2'+d; if(d.length===10&&d.startsWith('1')) d='20'+d; return d; }
 function ago(t){ const m=Math.round((Date.now()-new Date(t))/6e4); if(m<60) return `من ${m} دقيقة`; const h=Math.round(m/60); if(h<48) return `من ${h} ساعة`; return `من ${Math.round(h/24)} يوم`; }
 function holdLeft(o){ const h=num(S.settings.holdHours)??6; if(!S.v2||h<=0||o.status!=='new') return ''; const ms=new Date(o.created_at).getTime()+h*36e5-Date.now(); if(ms<=0) return '⏳ هيتلغي دلوقتي'; const hh=Math.floor(ms/36e5), mm=Math.round(ms%36e5/6e4); return `⏳ هيتلغي لوحده بعد ${hh?hh+' س ':''}${mm} د لو ماتأكدش`; }
 function orderButtons(o){
@@ -2001,7 +2005,7 @@ function openRequest(pre={}){
     <div class="row2"><div class="f"><label>الاسم</label><input id="rNm" value="${esc(saved.n||'')}"></div><div class="f"><label>الموبايل</label><input id="rP" type="tel" inputmode="tel" value="${esc(saved.p||'')}" style="direction:ltr;text-align:right"></div></div>`,
     `<button class="btn" data-close>إلغاء</button><button class="btn r" id="rGo">ابعتي الطلب</button>`);
   ov.querySelector('#rGo').onclick=async()=>{
-    const q=x=>ov.querySelector(x).value.trim(), d={country:q('#rC'),link:q('#rL'),note:q('#rN'),name:q('#rNm'),phone:q('#rP')};
+    const q=x=>ov.querySelector(x).value.trim(), d={country:q('#rC'),link:q('#rL'),note:q('#rN'),name:q('#rNm'),phone:cleanPhone(q('#rP'))||q('#rP')};
     if(!d.link&&!d.note){ toast('اكتبي اسم المنتج أو حطي اللينك'); return; }
     if(!d.name){ toast('اكتبي اسمك'); return; }
     const wa=(S.settings.whatsapp||'').replace(/\D/g,''); if(!wa){ toast('رقم الواتساب مش متسجل'); return; }
