@@ -277,6 +277,12 @@
    "name": "ماسكرا",
    "parentId": "makeup",
    "order": 2
+  },
+  {
+   "id": "sneakers",
+   "name": "كوتشيات وأحذية",
+   "parentId": "clothes",
+   "order": 8
   }
  ],
  "products": [
@@ -13073,6 +13079,1447 @@
     "rate": 60.63,
     "url": "https://www.dm.de"
    }
+  },
+  {
+   "id": "amz-daily4-black-carbon-gum",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Black / Carbon / Gum",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Black / Carbon / Gum\nالمقاسات المتاحة (EU): 40 · 40⅔ · 41⅓ · 44 · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 4960,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61GtSOAo+kL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81b-8vbhiWL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71GK+RlB-LL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 30,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-earth-strata-off-white-aurora-coffee",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Earth Strata / Off White / Aurora Coffee",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Earth Strata / Off White / Aurora Coffee\nالمقاسات المتاحة (EU): 36 · 36⅔ · 37⅓ · 38 · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 46⅔ · 47⅓ · 48\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3760,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61zagtc3-PL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81phT8pFJ7L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71yQowWwqiL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    }
+   ],
+   "qty": 95,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-grey-white-off-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Grey / White / Off White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Grey / White / Off White\nالمقاسات المتاحة (EU): 36 · 37⅓ · 38 · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓ · 42 · 43⅓ · 44 · 45⅓ · 46⅔ · 47⅓ · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3205,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/71cl0ffqLGL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81tfH+o9RvL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71aIIESJQGL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 80,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-dusky-bronze-carbon-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Dusky Bronze / Carbon / White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Dusky Bronze / Carbon / White\nالمقاسات المتاحة (EU): 36⅔ · 38 · 38⅔ · 39⅓ · 40\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3450,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61jEpH1lH4L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71pPIxNflXL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61e+HEwKgQL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    }
+   ],
+   "qty": 25,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-clay-black-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Clay / Black / White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Clay / Black / White\nالمقاسات المتاحة (EU): 36 · 36⅔ · 37⅓ · 38 · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 46 · 47⅓ · 48\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3605,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/514Eof1U4nL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81Ut6tJ8mHL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    }
+   ],
+   "qty": 80,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-grey-team-royal-blue-grey",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Grey / Team Royal Blue / Grey",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Grey / Team Royal Blue / Grey\nالمقاسات المتاحة (EU): 36 · 38\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3605,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61pcqDFumwL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81o3eofymxL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71yl4ZHsLGL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    }
+   ],
+   "qty": 10,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-collegiate-burgundy-crystal-linen-off-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Collegiate Burgundy / Crystal Linen / Off White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Collegiate Burgundy / Crystal Linen / Off White\nالمقاسات المتاحة (EU): 36 · 37⅓ · 38⅔ · 40⅔ · 42⅔ · 45⅓ · 46⅔ · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3805,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61FNUcdd1KL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71AaETSAbKL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/612iF1NikDL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 45,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-blanch-cargo-wonder-beige-off-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Blanch Cargo / Wonder Beige / Off White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Blanch Cargo / Wonder Beige / Off White\nالمقاسات المتاحة (EU): 37⅓ · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3435,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61ySu9Bh0AL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71vrTFJup-L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61x5gjj-4vL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    }
+   ],
+   "qty": 30,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-cardboard-gum-black",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Cardboard / Gum / Black",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Cardboard / Gum / Black\nالمقاسات المتاحة (EU): 36 · 36⅔ · 37⅓ · 38 · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 47⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3475,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/616CtdXw-zL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81aDLA0L2PL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71Cw4FpN4WL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    }
+   ],
+   "qty": 85,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-black-white-black",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Black / White / Black",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Black / White / Black\nالمقاسات المتاحة (EU): 36 · 36⅔ · 37⅓ · 38 · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 46⅔ · 47⅓ · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3830,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/714ftqYlrjL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81JNKOTF37L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71JTbcCdW3L._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 100,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-olive-strata-shadow-olive-gum",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Olive Strata / Shadow Olive / Gum",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Olive Strata / Shadow Olive / Gum\nالمقاسات المتاحة (EU): 38 · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 46⅔ · 48\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3100,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61VzzGPTaBL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81ZE04qaRLL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71vvaMoFcJL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    }
+   ],
+   "qty": 75,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-dark-blue-white-off-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Dark Blue / White / Off White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Dark Blue / White / Off White\nالمقاسات المتاحة (EU): 36 · 37⅓ · 38 · 39⅓ · 40 · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 46⅔ · 47⅓ · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 2960,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/71J2VHZH5iL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81fVNHLD5EL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/7116EalGoYL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 90,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-grey-gum-collegiate-green",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Grey / Gum / Collegiate Green",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Grey / Gum / Collegiate Green\nالمقاسات المتاحة (EU): 36 · 36⅔ · 38 · 38⅔ · 39⅓ · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 47⅓ · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3905,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61bYro2o3VL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71OxUxgyiGL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61M-JjbBBnL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 85,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-shadow-navy-glory-grey-off-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Shadow Navy / Glory Grey / Off White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Shadow Navy / Glory Grey / Off White\nالمقاسات المتاحة (EU): 36\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3230,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/51n78Qj3CmL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/51vvgQ7VqKL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/41hPg9oyDSL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    }
+   ],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-shadow-brown-black-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Shadow Brown / Black / White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Shadow Brown / Black / White\nالمقاسات المتاحة (EU): 36 · 36⅔ · 37⅓ · 38 · 38⅔\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3475,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61yH6KSPsxL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71quLaNRmgL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/716cxp7zkiL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    }
+   ],
+   "qty": 25,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-grey-black-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Grey / Black / White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Grey / Black / White\nالمقاسات المتاحة (EU): 40 · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 46⅔ · 47⅓ · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 2925,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/71u50igMLDL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81EDYbEze+L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71RjzryJHbL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 70,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-white-black-off-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – White / Black / Off White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: White / Black / Off White\nالمقاسات المتاحة (EU): 36 · 36⅔ · 37⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3465,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/710A7SiJHuL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71xuLxReycL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71SFBEc1oSL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    }
+   ],
+   "qty": 15,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-black-white-gum",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Black / White / Gum",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Black / White / Gum\nالمقاسات المتاحة (EU): 36 · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 46⅔ · 47⅓ · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3210,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/71veqMQhrbL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71r-y447+OL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61DfM9JOnnL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "47⅓ (US 12.5)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 85,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-bronze-strata-dark-brown-off-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Bronze Strata / Dark Brown / Off White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Bronze Strata / Dark Brown / Off White\nالمقاسات المتاحة (EU): 36⅔ · 37⅓ · 38 · 38⅔ · 39⅓ · 40 · 40⅔ · 41⅓ · 45⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 4960,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/41ukzhKgZKL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71tpkYhYhjL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81dVBKQHf9L._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40 (US 7)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    }
+   ],
+   "qty": 45,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-ink-utility-yellow-gum",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Ink / Utility Yellow / Gum",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Ink / Utility Yellow / Gum\nالمقاسات المتاحة (EU): 36\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 2975,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/71AL4vw6YIL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71K4o6onIQL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71XDndUHoxL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    }
+   ],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-black-white-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Black / White / White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Black / White / White\nالمقاسات المتاحة (EU): 36⅔ · 37⅓ · 38 · 38⅔ · 39⅓ · 40⅔ · 41⅓ · 42 · 42⅔ · 43⅓ · 44 · 44⅔ · 45⅓ · 46 · 46⅔ · 48 · 49⅓\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3605,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/712FGbCJ6CL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71WXYGXNgpL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61w3npfrcEL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36⅔ (US 4.5)",
+     "q": 5
+    },
+    {
+     "s": "37⅓ (US 5)",
+     "q": 5
+    },
+    {
+     "s": "38 (US 5.5)",
+     "q": 5
+    },
+    {
+     "s": "38⅔ (US 6)",
+     "q": 5
+    },
+    {
+     "s": "39⅓ (US 6.5)",
+     "q": 5
+    },
+    {
+     "s": "40⅔ (US 7.5)",
+     "q": 5
+    },
+    {
+     "s": "41⅓ (US 8)",
+     "q": 5
+    },
+    {
+     "s": "42 (US 8.5)",
+     "q": 5
+    },
+    {
+     "s": "42⅔ (US 9)",
+     "q": 5
+    },
+    {
+     "s": "43⅓ (US 9.5)",
+     "q": 5
+    },
+    {
+     "s": "44 (US 10)",
+     "q": 5
+    },
+    {
+     "s": "44⅔ (US 10.5)",
+     "q": 5
+    },
+    {
+     "s": "45⅓ (US 11)",
+     "q": 5
+    },
+    {
+     "s": "46 (US 11.5)",
+     "q": 5
+    },
+    {
+     "s": "46⅔ (US 12)",
+     "q": 5
+    },
+    {
+     "s": "48 (US 13)",
+     "q": 5
+    },
+    {
+     "s": "49⅓ (US 14)",
+     "q": 5
+    }
+   ],
+   "qty": 85,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "amz-daily4-grey-grey-crystal-white",
+   "brand": "adidas",
+   "name": "Daily 4.0 Sneakers – Grey / Grey / Crystal White",
+   "desc": "كوتشي adidas Daily 4.0 الأصلي 👟 كاجوال برباط ورقبة قصيرة، مريح للبس اليومي.\nاللون: Grey / Grey / Crystal White\nالمقاسات المتاحة (EU): 36\n\n📏 المقاس مكتوب أوروبي (EU) وجنبه الأمريكي الرجالي (US). الموديل رجالي وبيتلبس حريمي عادي: الحريمي الأمريكي = الرجالي + 1.\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "sneakers",
+   "price": 3605,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/813UaQJjb5L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/712GOQ8yDkL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61wCOUSg7pL._AC_SL1000_.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "36 (US 4)",
+     "q": 5
+    }
+   ],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:45:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CKMCTT55"
   }
  ],
  "settingsPatch": {
@@ -18637,6 +20084,11 @@
    "key": "primark-sale-2026-11-11",
    "prefix": "pk-",
    "until": "2026-11-12T00:00:00+02:00"
+  },
+  {
+   "key": "amazon-adidas-2026-11-19",
+   "prefix": "amz-",
+   "until": "2026-11-20T20:00:00+02:00"
   }
  ],
  "revert": [
