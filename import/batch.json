@@ -301,6 +301,30 @@
    "name": "مكواة وأدوات تصفيف",
    "parentId": "hair",
    "order": 7
+  },
+  {
+   "id": "shampoo",
+   "name": "شامبو وبلسم",
+   "parentId": "hair",
+   "order": 1
+  },
+  {
+   "id": "hairmask",
+   "name": "ماسكات شعر",
+   "parentId": "hair",
+   "order": 2
+  },
+  {
+   "id": "toner",
+   "name": "تونر",
+   "parentId": "skin",
+   "order": 3
+  },
+  {
+   "id": "brushes",
+   "name": "فرش ميكب",
+   "parentId": "makeup",
+   "order": 9
   }
  ],
  "products": [
@@ -15340,6 +15364,416 @@
    "createdAt": "2026-11-19T19:55:00+02:00",
    "needsPrice": false,
    "src": "https://www.kikocosmetics.com/fr-fr/p/42039/"
+  },
+  {
+   "id": "fr22-shea-curl",
+   "brand": "SheaMoisture",
+   "name": "Curl & Shine Coconut & Hibiscus Conditioner 384ml",
+   "desc": "بلسم للشعر الكيرلي والتقيل بجوز الهند والكركديه، مع بروتين الحرير وزيت النيم. بيرطب ويحدد التموجات. من غير سيليكون وسلفات.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "shampoo",
+   "price": 925,
+   "oldPrice": 1190,
+   "images": [
+    "https://m.media-amazon.com/images/I/51wkpsktbUL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61yQHsjUOzL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71uMY9depGL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71KaIWwBsrL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-balm",
+   "brand": "medicube",
+   "name": "PDRN Pink Collagen Volume Multi Balm 10g",
+   "desc": "ستيك بلسم متعدد الاستخدام بالكولاجين والـ PDRN و5% Volufiline، للوش والجسم. بيرطب ويدي امتلاء ونضارة.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "moist",
+   "price": 1130,
+   "oldPrice": 1495,
+   "images": [
+    "https://m.media-amazon.com/images/I/51ShyBZyxhL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61XUGImzWgL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71Y-2rYovRL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71+Pa8X32VL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-glut-foam",
+   "brand": "medicube",
+   "name": "PDRN Pink Glutathione Capsule Cleansing Foam 120g",
+   "desc": "غسول فوم بكبسولات الجلوتاثيون والنياسيناميد والـ PDRN، للنضارة وتوحيد اللون.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "facewash",
+   "price": 885,
+   "oldPrice": null,
+   "images": [
+    "img/fr/mc-glut-foam.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-zero-foam",
+   "brand": "medicube",
+   "name": "Zero Foam Cleanser 120g",
+   "desc": "غسول فوم لتنظيف المسام بعمق، بخلاصة الميليسا وزهرة الكاميليا.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "facewash",
+   "price": 885,
+   "oldPrice": 1105,
+   "images": [
+    "https://m.media-amazon.com/images/I/61O0WUM3SuL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71eLS5neXEL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61jMs3wDYdL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71TUNYW6ZgL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-zero-capsule",
+   "brand": "medicube",
+   "name": "Zero Pore SA Clear Capsule Cleansing Foam 120g",
+   "desc": "غسول فوم بكبسولات سالسيليك أسيد 0.45% و AHA + PHA، لتنظيف المسام المسدودة وتقشير لطيف.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "facewash",
+   "price": 885,
+   "oldPrice": 1105,
+   "images": [
+    "img/fr/mc-zero-capsule.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-kojic-toner",
+   "brand": "medicube",
+   "name": "Kojic Acid Turmeric Resurfacing Toner 250ml",
+   "desc": "تونر بحمض الكوجيك والكركم، مع نياسيناميد 5% وجليكوليك أسيد 3%، لتفتيح وتوحيد لون البشرة.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "toner",
+   "price": 945,
+   "oldPrice": 1190,
+   "images": [
+    "img/fr/mc-kojic-toner.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-collagen-toner",
+   "brand": "medicube",
+   "name": "Triple Collagen Toner 140ml",
+   "desc": "تونر بالكولاجين المتحلل وخلاصة الكولاجين، لترطيب البشرة ومرونتها.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "toner",
+   "price": 945,
+   "oldPrice": null,
+   "images": [
+    "img/fr/mc-collagen-toner.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-rt-wanderer",
+   "brand": "Real Techniques",
+   "name": "Face Base Set – 4 Brushes",
+   "desc": "طقم 4 فرش للفاونديشن والكونسيلر والكونتور والتثبيت.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "brushes",
+   "price": 855,
+   "oldPrice": 1205,
+   "images": [
+    "https://m.media-amazon.com/images/I/81tNXEFUBYL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81B678tIRpL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71GDxCQ0-WL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71B0wx1FuDL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-gel-cleanser",
+   "brand": "medicube",
+   "name": "PDRN Hydrating Gel Cleanser 200ml",
+   "desc": "غسول جل مرطب بـ 99% PDRN.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "facewash",
+   "price": 1005,
+   "oldPrice": null,
+   "images": [
+    "img/fr/mc-gel-cleanser.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-dercos-ds",
+   "brand": "Vichy",
+   "name": "Dercos Anti-Dandruff DS Shampoo – Dry Hair 390ml",
+   "desc": "شامبو علاجي للقشرة وهرش فروة الراس، بالسيلينيوم DS وحمض السالسيليك. للشعر الجاف وفروة الراس الحساسة.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "shampoo",
+   "price": 880,
+   "oldPrice": 1055,
+   "images": [
+    "img/fr/dercos-ds.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-shea-manuka-mask",
+   "brand": "SheaMoisture",
+   "name": "Manuka Honey & Mafura Oil Intensive Hydration Hair Masque 355ml",
+   "desc": "ماسك ترطيب عميق بعسل المانوكا وزيت المافورا، مع خلاصة التين وزيت الباوباب. للشعر الجاف والتالف.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "hairmask",
+   "price": 935,
+   "oldPrice": 1110,
+   "images": [
+    "https://m.media-amazon.com/images/I/71MfXZhIhzL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61EUxGp0xcL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71HAoQopN+L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71LBJTRhhvL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-shea-manuka-cond",
+   "brand": "SheaMoisture",
+   "name": "Manuka Honey & Mafura Oil Intensive Hydration Conditioner 384ml",
+   "desc": "بلسم ترطيب عميق بعسل المانوكا وزيت المافورا. للشعر الجاف والتالف.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "shampoo",
+   "price": 855,
+   "oldPrice": 1040,
+   "images": [
+    "https://m.media-amazon.com/images/I/61afskg0baL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/617TSPMuAmL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71HAoQopN+L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71MlTtqrFWL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-cica-toner",
+   "brand": "medicube",
+   "name": "PDRN Pink Cica Soothing Toner 250ml",
+   "desc": "تونر مهدئ بالـ PDRN والسيكا وهيالورونات الصوديوم. النوع: Salmon PDRN Watery.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "toner",
+   "price": 885,
+   "oldPrice": 1130,
+   "images": [
+    "https://m.media-amazon.com/images/I/51SIeKqdmQL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71zGJgqw67L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61QI6hBQ7bL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61aDBwnT2GL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-mc-jelly-mist",
+   "brand": "medicube",
+   "name": "PDRN Pink Collagen Glow Jelly Mist Serum 100ml",
+   "desc": "سيروم ميست جيلي بالكولاجين والـ PDRN للنضارة والترطيب.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "serum",
+   "price": 1010,
+   "oldPrice": 1425,
+   "images": [
+    "img/fr/mc-jelly-mist.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-karseell",
+   "brand": "Karseell",
+   "name": "Maca Power Collagen Hair Mask 500ml",
+   "desc": "ماسك الكولاجين بخلاصة الماكا، للشعر الجاف والتالف والمعالج كيميائيًا.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "hairmask",
+   "price": 1680,
+   "oldPrice": 1945,
+   "images": [
+    "img/fr/karseell.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-uniqone",
+   "brand": "Revlon Professional",
+   "name": "UniqOne All in One Shampoo 490ml",
+   "desc": "شامبو UniqOne الكل في واحد – 10 فوايد للشعر. الحجم الكبير بالبامب 490ml.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "shampoo",
+   "price": 930,
+   "oldPrice": null,
+   "images": [
+    "https://m.media-amazon.com/images/I/61Jm0FCTpeL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/7198j71hmdL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61FEFSbFiyL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71Okj0dUdTL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-garnier-rice",
+   "brand": "Garnier",
+   "name": "Ultra Doux Rice Water Set – Shampoo + Conditioner + Mask",
+   "desc": "طقم أولترا دو بماء الأرز والنشا للشعر الطويل: شامبو + بلسم + ماسك. لنعومة وفرد الشعر.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "shampoo",
+   "price": 760,
+   "oldPrice": 1010,
+   "images": [
+    "img/fr/garnier-rice.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-rem-proceramic",
+   "brand": "Remington",
+   "name": "Pro-Ceramic Extra Wide Straightener S5525",
+   "desc": "مكواة شعر بألواح سيراميك عريضة 45mm وحرارة لحد 230°، بشاشة ديجيتال.\n🔌 الفيشة أوروبي وتنفع في مصر.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "hairtools",
+   "price": 1445,
+   "oldPrice": 2150,
+   "images": [
+    "https://m.media-amazon.com/images/I/61Smx1StfQL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71hS3GCtFjL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61479NZB9yL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71a6RU097bL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-rem-s3500",
+   "brand": "Remington",
+   "name": "Ceramic Straight 230 Straightener S3500",
+   "desc": "مكواة شعر سيراميك بالتورمالين، حرارة لحد 230° وحماية 4X.\n🔌 الفيشة أوروبي وتنفع في مصر.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "hairtools",
+   "price": 935,
+   "oldPrice": 1695,
+   "images": [
+    "https://m.media-amazon.com/images/I/61SmgXgoPNL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71XfRH3WmNL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61-SnWs+6qL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/619i-Yq5xJL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "fr22-skyhigh",
+   "brand": "Maybelline",
+   "name": "Lash Sensational Sky High Mascara – Ultra Intense Black",
+   "desc": "ماسكرا Sky High لتطويل وتكثيف الرموش. اللون: Ultra Intense Black.\n\n📦 بيتطلب مخصوص من Amazon فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 22 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "mascara",
+   "price": 615,
+   "oldPrice": 795,
+   "images": [
+    "img/fr/skyhigh.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-19T21:50:00+02:00",
+   "needsPrice": false
   }
  ],
  "settingsPatch": {
@@ -23041,6 +23475,11 @@
    "key": "bf24-2026-11-19",
    "prefix": "bf24-",
    "until": "2026-11-20T20:00:00+02:00"
+  },
+  {
+   "key": "fr22-2026-11-19",
+   "prefix": "fr22-",
+   "until": "2026-11-20T19:20:00+02:00"
   }
  ],
  "revert": [
