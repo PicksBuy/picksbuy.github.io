@@ -1,27 +1,15 @@
-import urllib.request, json, time, os, re
-H={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36','Accept':'image/avif,image/webp,image/*,*/*;q=0.8'}
-d=json.load(open('import/bf-ids.json')); out={'amz':{},'kiko':{}}
-def get(u,h=H):
-    r=urllib.request.urlopen(urllib.request.Request(u,headers=h),timeout=40); return r.status,r.read(),r.headers.get('Content-Type','')
-for i in d['amz']:
-    try:
-        s,b,ct=get('https://m.media-amazon.com/images/I/'+i+'._AC_SL1000_.jpg'); out['amz'][i]=[s,len(b)]
-        if i==d['tarte']: open('import/tarte-check.jpg','wb').write(b)
-    except Exception as x: out['amz'][i]=['err',str(x)[:80]]
-    time.sleep(0.15)
-os.makedirs('img/kiko',exist_ok=True)
-for n,u in d['kiko']:
-    try:
-        s,b,ct=get('https://assets.joqhl8w6.on-eva.io/blob/'+u)
-        ext={'image/jpeg':'jpg','image/png':'png','image/webp':'webp'}.get(ct.split(';')[0].strip(),'bin')
-        open(f'img/kiko/sfl-{n}.{ext}','wb').write(b); out['kiko'][n]=[s,len(b),ct,ext]
-    except Exception as x: out['kiko'][n]=['err',str(x)[:80]]
-    time.sleep(0.2)
+import urllib.request, json, re
+t=open('index.html',encoding='utf8').read(); U=re.search(r'const SB_URL = "([^"]+)"',t).group(1); K=re.search(r'const SB_KEY = "([^"]+)"',t).group(1)
+H={'apikey':K,'Authorization':'Bearer '+K}
+out={}
 try:
-    t=open('index.html',encoding='utf8').read(); U=re.search(r'const SB_URL = "([^"]+)"',t).group(1); K=re.search(r'const SB_KEY = "([^"]+)"',t).group(1)
-    hh={'apikey':K,'Authorization':'Bearer '+K}
-    for tb in ('categories','countries'):
-        s,b,ct=get(U+'/rest/v1/'+tb+'?select=*',hh); out[tb]=json.loads(b)
-    s,b,ct=get(U+'/rest/v1/rpc/pb_version',{**hh,'Content-Type':'application/json'}); out['ver']=b.decode()[:20]
-except Exception as x: out['sb']=str(x)[:120]
+    r=urllib.request.urlopen(urllib.request.Request(U+'/rest/v1/products?select=id,price,old_price,qty,hidden,sizes,updated_at&limit=1000',headers=H),timeout=40); rows=json.loads(r.read())
+    out['n']=len(rows)
+    sized=[x for x in rows if x.get('sizes')]
+    out['sized']=len(sized)
+    out['amz']=[[x['id'][11:],x['price'],x['qty'],x['hidden'],len(x['sizes']),sum(1 for s in x['sizes'] if (s.get('q') or 0)>0),x['sizes'][:2],x['updated_at'][:19]] for x in rows if x['id'].startswith('amz-')]
+    out['bf24']=[[x['id'],x['price'],x['old_price'],x['qty'],len(x.get('sizes') or [])] for x in rows if x['id'].startswith('bf24-')]
+    out['other_sized']=[[x['id'],x['qty'],x['hidden'],[(s.get('s'),s.get('q')) for s in x['sizes']][:6]] for x in sized if not x['id'].startswith(('amz-','pk-'))][:25]
+    out['types']=sorted(set(type(s.get('q')).__name__ for x in sized for s in x['sizes']))
+except Exception as e: out['err']=str(e)[:200]
 json.dump(out,open('import/nyx-probe.json','w'),ensure_ascii=False,indent=0)
