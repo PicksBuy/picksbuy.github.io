@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="boot">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>/* ask for the products right away, in parallel with everything else the page loads; the shop code picks the answers up when it starts */
+(function(){try{var U="https://iozwfbafomkwlhlbkcuq.supabase.co",K="sb_publishable_JdmfjPIw0VthxJSCGbzN3g_6Ymo-DhQ";
+if(!window.fetch||localStorage.getItem("sb-iozwfbafomkwlhlbkcuq-auth-token"))return;
+var h={apikey:K,Authorization:"Bearer "+K},q={countries:"countries?select=*",categories:"categories?select=*",products:"products?select=*",settings:"settings?select=data&id=eq.1"},E={};
+for(var t in q)E[t]=fetch(U+"/rest/v1/"+q[t],{headers:h}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();});
+E.v=fetch(U+"/rest/v1/rpc/pb_version",{method:"POST",headers:{apikey:K,Authorization:"Bearer "+K,"Content-Type":"application/json"},body:"{}"}).then(function(r){return r.ok?r.json():null;});
+for(var k in E)E[k].catch(function(){});window.__early=E;}catch(e){}})();</script>
 <title>PicksBuy | منتجات أصلية من كل العالم</title>
 <meta name="description" content="PicksBuy — ميكب وعناية بالبشرة والشعر وملابس من بره مصر. اطلب على واتساب.">
 <meta property="og:title" content="PicksBuy 🛍️">
@@ -343,7 +350,7 @@ body.admin .fab, body.admin .fab2{display:flex}
 @keyframes sk{to{background-position:-200% 0}}
 
 /* ================= Rose Luxe theme + motion ================= */
-:root{--bg:#FCF5F3;--ink:#2A1A1F;--muted:#8A7479;--line:#F0DFDA;--soft:#F9EAE6;--rose:#C9776A;--red:#B23A48;
+:root{--bg:#FCF5F3;--ink:#2A1A1F;--muted:#7A666C;--line:#F0DFDA;--soft:#F9EAE6;--rose:#C9776A;--red:#B23A48;
   --rg:linear-gradient(135deg,#B76E79 0%,#E2A797 48%,#C98276 100%);--rg2:linear-gradient(135deg,#2A1A1F,#5A2A33);
   --r:20px;--shadow:0 1px 2px rgba(120,50,60,.05),0 10px 28px rgba(150,70,80,.09);--ease:cubic-bezier(.22,1,.36,1);--spring:cubic-bezier(.34,1.56,.64,1)}
 body{background:radial-gradient(900px 500px at 110% -10%,#F9DCD5 0%,transparent 60%),radial-gradient(700px 500px at -20% 30%,#FBE8E3 0%,transparent 60%),var(--bg);background-attachment:fixed}
@@ -594,6 +601,10 @@ footer.wrap{padding-bottom:130px!important}
 .dlv button.on{background:var(--rg2);border-color:transparent;color:#fff;box-shadow:0 8px 18px rgba(90,42,51,.25)}
 .pickn{margin:0 0 12px;padding:10px 12px;border-radius:14px;background:#FBEAE5;font-size:13.5px;line-height:1.7}
 .vshare{display:block;width:100%;max-width:360px;margin:10px auto 14px;background:var(--rg);color:#fff;font-weight:800;box-shadow:0 8px 20px rgba(183,110,121,.35)}
+html.boot main,html.boot footer{display:none}
+.bootsk{display:none;padding-top:12px}html.boot .bootsk{display:block}
+.bootsk .bk{background:linear-gradient(90deg,#efe5e2,#f8f1ef,#efe5e2);background-size:200% 100%;animation:sk 1.2s infinite;border-radius:22px;margin-bottom:14px}
+.bootsk .b1{height:300px}.bootsk .b2{height:96px;border-radius:999px;width:70%}.bootsk .b3{height:110px}
 .gmore{grid-column:1/-1;height:1px}
 .fav:after,.addq:after{content:"";position:absolute;inset:-7px;border-radius:50%}
 footer a,footer button{display:inline-block;padding:10px 6px}
@@ -604,7 +615,7 @@ footer a,footer button{display:inline-block;padding:10px 6px}
 <body>
 <div id="splash"><div class="in"><img src="img/logo.webp" alt="" width="150" height="131" fetchpriority="high"><b>Picks<span>Buy</span></b><small>منتجات أصلية من كل العالم</small><i></i></div></div>
 <script>(function(){var s=document.getElementById('splash'),t0=Date.now();try{if(sessionStorage.getItem('pb_spl')){s.remove();return;}sessionStorage.setItem('pb_spl','1');}catch(e){}
-window.__splashOff=function(){var w=Math.max(0,1300-(Date.now()-t0));setTimeout(function(){s.classList.add('go');setTimeout(function(){s.remove();},700);},w);};setTimeout(window.__splashOff,4500);})();</script>
+window.__splashOff=function(){var w=Math.max(0,1300-(Date.now()-t0));setTimeout(function(){s.classList.add('go');setTimeout(function(){s.remove();},700);},w);};setTimeout(window.__splashOff,4500);})();setTimeout(function(){document.documentElement.classList.remove('boot');},9000);</script>
 <header>
   <div class="wrap">
     <div class="hd">
@@ -621,6 +632,7 @@ window.__splashOff=function(){var w=Math.max(0,1300-(Date.now()-t0));setTimeout(
   </div>
 </header>
 
+<div class="wrap bootsk" aria-hidden="true"><div class="bk b1"></div><div class="bk b2"></div><div class="bk b3"></div><div class="grid"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></div></div>
 <main class="wrap">
   <div id="upg"></div>
   <div id="imp"></div>
@@ -837,6 +849,7 @@ function render(){
   $('#cinfo').innerHTML = ci&&ci.info ? `<div class="shipnote">🚚 ${esc(ci.flag||'')} ${esc(ci.info)}</div>` : '';
   drawCartBtn(); drawActive();
   if (!S.ready) return;
+  document.documentElement.classList.remove('boot');
   if (!list.length){
     $('#grid').innerHTML = `<div class="empty" style="grid-column:1/-1"><div class="big">🔍</div>${
       S.products.length ? 'مفيش منتجات بالاختيارات دي'+(activeFilters().length||S.q?'<br><button class="btn p" data-clearall="1">امسحي الفلاتر</button>':'') : (S.admin ? 'لسه مفيش منتجات. دوس <b>＋ منتج جديد</b> تحت علشان تضيف أول منتج.' : 'المنتجات هتنزل قريب ✨')}</div>`;
@@ -1776,14 +1789,16 @@ const ASSETS = {
 const CK='pb_cache_v1';
 function cacheSave(){ clearTimeout(cacheSave.t); cacheSave.t=setTimeout(()=>{ if(!S.loaded) return; try{ localStorage.setItem(CK,JSON.stringify({t:Date.now(),v2:!!S.v2,v3:!!S.v3,countries:S.countries,cats:S.cats,products:S.products,settings:S.settings})); }catch(e){ try{ localStorage.removeItem(CK); }catch(x){} } },700); }
 function cacheLoad(){ try{ const c=JSON.parse(localStorage.getItem(CK)||'null'); if(!c||!Array.isArray(c.products)||!c.products.length||Date.now()-c.t>3*864e5) return null; return c; }catch(e){ return null; } }
+function early(t){ const E=window.__early, p=E&&E[t]; if(!p) return null; E[t]=null; return p.catch(()=>null); }
 async function refresh(t,quiet){
+  const pre=await early(t);
   if(t==='settings'){
-    const d=ok(await sb.from('settings').select('data').eq('id',1).maybeSingle());
+    const d=Array.isArray(pre) ? (pre[0]||null) : ok(await sb.from('settings').select('data').eq('id',1).maybeSingle());
     S.settings=d?.data||{};
     $('#tagline').textContent=S.settings.tagline||'منتجات أصلية من كل العالم 🌍';
     paintGroup(); paintFloat(); renderExtras(); dropExpired(); applyRevert();
   } else {
-    S[KEY[t]] = ok(await sb.from(t).select('*')).map(r=>fromRow(t,r));
+    S[KEY[t]] = (Array.isArray(pre) ? pre : ok(await sb.from(t).select('*'))).map(r=>fromRow(t,r));
     if(t==='products'){ dropExpired(); applyRevert(); }
   }
   if(quiet) return;
@@ -2164,7 +2179,7 @@ async function openOrder(no){
 
 /* ---------- boot ---------- */
 (async()=>{
-  if(!sb){ S.ready=true; note('الموقع لسه متوصلش بقاعدة البيانات.'); render(); return; }
+  if(!sb){ S.ready=true; note('الموقع لسه متوصلش بقاعدة البيانات.'); render(); document.documentElement.classList.remove('boot'); return; }
   S.db=DB;
   const C=cacheLoad();
   if(C){ try{ S.v2=!!C.v2; S.v3=!!C.v3; S.countries=C.countries||[]; S.cats=C.cats||[]; S.products=C.products; S.settings=C.settings||{};
@@ -2173,7 +2188,7 @@ async function openOrder(no){
     if(/^#(p-|c-|offers|howto)/.test(location.hash)) route(); }catch(e){ S.ready=false; } }
   S.timer=setTimeout(()=>{ if(!S.loaded&&!C){ note('النت بطيء شوية… لسه بنحمّل المنتجات.'); } },10000);
   try{
-    const ver=sb.rpc('pb_version').then(v=>{ S.v2=!v.error && v.data>=2; S.v3=!v.error && v.data>=3; },()=>{ S.v2=false; S.v3=false; });
+    const ev=early('v'), ver=(ev?ev.then(d=>d==null?sb.rpc('pb_version'):{data:d,error:null}):sb.rpc('pb_version')).then(v=>{ S.v2=!v.error && v.data>=2; S.v3=!v.error && v.data>=3; },()=>{ S.v2=false; S.v3=false; });
     await Promise.all([ver,...['countries','categories','products','settings'].map(t=>refresh(t,true))]);
     S.ready=true; S.loaded=true; clearTimeout(S.timer); note(''); render(); drawCart(); cacheSave(); if(window.__splashOff) window.__splashOff();
     if(S.v2) sb.rpc('release_expired').then(r=>{ if(r&&r.data>0) refresh('products').catch(()=>{}); },()=>{});
