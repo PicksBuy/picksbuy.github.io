@@ -121,6 +121,9 @@ body:not(.admin) .cartbtn.has{display:flex}
 .ribbon~.addq{bottom:32px}
 .vch{border:1.5px solid var(--line);border-radius:10px;padding:6px 14px;font-weight:700;direction:ltr;background:#fff}
 .vch.on{border-color:var(--ink);background:var(--ink);color:#fff}
+.vch .vt{font-style:normal;display:inline-flex;flex-direction:column;align-items:center;line-height:1.25}.vch .vt small{font-size:11px;font-weight:700;opacity:.7}.vch:disabled .vt small{display:none}
+.frm{font-style:normal;font-size:12px;font-weight:700;color:var(--muted)}.dprice .frm{font-size:14px;margin-inline-end:5px}.mini .pr .frm{margin-left:4px}
+.sp3 .srow{grid-template-columns:1fr 62px 84px 34px}
 .vch:disabled{color:#bbb;text-decoration:line-through}
 .vch.sw{display:inline-flex;align-items:center;gap:7px;padding:4px 12px 4px 5px;border-radius:999px}
 .vch.sw img{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid rgba(0,0,0,.08);padding:0!important;background:#eee}
@@ -696,10 +699,17 @@ let CART=[]; try{ CART=JSON.parse(localStorage.getItem('pb_cart')||'[]')||[]; }c
 const HOLDER='h'+Math.random().toString(36).slice(2);
 function saveCart(){ try{ localStorage.setItem('pb_cart',JSON.stringify(CART)); }catch(e){} drawCartBtn(); }
 function variants(p){ return (Array.isArray(p.sizes)&&p.sizes.length) ? p.sizes : null; }
+/* a size can carry its own price (p). The server charges it from version 3 on; before that everything stays on the product price */
+function szP(p,s){ const n=S.v3&&s?num(s.p):null; return n>0?n:num(p.price); }
+function vprice(p,v){ const vs=variants(p); return szP(p, vs&&v?vs.find(s=>s.s===v):null); }
+function pset(p){ const vs=S.v3&&variants(p); if(!vs||!vs.some(s=>num(s.p)>0)) return null; const live=vs.filter(s=>num(s.q)>0); return (live.length?live:vs).map(s=>szP(p,s)).filter(x=>x!=null); }
+function lowP(p){ const a=pset(p); return a&&a.length?Math.min(...a):num(p.price); }
+function ranged(p){ const a=pset(p); return !!a&&new Set(a).size>1; }
+const frm=p=>ranged(p)?'<i class="frm">من</i>':'';
 function avail(p,v){ if(variants(p)){ const x=p.sizes.find(s=>s.s===v); return x?Math.max(0,num(x.q)||0):0; } return Math.max(0,stock(p)); }
 function inCart(id,v){ return CART.filter(c=>c.id===id&&(c.v||'')===(v||'')).reduce((a,c)=>a+c.n,0); }
 function cartLines(){ return CART.map(c=>{ const p=S.products.find(x=>x.id===c.id); const ok=p&&!p.hidden&&avail(p,c.v)>0; return {...c,p,ok,max:p?avail(p,c.v):0}; }); }
-function cartTotal(){ return cartLines().filter(l=>l.ok).reduce((a,l)=>a+(num(l.p.price)||0)*Math.min(l.n,l.max),0); }
+function cartTotal(){ return cartLines().filter(l=>l.ok).reduce((a,l)=>a+(vprice(l.p,l.v)||0)*Math.min(l.n,l.max),0); }
 function addToCart(id,v,n=1){
   const p=S.products.find(x=>x.id===id); if(!p) return false;
   if(variants(p) && !v){ toast('اختار النوع الأول'); return false; }
@@ -719,7 +729,7 @@ function discount(p){ const o=num(p.oldPrice), n=num(p.price); return (o && n &&
 function tileImg(list,catId){ const ps=list.filter(p=>mainCatOf(p)===catId&&p.images&&p.images.length); const p=ps.find(x=>stock(x)>0&&!x.hidden)||ps[0]; return p?img(p.images[0]):''; }
 let SEEN=[]; try{ SEEN=JSON.parse(localStorage.getItem('pb_seen')||'[]')||[]; }catch(e){ SEEN=[]; }
 function markSeen(id){ SEEN=[id,...SEEN.filter(x=>x!==id)].slice(0,12); try{ localStorage.setItem('pb_seen',JSON.stringify(SEEN)); }catch(e){} }
-function miniCard(p){ const d=discount(p); return `<div class="mini ${stock(p)>0?'':'sold'}" data-mid="${esc(p.id)}"><div class="im">${p.images?.length?`<img src="${img(p.images[0])}" loading="lazy" alt="">`:''}${d&&stock(p)>0?`<span>-${d}%</span>`:''}</div><div class="t">${p.brand?`<div class="br">${esc(p.brand)}</div>`:''}<div class="nm">${esc(p.name)}</div>${num(p.price)!=null?`<div class="pr">${fmt(num(p.price))} ${esc(cur())}</div>`:''}</div></div>`; }
+function miniCard(p){ const d=discount(p); return `<div class="mini ${stock(p)>0?'':'sold'}" data-mid="${esc(p.id)}"><div class="im">${p.images?.length?`<img src="${img(p.images[0])}" loading="lazy" alt="">`:''}${d&&stock(p)>0?`<span>-${d}%</span>`:''}</div><div class="t">${p.brand?`<div class="br">${esc(p.brand)}</div>`:''}<div class="nm">${esc(p.name)}</div>${num(p.price)!=null?`<div class="pr">${fmt(lowP(p))} ${esc(cur())}${frm(p)}</div>`:''}</div></div>`; }
 function seenRail(){ if(S.admin) return ''; const ps=SEEN.map(id=>S.products.find(p=>p.id===id)).filter(p=>p&&!p.hidden&&stock(p)>0); return ps.length>=2?`<div class="xsec"><h2>كمّلي من مكان ما وقفتي</h2><div class="mrail">${ps.map(miniCard).join('')}</div></div>`:''; }
 document.addEventListener('click',e=>{ const m=e.target.closest('[data-mid]'); if(!m) return; const o=m.closest('.ov'); if(o&&o.close) o.close(); setTimeout(()=>openDetail(m.dataset.mid),o?240:0); });
 const nrm=s=>String(s||'').toLowerCase().replace(/[\u064B-\u0652\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');
@@ -770,8 +780,8 @@ function render(){
   const t = p => p.createdAt || '';
   const _cmp=({
     new:(a,b)=>t(b).localeCompare(t(a)),
-    low:(a,b)=>(num(a.price)??1e12)-(num(b.price)??1e12),
-    high:(a,b)=>(num(b.price)??-1)-(num(a.price)??-1),
+    low:(a,b)=>(lowP(a)??1e12)-(lowP(b)??1e12),
+    high:(a,b)=>(lowP(b)??-1)-(lowP(a)??-1),
     avail:(a,b)=>(stock(b)>0)-(stock(a)>0) || t(b).localeCompare(t(a)),
     off:(a,b)=>(discount(b)-discount(a)) || (isPromo(b)-isPromo(a)) || (num(a.price)||0)-(num(b.price)||0)
   }[S.sort] || ((a,b)=>t(b).localeCompare(t(a))));
@@ -816,7 +826,7 @@ function renderPromo(all){
     <div class="bfx" id="bfx"><div class="bft">${items.map((p,i)=>{ const d=discount(p), so=stock(p)<=0; return `<div class="bfs ${so?'sold':''}" data-pid="${esc(p.id)}">
       <div class="bfi">${p.images?.length?`<img src="${img(p.images[0])}" ${i?'loading="lazy"':''} alt="">`:''}${d&&!so?`<span class="bfoff">-${d}%</span>`:''}</div>
       <div class="bfc">${p.brand?`<div class="br">${esc(p.brand)}</div>`:''}<div class="nm">${esc(p.name)}</div>
-        <div class="pr">${so?'<span class="so">نفدت</span>':`<b>${fmt(num(p.price))} ${esc(cur())}</b>${num(p.oldPrice)>num(p.price)?`<s>${fmt(num(p.oldPrice))}</s>`:''}`}</div>
+        <div class="pr">${so?'<span class="so">نفدت</span>':`${frm(p)}<b>${fmt(lowP(p))} ${esc(cur())}</b>${num(p.oldPrice)>num(p.price)?`<s>${fmt(num(p.oldPrice))}</s>`:''}`}</div>
         ${so?'':`<span class="bfgo">${variants(p)?'اختاري الدرجة ←':'أضيفي للسلة ＋'}</span>`}</div></div>`; }).join('')}</div>
       ${items.length>1?`<div class="bfd">${items.map((_,i)=>`<i data-bi="${i}"></i>`).join('')}</div>`:''}</div>
     <i class="spk s1">✦</i><i class="spk s2">✧</i><i class="spk s3">✦</i><i class="spk s4">✧</i>
@@ -927,7 +937,7 @@ function card(p){
       ${p.brand ? `<div class="brand-l">${esc(p.brand)}</div>` : ''}
       <h3>${esc(p.name)}</h3>
       ${sizes ? `<div class="sz">${esc(sizes)}</div>` : ''}
-      <div class="price">${S.admin && !num(p.price) ? `<b style="color:var(--warn);font-size:13px">⚠️ محتاج سعر</b>` : num(p.price)!=null ? `<b>${fmt(num(p.price))} ${esc(cur())}</b>` : ''}${num(p.oldPrice) && num(p.oldPrice)>num(p.price) ? `<s>${fmt(num(p.oldPrice))}</s>` : ''}</div>
+      <div class="price">${S.admin && !num(p.price) ? `<b style="color:var(--warn);font-size:13px">⚠️ محتاج سعر</b>` : num(p.price)!=null ? `${frm(p)}<b>${fmt(lowP(p))} ${esc(cur())}</b>` : ''}${num(p.oldPrice) && num(p.oldPrice)>num(p.price) ? `<s>${fmt(num(p.oldPrice))}</s>` : ''}</div>
       ${S.admin ? `<div class="meta" style="font-size:12px">المتاح: ${st}</div>` : ''}
     </div>
     ${S.admin ? `<div class="adm"><button data-edit="${esc(p.id)}">✏️ تعديل</button><button data-del="${esc(p.id)}">🗑️ مسح</button></div>` : ''}
@@ -1006,8 +1016,8 @@ function isNewP(p){ return p.createdAt && Date.now()-new Date(p.createdAt).getTi
 function applyExtra(list){
   if(S.favOnly) list=list.filter(p=>isFav(p.id));
   if(S.inStock) list=list.filter(p=>stock(p)>0);
-  if(S.minP!=null) list=list.filter(p=>(num(p.price)||0)>=S.minP);
-  if(S.maxP!=null) list=list.filter(p=>(num(p.price)||0)<=S.maxP);
+  if(S.minP!=null) list=list.filter(p=>(lowP(p)||0)>=S.minP);
+  if(S.maxP!=null) list=list.filter(p=>(lowP(p)||0)<=S.maxP);
   if(S.brands.length) list=list.filter(p=>S.brands.includes((p.brand||'').trim()));
   return list;
 }
@@ -1135,7 +1145,7 @@ function ask(msg, okText='تمام', danger=true){
 
 /* ---------- detail ---------- */
 function waText(p){
-  const c=country(p.countryId), o=num(p.oldPrice), n=num(p.price);
+  const c=country(p.countryId), o=num(p.oldPrice), n=lowP(p);
   const lines=[[p.brand,p.name].filter(Boolean).join(' - ')];
   if (p.desc) lines.push(p.desc);
   if (c) lines.push(`${c.flag||''} من ${c.name}`.trim());
@@ -1144,7 +1154,7 @@ function waText(p){
   lines.push('');
   if (isPromo(p) && !(o&&n&&o>n)) { lines.push(`💥${String(S.settings.promo.title).toUpperCase()} OFFER💥 ${fmt(n)} ${cur()}`); }
   else if (o && n && o>n){ lines.push(`${fmt(o)} ${cur()}❌`,'',isPromo(p)?`💥${String(S.settings.promo.title).toUpperCase()} OFFER💥`:'💥OFFER PRICE💥','',`${fmt(n)} ${cur()} ✅`); }
-  else if (n!=null) lines.push(`${fmt(n)} ${cur()} ✅`);
+  else if (n!=null) lines.push(`${ranged(p)?'من ':''}${fmt(n)} ${cur()} ✅`);
   if (stock(p)<=0) lines.push('','Sold out');
   lines.push('',`🛒 اطلبي من هنا: ${location.origin+location.pathname}#p-${p.id}`);
   return lines.join('\n');
@@ -1157,10 +1167,10 @@ function openDetail(id){
   const sv=(num(p.oldPrice)||0)-(num(p.price)||0), dd=discount(p);
   const sim=S.admin?[]:visible().filter(x=>x.id!==p.id&&stock(x)>0&&mainCatOf(x)===mainCatOf(p)).sort((a,b)=>(b.categoryId===p.categoryId)-(a.categoryId===p.categoryId)||(b.brand===p.brand)-(a.brand===p.brand)||discount(b)-discount(a)).slice(0,10);
   const gal = ims.length ? `<div class="galw">${!S.admin?`<div class="galbtns"><button id="dShare" aria-label="مشاركة">↗</button><button id="dFav" class="${isFav(p.id)?'on':''}" aria-label="المفضلة">${isFav(p.id)?'♥':'♡'}</button></div>`:''}<div class="gal" id="gal">${ims.map(i=>`<img src="${img(i)}" alt="">`).join('')}</div>${ims.length>1?`<div class="dots" id="dots">${ims.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`:''}</div>` : '';
-  const vs=variants(p);
+  const vs=variants(p), rg=ranged(p);
   const sizes=!vs ? '' : S.admin
-    ? `<div class="lbl">المتاح</div><div class="szl">${vs.map(s=>`<span class="${num(s.q)>0?'':'no'}">${s.img?`<img src="${img(s.img)}" alt="">`:''}${esc(s.s)}<small>(${num(s.q)||0})</small></span>`).join('')}</div>`
-    : `<div class="lbl">اختار${vs.some(s=>s.img)?' الدرجة':''}</div><div class="szl" id="vsel">${vs.map((s,i)=>`<button class="vch${s.img?' sw':''}" data-vi="${i}" ${num(s.q)>0?'':'disabled'}>${s.img?`<img src="${img(s.img)}" alt="" loading="lazy">`:''}${esc(s.s)}</button>`).join('')}</div><div class="swbig" id="swbig"><img alt=""><b></b></div>`;
+    ? `<div class="lbl">المتاح</div><div class="szl">${vs.map(s=>`<span class="${num(s.q)>0?'':'no'}">${s.img?`<img src="${img(s.img)}" alt="">`:''}${esc(s.s)}<small>(${num(s.q)||0})${num(s.p)>0?' · '+fmt(num(s.p)):''}</small></span>`).join('')}</div>`
+    : `<div class="lbl">اختار${vs.some(s=>s.img)?' الدرجة':''}</div><div class="szl" id="vsel">${vs.map((s,i)=>`<button class="vch${s.img?' sw':''}" data-vi="${i}" ${num(s.q)>0?'':'disabled'}>${s.img?`<img src="${img(s.img)}" alt="" loading="lazy">`:''}${rg?`<i class="vt">${esc(s.s)}<small>${fmt(szP(p,s))} ${esc(cur())}</small></i>`:esc(s.s)}</button>`).join('')}</div><div class="swbig" id="swbig"><img alt=""><b></b></div>`;
   const foot = S.admin
     ? `<button class="btn" id="cpy" style="flex:1.2">📋 بوست</button><button class="btn" id="sty">📸 ستوري</button><button class="btn p" id="ed">✏️ تعديل</button>`
     : (st>0 ? `<div class="qty"><button data-q="1">+</button><b id="qn">1</b><button data-q="-1">−</button></div><button class="btn r" id="addc">🛒 أضف للسلة${num(p.price)!=null?` <span id="addp" style="opacity:.85;font-weight:700;direction:ltr;display:inline-block;margin-inline-start:4px"></span>`:''}</button>`
@@ -1172,7 +1182,7 @@ function openDetail(id){
     ${isPromo(p)?`<div style="display:inline-block;background:#120c0e;color:#fff;font-family:Anton,sans-serif;letter-spacing:1.5px;font-size:12px;border-radius:999px;padding:3px 12px;margin:4px 0;direction:ltr">🔥 ${esc(String(S.settings.promo.title).toUpperCase())}</div>`:''}
     <div class="meta">${[par?.name,k?.name].filter(Boolean).map(esc).join(' › ')}</div>
     ${c&&c.info?`<div class="shipnote" style="margin-top:8px">🚚 ${esc(c.info)}</div>`:''}
-    <div class="dprice">${num(p.price)!=null?`<b>${fmt(num(p.price))} ${esc(cur())}</b>`:''}${num(p.oldPrice)&&num(p.oldPrice)>num(p.price)?`<s>${fmt(num(p.oldPrice))} ${esc(cur())}</s>`:''}</div>
+    <div class="dprice" id="dpr">${num(p.price)!=null?`${frm(p)}<b>${fmt(lowP(p))} ${esc(cur())}</b>`:''}${num(p.oldPrice)&&num(p.oldPrice)>num(p.price)?`<s>${fmt(num(p.oldPrice))} ${esc(cur())}</s>`:''}</div>
     ${st>0&&!S.admin&&sv>0?`<span class="save">هتوفّري ${fmt(sv)} ${esc(cur())}${dd?` (${dd}%)`:''}</span>`:''}${st>0&&st<=3&&!S.admin?`<span class="lastp">${st===1?'آخر قطعة':'باقي '+st+' قطع بس'}</span>`:''}${(e=>st>0&&e?`<span class="lastp dl">⏰ ${dealLeft(e)} على العرض</span>`:'')(dealEnds(p))}
     ${st<=0?`<div class="note" style="margin:0 0 10px;background:#FBE9EA;border-color:#F0C9CD;color:var(--red)">نفدت الكمية</div>`:(S.admin?`<div class="meta">المتاح: ${st} قطعة</div>`:'')}
     ${sizes}
@@ -1187,7 +1197,7 @@ function openDetail(id){
   const sy=ov.querySelector('#sty'); if(sy) sy.onclick=()=>makeStory(p);
   const rs=ov.querySelector('#reqSim'); if(rs) rs.onclick=()=>{ ov.close(); openRequest({note:[p.brand,p.name].filter(Boolean).join(' - '),country:c?((c.flag||'')+' '+c.name):''}); };
   const df=ov.querySelector('#dFav'); if(df) df.onclick=()=>{ toggleFav(p.id); df.classList.toggle('on',isFav(p.id)); df.textContent=isFav(p.id)?'♥':'♡'; };
-  const ds=ov.querySelector('#dShare'); if(ds) ds.onclick=async()=>{ const url=`${location.origin+location.pathname}#p-${p.id}`, text=`${[p.brand,p.name].filter(Boolean).join(' - ')} بـ ${fmt(num(p.price))} ${cur()} من PicksBuy 🛍️`;
+  const ds=ov.querySelector('#dShare'); if(ds) ds.onclick=async()=>{ const url=`${location.origin+location.pathname}#p-${p.id}`, text=`${[p.brand,p.name].filter(Boolean).join(' - ')} ${ranged(p)?'من':'بـ'} ${fmt(lowP(p))} ${cur()} من PicksBuy 🛍️`;
     try{ if(navigator.share){ await navigator.share({title:p.name,text,url}); return; } }catch(e){ return; }
     try{ await navigator.clipboard.writeText(text+'\n'+url); toast('اتنسخ اللينك ✅'); }catch(e){ showCopy(text+'\n'+url); } };
   const gl=ov.querySelector('#gal'); if(gl) gl.addEventListener('click',e=>{ const im=e.target.closest('img'); if(im) zoomImg(im.src); });
@@ -1195,7 +1205,8 @@ function openDetail(id){
   const vsel=ov.querySelector('#vsel');
   const swb=ov.querySelector('#swbig');
   const paint=()=>{ if(vsel) vsel.querySelectorAll('.vch').forEach(b=>b.classList.toggle('on',vs[+b.dataset.vi].s===sel));
-    if(swb){ const x=vs.find(v=>v.s===sel); if(x&&(x.img||x.photo)){ const si=swb.querySelector('img'); si.src=img(x.photo||x.img); si.onclick=()=>zoomImg(img(x.photo||x.img)); swb.querySelector('b').textContent=x.s; swb.classList.add('on'); } else swb.classList.remove('on'); } const q=ov.querySelector('#qn'); if(q) q.textContent=qn; const ap=ov.querySelector('#addp'); if(ap) ap.textContent=fmt((num(p.price)||0)*qn)+' '+cur(); };
+    if(swb){ const x=vs.find(v=>v.s===sel); if(x&&(x.img||x.photo)){ const si=swb.querySelector('img'); si.src=img(x.photo||x.img); si.onclick=()=>zoomImg(img(x.photo||x.img)); swb.querySelector('b').textContent=x.s; swb.classList.add('on'); } else swb.classList.remove('on'); } const q=ov.querySelector('#qn'); if(q) q.textContent=qn; const unit=sel?vprice(p,sel):lowP(p); const ap=ov.querySelector('#addp'); if(ap) ap.textContent=fmt((unit||0)*qn)+' '+cur();
+    if(rg){ const dp=ov.querySelector('#dpr'), b=dp&&dp.querySelector('b'), f=dp&&dp.querySelector('.frm'); if(b) b.textContent=fmt(unit)+' '+cur(); if(f) f.style.display=sel?'none':''; } };
   if(vsel) vsel.onclick=e=>{ const b=e.target.closest('[data-vi]'); if(!b||b.disabled) return; sel=vs[+b.dataset.vi].s; qn=1; paint(); };
   ov.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{
     const cur=S.products.find(x=>x.id===p.id)||p; const room=(vs&&!sel)?99:avail(cur,sel)-inCart(p.id,sel);
@@ -1241,7 +1252,7 @@ function drawCart(){
       <div class="i">${p?.brand?`<div class="brand-l" style="font-size:10px">${esc(p.brand)}</div>`:''}
         <div class="n">${esc(p?p.name:'منتج اتشال')}</div>
         ${l.v?`<div class="v">${esc(l.v)}</div>`:''}
-        ${l.ok?`<div class="p">${fmt((num(p.price)||0)*Math.min(l.n,l.max))} ${esc(cur())}</div>`:`<div class="v" style="color:var(--red)">نفدت الكمية</div>`}
+        ${l.ok?`<div class="p">${fmt((vprice(p,l.v)||0)*Math.min(l.n,l.max))} ${esc(cur())}</div>`:`<div class="v" style="color:var(--red)">نفدت الكمية</div>`}
         <button class="rmv" data-ci="${i}" data-op="rm">شيل</button></div>
       ${l.ok?`<div class="qty"><button data-ci="${i}" data-op="1">+</button><b>${Math.min(l.n,l.max)}</b><button data-ci="${i}" data-op="-1">−</button></div>`:''}
     </div>`; }).join('') +
@@ -1363,7 +1374,7 @@ async function makeStory(p){
   let y=iy+ih+90; cx.textAlign='center'; cx.direction='ltr';
   if(p.brand){ cx.fillStyle=muted; cx.font='700 38px Cairo, sans-serif'; cx.fillText(String(p.brand).toUpperCase().split('').join(String.fromCharCode(8202)),W/2,y); y+=70; }
   cx.fillStyle=ink; cx.font='800 54px Cairo, sans-serif'; for(const ln of wrapLines(cx,p.name,900,2)){ cx.fillText(ln,W/2,y); y+=70; }
-  y+=40; cx.fillStyle=sub; cx.font='900 110px Cairo, sans-serif'; cx.fillText(`${fmt(num(p.price))} ${cur()}`,W/2,y+30);
+  y+=40; cx.fillStyle=sub; cx.font='900 110px Cairo, sans-serif'; cx.fillText(`${fmt(lowP(p))} ${cur()}`,W/2,y+30);
   const o=num(p.oldPrice); if(o&&o>num(p.price)){ y+=110; cx.fillStyle=muted; cx.font='700 52px Cairo, sans-serif'; const t=`${fmt(o)} ${cur()}`; cx.fillText(t,W/2,y); const tw=cx.measureText(t).width; cx.fillRect(W/2-tw/2,y-18,tw,5); }
   cx.fillStyle=dark?'rgba(255,255,255,.12)':'rgba(28,20,23,.08)'; rrect(cx,140,H-190,800,110,55); cx.fill();
   cx.fillStyle=ink; cx.font='800 46px Cairo, sans-serif'; cx.direction='rtl'; cx.fillText('🛒 اطلبي من picksbuy.github.io',W/2,H-118);
@@ -1390,7 +1401,7 @@ function openForm(p){
   const F = {
     images:[...(p?.images||[])].map(id=>({id})),
     hasSizes: p ? !!(p.sizes&&p.sizes.length) : false,
-    sizes: (p?.sizes||[]).map(s=>({s:s.s,q:s.q,...(s.img?{img:s.img}:{}),...(s.photo?{photo:s.photo}:{})})),
+    sizes: (p?.sizes||[]).map(s=>({s:s.s,q:s.q,...(s.p!=null?{p:s.p}:{}),...(s.img?{img:s.img}:{}),...(s.photo?{photo:s.photo}:{})})),
     fresh:[] // uploaded during this form
   };
   const defCountry = p?.countryId || (S.country!=='all'?S.country:'');
@@ -1453,14 +1464,16 @@ function openForm(p){
       box.innerHTML=`<div class="f"><label>الكمية المتاحة</label><input id="fQty" inputmode="numeric" value="${esc(p&&!(p.sizes&&p.sizes.length)?(p.qty??''):'1')}"></div>`;
       return;
     }
-    box.innerHTML=`<div class="f"><label>المقاس / اللون / النوع، والكمية من كل واحد</label>
-      ${F.sizes.map((s,i)=>`<div class="srow"><input data-ss="${i}" value="${esc(s.s)}" placeholder="مثلاً M أو أحمر"><input data-sq="${i}" inputmode="numeric" value="${esc(s.q)}" placeholder="العدد"><button data-sr="${i}">×</button></div>`).join('')}
+    box.innerHTML=`<div class="f${S.v3?' sp3':''}"><label>المقاس / اللون / النوع، والكمية من كل واحد</label>
+      ${F.sizes.map((s,i)=>`<div class="srow"><input data-ss="${i}" value="${esc(s.s)}" placeholder="مثلاً M أو أحمر"><input data-sq="${i}" inputmode="numeric" value="${esc(s.q)}" placeholder="العدد">${S.v3?`<input data-sp="${i}" inputmode="decimal" value="${esc(s.p??'')}" placeholder="سعره">`:''}<button data-sr="${i}">×</button></div>`).join('')}
+      ${S.v3?'<div class="hint" style="margin:-2px 0 8px">«سعره» اختياري: لو المقاس ده له سعر مختلف اكتبه، ولو سبته فاضي بياخد سعر المنتج.</div>':''}
       <div class="presets">${PRESETS.map(x=>`<button data-pre="${esc(x)}">+ ${esc(x)}</button>`).join('')}</div>
       <button class="ghost" id="addSz">＋ مقاس تاني</button></div>`;
   }
   q('#sizesBox').addEventListener('input',e=>{
     if(e.target.dataset.ss!=null) F.sizes[+e.target.dataset.ss].s=e.target.value;
     if(e.target.dataset.sq!=null) F.sizes[+e.target.dataset.sq].q=e.target.value;
+    if(e.target.dataset.sp!=null) F.sizes[+e.target.dataset.sp].p=e.target.value;
   });
   q('#sizesBox').addEventListener('click',e=>{
     const r=e.target.closest('[data-sr]'); if(r){ F.sizes.splice(+r.dataset.sr,1); drawSizes(); return; }
@@ -1490,7 +1503,7 @@ function openForm(p){
       createdAt:p?.createdAt||new Date().toISOString()
     };
     if(F.hasSizes){
-      data.sizes=F.sizes.filter(s=>String(s.s).trim()).map(s=>({s:String(s.s).trim(),q:Math.max(0,Math.round(num(s.q)||0)),...(s.img?{img:s.img}:{}),...(s.photo?{photo:s.photo}:{})}));
+      data.sizes=F.sizes.filter(s=>String(s.s).trim()).map(s=>({s:String(s.s).trim(),q:Math.max(0,Math.round(num(s.q)||0)),...(num(s.p)>0?{p:num(s.p)}:{}),...(s.img?{img:s.img}:{}),...(s.photo?{photo:s.photo}:{})}));
       data.qty=null;
     } else { data.sizes=[]; data.qty=Math.max(0,Math.round(num(q('#fQty').value)||0)); }
     const btn=q('#save'); btn.disabled=true; btn.textContent='بيحفظ…';
@@ -2105,7 +2118,7 @@ async function openOrder(no){
   S.db=DB;
   S.timer=setTimeout(()=>{ if(!S.ready){ note('النت بطيء شوية… لسه بنحمّل المنتجات.'); } },10000);
   try{
-    try{ const v=await sb.rpc('pb_version'); S.v2=!v.error && v.data>=2; }catch(e){ S.v2=false; }
+    try{ const v=await sb.rpc('pb_version'); S.v2=!v.error && v.data>=2; S.v3=!v.error && v.data>=3; }catch(e){ S.v2=false; S.v3=false; }
     if(S.v2){ try{ await sb.rpc('release_expired'); }catch(e){} }
     await Promise.all(['countries','categories','products','settings'].map(refresh));
     S.ready=true; clearTimeout(S.timer); note(''); render(); if(window.__splashOff) window.__splashOff(); pushInit();
