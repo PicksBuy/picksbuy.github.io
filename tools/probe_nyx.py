@@ -1,9 +1,15 @@
 import urllib.request, json, re
 t=open('index.html',encoding='utf8').read(); U=re.search(r'const SB_URL = "([^"]+)"',t).group(1); K=re.search(r'const SB_KEY = "([^"]+)"',t).group(1)
 H={'apikey':K,'Authorization':'Bearer '+K}
+g=lambda q: json.loads(urllib.request.urlopen(urllib.request.Request(U+'/rest/v1/'+q,headers=H),timeout=40).read())
 out={}
 try:
-    r=urllib.request.urlopen(urllib.request.Request(U+'/rest/v1/products?select=id,name,brand,country_id,category_id,images,hidden,sizes&limit=1000',headers=H),timeout=40); rows=json.loads(r.read())
-    out['sized']=[{'id':x['id'],'b':x['brand'],'n':x['name'],'c':x['country_id'],'k':x['category_id'],'h':x['hidden'],'im':len(x['images'] or []),'img0':(x['images'] or [''])[0][:60],'s':[[s.get('s'),s.get('q'),1 if (s.get('img') or s.get('photo')) else 0] for s in x['sizes']]} for x in rows if x.get('sizes') and not x['id'].startswith(('amz-','pk-'))]
+    cats=g('categories?select=id,name,parent_id')
+    rows=g('products?select=id,brand,name,category_id,price,old_price,promo,hidden,qty,sizes&limit=2000')
+    st=g('settings?select=data&id=eq.1')[0]['data']
+    out['cats']=cats
+    out['rows']=[r for r in rows if r['category_id'] in ('perfume','perfume-w','perfume-m','perfume-u','perfume-gift','bodymist','hairperfume') or r['id'].startswith('sd-')]
+    out['expire']=st.get('expire'); out['revert']=st.get('revert'); out['promo']=st.get('promo')
+    out['promoCount']=sum(1 for r in rows if r.get('promo'))
 except Exception as e: out['err']=str(e)[:200]
 json.dump(out,open('import/nyx-probe.json','w'),ensure_ascii=False,indent=0)
