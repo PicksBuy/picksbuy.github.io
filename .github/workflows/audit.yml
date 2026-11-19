@@ -1,0 +1,39 @@
+name: Site audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [tools/audit/**]
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm i --no-save playwright@1.48 lighthouse@12
+      - run: npx playwright install --with-deps chromium
+      - run: node tools/audit/live.mjs || true
+      - name: Lighthouse
+        run: |
+          export CHROME_PATH=$(node -e "console.log(require('playwright').chromium.executablePath())")
+          for u in "home|https://picksbuy.github.io/" ; do
+            n=${u%%|*}; url=${u#*|}
+            npx lighthouse "$url" --quiet --chrome-flags="--headless=new --no-sandbox" --form-factor=mobile --output=json --output-path=import/audit/lh-$n.json --only-categories=performance,accessibility,best-practices,seo || true
+          done
+          node -e "
+          const fs=require('fs'); const r=JSON.parse(fs.readFileSync('import/audit/lh-home.json'));
+          const o={scores:Object.fromEntries(Object.entries(r.categories).map(([k,v])=>[k,Math.round(v.score*100)])),
+            metrics:Object.fromEntries(['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index','interactive'].map(k=>[k,r.audits[k]?.displayValue])),
+            failing:Object.values(r.audits).filter(a=>a.score!==null&&a.score<0.9&&a.scoreDisplayMode!=='informative'&&a.scoreDisplayMode!=='notApplicable').map(a=>({id:a.id,score:a.score,title:a.title,dv:a.displayValue||'',items:(a.details&&a.details.items||[]).slice(0,6).map(i=>JSON.stringify(i).slice(0,260))}))};
+          fs.writeFileSync('import/audit/lh-summary.json',JSON.stringify(o,null,1)); fs.unlinkSync('import/audit/lh-home.json');" || true
+      - name: Commit
+        run: |
+          git config user.name "picksbuy-bot"
+          git config user.email "picksbuy-bot@users.noreply.github.com"
+          git add -A import/audit || true
+          git diff --cached --quiet || git commit -m "Site audit report"
+          git pull --rebase origin main && git push
