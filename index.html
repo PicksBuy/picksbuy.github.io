@@ -1635,7 +1635,13 @@ function drawManage(){
     mb.innerHTML=ordersTab();
   } else {
     const bc=S.settings.broadcast;
+    const aon=(()=>{ try{ return localStorage.getItem('pb_admin_alert')==='1' && 'Notification' in window && Notification.permission==='granted'; }catch(e){ return false; } })();
     mb.innerHTML=`
+      <div class="grp" style="background:linear-gradient(135deg,#fff,#EAF6EF)">
+        <div class="sect" style="margin-top:0">🛍️ إشعار لما حد يطلب أوردر</div>
+        <div class="hint" style="margin-bottom:8px">${aon?'✅ شغّال على الجهاز ده. أول ما حد يأكد طلب هيجيلك إشعار فيه اسمه والإجمالي، ولو دوست عليه بيفتح الطلب.':'فعّله على كل موبايل عايز يوصله الإشعار (حتى لو الموقع مقفول). على الآيفون لازم الموقع يكون متضاف للشاشة الرئيسية الأول.'}</div>
+        <button class="btn ${aon?'':'p'}" id="aAlert" style="width:100%">${aon?'🔔 جرّب الإشعار':'🔔 فعّل إشعار الطلبات على الموبايل ده'}</button>
+      </div>
       <div class="grp" style="background:linear-gradient(135deg,#fff,#FBEAE5)">
         <div class="sect" style="margin-top:0">📣 ابعت إشعار للعملاء</div>
         <div class="hint" style="margin-bottom:8px">رسالة منك بتوصل لكل اللي مفعّلين الإشعارات. المنتجات الجديدة والخصومات بتتبعت لوحدها، ده للإعلانات الخاصة (عرض، شحنة وصلت، ميعاد…).</div>
@@ -1734,6 +1740,7 @@ async function onManageClick(e){
       if(!await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return;
       const r=await sb.rpc('cancel_order',{oid:+b.dataset.cancel}); if(r.error) throw r.error;
       toast('اتلغى ورجعت الكمية'); S.orders=null; drawManage(); refresh('products');
+    } else if(b.id==='aAlert'){ await adminAlerts(b);
     } else if(b.id==='bcSend'){
       const t=manageOv.querySelector('#bcT').value.trim(), m=manageOv.querySelector('#bcB').value.trim();
       if(t.length<3||m.length<3){ toast('اكتب العنوان والرسالة الأول'); return; }
@@ -1822,6 +1829,7 @@ async function checkAdmin(){
   if(was!==isAdm) await refresh('products').catch(()=>{});
   let pref='1'; try{ pref=localStorage.getItem('pb_admin') ?? '1'; }catch(e){}
   setAdmin(isAdm && pref==='1');
+  if(isAdm) orderWatch();
   checkImports(); checkUpgrade();
   return {session,isAdm};
 }
@@ -2002,6 +2010,44 @@ async function pushEnable(){
     try{ reg.showNotification('PicksBuy 🔔',{body:'الإشعارات اتفعّلت. هنقولك أول ما ينزل جديد أو خصم 💕',icon:'img/icon-192.png?v=2',badge:'img/icon-192.png?v=2',dir:'rtl',lang:'ar',data:{url:'./'}}); }catch(e){}
   }catch(e){ console.warn('push',e); toast('الإشعارات ماتفعّلتش، جرّبي تاني'); if(b){ b.disabled=false; b.textContent='فعّلي الإشعارات 🔔'; } }
 }
+/* ---------- new-order alerts for the shop owner ---------- */
+async function adminAlerts(btn){
+  const ios=isIOS()&&!isStandalone();
+  if(!pushCan()||ios){ toast(ios?'على الآيفون: ضيف الموقع للشاشة الرئيسية وافتحه من هناك، وبعدين فعّل':'المتصفح ده مش بيدعم الإشعارات، جرّب Chrome'); return; }
+  btn.disabled=true; const was=btn.textContent; btn.textContent='ثواني…';
+  try{
+    const perm=await Notification.requestPermission();
+    if(perm!=='granted'){ toast('الإشعارات مقفولة من المتصفح، افتحها من إعدادات الموقع'); return; }
+    const reg=PUSH.reg||await navigator.serviceWorker.register('sw.js'); await navigator.serviceWorker.ready; PUSH.reg=reg;
+    const sub=await reg.pushManager.getSubscription()||await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64u(VAPID_PUB)});
+    PUSH.sub=sub; await pushSave(sub);
+    const r=await sb.rpc('push_admin_add',{p_endpoint:sub.endpoint});
+    if(r.error){ if(r.error.code==='PGRST202'||/push_admin_add/.test(r.error.message||'')){ toast('محتاج تشغّل كود upgrade-4 في Supabase الأول'); return; } throw r.error; }
+    try{ localStorage.setItem('pb_admin_alert','1'); }catch(e){}
+    reg.showNotification('🛍️ إشعارات الطلبات شغالة',{body:'أول ما حد يطلب أوردر هيجيلك إشعار هنا',icon:'img/icon-192.png?v=2',badge:'img/icon-192.png?v=2',tag:'pb-admin-on',dir:'rtl',lang:'ar',data:{url:'./'}});
+    toast('تمام ✅ إشعار الطلبات اتفعّل'); drawManage();
+  }catch(e){ console.warn('alerts',e); toast('ماتفعّلش، جرّب تاني'); }
+  finally{ if(btn.isConnected){ btn.disabled=false; if(btn.textContent==='ثواني…') btn.textContent=was; } }
+}
+/* while the site is open on the owner's phone: check for new orders every 30 seconds */
+const OW={last:null,t:null};
+async function orderWatch(){
+  clearTimeout(OW.t); OW.t=setTimeout(orderWatch,30000);
+  if(!S.canEdit||document.hidden||!sb) return;
+  try{
+    const r=await sb.from('orders').select('id,order_no,total,shipping,customer,gov,items').order('id',{ascending:false}).limit(5);
+    if(r.error) return; const rows=r.data||[], top=rows.length?rows[0].id:0;
+    if(OW.last==null){ OW.last=top; return; }
+    const fresh=rows.filter(o=>o.id>OW.last).reverse(); OW.last=Math.max(OW.last,top);
+    for(const o of fresh){
+      const t=(num(o.total)||0)+(num(o.shipping)||0), n=(o.items||[]).reduce((a,l)=>a+(+l.n||0),0), c=o.customer||{};
+      toast(`🛍️ طلب جديد ${o.order_no} · ${fmt(t)} ${cur()}`); try{ navigator.vibrate&&navigator.vibrate([120,60,120]); }catch(e){}
+      try{ if('Notification' in window&&Notification.permission==='granted'){ const reg=await navigator.serviceWorker.getRegistration(); if(reg) reg.showNotification(`🛍️ طلب جديد ${o.order_no}`,{body:[c.name,n?`${n} قطعة`:'',`${fmt(t)} ${cur()}`,o.gov].filter(Boolean).join(' · '),icon:'img/icon-192.png?v=2',badge:'img/icon-192.png?v=2',tag:'order-'+o.order_no,dir:'rtl',lang:'ar',data:{url:'./#order-'+o.order_no}}); } }catch(e){}
+    }
+    if(fresh.length&&manageOv) loadOrders();
+  }catch(e){}
+}
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden&&S.canEdit) orderWatch(); });
 async function setOrderStatus(id,st){
   if(st==='cancelled' && !await ask('تلغي الطلب ده وترجّع الكمية للمنتجات؟','إلغاء الطلب')) return false;
   try{
@@ -2154,6 +2200,8 @@ async function route(){
   if(h==='#admin'){ clearHash(); const {data:{session}}=await sb.auth.getSession(); if(!session) openLogin(); return; }
   if(h==='#howto'){ window.__noJoin=true; clearHash(); setTimeout(goHowto,600); return; }
   if(h.startsWith('#p-')){ const id=h.slice(3); clearHash(); if(S.products.find(x=>x.id===id)) openDetail(id); else toast('المنتج ده مش متاح دلوقتي'); return; }
+  if(h==='#bf'){ clearHash(); window.__noJoin=true; Object.assign(S,{country:'all',cat:'all',sub:'all',q:'',brands:[],favOnly:false}); $('#q').value='';
+    if(!promoOn()){ toast('مفيش عروض شغالة دلوقتي'); return; } S.promoOnly=true; render(); setTimeout(()=>{ const g=$('#title'); if(g) g.scrollIntoView({behavior:'smooth',block:'start'}); },500); return; }
   if(h==='#offers'){ clearHash(); window.__noJoin=true; S.country='all'; S.cat='all'; S.sub='all'; S.sort='off'; render(); setTimeout(()=>{ const g=$('#title'); if(g) g.scrollIntoView({behavior:'smooth',block:'start'}); },500); return; }
   if(h.startsWith('#c-')){ const id=h.slice(3); clearHash(); window.__noJoin=true;
     if(S.countries.find(c=>c.id===id)){ S.country=id; S.cat='all'; S.sub='all'; render(); setTimeout(()=>{ const g=$('#countries'); if(g) g.scrollIntoView({behavior:'smooth',block:'start'}); },400); }
@@ -2191,7 +2239,7 @@ async function openOrder(no){
   if(C){ try{ S.v2=!!C.v2; S.v3=!!C.v3; S.countries=C.countries||[]; S.cats=C.cats||[]; S.products=C.products; S.settings=C.settings||{};
     $('#tagline').textContent=S.settings.tagline||'منتجات أصلية من كل العالم 🌍'; paintGroup(); paintFloat(); renderExtras(); dropExpired(); applyRevert();
     S.ready=true; render(); if(window.__splashOff) window.__splashOff();
-    if(/^#(p-|c-|offers|howto)/.test(location.hash)) route(); }catch(e){ S.ready=false; } }
+    if(/^#(p-|c-|offers|howto|bf)/.test(location.hash)) route(); }catch(e){ S.ready=false; } }
   S.timer=setTimeout(()=>{ if(!S.loaded&&!C){ note('النت بطيء شوية… لسه بنحمّل المنتجات.'); } },10000);
   try{
     const ev=early('v'), ver=(ev?ev.then(d=>d==null?sb.rpc('pb_version'):{data:d,error:null}):sb.rpc('pb_version')).then(v=>{ S.v2=!v.error && v.data>=2; S.v3=!v.error && v.data>=3; },()=>{ S.v2=false; S.v3=false; });
@@ -2209,7 +2257,7 @@ async function openOrder(no){
   document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refresh('products').catch(()=>{}); });
   await checkAdmin();
   sb.auth.onAuthStateChange(ev=>{ if(ev==='SIGNED_OUT') setTimeout(checkAdmin,0); });
-  const viaLink=/^#(order-|admin)/.test(location.hash);
+  const viaLink=/^#(order-|admin|bf)/.test(location.hash);
   route();
   if(!viaLink) maybeJoinPopup();
   window.addEventListener('hashchange',route);

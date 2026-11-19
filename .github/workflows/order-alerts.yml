@@ -1,0 +1,23 @@
+name: Order alerts
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: order-alerts
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm i --no-save --silent web-push@3
+      - run: node tools/order-alerts.mjs
+        env:
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          RUN_MIN: '30'
