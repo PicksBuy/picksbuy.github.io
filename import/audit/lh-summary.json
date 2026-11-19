@@ -1,103 +1,141 @@
 {
  "scores": {
-  "performance": 25,
+  "performance": 22,
   "accessibility": 96,
-  "best-practices": 0,
+  "best-practices": 100,
   "seo": 100
  },
  "metrics": {
-  "first-contentful-paint": "3.6 s",
-  "largest-contentful-paint": "8.5 s",
-  "total-blocking-time": "710 ms",
-  "cumulative-layout-shift": "0.741",
-  "speed-index": "4.7 s",
-  "interactive": "8.6 s"
+  "first-contentful-paint": "3.7 s",
+  "largest-contentful-paint": "8.2 s",
+  "total-blocking-time": "990 ms",
+  "cumulative-layout-shift": "0.614",
+  "speed-index": "4.1 s",
+  "interactive": "8.3 s"
  },
+ "cats": {
+  "performance": [
+   [
+    "first-contentful-paint",
+    0.3
+   ],
+   [
+    "largest-contentful-paint",
+    0.02
+   ],
+   [
+    "total-blocking-time",
+    0.27
+   ],
+   [
+    "cumulative-layout-shift",
+    0.1
+   ],
+   [
+    "speed-index",
+    0.8
+   ]
+  ],
+  "accessibility": [
+   [
+    "color-contrast",
+    0
+   ]
+  ],
+  "best-practices": [],
+  "seo": []
+ },
+ "contrast": [
+  "div#brands > div.rail > button.bchip > span | Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #8a7479, background color: #ffffff, font size: 8.3pt (11px), font",
+  "div#brands > div.rail > button.bchip > span | Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #8a7479, background color: #ffffff, font size: 8.3pt (11px), font",
+  "div#brands > div.rail > button.bchip > span | Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #8a7479, background color: #ffffff, font size: 8.3pt (11px), font",
+  "div#brands > div.rail > button.bchip > span | Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #8a7479, background color: #ffffff, font size: 8.3pt (11px), font"
+ ],
  "failing": [
   {
    "id": "first-contentful-paint",
-   "score": 0.32,
+   "score": 0.3,
    "title": "First Contentful Paint",
-   "dv": "3.6 s",
+   "dv": "3.7 s",
    "items": []
   },
   {
    "id": "largest-contentful-paint",
    "score": 0.02,
    "title": "Largest Contentful Paint",
-   "dv": "8.5 s",
+   "dv": "8.2 s",
    "items": []
   },
   {
    "id": "speed-index",
-   "score": 0.68,
+   "score": 0.8,
    "title": "Speed Index",
-   "dv": "4.7 s",
+   "dv": "4.1 s",
    "items": []
   },
   {
    "id": "total-blocking-time",
-   "score": 0.42,
+   "score": 0.27,
    "title": "Total Blocking Time",
-   "dv": "710 ms",
+   "dv": "990 ms",
    "items": []
   },
   {
    "id": "max-potential-fid",
-   "score": 0.01,
+   "score": 0,
    "title": "Max Potential First Input Delay",
-   "dv": "730 ms",
+   "dv": "1,020 ms",
    "items": []
   },
   {
    "id": "cumulative-layout-shift",
-   "score": 0.06,
+   "score": 0.1,
    "title": "Cumulative Layout Shift",
-   "dv": "0.741",
+   "dv": "0.614",
    "items": [
-    "{\"cumulativeLayoutShiftMainFrame\":0.7411541720478957,\"newEngineResultDiffered\":false}"
+    "{\"cumulativeLayoutShiftMainFrame\":0.6144368871406616,\"newEngineResultDiffered\":false}"
    ]
   },
   {
    "id": "interactive",
-   "score": 0.37,
+   "score": 0.39,
    "title": "Time to Interactive",
-   "dv": "8.6 s",
+   "dv": "8.3 s",
    "items": []
   },
   {
    "id": "mainthread-work-breakdown",
    "score": 0,
    "title": "Minimize main-thread work",
-   "dv": "5.7 s",
+   "dv": "7.7 s",
    "items": [
-    "{\"group\":\"styleLayout\",\"groupLabel\":\"Style & Layout\",\"duration\":2651.064}",
-    "{\"group\":\"other\",\"groupLabel\":\"Other\",\"duration\":1731.0839999999944}",
-    "{\"group\":\"paintCompositeRender\",\"groupLabel\":\"Rendering\",\"duration\":675.4040000000201}",
-    "{\"group\":\"scriptEvaluation\",\"groupLabel\":\"Script Evaluation\",\"duration\":434.7680000000002}",
-    "{\"group\":\"parseHTML\",\"groupLabel\":\"Parse HTML & CSS\",\"duration\":177.64}",
-    "{\"group\":\"scriptParseCompile\",\"groupLabel\":\"Script Parsing & Compilation\",\"duration\":45.004000000000005}"
+    "{\"group\":\"styleLayout\",\"groupLabel\":\"Style & Layout\",\"duration\":3269.4240000000004}",
+    "{\"group\":\"other\",\"groupLabel\":\"Other\",\"duration\":2591.8599999999888}",
+    "{\"group\":\"paintCompositeRender\",\"groupLabel\":\"Rendering\",\"duration\":902.7200000000886}",
+    "{\"group\":\"scriptEvaluation\",\"groupLabel\":\"Script Evaluation\",\"duration\":594.207999999997}",
+    "{\"group\":\"parseHTML\",\"groupLabel\":\"Parse HTML & CSS\",\"duration\":286.444}",
+    "{\"group\":\"scriptParseCompile\",\"groupLabel\":\"Script Parsing & Compilation\",\"duration\":42.46}"
    ]
   },
   {
    "id": "uses-rel-preconnect",
    "score": 0,
    "title": "Preconnect to required origins",
-   "dv": "Est savings of 300 ms",
+   "dv": "Est savings of 320 ms",
    "items": [
-    "{\"url\":\"https://m.media-amazon.com\",\"wastedMs\":301.828}",
-    "{\"url\":\"https://iozwfbafomkwlhlbkcuq.supabase.co\",\"wastedMs\":190.10399999996181}",
-    "{\"url\":\"https://fonts.gstatic.com\",\"wastedMs\":100.74399999994785}"
+    "{\"url\":\"https://m.media-amazon.com\",\"wastedMs\":318.57}",
+    "{\"url\":\"https://boots.scene7.com\",\"wastedMs\":312.702}",
+    "{\"url\":\"https://iozwfbafomkwlhlbkcuq.supabase.co\",\"wastedMs\":115.19599999998556}"
    ]
   },
   {
    "id": "largest-contentful-paint-element",
    "score": 0,
    "title": "Largest Contentful Paint element",
-   "dv": "8,490 ms",
+   "dv": "8,230 ms",
    "items": [
-    "{\"type\":\"table\",\"headings\":[{\"key\":\"node\",\"valueType\":\"node\",\"label\":\"Element\"}],\"items\":[{\"node\":{\"type\":\"node\",\"lhId\":\"page-5-IMG\",\"path\":\"1,DIV,0,DIV,0,DIV,0,DIV,0,IMG\",\"selector\":\"div.bft > div.bfs > div.bfi > img.ld\",\"boundingRect\":{\"top\":0,\"bottom\":0,\"le",
-    "{\"type\":\"table\",\"headings\":[{\"key\":\"phase\",\"valueType\":\"text\",\"label\":\"Phase\"},{\"key\":\"percent\",\"valueType\":\"text\",\"label\":\"% of LCP\"},{\"key\":\"timing\",\"valueType\":\"ms\",\"label\":\"Timing\"}],\"items\":[{\"phase\":\"TTFB\",\"timing\":614.19,\"percent\":\"7%\"},{\"phase\":\"Load D"
+    "{\"type\":\"table\",\"headings\":[{\"key\":\"node\",\"valueType\":\"node\",\"label\":\"Element\"}],\"items\":[{\"node\":{\"type\":\"node\",\"lhId\":\"page-9-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,3,DIV,0,SECTION,1,DIV,0,DIV,0,DIV,0,DIV,0,IMG\",\"selector\":\"div.bft > div.bfs > div.bfi > img.ld\",\"",
+    "{\"type\":\"table\",\"headings\":[{\"key\":\"phase\",\"valueType\":\"text\",\"label\":\"Phase\"},{\"key\":\"percent\",\"valueType\":\"text\",\"label\":\"% of LCP\"},{\"key\":\"timing\",\"valueType\":\"ms\",\"label\":\"Timing\"}],\"items\":[{\"phase\":\"TTFB\",\"timing\":607.617,\"percent\":\"7%\"},{\"phase\":\"Load "
    ]
   },
   {
@@ -106,12 +144,12 @@
    "title": "Avoid large layout shifts",
    "dv": "15 layout shifts found",
    "items": [
-    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-9-MAIN\",\"path\":\"1,HTML,1,BODY,2,MAIN\",\"selector\":\"body > main.wrap\",\"boundingRect\":{\"top\":201,\"bottom\":50191,\"left\":0,\"right\":412,\"width\":412,\"height\":49991},\"snippet\":\"<main class=\\\"wrap\\\">\",\"nodeLabel\":\"BLACK FRIDAY\\nعروض ",
-    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-15-DIV\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV\",\"selector\":\"body > main.wrap > div#grid\",\"boundingRect\":{\"top\":1006,\"bottom\":49295,\"left\":14,\"right\":398,\"width\":384,\"height\":48289},\"snippet\":\"<div class=\\\"grid\\\" id=\\\"grid\\\">\",\"",
-    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-13-DIV\",\"path\":\"1,HTML,1,BODY,2,MAIN,7,DIV\",\"selector\":\"body > main.wrap > div#cats\",\"boundingRect\":{\"top\":736,\"bottom\":859,\"left\":14,\"right\":398,\"width\":384,\"height\":123},\"snippet\":\"<div class=\\\"rail shelf\\\" id=\\\"cats\\\">\",\"",
-    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-9-MAIN\",\"path\":\"1,HTML,1,BODY,2,MAIN\",\"selector\":\"body > main.wrap\",\"boundingRect\":{\"top\":201,\"bottom\":50191,\"left\":0,\"right\":412,\"width\":412,\"height\":49991},\"snippet\":\"<main class=\\\"wrap\\\">\",\"nodeLabel\":\"BLACK FRIDAY\\nعروض ",
-    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-24-::after\",\"path\":\"1,HTML,1,BODY,1,HEADER,0,DIV,2,DIV,2,BUTTON,0,::after\",\"selector\":\"div.wrap > div.tools > button#reqBtn > ::after\",\"boundingRect\":{\"top\":132,\"bottom\":177,\"left\":-65,\"right\":-1,\"width\":65,\"height\":45},\"sni",
-    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-25-::after\",\"path\":\"\",\"selector\":\"::after\",\"boundingRect\":{\"top\":0,\"bottom\":0,\"left\":0,\"right\":0,\"width\":0,\"height\":0},\"snippet\":\"<::after>\",\"nodeLabel\":\"::after\"},\"score\":0.00019981398378814832}"
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-19-MAIN\",\"path\":\"1,HTML,1,BODY,2,MAIN\",\"selector\":\"body > main.wrap\",\"boundingRect\":{\"top\":201,\"bottom\":49430,\"left\":0,\"right\":412,\"width\":412,\"height\":49230},\"snippet\":\"<main class=\\\"wrap\\\">\",\"nodeLabel\":\"BLACK FRIDAY\\nعروض",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-14-DIV\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV\",\"selector\":\"body > main.wrap > div#grid\",\"boundingRect\":{\"top\":1006,\"bottom\":48534,\"left\":14,\"right\":398,\"width\":384,\"height\":47528},\"snippet\":\"<div class=\\\"grid\\\" id=\\\"grid\\\">\",\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-14-DIV\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV\",\"selector\":\"body > main.wrap > div#grid\",\"boundingRect\":{\"top\":1006,\"bottom\":48534,\"left\":14,\"right\":398,\"width\":384,\"height\":47528},\"snippet\":\"<div class=\\\"grid\\\" id=\\\"grid\\\">\",\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-15-DIV\",\"path\":\"1,HTML,1,BODY,2,MAIN,7,DIV\",\"selector\":\"body > main.wrap > div#cats\",\"boundingRect\":{\"top\":736,\"bottom\":859,\"left\":14,\"right\":398,\"width\":384,\"height\":123},\"snippet\":\"<div class=\\\"rail shelf\\\" id=\\\"cats\\\">\",\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-23-::after\",\"path\":\"1,HTML,1,BODY,2,MAIN,3,DIV,0,SECTION,1,DIV,0,DIV,0,DIV,1,DIV,3,SPAN,0,::after\",\"selector\":\"div.bfs > div.bfc > span.bfgo > ::after\",\"boundingRect\":{\"top\":450,\"bottom\":490,\"left\":703,\"right\":769,\"width\":66",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"page-22-::after\",\"path\":\"1,HTML,1,BODY,1,HEADER,0,DIV,2,DIV,2,BUTTON,0,::after\",\"selector\":\"div.wrap > div.tools > button#reqBtn > ::after\",\"boundingRect\":{\"top\":132,\"bottom\":177,\"left\":152,\"right\":216,\"width\":65,\"height\":45},\"sn"
    ]
   },
   {
@@ -132,21 +170,21 @@
    "title": "Serve static assets with an efficient cache policy",
    "dv": "15 resources found",
    "items": [
-    "{\"url\":\"https://picksbuy.github.io/img/bbw/bbw-candles.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":198816,\"wastedBytes\":182248}",
-    "{\"url\":\"https://picksbuy.github.io/img/logo.png\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":154233,\"wastedBytes\":141380.25}",
-    "{\"url\":\"https://picksbuy.github.io/img/lotion.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":154182,\"wastedBytes\":141333.5}",
-    "{\"url\":\"https://picksbuy.github.io/img/xbc.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":129822,\"wastedBytes\":119003.5}",
-    "{\"url\":\"https://picksbuy.github.io/img/dm/balea-bodyspray-glam.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":102516,\"wastedBytes\":93973}",
-    "{\"url\":\"https://picksbuy.github.io/img/powershine.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":85849,\"wastedBytes\":78694.91666666666}"
+    "{\"url\":\"https://picksbuy.github.io/img/bbw/bbw-candles.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":198843,\"wastedBytes\":182272.75}",
+    "{\"url\":\"https://picksbuy.github.io/img/logo.png\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":154231,\"wastedBytes\":141378.41666666666}",
+    "{\"url\":\"https://picksbuy.github.io/img/lotion.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":154196,\"wastedBytes\":141346.3333333333}",
+    "{\"url\":\"https://picksbuy.github.io/img/xbc.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":129895,\"wastedBytes\":119070.41666666666}",
+    "{\"url\":\"https://picksbuy.github.io/img/dm/balea-bodyspray-glam.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":102367,\"wastedBytes\":93836.41666666666}",
+    "{\"url\":\"https://picksbuy.github.io/img/powershine.jpg\",\"debugData\":{\"type\":\"debugdata\",\"max-age\":600},\"cacheLifetimeMs\":600000,\"cacheHitProbability\":0.08333333333333333,\"totalBytes\":85690,\"wastedBytes\":78549.16666666666}"
    ]
   },
   {
    "id": "render-blocking-resources",
    "score": 0,
    "title": "Eliminate render-blocking resources",
-   "dv": "Est savings of 2,470 ms",
+   "dv": "Est savings of 2,530 ms",
    "items": [
-    "{\"url\":\"https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&family=Pacifico&family=Playfair+Display:ital,wght@1,600&display=swap\",\"totalBytes\":1772,\"wastedMs\":790}"
+    "{\"url\":\"https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&family=Pacifico&family=Playfair+Display:ital,wght@1,600&display=swap\",\"totalBytes\":1771,\"wastedMs\":785}"
    ]
   },
   {
@@ -156,18 +194,46 @@
    "dv": "Est savings of 59 KiB",
    "items": [
     "{\"url\":\"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2\",\"totalBytes\":48439,\"wastedBytes\":35203,\"wastedPercent\":72.67560655471509}",
-    "{\"url\":\"https://picksbuy.github.io/\",\"totalBytes\":38682,\"wastedBytes\":25343,\"wastedPercent\":65.51627977087729}"
+    "{\"url\":\"https://picksbuy.github.io/\",\"totalBytes\":38682,\"wastedBytes\":25338,\"wastedPercent\":65.50422068133855}"
+   ]
+  },
+  {
+   "id": "modern-image-formats",
+   "score": 0,
+   "title": "Serve images in next-gen formats",
+   "dv": "Est savings of 731 KiB",
+   "items": [
+    "{\"url\":\"https://picksbuy.github.io/img/logo.png\",\"fromProtocol\":true,\"isCrossOrigin\":false,\"totalBytes\":153998,\"wastedBytes\":125082.8,\"wastedWebpBytes\":101720}",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-302-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,257,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":47916,\"bottom\":48142,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-300-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,255,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":47552,\"bottom\":47778,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-296-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,251,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":46797,\"bottom\":47023,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-89-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,44,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":9344,\"bottom\":9570,\"left\":215,\"right\":395,\"width\":180,\"height\":225},\"snippet\":\"<im",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-94-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,49,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":10072,\"bottom\":10298,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\"<i"
+   ]
+  },
+  {
+   "id": "uses-responsive-images",
+   "score": 0,
+   "title": "Properly size images",
+   "dv": "Est savings of 1,133 KiB",
+   "items": [
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-302-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,257,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":47916,\"bottom\":48142,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-300-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,255,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":47552,\"bottom\":47778,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-296-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,251,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":46797,\"bottom\":47023,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\"",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-89-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,44,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":9344,\"bottom\":9570,\"left\":215,\"right\":395,\"width\":180,\"height\":225},\"snippet\":\"<im",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-50-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,5,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":1761,\"bottom\":1986,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\"<img ",
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-294-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV,249,ARTICLE,0,DIV,0,IMG\",\"selector\":\"div#grid > article.card > div.ph > img.ld\",\"boundingRect\":{\"top\":46454,\"bottom\":46679,\"left\":17,\"right\":197,\"width\":180,\"height\":225},\"snippet\":\""
    ]
   },
   {
    "id": "dom-size",
    "score": 0,
    "title": "Avoid an excessive DOM size",
-   "dv": "3,934 elements",
+   "dv": "3,874 elements",
    "items": [
-    "{\"statistic\":\"Total DOM Elements\",\"value\":{\"type\":\"numeric\",\"granularity\":1,\"value\":3934}}",
+    "{\"statistic\":\"Total DOM Elements\",\"value\":{\"type\":\"numeric\",\"granularity\":1,\"value\":3874}}",
     "{\"node\":{\"type\":\"node\",\"lhId\":\"1-16-B\",\"path\":\"1,HTML,1,BODY,2,MAIN,3,DIV,0,SECTION,1,DIV,0,DIV,0,DIV,1,DIV,2,DIV,0,B\",\"selector\":\"div.bfs > div.bfc > div.pr > b\",\"boundingRect\":{\"top\":399,\"bottom\":438,\"left\":437,\"right\":520,\"width\":84,\"height\":39},\"snippet\":\"",
-    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-17-DIV\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV\",\"selector\":\"body > main.wrap > div#grid\",\"boundingRect\":{\"top\":1006,\"bottom\":49241,\"left\":14,\"right\":398,\"width\":384,\"height\":48235},\"snippet\":\"<div class=\\\"grid\\\" id=\\\"grid\\\">\",\"nod"
+    "{\"node\":{\"type\":\"node\",\"lhId\":\"1-17-DIV\",\"path\":\"1,HTML,1,BODY,2,MAIN,15,DIV\",\"selector\":\"body > main.wrap > div#grid\",\"boundingRect\":{\"top\":1006,\"bottom\":48534,\"left\":14,\"right\":398,\"width\":384,\"height\":47528},\"snippet\":\"<div class=\\\"grid\\\" id=\\\"grid\\\">\",\"nod"
    ]
   },
   {
@@ -183,14 +249,14 @@
    "id": "cache-insight",
    "score": 0,
    "title": "Use efficient cache lifetimes",
-   "dv": "Est savings of 1,042 KiB",
+   "dv": "Est savings of 1,043 KiB",
    "items": [
-    "{\"url\":\"https://picksbuy.github.io/img/bbw/bbw-candles.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":198816,\"wastedBytes\":182248}",
-    "{\"url\":\"https://picksbuy.github.io/img/logo.png\",\"cacheLifetimeMs\":600000,\"totalBytes\":154233,\"wastedBytes\":141380.25}",
-    "{\"url\":\"https://picksbuy.github.io/img/lotion.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":154182,\"wastedBytes\":141333.5}",
-    "{\"url\":\"https://picksbuy.github.io/img/xbc.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":129822,\"wastedBytes\":119003.5}",
-    "{\"url\":\"https://picksbuy.github.io/img/dm/balea-bodyspray-glam.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":102516,\"wastedBytes\":93973}",
-    "{\"url\":\"https://picksbuy.github.io/img/powershine.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":85849,\"wastedBytes\":78694.91666666666}"
+    "{\"url\":\"https://picksbuy.github.io/img/bbw/bbw-candles.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":198843,\"wastedBytes\":182272.75}",
+    "{\"url\":\"https://picksbuy.github.io/img/logo.png\",\"cacheLifetimeMs\":600000,\"totalBytes\":154231,\"wastedBytes\":141378.41666666666}",
+    "{\"url\":\"https://picksbuy.github.io/img/lotion.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":154196,\"wastedBytes\":141346.3333333333}",
+    "{\"url\":\"https://picksbuy.github.io/img/xbc.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":129895,\"wastedBytes\":119070.41666666666}",
+    "{\"url\":\"https://picksbuy.github.io/img/dm/balea-bodyspray-glam.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":102367,\"wastedBytes\":93836.41666666666}",
+    "{\"url\":\"https://picksbuy.github.io/img/powershine.jpg\",\"cacheLifetimeMs\":600000,\"totalBytes\":85690,\"wastedBytes\":78549.16666666666}"
    ]
   },
   {
@@ -216,13 +282,14 @@
    "id": "image-delivery-insight",
    "score": 0,
    "title": "Improve image delivery",
-   "dv": "Est savings of 271 KiB",
+   "dv": "Est savings of 1,103 KiB",
    "items": [
+    "{\"url\":\"https://picksbuy.github.io/img/bbw/bbw-candles.jpg\",\"totalBytes\":198526,\"wastedBytes\":197323,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's downl",
+    "{\"url\":\"https://picksbuy.github.io/img/lotion.jpg\",\"totalBytes\":153913,\"wastedBytes\":153151,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"This image file is larger than it needs to be (1080x1350) for its displayed dimensions (76x95). Use responsive images ",
     "{\"url\":\"https://picksbuy.github.io/img/logo.png\",\"totalBytes\":153998,\"wastedBytes\":150712,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.\",",
-    "{\"url\":\"https://m.media-amazon.com/images/I/61zagtc3-PL._AC_SL1000_.jpg\",\"totalBytes\":58917,\"wastedBytes\":56763,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"Using a modern image format (WebP, AVIF) or increasing the image compression could improve this im",
-    "{\"url\":\"https://picksbuy.github.io/img/howto.jpg?v=3\",\"totalBytes\":47586,\"wastedBytes\":35690,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"This image file is larger than it needs to be (720x1280) for its displayed dimensions (360x640). Use responsive image",
-    "{\"url\":\"https://boots.scene7.com/is/image/Boots/10319040?wid=900\",\"totalBytes\":26701,\"wastedBytes\":26511,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"This image file is larger than it needs to be (900x979) for its displayed dimensions (76x83). Use respons",
-    "{\"url\":\"https://picksbuy.github.io/img/icon.jpg?v=2\",\"totalBytes\":8515,\"wastedBytes\":7394,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"This image file is larger than it needs to be (192x192) for its displayed dimensions (82x82). Use responsive images to r"
+    "{\"url\":\"https://picksbuy.github.io/img/xbc.jpg\",\"totalBytes\":129605,\"wastedBytes\":128963,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"This image file is larger than it needs to be (1080x1350) for its displayed dimensions (76x95). Use responsive images to ",
+    "{\"url\":\"https://picksbuy.github.io/img/dm/balea-bodyspray-glam.jpg\",\"totalBytes\":102110,\"wastedBytes\":101700,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"This image file is larger than it needs to be (1200x1200) for its displayed dimensions (76x76). Use r",
+    "{\"url\":\"https://picksbuy.github.io/img/powershine.jpg\",\"totalBytes\":85452,\"wastedBytes\":84843,\"subItems\":{\"type\":\"subitems\",\"items\":[{\"reason\":\"This image file is larger than it needs to be (900x1125) for its displayed dimensions (76x95). Use responsive images"
    ]
   },
   {
@@ -232,7 +299,7 @@
    "dv": "",
    "items": [
     "{\"type\":\"checklist\",\"items\":{\"priorityHinted\":{\"label\":\"fetchpriority=high should be applied\",\"value\":false},\"requestDiscoverable\":{\"label\":\"Request is discoverable in initial document\",\"value\":false},\"eagerlyLoaded\":{\"label\":\"lazy load not applied\",\"value\":tr",
-    "{\"type\":\"node\",\"lhId\":\"page-5-IMG\",\"path\":\"1,DIV,0,DIV,0,DIV,0,DIV,0,IMG\",\"selector\":\"div.bft > div.bfs > div.bfi > img.ld\",\"boundingRect\":{\"top\":0,\"bottom\":0,\"left\":0,\"right\":0,\"width\":0,\"height\":0},\"snippet\":\"<img src=\\\"img/sd/sd-boss-bottled-infinite-eau-de"
+    "{\"type\":\"node\",\"lhId\":\"page-9-IMG\",\"path\":\"1,HTML,1,BODY,2,MAIN,3,DIV,0,SECTION,1,DIV,0,DIV,0,DIV,0,DIV,0,IMG\",\"selector\":\"div.bft > div.bfs > div.bfi > img.ld\",\"boundingRect\":{\"top\":315,\"bottom\":503,\"left\":964,\"right\":1081,\"width\":117,\"height\":188},\"snippet\":"
    ]
   },
   {
@@ -241,7 +308,7 @@
    "title": "Network dependency tree",
    "dv": "",
    "items": [
-    "{\"type\":\"list-section\",\"value\":{\"type\":\"network-tree\",\"chains\":{\"9016DD6DFBC0444C9C2C62344305C0DD\":{\"url\":\"https://picksbuy.github.io/\",\"navStartToEndTime\":125,\"transferSize\":59157,\"isLongest\":true,\"children\":{\"4007.5\":{\"url\":\"https://cdn.jsdelivr.net/npm/@sup",
+    "{\"type\":\"list-section\",\"value\":{\"type\":\"network-tree\",\"chains\":{\"5C98BB70624DBDAE7CE892027E90F0F2\":{\"url\":\"https://picksbuy.github.io/\",\"navStartToEndTime\":62,\"transferSize\":59143,\"isLongest\":true,\"children\":{\"3955.5\":{\"url\":\"https://cdn.jsdelivr.net/npm/@supa",
     "{\"type\":\"list-section\",\"title\":\"Preconnected origins\",\"description\":\"[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first ",
     "{\"type\":\"list-section\",\"title\":\"Preconnect candidates\",\"description\":\"Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.\",\"value\":{\"type\":\"table\","
    ]
@@ -250,9 +317,9 @@
    "id": "render-blocking-insight",
    "score": 0,
    "title": "Render blocking requests",
-   "dv": "Est savings of 2,470 ms",
+   "dv": "Est savings of 2,530 ms",
    "items": [
-    "{\"url\":\"https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&family=Pacifico&family=Playfair+Display:ital,wght@1,600&display=swap\",\"totalBytes\":1772,\"wastedMs\":790}"
+    "{\"url\":\"https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&family=Pacifico&family=Playfair+Display:ital,wght@1,600&display=swap\",\"totalBytes\":1771,\"wastedMs\":785}"
    ]
   }
  ]

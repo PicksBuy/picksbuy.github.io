@@ -1,8 +1,8 @@
 {
- "at": "2026-11-19T18:02:52.136Z",
+ "at": "2026-11-19T18:17:32.830Z",
  "data": {
   "version": "2",
-  "nProducts": 268,
+  "nProducts": 258,
   "nCats": 59,
   "nCountries": 16,
   "settingsKeys": [
@@ -15,8 +15,8 @@
    "imported",
    "whatsapp"
   ],
-  "visible": 268,
-  "inStockVisible": 267,
+  "visible": 258,
+  "inStockVisible": 257,
   "noPriceVisible": [],
   "noImage": [],
   "badCategory": [],
@@ -43,7 +43,7 @@
    "pk-acc:أحذية وشنط وإكسسوارات"
   ],
   "byCountry": {
-   "uk": 176,
+   "uk": 166,
    "in": 2,
    "null": 3,
    "ru": 1,
@@ -68,8 +68,7 @@
    "imported": 536
   },
   "longNames": [],
-  "descLatinOnly": [],
-  "noDesc": [
+  "descLatinOnly": [
    "bf-xbc",
    "bf-mamaearth",
    "bf-onside",
@@ -164,7 +163,6 @@
    "sd-jimmy-choo-flash-eau-de-parfum-60ml",
    "sd-emporio-armani-stronger-with-you-eau-de-toilette-1",
    "sd-versace-eros-flame-eau-de-parfum-100ml",
-   "sd-jean-paul-gaultier-le-male-eau-de-toilette-40ml",
    "sd-marc-jacobs-daisy-love-eau-so-sweet-eau-de-toilett",
    "dm-ts-sens",
    "sd-diesel-only-the-brave-eau-de-toilette-200ml",
@@ -173,19 +171,14 @@
    "sd-versace-pour-femme-dylan-turquoise-eau-de-toilette",
    "sd-versace-dylan-blue-pour-femme-eau-de-parfum-50ml",
    "sd-marc-jacobs-daisy-ever-so-fresh-eau-de-parfum-75ml",
-   "sd-jean-paul-gaultier-classique-eau-de-toilette-30ml",
-   "sd-dkny-nectar-love-eau-de-parfum-30ml",
    "sd-billie-eilish-eilish-eau-de-parfum-100ml",
    "sd-billie-eilish-eilish-no-2-eau-de-parfum-100ml",
    "sd-dkny-golden-delicious-eau-de-parfum-50ml",
    "sd-dkny-be-delicious-fresh-blossom-eau-de-parfum-30ml",
-   "sd-rabanne-olymp-a-flora-eau-de-parfum-intense-30ml",
    "sd-jimmy-choo-blossom-special-edition-eau-de-parfum-6",
    "sd-rabanne-fame-eau-de-parfum-50ml",
    "sd-rabanne-pure-xs-for-her-eau-de-parfum-50ml",
    "sd-rabanne-lady-million-eau-de-parfum-50ml",
-   "sd-rabanne-olymp-a-eau-de-parfum-30ml",
-   "sd-narciso-rodriguez-all-of-me-eau-de-parfum-30ml",
    "sd-versace-eros-pour-femme-eau-de-toilette-100ml",
    "sd-versace-dylan-purple-eau-de-parfum-50ml",
    "sd-moschino-toy-2-pearl-eau-de-parfum-50ml",
@@ -221,11 +214,7 @@
    "sd-arabian-oud-only-collection-gift-set-400ml",
    "sd-ariana-grande-ari-eau-de-parfum-50ml",
    "sd-boss-the-scent-magnetic-eau-de-parfum-for-her-50ml",
-   "sd-valentino-born-in-roma-extradose-donna-30ml",
    "sd-ysl-black-opium-illicit-green-eau-de-parfum-75ml",
-   "sd-mugler-alien-eau-de-parfum-extraintense-30ml",
-   "sd-ysl-black-opium-glitter-eau-de-parfum-30ml",
-   "sd-prada-paradoxe-radical-essence-30ml",
    "sd-marc-jacobs-dot-eau-de-parfum-50ml",
    "sd-michael-kors-mini-gift-set",
    "sd-dkny-be-delicious-coconuts-about-summer-eau-de-toi",
@@ -339,38 +328,39 @@
    "b-glucosamine-240",
    "b-vitc-d-eff"
   ],
+  "noDesc": [],
   "images": {
-   "total": 558,
+   "total": 548,
    "broken": [
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-mauve.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-natural.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-peekaboo-neutral.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-nude-beige.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-pale-pink.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-mauve.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-nude-beige.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-dash-of-cocoa.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-nude-flip.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-touch-up-taupe.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-ducking-clear.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-swollen-spice.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-subtle-touch.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-syringe-sienna.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-had-butta.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-all-the-butta.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-my-butta-half.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-with-time.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-than-before.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-together.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-feeling-butta.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-fill-em-in.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-ducking-clear.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-subtle-touch.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-nude-flip.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-syringe-sienna.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-swollen-spice.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-my-butta-half.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-all-the-butta.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-with-time.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-feeling-butta.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-together.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-than-before.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-u-know-butta.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-cup.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-than-u.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-all-butta-d-up.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-had-butta.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-deserve-butta.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-all-butta-d-up.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-cup.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-match.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-biscuit.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-do-butta.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-ballin.jpg"
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-ballin.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-than-u.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-biscuit.jpg"
    ],
    "heaviest": [
     "214KB https://picksbuy.github.io/img/dm/balea-creme-natron.jpg",
@@ -390,19 +380,19 @@
     "130KB https://m.media-amazon.com/images/I/81o3eofymxL._AC_SL1000_.jpg"
    ],
    "over300k": 0,
-   "totalMB": 26.7
+   "totalMB": 26.2
   }
  },
  "home": {
-  "tDom": 279,
-  "tCards": 2071,
-  "cards": 268,
+  "tDom": 287,
+  "tCards": 2334,
+  "cards": 258,
   "overlays": [
    "ov"
   ],
   "brokenImgs": [],
-  "imgCount": 295,
-  "domNodes": 4044,
+  "imgCount": 285,
+  "domNodes": 3894,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -414,9 +404,9 @@
    ]
   },
   "perf": {
-   "fcp": 283,
-   "load": 283,
-   "transferKB": 8729,
+   "fcp": 268,
+   "load": 284,
+   "transferKB": 8233,
    "requests": 250,
    "slow": []
   },
@@ -425,14 +415,14 @@
   "bigResponses": []
  },
  "product_sized": {
-  "tDom": 242,
-  "tCards": 2122,
+  "tDom": 222,
+  "tCards": 2191,
   "id": "nyx-slim-lip-liner",
   "sheet": true,
   "btn": "اختاري الدرجة الأول",
   "brokenImgs": [],
-  "imgCount": 314,
-  "domNodes": 4147,
+  "imgCount": 304,
+  "domNodes": 3997,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -444,9 +434,9 @@
    ]
   },
   "perf": {
-   "fcp": 233,
-   "load": 237,
-   "transferKB": 8742,
+   "fcp": 236,
+   "load": 215,
+   "transferKB": 8246,
    "requests": 250,
    "slow": []
   },
@@ -455,13 +445,13 @@
   "bigResponses": []
  },
  "product_plain": {
-  "tDom": 252,
-  "tCards": 2114,
+  "tDom": 262,
+  "tCards": 2408,
   "id": "bf-xbc",
   "btn": "🛒 أضف للسلة 250 L.E",
   "brokenImgs": [],
-  "imgCount": 305,
-  "domNodes": 4132,
+  "imgCount": 295,
+  "domNodes": 3982,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -473,9 +463,9 @@
    ]
   },
   "perf": {
-   "fcp": 257,
-   "load": 244,
-   "transferKB": 9008,
+   "fcp": 268,
+   "load": 260,
+   "transferKB": 8512,
    "requests": 250,
    "slow": []
   },
@@ -484,8 +474,8 @@
   "bigResponses": []
  },
  "germany": {
-  "tDom": 218,
-  "tCards": 1946,
+  "tDom": 212,
+  "tCards": 1878,
   "cards": 29,
   "brokenImgs": [],
   "imgCount": 51,
@@ -501,9 +491,9 @@
    ]
   },
   "perf": {
-   "fcp": 196,
-   "load": 217,
-   "transferKB": 3605,
+   "fcp": 223,
+   "load": 209,
+   "transferKB": 3654,
    "requests": 48,
    "slow": []
   },
@@ -512,11 +502,11 @@
   "bigResponses": []
  },
  "offers": {
-  "tDom": 166,
-  "tCards": 2253,
+  "tDom": 151,
+  "tCards": 2387,
   "brokenImgs": [],
-  "imgCount": 294,
-  "domNodes": 4027,
+  "imgCount": 284,
+  "domNodes": 3877,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -528,9 +518,9 @@
    ]
   },
   "perf": {
-   "fcp": 145,
-   "load": 164,
-   "transferKB": 9594,
+   "fcp": 154,
+   "load": 181,
+   "transferKB": 9098,
    "requests": 250,
    "slow": []
   },
@@ -539,48 +529,25 @@
   "bigResponses": []
  },
  "howto": {
-  "tDom": 213,
-  "tCards": 2041,
+  "tDom": 243,
+  "tCards": 2238,
   "brokenImgs": [],
-  "imgCount": 292,
-  "domNodes": 3997,
+  "imgCount": 284,
+  "domNodes": 3877,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
    "btnNoName": [],
    "inputsNoLabel": [],
    "smallTargets": [
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31",
-    "fav :31x31"
+    "grpLink:103x23",
+    "adminLink:74x26"
    ]
   },
   "perf": {
-   "fcp": 214,
-   "load": 211,
-   "transferKB": 11887,
+   "fcp": 251,
+   "load": 240,
+   "transferKB": 12283,
    "requests": 250,
    "slow": []
   },
