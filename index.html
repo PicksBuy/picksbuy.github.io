@@ -2056,6 +2056,11 @@ async function checkImports(){
   const box=$('#imp'); box.innerHTML='';
   if(!S.canEdit) return;
   try{ BATCH=await (await fetch('import/batch.json?v='+Date.now(),{cache:'no-store'})).json(); }catch(e){ BATCH=null; return; }
+  /* end dates the shop called off (e.g. an offer turned into a normal product) */
+  const drop=new Set(BATCH.dropRules||[]);
+  if(drop.size && [...(S.settings.expire||[]),...(S.settings.revert||[])].some(r=>drop.has(r.key))){ try{
+    ok(await sb.from('settings').upsert({id:1,data:{...S.settings,expire:(S.settings.expire||[]).filter(r=>!drop.has(r.key)),revert:(S.settings.revert||[]).filter(r=>!drop.has(r.key))}})); await refresh('settings');
+  }catch(e){ console.warn('drop',e); } }
   const rules=(BATCH.expire||[]).filter(r=>!(S.settings.expire||[]).some(x=>x.key===r.key));
   if(rules.length){ try{ ok(await sb.from('settings').upsert({id:1,data:{...S.settings,expire:[...(S.settings.expire||[]),...rules]}})); await refresh('settings'); }catch(e){ console.warn('expire',e); } }
   const rv=(BATCH.revert||[]).filter(r=>!(S.settings.revert||[]).some(x=>x.key===r.key));
