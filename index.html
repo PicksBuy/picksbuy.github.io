@@ -124,7 +124,9 @@ body:not(.admin) .cartbtn.has{display:flex}
 .vch .vt{font-style:normal;display:inline-flex;flex-direction:column;align-items:center;line-height:1.25}.vch .vt small{font-size:11px;font-weight:700;opacity:.7}.vch:disabled .vt small{display:none}
 .frm{font-style:normal;font-size:12px;font-weight:700;color:var(--muted)}.dprice .frm{font-size:14px;margin-inline-end:5px}.mini .pr .frm{margin-left:4px}
 .sp3 .srow{grid-template-columns:1fr 62px 84px 34px}
-.vch:disabled{color:#bbb;text-decoration:line-through}
+.vch:disabled,.vch.zero{color:#bbb;text-decoration:line-through}
+.szl.need{animation:need .5s ease 2;border-radius:14px;box-shadow:0 0 0 3px rgba(178,58,72,.28)}@keyframes need{20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+.btn.wait{filter:saturate(.55);opacity:.82}
 .vch.sw{display:inline-flex;align-items:center;gap:7px;padding:4px 12px 4px 5px;border-radius:999px}
 .vch.sw img{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid rgba(0,0,0,.08);padding:0!important;background:#eee}
 .vch.sw.on img{border-color:#fff}
@@ -1168,12 +1170,11 @@ function openDetail(id){
   const sim=S.admin?[]:visible().filter(x=>x.id!==p.id&&stock(x)>0&&mainCatOf(x)===mainCatOf(p)).sort((a,b)=>(b.categoryId===p.categoryId)-(a.categoryId===p.categoryId)||(b.brand===p.brand)-(a.brand===p.brand)||discount(b)-discount(a)).slice(0,10);
   const gal = ims.length ? `<div class="galw">${!S.admin?`<div class="galbtns"><button id="dShare" aria-label="مشاركة">↗</button><button id="dFav" class="${isFav(p.id)?'on':''}" aria-label="المفضلة">${isFav(p.id)?'♥':'♡'}</button></div>`:''}<div class="gal" id="gal">${ims.map(i=>`<img src="${img(i)}" alt="">`).join('')}</div>${ims.length>1?`<div class="dots" id="dots">${ims.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`:''}</div>` : '';
   const vs=variants(p), rg=ranged(p);
-  const sizes=!vs ? '' : S.admin
-    ? `<div class="lbl">المتاح</div><div class="szl">${vs.map(s=>`<span class="${num(s.q)>0?'':'no'}">${s.img?`<img src="${img(s.img)}" alt="">`:''}${esc(s.s)}<small>(${num(s.q)||0})${num(s.p)>0?' · '+fmt(num(s.p)):''}</small></span>`).join('')}</div>`
-    : `<div class="lbl">اختار${vs.some(s=>s.img)?' الدرجة':''}</div><div class="szl" id="vsel">${vs.map((s,i)=>`<button class="vch${s.img?' sw':''}" data-vi="${i}" ${num(s.q)>0?'':'disabled'}>${s.img?`<img src="${img(s.img)}" alt="" loading="lazy">`:''}${rg?`<i class="vt">${esc(s.s)}<small>${fmt(szP(p,s))} ${esc(cur())}</small></i>`:esc(s.s)}</button>`).join('')}</div><div class="swbig" id="swbig"><img alt=""><b></b></div>`;
+  const kind=!vs?'':vs.some(s=>s.img)?'الدرجة':(mainCatOf(p)==='clothes'?'المقاس':'النوع');
+  const sizes=!vs ? '' : `<div class="lbl" id="vlbl">${S.admin?'المتاح':'اختاري '+kind}</div><div class="szl" id="vsel">${vs.map((s,i)=>{ const live=num(s.q)>0; const sub=S.admin?`(${num(s.q)||0})${num(s.p)>0?' · '+fmt(num(s.p)):''}`:(rg?`${fmt(szP(p,s))} ${esc(cur())}`:''); return `<button class="vch${s.img?' sw':''}${live?'':' zero'}" data-vi="${i}" ${live||S.admin?'':'disabled'}>${s.img?`<img src="${img(s.img)}" alt="" loading="lazy">`:''}${sub?`<i class="vt">${esc(s.s)}<small>${sub}</small></i>`:esc(s.s)}</button>`; }).join('')}</div><div class="swbig" id="swbig"><img alt=""><b></b></div>`;
   const foot = S.admin
     ? `<button class="btn" id="cpy" style="flex:1.2">📋 بوست</button><button class="btn" id="sty">📸 ستوري</button><button class="btn p" id="ed">✏️ تعديل</button>`
-    : (st>0 ? `<div class="qty"><button data-q="1">+</button><b id="qn">1</b><button data-q="-1">−</button></div><button class="btn r" id="addc">🛒 أضف للسلة${num(p.price)!=null?` <span id="addp" style="opacity:.85;font-weight:700;direction:ltr;display:inline-block;margin-inline-start:4px"></span>`:''}</button>`
+    : (st>0 ? `<div class="qty"><button data-q="1">+</button><b id="qn">1</b><button data-q="-1">−</button></div><button class="btn r" id="addc"><span id="addt">🛒 أضف للسلة</span>${num(p.price)!=null?` <span id="addp" style="opacity:.85;font-weight:700;direction:ltr;display:inline-block;margin-inline-start:4px"></span>`:''}</button>`
             : `<button class="btn" data-close>رجوع</button><button class="btn p" id="reqSim">✨ اطلبي زيه</button>`);
   const ov=sheet(esc(c?(c.flag+' '+c.name):'تفاصيل المنتج'), `
     ${gal}
@@ -1206,12 +1207,17 @@ function openDetail(id){
   const swb=ov.querySelector('#swbig');
   const paint=()=>{ if(vsel) vsel.querySelectorAll('.vch').forEach(b=>b.classList.toggle('on',vs[+b.dataset.vi].s===sel));
     if(swb){ const x=vs.find(v=>v.s===sel); if(x&&(x.img||x.photo)){ const si=swb.querySelector('img'); si.src=img(x.photo||x.img); si.onclick=()=>zoomImg(img(x.photo||x.img)); swb.querySelector('b').textContent=x.s; swb.classList.add('on'); } else swb.classList.remove('on'); } const q=ov.querySelector('#qn'); if(q) q.textContent=qn; const unit=sel?vprice(p,sel):lowP(p); const ap=ov.querySelector('#addp'); if(ap) ap.textContent=fmt((unit||0)*qn)+' '+cur();
+    const need=!!vs&&!sel, at=ov.querySelector('#addt'), acb=ov.querySelector('#addc'); if(at) at.textContent=need?`اختاري ${kind} الأول`:'🛒 أضف للسلة'; if(ap) ap.style.display=need?'none':'inline-block'; if(acb) acb.classList.toggle('wait',need);
+    const lb=ov.querySelector('#vlbl'); if(lb&&!S.admin) lb.innerHTML=sel?`${kind}: <bdi dir="ltr">${esc(sel)}</bdi>`:`اختاري ${kind}`;
+    const g0=ov.querySelector('#gal img'); if(g0&&vs){ if(!g0.dataset.o) g0.dataset.o=g0.getAttribute('src'); const x=vs.find(v=>v.s===sel), u=x&&(x.photo||x.img)?img(x.photo||x.img):g0.dataset.o; if(g0.getAttribute('src')!==u) g0.src=u; }
     if(rg){ const dp=ov.querySelector('#dpr'), b=dp&&dp.querySelector('b'), f=dp&&dp.querySelector('.frm'); if(b) b.textContent=fmt(unit)+' '+cur(); if(f) f.style.display=sel?'none':''; } };
-  if(vsel) vsel.onclick=e=>{ const b=e.target.closest('[data-vi]'); if(!b||b.disabled) return; sel=vs[+b.dataset.vi].s; qn=1; paint(); };
+  if(vsel) vsel.onclick=e=>{ const b=e.target.closest('[data-vi]'); if(!b||b.disabled) return; sel=vs[+b.dataset.vi].s; qn=1; paint(); const x=vs[+b.dataset.vi], gl0=ov.querySelector('#gal'); if(gl0&&(x.photo||x.img)) try{ gl0.scrollTo({left:0,behavior:'smooth'}); }catch(e){} vsel.classList.remove('need'); };
   ov.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{
     const cur=S.products.find(x=>x.id===p.id)||p; const room=(vs&&!sel)?99:avail(cur,sel)-inCart(p.id,sel);
     qn=Math.max(1,Math.min(qn+(+b.dataset.q),Math.max(1,room))); if(+b.dataset.q>0&&qn>=room) toast(`المتاح ${Math.max(0,room)} بس`); paint(); });
-  const ac=ov.querySelector('#addc'); if(ac) ac.onclick=()=>{ if(addToCart(p.id,sel,qn)) ov.close(); };
+  const ac=ov.querySelector('#addc'); if(ac) ac.onclick=()=>{
+    if(vs&&!sel){ if(vsel){ try{ vsel.scrollIntoView({block:'center',behavior:'smooth'}); }catch(e){} vsel.classList.remove('need'); void vsel.offsetWidth; vsel.classList.add('need'); } toast(`اختاري ${kind} الأول`); return; }
+    if(addToCart(p.id,sel,qn)) ov.close(); };
   paint();
 }
 function showCopy(text){
