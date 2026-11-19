@@ -615,7 +615,7 @@ footer a,footer button{display:inline-block;padding:10px 6px}
 </head>
 <body>
 <div id="splash"><div class="in"><img src="img/logo.webp" alt="" width="150" height="131" fetchpriority="high"><b>Picks<span>Buy</span></b><small>منتجات أصلية من كل العالم</small><i></i></div></div>
-<script>(function(){var s=document.getElementById('splash'),t0=Date.now();try{if(sessionStorage.getItem('pb_spl')){s.remove();return;}sessionStorage.setItem('pb_spl','1');}catch(e){}
+<script>(function(){var s=document.getElementById('splash'),t0=Date.now();if(/^#(bf|offers|p-|c-)/.test(location.hash)){s.remove();return;}try{if(sessionStorage.getItem('pb_spl')){s.remove();return;}sessionStorage.setItem('pb_spl','1');}catch(e){}
 window.__splashOff=function(){var w=Math.max(0,1300-(Date.now()-t0));setTimeout(function(){s.classList.add('go');setTimeout(function(){s.remove();},700);},w);};setTimeout(window.__splashOff,4500);})();setTimeout(function(){document.documentElement.classList.remove('boot');},9000);</script>
 <header>
   <div class="wrap">
@@ -1971,7 +1971,10 @@ async function pushInit(){
 }
 function pushSnoozed(){ let st={}; try{ st=JSON.parse(localStorage.getItem('pb_pushbar')||'{}'); }catch(e){} return !!(st.t && Date.now()-st.t < (st.n>=3?30:4)*864e5); }
 /* will the notifications popup be offered on this visit? (answers without waiting for the network) */
+/* someone who came through a shared link (offers, a product) goes straight to it, no popups on that visit */
+const DEEP=/^#(bf|offers|p-|c-)/.test(location.hash);
 function pushWanted(){
+  if(DEEP) return false;
   let ok=PUSH.ok; if(!ok){ try{ ok=localStorage.getItem('pb_push_ok')==='1'; }catch(e){} } if(!ok) return false;
   if(pushSnoozed()) return false;
   if(isIOS()&&!isStandalone()) return true;
@@ -2195,14 +2198,16 @@ function maybeJoinPopup(){
 
 /* ---------- links: #order-XXX, #p-ID, #admin ---------- */
 function clearHash(){ try{ history.replaceState(history.state,'',location.pathname+location.search); }catch(e){} }
+/* bring the product list's title just under the sticky header */
+function toTitle(){ const g=$('#title'), hd=document.querySelector('header'); if(!g) return; window.scrollTo({top:Math.max(0,g.getBoundingClientRect().top+scrollY-(hd?hd.offsetHeight:0)-10),behavior:'smooth'}); }
 async function route(){
   const h=decodeURIComponent(location.hash||'');
   if(h==='#admin'){ clearHash(); const {data:{session}}=await sb.auth.getSession(); if(!session) openLogin(); return; }
   if(h==='#howto'){ window.__noJoin=true; clearHash(); setTimeout(goHowto,600); return; }
   if(h.startsWith('#p-')){ const id=h.slice(3); clearHash(); if(S.products.find(x=>x.id===id)) openDetail(id); else toast('المنتج ده مش متاح دلوقتي'); return; }
   if(h==='#bf'){ clearHash(); window.__noJoin=true; Object.assign(S,{country:'all',cat:'all',sub:'all',q:'',brands:[],favOnly:false}); $('#q').value='';
-    if(!promoOn()){ toast('مفيش عروض شغالة دلوقتي'); return; } S.promoOnly=true; render(); setTimeout(()=>{ const g=$('#title'); if(g) g.scrollIntoView({behavior:'smooth',block:'start'}); },500); return; }
-  if(h==='#offers'){ clearHash(); window.__noJoin=true; S.country='all'; S.cat='all'; S.sub='all'; S.sort='off'; render(); setTimeout(()=>{ const g=$('#title'); if(g) g.scrollIntoView({behavior:'smooth',block:'start'}); },500); return; }
+    if(!promoOn()){ toast('مفيش عروض شغالة دلوقتي'); return; } S.promoOnly=true; render(); setTimeout(toTitle,500); setTimeout(toTitle,1300); return; }
+  if(h==='#offers'){ clearHash(); window.__noJoin=true; S.country='all'; S.cat='all'; S.sub='all'; S.sort='off'; render(); setTimeout(toTitle,500); return; }
   if(h.startsWith('#c-')){ const id=h.slice(3); clearHash(); window.__noJoin=true;
     if(S.countries.find(c=>c.id===id)){ S.country=id; S.cat='all'; S.sub='all'; render(); setTimeout(()=>{ const g=$('#countries'); if(g) g.scrollIntoView({behavior:'smooth',block:'start'}); },400); }
     return; }
