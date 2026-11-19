@@ -1,30 +1,8 @@
 {
- "https://www.primark.com/en-gb/c/sale/women": {
-  "status": 200,
-  "len": 2395614,
-  "title": "Every Day is Black Friday | Women&#x27;s Clothing Sale | Primark UK",
-  "next": 0,
-  "plinks": 48
- },
- "https://www.primark.com/en-gb/c/sale/women?page=2": {
-  "status": 200,
-  "len": 2344195,
-  "title": "Page 2 | Every Day is Black Friday | Women&#x27;s Clothing Sale | Primark UK",
-  "next": 0,
-  "plinks": 48
- },
- "https://www.primark.com/en-gb/c/sale/women?page=3": {
-  "status": 200,
-  "len": 2064846,
-  "title": "Page 3 | Every Day is Black Friday | Women&#x27;s Clothing Sale | Primark UK",
-  "next": 0,
-  "plinks": 38
- },
- "https://www.primark.com/en-gb/c/sale/women?page=4": {
-  "status": 200,
-  "len": 2390368,
-  "title": "Every Day is Black Friday | Women&#x27;s Clothing Sale | Primark UK",
-  "next": 0,
-  "plinks": 48
- }
+ "final": "https://www.amazon.com/dp/B0CKMCTT55?ref=cm_sw_r_cso_cp_apan_dp_VVB6R4B0D3FPG1N9V320&ref_=cm_sw_r_cso_cp_apan_dp_VVB6R4B0D3FPG1N9V320&social_share=cm_sw_r_cso_cp_apan_dp_VVB6R4B0D3FPG1N9V320&rsd=BcsJXZCKEuDJQI4zmRCs3VYy%2BplTZhUvcg18wxgnHHpd35K%2BSx8SKccFJ8nNsyHUMDKjmsb9YWorQ70E7dtxBwsc%2B6wdCdbdky%2F%2FhN3kM3OAhvGYL5Fi&edk=AQIDAHi1lw%2FM8UbbSMD9ScOOFEmBMHMthHeEhqDaQYPJUAX3jQGUkO8pdYWSQd0nqInVx2FTAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTpw2EM42OSI3QbPKAgEQgDsjSaFiu39frbhPRj1920I8XJGObLyWZisuZEIotow59yUHDlWQbl6HOcVKr7X0d%2B4pmKvMTeCPN7evAQ%3D%3D&sts=1",
+ "status": 200,
+ "len": 3781,
+ "title": "Amazon.com",
+ "captcha": true,
+ "has_twister": false
 }
