@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T18:31:06.289Z",
+ "at": "2026-11-19T18:38:15.511Z",
  "data": {
   "version": "2",
   "nProducts": 258,
@@ -73,35 +73,35 @@
   "images": {
    "total": 548,
    "broken": [
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-mauve.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-natural.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-nude-beige.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-mauve.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-peekaboo-neutral.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-pale-pink.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-swollen-spice.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-slim-lip-liner-peekaboo-neutral.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-fill-em-in.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-dash-of-cocoa.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-nude-flip.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-touch-up-taupe.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-ducking-clear.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-subtle-touch.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-syringe-sienna.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-dash-of-cocoa.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-my-butta-half.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-nude-flip.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-fill-em-in.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-u-know-butta.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-had-butta.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-than-before.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-swollen-spice.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-duck-plump-liner-subtle-touch.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-all-the-butta.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-had-butta.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-with-time.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-feeling-butta.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-than-before.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-butta-together.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-my-butta-half.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-u-know-butta.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-blush-feeling-butta.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-cup.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-than-u.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-deserve-butta.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-than-u.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-biscuit.jpg",
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-match.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-all-butta-d-up.jpg",
     "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-do-butta.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-ballin.jpg",
-    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-match.jpg"
+    "200 https://picksbuy.github.io/img/nyx/sw/nyx-buttermelt-bronzer-butta-ballin.jpg"
    ],
    "heaviest": [
     "214KB https://picksbuy.github.io/img/dm/balea-creme-natron.jpg",
@@ -125,15 +125,15 @@
   }
  },
  "home": {
-  "tDom": 240,
-  "tCards": 908,
+  "tDom": 351,
+  "tCards": 1199,
   "cards": 24,
   "overlays": [
    "ov"
   ],
   "brokenImgs": [],
   "imgCount": 285,
-  "domNodes": 3909,
+  "domNodes": 3910,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -142,25 +142,29 @@
    "smallTargets": []
   },
   "perf": {
-   "fcp": 211,
-   "load": 287,
-   "transferKB": 315,
+   "fcp": 336,
+   "load": 479,
+   "transferKB": 316,
    "requests": 250,
    "slow": []
   },
-  "errors": [],
-  "failed": [],
+  "errors": [
+   "error: Failed to load resource: the server responded with a status of 503 ()"
+  ],
+  "failed": [
+   "503 https://picksbuy.github.io/img/t/sd/sd-rabanne-lady-million-eau-de-parfum-50ml.webp"
+  ],
   "bigResponses": []
  },
  "product_sized": {
-  "tDom": 158,
-  "tCards": 1044,
+  "tDom": 122,
+  "tCards": 954,
   "id": "nyx-slim-lip-liner",
   "sheet": true,
   "btn": "اختاري الدرجة الأول",
   "brokenImgs": [],
   "imgCount": 304,
-  "domNodes": 4012,
+  "domNodes": 4013,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -169,8 +173,8 @@
    "smallTargets": []
   },
   "perf": {
-   "fcp": 116,
-   "load": 193,
+   "fcp": 100,
+   "load": 119,
    "transferKB": 401,
    "requests": 250,
    "slow": []
@@ -180,13 +184,13 @@
   "bigResponses": []
  },
  "product_plain": {
-  "tDom": 189,
-  "tCards": 1043,
+  "tDom": 251,
+  "tCards": 751,
   "id": "bf-xbc",
   "btn": "🛒 أضف للسلة 250 L.E",
   "brokenImgs": [],
   "imgCount": 295,
-  "domNodes": 3997,
+  "domNodes": 3998,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -195,8 +199,8 @@
    "smallTargets": []
   },
   "perf": {
-   "fcp": 170,
-   "load": 222,
+   "fcp": 154,
+   "load": 354,
    "transferKB": 510,
    "requests": 250,
    "slow": []
@@ -206,12 +210,12 @@
   "bigResponses": []
  },
  "germany": {
-  "tDom": 165,
-  "tCards": 1246,
+  "tDom": 209,
+  "tCards": 1067,
   "cards": 24,
   "brokenImgs": [],
   "imgCount": 51,
-  "domNodes": 742,
+  "domNodes": 743,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -220,10 +224,10 @@
    "smallTargets": []
   },
   "perf": {
-   "fcp": 138,
-   "load": 215,
+   "fcp": 177,
+   "load": 376,
    "transferKB": 428,
-   "requests": 52,
+   "requests": 53,
    "slow": []
   },
   "errors": [],
@@ -231,11 +235,11 @@
   "bigResponses": []
  },
  "offers": {
-  "tDom": 131,
-  "tCards": 997,
+  "tDom": 135,
+  "tCards": 996,
   "brokenImgs": [],
   "imgCount": 284,
-  "domNodes": 3892,
+  "domNodes": 3893,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -244,8 +248,8 @@
    "smallTargets": []
   },
   "perf": {
-   "fcp": 113,
-   "load": 175,
+   "fcp": 102,
+   "load": 136,
    "transferKB": 358,
    "requests": 250,
    "slow": []
@@ -255,11 +259,11 @@
   "bigResponses": []
  },
  "howto": {
-  "tDom": 174,
-  "tCards": 1006,
+  "tDom": 214,
+  "tCards": 1022,
   "brokenImgs": [],
   "imgCount": 284,
-  "domNodes": 3892,
+  "domNodes": 3893,
   "overflowX": false,
   "a11y": {
    "imgNoAlt": 0,
@@ -268,8 +272,8 @@
    "smallTargets": []
   },
   "perf": {
-   "fcp": 147,
-   "load": 223,
+   "fcp": 176,
+   "load": 211,
    "transferKB": 3500,
    "requests": 250,
    "slow": []
@@ -280,5 +284,5 @@
    "3185KB https://picksbuy.github.io/img/howto.mp4?v=3"
   ]
  },
- "desktopOverflow": false
+ "desktopOverflow": true
 }
