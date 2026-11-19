@@ -1,1053 +1,908 @@
 {
-"n": 268,
-"sized": 39,
-"amz": [
-[
-"earth-strata-off-white-aurora-coffee",
-3760,
-95,
-false,
-19,
-19,
-[
+"sized": [
 {
-"p": 3210,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3605,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"dusky-bronze-carbon-white",
-3605,
-35,
-false,
-7,
-7,
-[
-{
-"p": 3605,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3450,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"clay-black-white",
-3605,
-80,
-false,
-16,
-16,
-[
-{
-"p": 3605,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3210,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"blanch-cargo-wonder-beige-off-white",
-3605,
-45,
-false,
-9,
-9,
-[
-{
-"p": 3605,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3605,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"cardboard-gum-black",
-3605,
-90,
-false,
-18,
-18,
-[
-{
-"p": 3475,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3475,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"black-white-black",
-3830,
-100,
-false,
-20,
-20,
-[
-{
-"p": 2585,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 2860,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"dark-blue-white-off-white",
-3605,
-95,
-false,
-19,
-19,
-[
-{
-"p": 2960,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3605,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"shadow-navy-glory-grey-off-white",
-3230,
-5,
-false,
-1,
-1,
-[
-{
-"p": 3230,
-"q": 5,
-"s": "36 (US 4)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"shadow-brown-black-white",
-3475,
-25,
-false,
-5,
-5,
-[
-{
-"p": 3475,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3375,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"white-black-off-white",
-3465,
-15,
-false,
-3,
-3,
-[
-{
-"p": 3315,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3465,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"black-white-gum",
-3210,
-85,
-false,
-17,
-17,
-[
-{
-"p": 3210,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3210,
-"q": 5,
-"s": "38⅔ (US 6)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"bronze-strata-dark-brown-off-white",
-4960,
-45,
-false,
-9,
-9,
-[
-{
-"p": 4960,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-},
-{
-"p": 4960,
-"q": 5,
-"s": "37⅓ (US 5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"ink-utility-yellow-gum",
-2975,
-5,
-false,
-1,
-1,
-[
-{
-"p": 2975,
-"q": 5,
-"s": "36 (US 4)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"black-white-white",
-3605,
-85,
-false,
-17,
-17,
-[
-{
-"p": 3100,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-},
-{
-"p": 3605,
-"q": 5,
-"s": "37⅓ (US 5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"grey-grey-crystal-white",
-3605,
-5,
-false,
-1,
-1,
-[
-{
-"p": 3605,
-"q": 5,
-"s": "36 (US 4)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"black-carbon-gum",
-4960,
-30,
-false,
-6,
-6,
-[
-{
-"p": 3575,
-"q": 5,
-"s": "40 (US 7)"
-},
-{
-"p": 4960,
-"q": 5,
-"s": "40⅔ (US 7.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"grey-team-royal-blue-grey",
-4960,
-20,
-false,
-4,
-4,
-[
-{
-"p": 3605,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 2925,
-"q": 5,
-"s": "38 (US 5.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"grey-white-off-white",
-3605,
-100,
-false,
-20,
-20,
-[
-{
-"p": 2640,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3605,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"collegiate-burgundy-crystal-linen-off-white",
-4310,
-70,
-false,
-14,
-14,
-[
-{
-"p": 3660,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3170,
-"q": 5,
-"s": "37⅓ (US 5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"olive-strata-shadow-olive-gum",
-3760,
-90,
-false,
-18,
-18,
-[
-{
-"p": 3575,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 3760,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"grey-gum-collegiate-green",
-4310,
-100,
-false,
-20,
-20,
-[
-{
-"p": 3665,
-"q": 5,
-"s": "36 (US 4)"
-},
-{
-"p": 2870,
-"q": 5,
-"s": "36⅔ (US 4.5)"
-}
-],
-"2026-11-19T17:47:04"
-],
-[
-"grey-black-white",
-2925,
-70,
-false,
-14,
-14,
-[
-{
-"p": 2925,
-"q": 5,
-"s": "40 (US 7)"
-},
-{
-"p": 2925,
-"q": 5,
-"s": "40⅔ (US 7.5)"
-}
-],
-"2026-11-19T17:47:04"
-]
-],
-"bf24": [
-[
-"bf24-celimax",
-995,
-1560,
-5,
-0
-],
-[
-"bf24-skin1004-retinol",
-950,
-1560,
-5,
-0
-],
-[
-"bf24-skin1004-clay",
-890,
-1335,
-5,
-0
-],
-[
-"bf24-skin1004-ampoule",
-970,
-1615,
-5,
-0
-],
-[
-"bf24-skin1004-cream",
-975,
-1275,
-5,
-0
-],
-[
-"bf24-abh-sugarplum",
-940,
-1675,
-5,
-0
-],
-[
-"bf24-lancome-flutter",
-1220,
-1900,
-5,
-0
-],
-[
-"bf24-lancome-drama",
-1290,
-2015,
-5,
-0
-],
-[
-"bf24-lancome-idole-black",
-995,
-1900,
-5,
-0
-],
-[
-"bf24-chi-helmet",
-860,
-1785,
-5,
-0
-],
-[
-"bf24-chi-iron",
-2270,
-5860,
-5,
-0
-],
-[
-"bf24-chi-silk-59",
-765,
-1390,
-5,
-0
-],
-[
-"bf24-chi-keratin-mist",
-890,
-1275,
-5,
-0
-],
-[
-"bf24-tarte-duo",
-1785,
-3370,
-5,
-0
-],
-[
-"bf24-lancome-idole-brown",
-995,
-1900,
-5,
-0
-],
-[
-"bf24-chi-ironguard",
-990,
-1335,
-5,
-0
-],
-[
-"bf24-chi-silk-177",
-1100,
-2135,
-5,
-0
-],
-[
-"bf24-kiko-smart-fusion",
-490,
-null,
-null,
-10
-]
-],
-"other_sized": [
-[
-"bf-lotion",
-null,
-false,
-[
+"id": "bf-lotion",
+"b": "",
+"n": "Hand & Body Lotion",
+"c": null,
+"k": "body",
+"h": false,
+"im": 1,
+"img0": "img/lotion.jpg",
+"s": [
 [
 "Spring Blossom",
-1
+1,
+0
 ],
 [
 "Fresh Flower",
-1
+1,
+0
 ]
 ]
-],
-[
-"bf-fitme",
-null,
-false,
-[
+},
+{
+"id": "bf-fitme",
+"b": "Maybelline",
+"n": "Fit Me Compact Powder SPF32",
+"c": "in",
+"k": "powder",
+"h": false,
+"im": 1,
+"img0": "img/fitme.jpg",
+"s": [
 [
 "128",
-2
+2,
+0
 ]
 ]
-],
-[
-"nyx-slim-lip-liner",
-40,
-false,
-[
+},
+{
+"id": "nyx-slim-lip-liner",
+"b": "NYX Professional Makeup",
+"n": "Slim Lip Liner",
+"c": "fr",
+"k": "lips",
+"h": false,
+"im": 1,
+"img0": "img/nyx/nyx-slim-lip-liner-1.jpg",
+"s": [
 [
 "Mauve",
-5
+5,
+1
 ],
 [
 "Natural",
-5
+5,
+1
 ],
 [
 "Nude Pink",
-5
+5,
+1
 ],
 [
 "Peekaboo Neutral",
-5
+5,
+1
 ],
 [
 "Nude Beige",
-5
+5,
+1
 ],
 [
 "Pale Pink",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-lip-lingerie-stain",
-70,
-false,
+"Mahogany",
+5,
+1
+],
 [
+"Nude Truffle",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-lip-lingerie-stain",
+"b": "NYX Professional Makeup",
+"n": "Lip Lingerie Stain",
+"c": "fr",
+"k": "lips",
+"h": false,
+"im": 1,
+"img0": "img/nyx-lip-lingerie-stain.jpg",
+"s": [
 [
 "Tease U Later",
-5
+5,
+1
 ],
 [
 "Naughty Nude",
-5
+5,
+1
 ],
 [
 "Barely There",
-5
+5,
+1
 ],
 [
 "Steamy Spice",
-5
+5,
+1
 ],
 [
 "Lip Lock",
-5
+5,
+1
 ],
 [
 "Up To No Good",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-butter-gloss",
-35,
-false,
+"Cuff Me",
+5,
+1
+],
 [
+"After Hours",
+5,
+1
+],
+[
+"Send Nudes",
+5,
+1
+],
+[
+"Up All Night",
+5,
+1
+],
+[
+"Hot N Heavy",
+5,
+1
+],
+[
+"Wild Side",
+5,
+1
+],
+[
+"Tied Up",
+5,
+1
+],
+[
+"Flirt Alert",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-butter-gloss",
+"b": "NYX Professional Makeup",
+"n": "Butter Gloss",
+"c": "fr",
+"k": "lips",
+"h": false,
+"im": 1,
+"img0": "img/nyx/nyx-butter-gloss-1.jpg",
+"s": [
 [
 "Madeleine",
-5
+5,
+1
 ],
 [
 "Angel Food Cake",
-5
+5,
+1
 ],
 [
 "Creme Brulee",
-5
+5,
+1
 ],
 [
 "Fortune Cookie",
-5
+5,
+1
 ],
 [
 "Ginger Snap",
-5
+5,
+1
 ],
 [
 "Praline",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-fat-oil",
-40,
-false,
-[
+"Tiramisu",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-fat-oil",
+"b": "NYX Professional Makeup",
+"n": "Fat Oil Lip Drip",
+"c": "fr",
+"k": "lips",
+"h": false,
+"im": 3,
+"img0": "img/nyx/nyx-fat-oil-1.jpg",
+"s": [
 [
 "Missed Call",
-5
+5,
+1
 ],
 [
 "Newsfeed",
-5
+5,
+1
 ],
 [
 "My Main",
-5
+5,
+1
 ],
 [
 "Follow Back",
-5
+5,
+1
 ],
 [
 "Status Update",
-5
+5,
+1
 ],
 [
 "Supermodel",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-cswsfoundation",
-40,
-false,
+"Scrollin",
+5,
+1
+],
 [
+"That's Chic",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-cswsfoundation",
+"b": "NYX Professional Makeup",
+"n": "Can't Stop Won't Stop Foundation",
+"c": "fr",
+"k": "foundation",
+"h": false,
+"im": 2,
+"img0": "img/nyx/nyx-cswsfoundation-light.jpg",
+"s": [
 [
 "Porcelain",
-5
+5,
+1
 ],
 [
 "Buff",
-5
+5,
+1
 ],
 [
 "Medium Olive",
-5
+5,
+1
 ],
 [
 "Cappuccino",
-5
+5,
+1
 ],
 [
 "Chestnut",
-5
+5,
+1
 ],
 [
 "Deep Sable",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-epic-ink",
+"Deep Espresso",
 5,
-false,
+1
+],
 [
+"Deep Ebony",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-epic-ink",
+"b": "NYX Professional Makeup",
+"n": "Epic Ink Liner",
+"c": "fr",
+"k": "eyes",
+"h": false,
+"im": 1,
+"img0": "img/nyx/nyx-epic-ink-1.jpg",
+"s": [
 [
 "Black",
-5
+5,
+1
 ]
 ]
-],
-[
-"nyx-brow-glue",
-25,
-false,
-[
+},
+{
+"id": "nyx-brow-glue",
+"b": "NYX Professional Makeup",
+"n": "The Brow Glue",
+"c": "fr",
+"k": "brows",
+"h": false,
+"im": 1,
+"img0": "img/nyx/nyx-brow-glue-1.jpg",
+"s": [
 [
 "Clear",
-5
+5,
+1
 ],
 [
 "Taupe",
-5
+5,
+1
 ],
 [
 "Medium Brown",
-5
+5,
+1
 ],
 [
 "Dark Brown",
-5
+5,
+1
 ],
 [
 "Black",
-5
+5,
+1
 ]
 ]
-],
-[
-"nyx-duck-plump-liner",
-40,
-false,
-[
+},
+{
+"id": "nyx-duck-plump-liner",
+"b": "NYX Professional Makeup",
+"n": "Duck Plump Liner",
+"c": "fr",
+"k": "lips",
+"h": false,
+"im": 2,
+"img0": "img/nyx/nyx-duck-plump-liner-1.jpg",
+"s": [
 [
 "Dash of Cocoa",
-5
+5,
+1
 ],
 [
 "Touch Up Taupe",
-5
+5,
+1
 ],
 [
 "Nude Flip",
-5
+5,
+1
 ],
 [
 "Fill Em' In",
-5
+5,
+1
 ],
 [
 "Ducking Clear",
-5
+5,
+1
 ],
 [
 "Swollen Spice",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-buttermelt-blush",
-40,
-false,
+"Subtle Touch",
+5,
+1
+],
 [
+"Syringe Sienna",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-buttermelt-blush",
+"b": "NYX Professional Makeup",
+"n": "Buttermelt Blush",
+"c": "fr",
+"k": "cheeks",
+"h": false,
+"im": 2,
+"img0": "img/nyx/nyx-buttermelt-blush-1.jpg",
+"s": [
 [
 "All The Butta",
-5
+5,
+1
 ],
 [
 "Had Butta",
-5
+5,
+1
 ],
 [
 "My Butta Half",
-5
+5,
+1
 ],
 [
 "Butta Together",
-5
+5,
+1
 ],
 [
 "Butta With Time",
-5
+5,
+1
 ],
 [
 "U Know Butta",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-buttermelt-bronzer",
-40,
-false,
+"Butta Than Before",
+5,
+1
+],
 [
+"Feeling Butta",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-buttermelt-bronzer",
+"b": "NYX Professional Makeup",
+"n": "Buttermelt Bronzer",
+"c": "fr",
+"k": "cheeks",
+"h": false,
+"im": 2,
+"img0": "img/nyx/nyx-buttermelt-bronzer-1.jpg",
+"s": [
 [
 "Butta Cup",
-5
+5,
+1
 ],
 [
 "Butta Than U",
-5
+5,
+1
 ],
 [
 "Do Butta",
-5
+5,
+1
 ],
 [
 "All Butta'd Up",
-5
+5,
+1
 ],
 [
 "Deserve Butta",
-5
+5,
+1
 ],
 [
 "Butta Biscuit",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-lip-iv",
-100,
-false,
+"Butta Match",
+5,
+1
+],
 [
+"Butta Ballin",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-lip-iv",
+"b": "NYX Professional Makeup",
+"n": "Lip IV Hydrating Gloss Stain",
+"c": "fr",
+"k": "lips",
+"h": false,
+"im": 2,
+"img0": "img/nyx/nyx-lip-iv-light.jpg",
+"s": [
 [
 "Caramel Drip",
-5
+5,
+1
 ],
 [
 "Hydra Honey",
-5
+5,
+1
 ],
 [
 "Splash N Spice",
-5
+5,
+1
 ],
 [
 "Cocoa Quench",
-5
+5,
+1
 ],
 [
 "Mocha Me Wet",
-5
+5,
+1
 ],
 [
 "Espresso Soak",
-5
-]
-]
+5,
+1
 ],
 [
-"nyx-csws-powder",
-30,
-false,
+"Bubblegum Burst",
+5,
+1
+],
 [
+"Drippin In Rose",
+5,
+1
+],
+[
+"Blush Rush",
+5,
+1
+],
+[
+"Berry Thirsty",
+5,
+1
+],
+[
+"Red-y Set Wet",
+5,
+1
+],
+[
+"Burst That Tang",
+5,
+1
+],
+[
+"Cranberry Splash",
+5,
+1
+],
+[
+"Mauve N Moist",
+5,
+1
+],
+[
+"Water Bout Wine",
+5,
+1
+],
+[
+"Grape Gushin",
+5,
+1
+],
+[
+"Petal Pourin",
+5,
+1
+],
+[
+"Drippin Nude",
+5,
+1
+],
+[
+"Magenta Mist",
+5,
+1
+],
+[
+"Cherry Drenched",
+5,
+1
+]
+]
+},
+{
+"id": "nyx-csws-powder",
+"b": "NYX Professional Makeup",
+"n": "Can't Stop Won't Stop Setting Powder",
+"c": "fr",
+"k": "powder",
+"h": false,
+"im": 1,
+"img0": "img/nyx/nyx-csws-powder-1.jpg",
+"s": [
 [
 "Brightening Translucent",
-5
+5,
+1
 ],
 [
 "Fair",
-5
+5,
+1
 ],
 [
 "Light",
-5
+5,
+1
 ],
 [
 "Light Medium",
-5
+5,
+1
 ],
 [
 "Medium",
-5
+5,
+1
 ],
 [
 "Rich",
-5
+5,
+1
 ]
 ]
-],
-[
-"nyx-bare-with-me-concealer",
-85,
-false,
-[
+},
+{
+"id": "nyx-bare-with-me-concealer",
+"b": "NYX Professional Makeup",
+"n": "Bare With Me Concealer Serum",
+"c": "fr",
+"k": "foundation",
+"h": false,
+"im": 2,
+"img0": "img/nyx/nyx-bare-with-me-concealer-light.jpg",
+"s": [
 [
 "Fair",
-5
+5,
+1
 ],
 [
 "Light",
-5
+5,
+1
 ],
 [
 "Medium Vanilla",
-5
+5,
+1
 ],
 [
 "Vanilla",
-5
+5,
+1
 ],
 [
 "Beige",
-5
+5,
+1
 ],
 [
 "Golden",
-5
-]
-]
+5,
+1
 ],
 [
-"bbw-candles-bf",
-null,
-false,
+"Medium Golden",
+5,
+1
+],
 [
+"Light Tan",
+5,
+1
+],
+[
+"Tan",
+5,
+1
+],
+[
+"Medium",
+5,
+1
+],
+[
+"Sand",
+5,
+1
+],
+[
+"Caramel",
+5,
+1
+],
+[
+"Deep Golden",
+5,
+1
+],
+[
+"Camel",
+5,
+1
+],
+[
+"Mocha",
+5,
+1
+],
+[
+"Rich",
+5,
+1
+],
+[
+"Deep",
+5,
+1
+]
+]
+},
+{
+"id": "bbw-candles-bf",
+"b": "Bath & Body Works",
+"n": "Single Wick Candles",
+"c": "us",
+"k": "candles",
+"h": false,
+"im": 7,
+"img0": "img/bbw/bbw-candles.jpg",
+"s": [
 [
 "'Tis the Season",
-0
+0,
+1
 ],
 [
 "The Perfect Christmas",
-0
+0,
+1
 ],
 [
 "Winter",
-0
+0,
+1
 ],
 [
 "Cinnamon Pinecone",
-0
+0,
+1
 ],
 [
 "Tree Farm",
-0
+0,
+1
 ],
 [
 "Coffee & Whiskey",
-0
-]
-]
+0,
+1
 ],
 [
-"bf24-kiko-smart-fusion",
-null,
-false,
+"Pumpkin Apple",
+0,
+1
+],
 [
+"Cranberry & Pomegranate",
+0,
+1
+],
+[
+"Leaves",
+0,
+1
+]
+]
+},
+{
+"id": "bf24-kiko-smart-fusion",
+"b": "KIKO Milano",
+"n": "Smart Fusion Lipstick 3g",
+"c": "fr",
+"k": "lips",
+"h": false,
+"im": 4,
+"img0": "img/kiko/sfl-435.jpg",
+"s": [
 [
 "409 Peach",
-5
+5,
+1
 ],
 [
 "410 Watermelon",
-5
+5,
+1
 ],
 [
 "411 Coral",
-5
+5,
+1
 ],
 [
 "412 Strawberry Pink",
-5
+5,
+1
 ],
 [
 "413 Red Papaya",
-5
+5,
+1
 ],
 [
 "414 Poppy Red",
-5
-]
-]
-]
+5,
+1
 ],
-"types": [
-"int"
+[
+"421 Fuchsia",
+5,
+1
+],
+[
+"422 Crimson Red",
+5,
+1
+],
+[
+"427 Lively Pink",
+5,
+1
+],
+[
+"435 Scarlet Red",
+5,
+1
+]
+]
+}
 ]
 }
