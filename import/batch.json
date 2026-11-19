@@ -283,6 +283,24 @@
    "name": "كوتشيات وأحذية",
    "parentId": "clothes",
    "order": 8
+  },
+  {
+   "id": "masks",
+   "name": "ماسكات",
+   "parentId": "skin",
+   "order": 6
+  },
+  {
+   "id": "hairtreat",
+   "name": "ليف إن وعلاج الشعر",
+   "parentId": "hair",
+   "order": 6
+  },
+  {
+   "id": "hairtools",
+   "name": "مكواة وأدوات تصفيف",
+   "parentId": "hair",
+   "order": 7
   }
  ],
  "products": [
@@ -14874,6 +14892,454 @@
    "createdAt": "2026-11-19T19:45:00+02:00",
    "needsPrice": false,
    "src": "https://www.amazon.com/dp/B0CKMCTT55"
+  },
+  {
+   "id": "bf24-celimax",
+   "brand": "celimax",
+   "name": "The Vita A Retinal Shot Tightening Booster 15ml",
+   "desc": "بوستر ريتينال (فيتامين A) لشد البشرة – 15ml.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "serum",
+   "price": 995,
+   "oldPrice": 1560,
+   "images": [
+    "https://m.media-amazon.com/images/I/51zdLqgadJL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71nm1zw-ZmL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81cbDonQkoL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0DK4Y2YP3"
+  },
+  {
+   "id": "bf24-skin1004-retinol",
+   "brand": "SKIN1004",
+   "name": "Retinol 0.2% Boosting Shot Ampoule 30ml",
+   "desc": "أمبول ريتينول 0.2% مع ريتينال وسنتيلا – لمرونة البشرة والخطوط الرفيعة. 30ml.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "serum",
+   "price": 950,
+   "oldPrice": 1560,
+   "images": [
+    "https://m.media-amazon.com/images/I/51XVmCC3eHL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61X+aBGeBVL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71qDC28ARaL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0FDTZ8Y5Q"
+  },
+  {
+   "id": "bf24-skin1004-clay",
+   "brand": "SKIN1004",
+   "name": "Poremizing Clay Stick Mask 27g",
+   "desc": "ماسك طين ستيك للعناية بالمسام – 27g. سهل في الاستخدام من غير فرشة.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "masks",
+   "price": 890,
+   "oldPrice": 1335,
+   "images": [
+    "https://m.media-amazon.com/images/I/71AEE6k6QaL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81CTdR7Kd8L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81+8nDrB6VL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0C8Y1TSKZ"
+  },
+  {
+   "id": "bf24-skin1004-ampoule",
+   "brand": "SKIN1004",
+   "name": "Madagascar Centella Ampoule 100ml",
+   "desc": "سيروم السنتيلا الكوري المشهور – مهدّئ للبشرة. الحجم الكبير 100ml.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "serum",
+   "price": 970,
+   "oldPrice": 1615,
+   "images": [
+    "https://m.media-amazon.com/images/I/61voDIqUmoL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61xVuNiZMaL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61221B2a-ZL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B06Y15D1LH"
+  },
+  {
+   "id": "bf24-skin1004-cream",
+   "brand": "SKIN1004",
+   "name": "Madagascar Centella Soothing Cream 75ml",
+   "desc": "كريم مرطب كوري بالسنتيلا – مهدّئ للبشرة. 75ml.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "moist",
+   "price": 975,
+   "oldPrice": 1275,
+   "images": [
+    "https://m.media-amazon.com/images/I/51zdKvYNFCL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71kZ6xfi0iL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71LoNpmEcjL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B09B221Q7K"
+  },
+  {
+   "id": "bf24-abh-sugarplum",
+   "brand": "Anastasia Beverly Hills",
+   "name": "Matte Lipstick – Sugar Plum",
+   "desc": "روج مات بلون كامل وملمس مخملي.\nالدرجة: Sugar Plum.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "lips",
+   "price": 940,
+   "oldPrice": 1675,
+   "images": [
+    "https://m.media-amazon.com/images/I/71Q6d3MbunL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/617Bp6-pltL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81iw-2je-cL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B09RTPW4Y8"
+  },
+  {
+   "id": "bf24-lancome-flutter",
+   "brand": "Lancôme",
+   "name": "Lash Idôle Flutter Extension Lengthening Mascara – Black",
+   "desc": "ماسكرا لتطويل الرموش – اللون أسود.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "mascara",
+   "price": 1220,
+   "oldPrice": 1900,
+   "images": [
+    "https://m.media-amazon.com/images/I/61czIPvF9rL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71MMf4tlLwL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/91Z7TJQcGKL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0DNLV82VY"
+  },
+  {
+   "id": "bf24-lancome-drama",
+   "brand": "Lancôme",
+   "name": "Hypnôse Drama Extreme Volume Mascara – Black",
+   "desc": "ماسكرا لكثافة قوية جدًا – ثبات 24 ساعة. اللون: Ultra Black.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "mascara",
+   "price": 1290,
+   "oldPrice": 2015,
+   "images": [
+    "https://m.media-amazon.com/images/I/615weN41jHL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81OzzD-Oh9L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71wHMS9flaL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0CTL1YPTJ"
+  },
+  {
+   "id": "bf24-lancome-idole-black",
+   "brand": "Lancôme",
+   "name": "Lash Idôle Lash-Lifting & Volumizing Mascara – Black",
+   "desc": "ماسكرا لرفع وتكثيف الرموش – اللون أسود.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "mascara",
+   "price": 995,
+   "oldPrice": 1900,
+   "images": [
+    "https://m.media-amazon.com/images/I/51Nj0hcoopL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81655oLP9tL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81An7rTlkcL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B08TPCHYLW"
+  },
+  {
+   "id": "bf24-chi-helmet",
+   "brand": "CHI",
+   "name": "Helmet Head Extra Firm Hairspray 284g",
+   "desc": "سبراي تثبيت قوي جدًا للشعر – 284g.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "hairstyle",
+   "price": 860,
+   "oldPrice": 1785,
+   "images": [
+    "https://m.media-amazon.com/images/I/41OS9mEsH+L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/51B-0WXaZBL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/51FWDBp5BWL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B002RS6KBQ"
+  },
+  {
+   "id": "bf24-chi-iron",
+   "brand": "CHI",
+   "name": "Original 1\" Ceramic Hair Straightener Flat Iron",
+   "desc": "مكواة شعر سيراميك 1 بوصة – الموديل الأصلي من CHI.\n🔌 الفيشة أمريكي.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "hairtools",
+   "price": 2270,
+   "oldPrice": 5860,
+   "images": [
+    "https://m.media-amazon.com/images/I/51GM9aEfo8L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71qcruy1UPL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61vtntxSs4L._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0009V1YR8"
+  },
+  {
+   "id": "bf24-chi-silk-59",
+   "brand": "CHI",
+   "name": "Infra Silk Infusion Leave-In Treatment 59ml",
+   "desc": "علاج ليف-إن بالحرير لإعادة بناء الشعر – الحجم الصغير 59ml.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "hairtreat",
+   "price": 765,
+   "oldPrice": 1390,
+   "images": [
+    "https://m.media-amazon.com/images/I/51KVwGgTx0L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61cH1bh+04L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61WxnSWvvDL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0018HH444"
+  },
+  {
+   "id": "bf24-chi-keratin-mist",
+   "brand": "CHI",
+   "name": "Keratin Mist Strengthening Leave-In Spray 355ml",
+   "desc": "سبراي كيراتين ليف-إن لتقوية الشعر – 355ml.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "hairtreat",
+   "price": 890,
+   "oldPrice": 1275,
+   "images": [
+    "https://m.media-amazon.com/images/I/51pkKaAVN3L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61d1uBBT6UL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61SCW3gtqbL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B000EMDK2Y"
+  },
+  {
+   "id": "bf24-chi-ironguard",
+   "brand": "CHI",
+   "name": "44 Iron Guard Thermal Protection Spray 237ml",
+   "desc": "سبراي حماية من الحرارة قبل السيشوار والمكواة – 237ml.\n#1 Best Seller على Amazon.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "hairstyle",
+   "price": 1020,
+   "oldPrice": 1335,
+   "images": [
+    "https://m.media-amazon.com/images/I/41cqM3FYB-L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/51w8qZ-m2dL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/611ME-xXHvL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B002RS6JSA"
+  },
+  {
+   "id": "bf24-chi-silk-177",
+   "brand": "CHI",
+   "name": "Infra Silk Infusion Leave-In Treatment 177ml",
+   "desc": "علاج ليف-إن بالحرير لإعادة بناء الشعر – الحجم الكبير 177ml.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "hairtreat",
+   "price": 1005,
+   "oldPrice": 2135,
+   "images": [
+    "https://m.media-amazon.com/images/I/410SRlLUJ0L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/610KFHuZSnL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/61rUV+DMyQL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B00103DUZS"
+  },
+  {
+   "id": "bf24-tarte-duo",
+   "brand": "tarte",
+   "name": "Elite Energy Lashes – Tartelette Tubing Primer & Mascara Set",
+   "desc": "طقم برايمر رموش Tubing + ماسكرا Tubing من tarte.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "mascara",
+   "price": 1785,
+   "oldPrice": 3370,
+   "images": [
+    "https://m.media-amazon.com/images/I/61xwNVsIS+L._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/817w1OvcNmL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71nW0osgYAL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0FRNBNZPN"
+  },
+  {
+   "id": "bf24-lancome-idole-brown",
+   "brand": "Lancôme",
+   "name": "Lash Idôle Lash-Lifting & Volumizing Mascara – Brown",
+   "desc": "ماسكرا لرفع وتكثيف الرموش – ثبات 24 ساعة. اللون بني.\n\n📦 بيتطلب مخصوص من Amazon أمريكا 🇺🇸، أصلي 100%.\n⏰ عرض Black Friday لمدة 24 ساعة بس.",
+   "countryId": "us",
+   "categoryId": "mascara",
+   "price": 995,
+   "oldPrice": 1900,
+   "images": [
+    "https://m.media-amazon.com/images/I/61Nb1XUUeDL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/71a9iJtiWFL._AC_SL1000_.jpg",
+    "https://m.media-amazon.com/images/I/81Uyf7W6gBL._AC_SL1000_.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.amazon.com/dp/B0DBW1CTG1"
+  },
+  {
+   "id": "bf24-kiko-smart-fusion",
+   "brand": "KIKO Milano",
+   "name": "Smart Fusion Lipstick 3g",
+   "desc": "روج كريمي مغذّي بلمعة خفيفة – تغطية متوسطة لعالية.\n10 درجات: 409 Peach · 410 Watermelon · 411 Coral · 412 Strawberry Pink · 413 Red Papaya · 414 Poppy Red · 421 Fuchsia · 422 Crimson Red · 427 Lively Pink · 435 Scarlet Red\n\n📦 بيتطلب مخصوص من KIKO Milano فرنسا 🇫🇷، أصلي 100%.\n⏰ العرض 24 ساعة بس.",
+   "countryId": "fr",
+   "categoryId": "lips",
+   "price": 515,
+   "oldPrice": null,
+   "images": [
+    "img/kiko/sfl-435.jpg",
+    "img/kiko/sfl-435b.jpg",
+    "img/kiko/sfl-421.jpg",
+    "img/kiko/sfl-409.jpg"
+   ],
+   "sizes": [
+    {
+     "s": "409 Peach",
+     "q": 5,
+     "img": "img/kiko/sfl-409.jpg"
+    },
+    {
+     "s": "410 Watermelon",
+     "q": 5,
+     "img": "img/kiko/sfl-410.jpg"
+    },
+    {
+     "s": "411 Coral",
+     "q": 5,
+     "img": "img/kiko/sfl-411.jpg"
+    },
+    {
+     "s": "412 Strawberry Pink",
+     "q": 5,
+     "img": "img/kiko/sfl-412.jpg"
+    },
+    {
+     "s": "413 Red Papaya",
+     "q": 5,
+     "img": "img/kiko/sfl-413.jpg"
+    },
+    {
+     "s": "414 Poppy Red",
+     "q": 5,
+     "img": "img/kiko/sfl-414.jpg"
+    },
+    {
+     "s": "421 Fuchsia",
+     "q": 5,
+     "img": "img/kiko/sfl-421.jpg"
+    },
+    {
+     "s": "422 Crimson Red",
+     "q": 5,
+     "img": "img/kiko/sfl-422.jpg"
+    },
+    {
+     "s": "427 Lively Pink",
+     "q": 5,
+     "img": "img/kiko/sfl-427.jpg"
+    },
+    {
+     "s": "435 Scarlet Red",
+     "q": 5,
+     "img": "img/kiko/sfl-435.jpg"
+    }
+   ],
+   "qty": 50,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-19T19:55:00+02:00",
+   "needsPrice": false,
+   "src": "https://www.kikocosmetics.com/fr-fr/p/42039/"
   }
  ],
  "settingsPatch": {
@@ -21974,6 +22440,11 @@
   {
    "key": "amazon-adidas-2026-11-19",
    "prefix": "amz-",
+   "until": "2026-11-20T20:00:00+02:00"
+  },
+  {
+   "key": "bf24-2026-11-19",
+   "prefix": "bf24-",
    "until": "2026-11-20T20:00:00+02:00"
   }
  ],
