@@ -1192,5 +1192,176 @@
   "out": "img/sd/sd-marc-jacobs-dot-eau-de-parfum-50ml.jpg",
   "kind": "product",
   "referer": "https://www.lookfantastic.com/p/marc-jacobs-dot-eau-de-parfum-50ml/11079299/"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/anua-heartleaf-cleansing-duo/17965518/",
+   "https://www.cultbeauty.com/p/anua-heartleaf-cleansing-duo/17965518/"
+  ],
+  "out": "img/zl/anua.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.revolutionbeauty.com/products/i-heart-revolution-blossom-bloom-bath-body-gift-set",
+   "https://superdrug.com/toiletries/washing-bathing/bubble-bath-soaks/i-heart-revolution-blossom-bloom-bath-body-gift-set/p/844174"
+  ],
+  "out": "img/zl/ihr-blossom.jpg",
+  "kind": "product"
+ },
+ {
+  "url": "https://cdn.shopify.com/s/files/1/1002/6015/1641/files/1875585-I-Heart-Revolution-Very-Cherry-Bath-Body-Gift-Set-1.jpg",
+  "out": "img/zl/ihr-cherry.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.rituals.com/en-fr/the-ritual-of-namaste-skin-care-set---daily-routine-1120581.html",
+   "https://www.lookfantastic.com/p/rituals-the-ritual-of-namaste-skin-daily-routine-care-set/17695896/"
+  ],
+  "out": "img/zl/rit-namaste.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/beauty-of-joseon-skin-nourishing-essentials-kit/18007961/"
+  ],
+  "out": "img/zl/boj.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://lyko.com/en/sol-de-janeiro/sol-de-janeiro-splash-of-sol-to-go",
+   "https://www.sephora.fr/p/splash-of-sol-to-go---coffret-de-lotion-corps-rafraichissante-et-brume-parfumee-P1000215978.html"
+  ],
+  "out": "img/zl/sdj-splash.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.rituals.com/en-fr/the-ritual-of-karma---small-gift-set-2026-1122147.html"
+  ],
+  "out": "img/zl/rit-karma.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.notino.co.uk/origins/holiday-mini-mask-rituals-gift-set/",
+   "https://lyko.com/en/origins/origins-mini-mask-rituals-set"
+  ],
+  "out": "img/zl/origins.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/clinique-moisture-surge-hydration-heroes-mini-skincare-kit/17631523/"
+  ],
+  "out": "img/zl/clq-hydration.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.justmylook.com/products/makeup-revolution-revolution-pro-miracle-mini-night-cream-serum-duo"
+  ],
+  "out": "img/zl/revpro-night.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.pharma-gdd.com/fr/nuxe-coffret-la-routine-beaute-glow",
+   "https://universpharmacie.fr/29145-nuxe-coffret-la-routine-beaute-glow.html",
+   "https://www.sephora.fr/p/prodigieuse%C2%AE--hyalu--boost---coffret-routine-beaute-glow-832018.html"
+  ],
+  "out": "img/zl/nuxe-hyalu.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://uk.nuxe.com/products/my-golden-crush-pouch"
+  ],
+  "out": "img/zl/nuxe-golden.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.caretobeauty.com/en/nuxe-ready-go-glow-pink-set/",
+   "https://lasante.net/espace-para/promotions/idees-cadeaux/coffrets-noel/nuxe-coffret-ready-go-glow-pink.html"
+  ],
+  "out": "img/zl/nuxe-readygo.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.rituals.com/en-fr/the-ritual-of-ayurveda---small-gift-set-2026-1122135.html"
+  ],
+  "out": "img/zl/rit-ayurveda.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/sol-de-janeiro-bom-dia-jet-set/13907283/"
+  ],
+  "out": "img/zl/sdj-bomdia.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://uk.nuxe.com/products/my-pink-crush-pouch"
+  ],
+  "out": "img/zl/nuxe-pink.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.universpara.com/nuxe-coffret-prodigieux-fragrance-iconique",
+   "https://www.pharma-gdd.com/fr/nuxe-coffret-fragrance-iconique"
+  ],
+  "out": "img/zl/nuxe-iconic.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://theordinary.com/en-fr/the-target-treat-set-100749.html",
+   "https://www.lookfantastic.com/p/the-ordinary-s-the-target-treat-set-for-blemish-prone-skin/17905162/"
+  ],
+  "out": "img/zl/to-target.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/the-ordinary-the-daily-set/15061738/",
+   "https://theordinary.com/en-fr/the-daily-set-100649.html"
+  ],
+  "out": "img/zl/to-daily.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.universpara.com/nuxe-coffret-men-boost-les-iconiques-pour-homme",
+   "https://www.pharma-gdd.com/fr/nuxe-coffret-cadeau-les-iconiques-homme"
+  ],
+  "out": "img/zl/nuxe-men.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/sol-de-janeiro-rosa-shine-duo/17905592/"
+  ],
+  "out": "img/zl/sdj-rosa.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.kikocosmetics.com/fr-fr/p/kind-by-kiko-skincare-set-50438/"
+  ],
+  "out": "img/zl/kiko-kind.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.beautybay.com/p/revolution-pro/miracle-working-duo/"
+  ],
+  "out": "img/zl/revpro-balm.jpg",
+  "kind": "product"
  }
 ]
