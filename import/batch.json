@@ -325,6 +325,18 @@
    "name": "فرش ميكب",
    "parentId": "makeup",
    "order": 9
+  },
+  {
+   "id": "skinsets",
+   "name": "سيتات بشرة 🎁",
+   "parentId": "skin",
+   "order": 10
+  },
+  {
+   "id": "bodysets",
+   "name": "سيتات جسم 🎁",
+   "parentId": "body",
+   "order": 10
   }
  ],
  "products": [
@@ -15793,6 +15805,498 @@
    "hidden": false,
    "createdAt": "2026-11-19T21:50:00+02:00",
    "needsPrice": false
+  },
+  {
+   "id": "zl-anua",
+   "brand": "Anua",
+   "name": "Heartleaf Cleansing Duo Set",
+   "desc": "سيت الغسيل المزدوج الكوري: زيت تنظيف Heartleaf بيشيل الميكب والصن بلوك، وغسول رغوة بيه BHA بينضف المسام. مناسب للبشرة الحساسة والمعرضة للحبوب.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 1505,
+   "oldPrice": 2065,
+   "images": [
+    "img/zl/anua.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-ihr-blossom",
+   "brand": "I Heart Revolution",
+   "name": "Blossom Bloom Bath & Body Gift Set",
+   "desc": "سيت جسم ميني بريحة زهر الكريز والرمان: شاور جل، بودي بتر، وميست للجسم والشعر. هدية لطيفة جداً.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 850,
+   "oldPrice": 1010,
+   "images": [
+    "img/zl/ihr-blossom.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-ihr-cherry",
+   "brand": "I Heart Revolution",
+   "name": "Very Cherry Bath & Body Gift Set",
+   "desc": "سيت جسم ميني بريحة الكريز والتونكا: شاور جل، كريم جسم، وميست للجسم والشعر في علبة هدية.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 850,
+   "oldPrice": 1010,
+   "images": [
+    "img/zl/ihr-cherry.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-rit-namaste",
+   "brand": "Rituals",
+   "name": "The Ritual of Namaste Skin Care Set - Daily Routine",
+   "desc": "روتين بشرة كامل بأحجام سفر: غسول رغوة 30مل، سيروم باكوتشيول 6.5مل، ومرطب خفيف 15مل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 950,
+   "oldPrice": 1195,
+   "images": [
+    "img/zl/rit-namaste.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-boj",
+   "brand": "Beauty of Joseon",
+   "name": "Skin-Nourishing Essentials Set",
+   "desc": "سيت ترطيب كوري: Glow Replenishing Rice Milk تونر بالرز، وDynasty Cream 50مل. لبشرة ندية ولامعة.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 1400,
+   "oldPrice": 2190,
+   "images": [
+    "img/zl/boj.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-sdj-splash",
+   "brand": "Sol de Janeiro",
+   "name": "Splash of Sol To Go Set",
+   "desc": "سيت سفر: لوشن Body Badalada المنعش 100مل + ميست Cheirosa 48 بريحة الجوافة 30مل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1095,
+   "oldPrice": 1570,
+   "images": [
+    "img/zl/sdj-splash.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-rit-karma",
+   "brand": "Rituals",
+   "name": "The Ritual of Karma Small Gift Set",
+   "desc": "سيت هدية 4 قطع بريحة اللوتس والشاي الأبيض: شاور فوم، كريم جسم، موس للجسم، وزيت جسم لامع.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1420,
+   "oldPrice": 1815,
+   "images": [
+    "img/zl/rit-karma.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zlp-garnier",
+   "brand": "Garnier",
+   "name": "SkinActive Sheet Mask Set",
+   "desc": "سيت ماسكات قماش من جارنييه بأنواع مختلفة للترطيب ونضارة البشرة.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "masks",
+   "price": 1010,
+   "images": [
+    "img/zl/garnier.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-origins",
+   "brand": "Origins",
+   "name": "Mini Mask Rituals Set",
+   "desc": "4 ماسكات ميني من أوريجينز: ماسك الفحم للمسام، GinZing للنضارة، Drink Up للترطيب، وغيرهم.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 1230,
+   "oldPrice": 1570,
+   "images": [
+    "img/zl/origins.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-clq-hydration",
+   "brand": "Clinique",
+   "name": "Moisture Surge Hydration Heroes Mini Kit",
+   "desc": "3 منتجات ترطيب من Moisture Surge: المرطب 100H، سيروم Active Glow، وماسك الليل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 1560,
+   "oldPrice": 2005,
+   "images": [
+    "img/zl/clq-hydration.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-revpro-night",
+   "brand": "Revolution PRO",
+   "name": "Miracle Mini Night Duo",
+   "desc": "سيت ليل ميني: كريم Miracle Firming Night وسيروم Miracle Night. بيرطب ويشد البشرة وانتي نايمة.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 950,
+   "oldPrice": 1130,
+   "images": [
+    "img/zl/revpro-night.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-nuxe-hyalu",
+   "brand": "NUXE",
+   "name": "Prodigieuse Hyalu Boost Glow Beauty Routine Set",
+   "desc": "روتين نضارة من نوكس: مركز Illuminateur 30مل، جل كريم 15مل، وستيك للعين ضد الإرهاق.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 1690,
+   "oldPrice": 2685,
+   "images": [
+    "img/zl/nuxe-hyalu.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-nuxe-golden",
+   "brand": "NUXE",
+   "name": "My Golden Crush Pouch",
+   "desc": "شنطة ذهبي فيها 4 منتجات Prodigieux: شامبو 30مل، زيت شاور 30مل، الزيت الشهير 10مل، وبرفان Prodigieux 15مل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1130,
+   "oldPrice": 1755,
+   "images": [
+    "img/zl/nuxe-golden.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zlp-clq-daily",
+   "brand": "Clinique",
+   "name": "Daily Hydrators Skincare Set",
+   "desc": "سيت ترطيب يومي من كلينيك بأشهر منتجات Moisture Surge.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 2375,
+   "images": [
+    "img/zl/clq-daily.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": false,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-nuxe-readygo",
+   "brand": "NUXE",
+   "name": "Ready, Go, Glow Pink Gift Set",
+   "desc": "سيت بينك: زيت Prodigieuse Florale Or بلمعة وردي ذهبي، سيروم شفايف Very Rose، وتوكة شعر هدية.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1600,
+   "oldPrice": 1940,
+   "images": [
+    "img/zl/nuxe-readygo.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-rit-ayurveda",
+   "brand": "Rituals",
+   "name": "The Ritual of Ayurveda Small Gift Set",
+   "desc": "سيت هدية 4 قطع بريحة الورد الهندي وزيت اللوز: شاور فوم، كريم جسم، زيت جسم، وميست.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1420,
+   "oldPrice": 1815,
+   "images": [
+    "img/zl/rit-ayurveda.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-sdj-bomdia",
+   "brand": "Sol de Janeiro",
+   "name": "Bom Dia Jet Set",
+   "desc": "سيت سفر: كريم Bom Dia Bright بفيتامين C، شاور جل AHA/BHA، وميست Cheirosa 40 في شنطة.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1600,
+   "oldPrice": 2190,
+   "images": [
+    "img/zl/sdj-bomdia.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-sdj-sass",
+   "brand": "Sol de Janeiro",
+   "name": "Sass & Sunshine Set",
+   "desc": "سيت هدية من سول دي جانيرو: كريم Brazilian Bum Bum وميست Cheirosa 62 بريحة الفستق والكراميل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1215,
+   "oldPrice": 1755,
+   "images": [
+    "img/zl/sdj-sass.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-nuxe-pink",
+   "brand": "NUXE",
+   "name": "My Pink Crush Pouch",
+   "desc": "شنطة بينك فيها 4 منتجات من نوكس: ماء ميسيلار Very Rose، زيت Prodigieuse Florale، وغيرهم.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1130,
+   "oldPrice": 1755,
+   "images": [
+    "img/zl/nuxe-pink.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-nuxe-iconic",
+   "brand": "NUXE",
+   "name": "Prodigieux Iconic Fragrance Set",
+   "desc": "سيت ريحة Prodigieux: برفان 30مل، زيت شاور 100مل، ولوشن جسم معطر 30مل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1740,
+   "oldPrice": 2750,
+   "images": [
+    "img/zl/nuxe-iconic.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-to-target",
+   "brand": "The Ordinary",
+   "name": "The Target & Treat Set",
+   "desc": "للحبوب والمسام: Sulfur 10% للحبوب + سيروم Niacinamide 10% + Zinc 1% (15مل).\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 725,
+   "oldPrice": 945,
+   "images": [
+    "img/zl/to-target.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-to-sensitive",
+   "brand": "The Ordinary",
+   "name": "The Sensitive Skin Set",
+   "desc": "سيت للبشرة الحساسة من ذا أوردينري: غسول لطيف وسيروم ومرطب.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 1205,
+   "oldPrice": 1630,
+   "images": [
+    "img/zl/to-sensitive.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-to-daily",
+   "brand": "The Ordinary",
+   "name": "The Daily Set",
+   "desc": "أساس أي روتين: Squalane Cleanser 50مل، Hyaluronic Acid 2% + B5 30مل، ومرطب NMF + HA 30مل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 1275,
+   "oldPrice": 1630,
+   "images": [
+    "img/zl/to-daily.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-nuxe-men",
+   "brand": "NUXE",
+   "name": "Men Boost Iconics for Men Set",
+   "desc": "هدية للرجالة: شاور جل للجسم والشعر، جل مرطب ضد الإرهاق، وديودورنت 24 ساعة.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 1460,
+   "oldPrice": 2125,
+   "images": [
+    "img/zl/nuxe-men.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-sdj-rosa",
+   "brand": "Sol de Janeiro",
+   "name": "Rosa & Shine Set",
+   "desc": "كريم Rosa Charmosa 75مل + ميست Cheirosa 91 بريحة الورد والباشن فروت 30مل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodysets",
+   "price": 1215,
+   "oldPrice": 1755,
+   "images": [
+    "img/zl/sdj-rosa.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl-kiko-kind",
+   "brand": "KIKO Milano",
+   "name": "Kind by KIKO Skincare Set",
+   "desc": "روتين كامل: غسول Gel-to-Foam ومزيل ميكب، سيروم Milky Hydra بلمعة، وكريم Sorbet Hydra.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "skinsets",
+   "price": 2065,
+   "oldPrice": 2685,
+   "images": [
+    "img/zl/kiko-kind.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T20:50:00+02:00",
+   "needsPrice": false
   }
  ],
  "settingsPatch": {
@@ -23499,6 +24003,11 @@
    "key": "fr22-2026-11-19",
    "prefix": "fr22-",
    "until": "2026-11-20T19:20:00+02:00"
+  },
+  {
+   "key": "zl-2026-11-20",
+   "prefix": "zl-",
+   "until": "2026-11-21T01:00:00+02:00"
   }
  ],
  "revert": [
