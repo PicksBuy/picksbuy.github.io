@@ -230,6 +230,5 @@ skip img/zl/to-target.jpg
 skip img/zl/to-daily.jpg
 skip img/zl/nuxe-men.jpg
 skip img/zl/sdj-rosa.jpg
-ok   img/zl/rit-karma.jpg 35992B
-ok   img/zl/rit-ayurveda.jpg 60544B
-FAIL img/zl/revpro-balm.jpg RuntimeError: no og:image (HTTP Error 404: Not Found)
+skip img/zl/rit-karma.jpg
+skip img/zl/rit-ayurveda.jpg
