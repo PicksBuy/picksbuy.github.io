@@ -211,3 +211,26 @@ skip img/sd/sd-mugler-alien-eau-de-parfum-extraintense-30ml.jpg
 skip img/sd/sd-ysl-black-opium-glitter-eau-de-parfum-30ml.jpg
 skip img/sd/sd-prada-paradoxe-radical-essence-30ml.jpg
 skip img/sd/sd-marc-jacobs-dot-eau-de-parfum-50ml.jpg
+ok   img/zl/anua.jpg 182018B
+ok   img/zl/ihr-blossom.jpg 22588B
+ok   img/zl/ihr-cherry.jpg 277678B
+ok   img/zl/rit-namaste.jpg 112599B
+ok   img/zl/boj.jpg 99814B
+ok   img/zl/sdj-splash.jpg 114290B
+FAIL img/zl/rit-karma.jpg NameError: name 'err' is not defined
+ok   img/zl/origins.jpg 88211B
+ok   img/zl/clq-hydration.jpg 159547B
+ok   img/zl/revpro-night.jpg 103946B
+ok   img/zl/nuxe-hyalu.jpg 111777B
+ok   img/zl/nuxe-golden.jpg 278058B
+ok   img/zl/nuxe-readygo.jpg 41440B
+FAIL img/zl/rit-ayurveda.jpg RuntimeError: no og:image (HTTP Error 403: Forbidden)
+ok   img/zl/sdj-bomdia.jpg 227466B
+ok   img/zl/nuxe-pink.jpg 191748B
+ok   img/zl/nuxe-iconic.jpg 354174B
+ok   img/zl/to-target.jpg 33362B
+ok   img/zl/to-daily.jpg 95203B
+ok   img/zl/nuxe-men.jpg 142008B
+ok   img/zl/sdj-rosa.jpg 154139B
+FAIL img/zl/kiko-kind.jpg RuntimeError: no og:image (HTTP Error 403: Forbidden)
+FAIL img/zl/revpro-balm.jpg RuntimeError: no og:image (HTTP Error 403: Forbidden)
