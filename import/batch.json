@@ -16297,6 +16297,234 @@
    "hidden": false,
    "createdAt": "2026-11-20T20:50:00+02:00",
    "needsPrice": false
+  },
+  {
+   "id": "zl2-sdj-59",
+   "brand": "Sol de Janeiro",
+   "name": "Cheirosa 59 Perfume Mist 90ml",
+   "desc": "ميست للجسم والشعر بريحة البرقوق والبنفسج والفانيليا، ريحة دافية وثابتة.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodymist",
+   "price": 1295,
+   "oldPrice": 1755,
+   "images": [
+    "img/zl/sdj-59.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-sdj-91",
+   "brand": "Sol de Janeiro",
+   "name": "Cheirosa 91 Perfume Mist 90ml",
+   "desc": "ميست للجسم والشعر بريحة الورد البينك والباشن فروت والكراميل بالعسل.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodymist",
+   "price": 1295,
+   "oldPrice": 1755,
+   "images": [
+    "img/zl/sdj-91.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-sdj-59i",
+   "brand": "Sol de Janeiro",
+   "name": "Cheirosa 59 Intense Perfume Mist 90ml",
+   "desc": "النسخة الـ Intense من Cheirosa 59: تركيز أعلى وثبات لحد 10 ساعات، بريحة الأوركيد والصندل والعنبر.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodymist",
+   "price": 1685,
+   "oldPrice": 2315,
+   "images": [
+    "img/zl/sdj-59i.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-lveb",
+   "brand": "Lancôme",
+   "name": "La Vie Est Belle Eau de Parfum 30ml",
+   "desc": "البرفان الأشهر من لانكوم: أيريس وياسمين وزهر البرتقال على قاعدة برالين وفانيليا.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "perfume-w",
+   "price": 2780,
+   "oldPrice": 4865,
+   "images": [
+    "img/zl/lveb.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-lveb-rose",
+   "brand": "Lancôme",
+   "name": "La Vie Est Belle Rose Extraordinaire EDP 30ml",
+   "desc": "نسخة الورد من La Vie Est Belle: 3 أنواع ورد مع الأيريس، ريحة فلورال ناعمة.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "perfume-w",
+   "price": 3000,
+   "oldPrice": 4555,
+   "images": [
+    "img/zl/lveb-rose.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-guess-dream",
+   "brand": "Guess",
+   "name": "Seductive Dream Fragrance Mist 250ml",
+   "desc": "بودي ميست 250مل بريحة الكمثرى والتفاح والورد والياسمين على قاعدة فانيليا.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodymist",
+   "price": 700,
+   "oldPrice": 820,
+   "images": [
+    "img/zl/guess-dream.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-guess-red",
+   "brand": "Guess",
+   "name": "Seductive Red Fragrance Mist 250ml",
+   "desc": "بودي ميست 250مل بريحة الكريز واللوز والفانيليا، دافية وجذابة.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodymist",
+   "price": 700,
+   "oldPrice": 820,
+   "images": [
+    "img/zl/guess-red.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-nuxe-gold-mist",
+   "brand": "NUXE",
+   "name": "Hair & Skin Sensual Era Gold Shimmery Mist 100ml",
+   "desc": "ميست للجسم والشعر بلمعة ذهبي، بريحة زهر البرتقال والماجنوليا والفانيليا.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodymist",
+   "price": 1320,
+   "oldPrice": 2065,
+   "images": [
+    "img/zl/nuxe-gold-mist.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-nuxe-pink-mist",
+   "brand": "NUXE",
+   "name": "Hair & Skin Happy in Pink Mist 100ml",
+   "desc": "ميست للجسم والشعر بريحة التوت والورد والمسك، فريش وبناتي.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "bodymist",
+   "price": 1320,
+   "oldPrice": 2065,
+   "images": [
+    "img/zl/nuxe-pink-mist.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-jc-wild",
+   "brand": "Just Cavalli",
+   "name": "Wild Heart for Her Eau de Parfum 30ml",
+   "desc": "برفان فلورال فروتي: مشمش وكشمش أحمر وبيوني على قاعدة مسك وخشب الأرز.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "perfume-w",
+   "price": 1445,
+   "oldPrice": 1755,
+   "images": [
+    "img/zl/jc-wild.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-armani-swyp",
+   "brand": "Armani",
+   "name": "Stronger With You Powerfully EDP 50ml",
+   "desc": "برفان رجالي: كريز ويوسفي ولافندر على قاعدة كستنا مدخنة وفانيليا. ثبات عالي.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "perfume-m",
+   "price": 3560,
+   "oldPrice": 5795,
+   "images": [
+    "img/zl/armani-swyp.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
+  },
+  {
+   "id": "zl2-ker-gloss",
+   "brand": "Kérastase",
+   "name": "Gloss Absolu Le Parfum Hair Perfume 30ml",
+   "desc": "برفان للشعر من كيراستاس: ريحة ليمون وورد وفانيليا، وبيسيب الشعر ناعم ولامع.\n\n📦 بيتطلب مخصوص من Zalando فرنسا 🇫🇷، أصلي 100%.\n⏰ عرض Black Friday لمدة 4 ساعات بس.",
+   "countryId": "fr",
+   "categoryId": "hairperfume",
+   "price": 1855,
+   "oldPrice": 2935,
+   "images": [
+    "img/zl/ker-gloss.jpg"
+   ],
+   "sizes": [],
+   "qty": 5,
+   "promo": true,
+   "hidden": false,
+   "createdAt": "2026-11-20T21:30:00+02:00",
+   "needsPrice": false
   }
  ],
  "settingsPatch": {
@@ -24008,6 +24236,11 @@
    "key": "zl-2026-11-20",
    "prefix": "zl-",
    "until": "2026-11-21T01:00:00+02:00"
+  },
+  {
+   "key": "zl2-2026-11-20",
+   "prefix": "zl2-",
+   "until": "2026-11-21T01:30:00+02:00"
   }
  ],
  "revert": [
