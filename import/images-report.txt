@@ -232,3 +232,15 @@ skip img/zl/nuxe-men.jpg
 skip img/zl/sdj-rosa.jpg
 skip img/zl/rit-karma.jpg
 skip img/zl/rit-ayurveda.jpg
+ok   img/zl/sdj-59.jpg 60189B
+ok   img/zl/sdj-91.jpg 66835B
+ok   img/zl/sdj-59i.jpg 67652B
+ok   img/zl/lveb.jpg 94739B
+ok   img/zl/lveb-rose.jpg 153081B
+ok   img/zl/guess-dream.jpg 31180B
+ok   img/zl/guess-red.jpg 30503B
+ok   img/zl/nuxe-gold-mist.jpg 26703B
+ok   img/zl/nuxe-pink-mist.jpg 23885B
+ok   img/zl/jc-wild.jpg 57930B
+ok   img/zl/armani-swyp.jpg 99377B
+ok   img/zl/ker-gloss.jpg 54003B
