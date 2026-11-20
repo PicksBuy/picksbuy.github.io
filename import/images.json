@@ -1351,5 +1351,96 @@
   ],
   "out": "img/zl/rit-ayurveda.jpg",
   "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/sol-de-janeiro-cheirosa-59-perfume-mist-90ml/14971363"
+  ],
+  "out": "img/zl/sdj-59.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/sol-de-janeiro-cheirosa-91-hair-body-perfume-mist-90ml/17313129/"
+  ],
+  "out": "img/zl/sdj-91.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/sol-de-janeiro-cheirosa-59-intense-mist/17976156/",
+   "https://soldejaneiro.com/products/cheirosa-59-intense-perfume-mist"
+  ],
+  "out": "img/zl/sdj-59i.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/lancome-la-vie-est-belle-eau-de-parfum-30ml/11077829"
+  ],
+  "out": "img/zl/lveb.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/lancome-la-vie-est-belle-rose-extra-eau-de-parfum-30ml/14991021/"
+  ],
+  "out": "img/zl/lveb-rose.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.notino.co.uk/guess/seductive-dream-scented-body-spray/",
+   "https://en.parfumdreams.de/Guess/Womens-fragrances/Seductive/Fragrance-Mist/index_137270.aspx"
+  ],
+  "out": "img/zl/guess-dream.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.notino.co.uk/-/pd/GUS02802",
+   "https://en.parfumdreams.de/Guess/Womens-fragrances/Seductive/Fragrance-Mist/index_116068.aspx"
+  ],
+  "out": "img/zl/guess-red.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.pharma-gdd.com/fr/nuxe-hair-and-skin-brume-parfumante-nacree-sensual-era-gold",
+   "https://universpharmacie.fr/28536-nuxe-hair-and-skin-sensual-era-gold-brume-parfumante-nacree-100ml.html"
+  ],
+  "out": "img/zl/nuxe-gold-mist.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.pharma-gdd.com/fr/nuxe-hair-and-skin-brume-parfumante-happy-in-pink",
+   "https://universpharmacie.fr/25644-nuxe-hair-skin-brume-parfumante-cheveux-et-corps-happy-in-pink-100ml.html"
+  ],
+  "out": "img/zl/nuxe-pink-mist.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.notino.fr/roberto-cavalli/just-cavalli-wild-heart-eau-de-parfum-pour-femme/p-16338149/",
+   "https://en.parfumdreams.de/Roberto-Cavalli/Womens-fragrances/Wild-Heart-for-Her/Eau-de-Parfum-Spray/index_138501.aspx"
+  ],
+  "out": "img/zl/jc-wild.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/emporio-armani-stronger-with-you-powerfully-eau-de-parfum-50ml/17585907"
+  ],
+  "out": "img/zl/armani-swyp.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.lookfantastic.com/p/kerastase-gloss-absolu-le-parfum-30ml/17091348/",
+   "https://www.kerastase.co.uk/ranges/regimen/gloss-absolu/kerastase-gloss-absolu-le-parfum-30ml/KER_00365.html"
+  ],
+  "out": "img/zl/ker-gloss.jpg",
+  "kind": "product"
  }
 ]
