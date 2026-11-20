@@ -1239,13 +1239,6 @@
  },
  {
   "pages": [
-   "https://www.rituals.com/en-fr/the-ritual-of-karma---small-gift-set-2026-1122147.html"
-  ],
-  "out": "img/zl/rit-karma.jpg",
-  "kind": "product"
- },
- {
-  "pages": [
    "https://www.notino.co.uk/origins/holiday-mini-mask-rituals-gift-set/",
    "https://lyko.com/en/origins/origins-mini-mask-rituals-set"
   ],
@@ -1288,13 +1281,6 @@
    "https://lasante.net/espace-para/promotions/idees-cadeaux/coffrets-noel/nuxe-coffret-ready-go-glow-pink.html"
   ],
   "out": "img/zl/nuxe-readygo.jpg",
-  "kind": "product"
- },
- {
-  "pages": [
-   "https://www.rituals.com/en-fr/the-ritual-of-ayurveda---small-gift-set-2026-1122135.html"
-  ],
-  "out": "img/zl/rit-ayurveda.jpg",
   "kind": "product"
  },
  {
@@ -1352,14 +1338,26 @@
  },
  {
   "pages": [
-   "https://www.kikocosmetics.com/fr-fr/p/kind-by-kiko-skincare-set-50438/"
+   "https://millies.ie/products/rituals-the-ritual-of-karma-small-gift-set-2026",
+   "https://www.rituals.com/en-gb/the-ritual-of-karma---small-gift-set-2026-1122147.html"
   ],
-  "out": "img/zl/kiko-kind.jpg",
+  "out": "img/zl/rit-karma.jpg",
   "kind": "product"
  },
  {
   "pages": [
-   "https://www.beautybay.com/p/revolution-pro/miracle-working-duo/"
+   "https://millies.ie/products/rituals-the-ritual-of-ayurveda-small-gift-set-2026",
+   "https://www.rituals.com/en-gb/the-ritual-of-ayurveda---small-gift-set-2026-1122135.html"
+  ],
+  "out": "img/zl/rit-ayurveda.jpg",
+  "kind": "product"
+ },
+ {
+  "pages": [
+   "https://www.revolutionbeauty.com/products/revolution-pro-balm-cream-duo",
+   "https://www.revolutionbeauty.com/products/revolution-pro-miracle-balm-cream-duo",
+   "https://www.revolutionbeauty.com/products/revolution-pro-balm-and-cream-duo",
+   "https://www.beautybay.com/it/p/revolution-pro/miracle-working-duo/"
   ],
   "out": "img/zl/revpro-balm.jpg",
   "kind": "product"
