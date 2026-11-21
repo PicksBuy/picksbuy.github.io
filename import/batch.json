@@ -24485,5 +24485,13 @@
  ],
  "dropRules": [
   "superdrug-bf-2026"
+ ],
+ "ensureCats": [
+  {
+   "id": "instant",
+   "name": "Immediate Purchase ⚡",
+   "parentId": null,
+   "order": 0
+  }
  ]
 }

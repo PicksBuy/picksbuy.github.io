@@ -2174,6 +2174,13 @@ async function checkImports(){
     ok(await sb.from('products').delete().in('id',S.expiredGone));
     toast(`اتمسحت ${S.expiredGone.length} عروض خلصت ⏰`); S.expiredGone=[];
   }catch(e){ console.warn('expire-del',e); } }
+  /* categories the shop asked for directly (added once; if deleted later they stay deleted) */
+  const ens=(BATCH.ensureCats||[]).filter(c=>!S.cats.some(x=>x.id===c.id)&&!(S.settings.imported||[]).includes('cat:'+c.id));
+  if(ens.length){ try{
+    ok(await sb.from('categories').upsert(ens.map(c=>toRow('categories',c))));
+    ok(await sb.from('settings').upsert({id:1,data:{...S.settings,imported:[...new Set([...(S.settings.imported||[]),...ens.map(c=>'cat:'+c.id)])]}}));
+    await Promise.all(['categories','settings'].map(refresh)); toast(`اتضاف قسم ${ens.map(c=>c.name).join('، ')} ✅`);
+  }catch(e){ console.warn('ensureCats',e); } }
   const done=new Set(S.settings.imported||[]);
   const ups=(BATCH.updates||[]).filter(u=>!done.has(u.key)&&S.products.some(p=>p.id===u.id));
   if(ups.length){ try{
